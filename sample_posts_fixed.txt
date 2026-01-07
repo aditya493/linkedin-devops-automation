@@ -1,0 +1,93 @@
+======================================================================
+INTELLIGENT POST (70%) - Growth Plan
+======================================================================
+DevOps practices at scale reveal key patterns. Pay attention to this.
+
+Unpopular opinion: Platform Engineering isn't just a rebrand of DevOps.
+
+Key insights on platform engineering will replace traditional devops:
+
+• Define the difference
+• Share examples
+• Address misconceptions
+
+What's your take?
+
+📩 Get weekly DevOps insights delivered to your inbox!
+👉 Subscribe: https://is.gd/devopstechradarnewsletter
+📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
+
+#PlatformEngineering #DevOps #CloudNative
+
+======================================================================
+RSS POST - Hot Take Style
+======================================================================
+⚡ 🔥 Hot take: unpopular opinion incoming.
+Container orchestration in production reveals key patterns. Here's the signal.
+
+🎯 Your CI/CD pipeline is your most critical production system. Treat it like one.
+
+The reasoning:
+→ This pattern appears across multiple orgs
+→ The industry hype often doesn't match ground reality
+→ Simple solutions usually outperform complex ones
+
+Is this wrong? Share your perspective.
+
+📩 Want more DevOps insights like this? Subscribe for weekly updates!
+👉 Subscribe: https://is.gd/devopstechradarnewsletter
+📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
+
+#Resilience #IncidentManagement #ReliabilityEngineering #SiteReliability #Kubernetes
+
+======================================================================
+RSS POST - Lessons Style
+======================================================================
+⚡ 🎯 What teams wish they knew earlier.
+Cloud-native systems and Kubernetes updates reveal trends. Let's break this down.
+
+Topic: Kubernetes 1.32 Introduces Sidecar Containers GA
+
+1️⃣ Health checks are your first line of defense against cascading failures.
+2️⃣ Resource limits prevent noisy neighbors from killing your cluster.
+3️⃣ GitOps keeps your cluster state predictable and recoverable.
+
+The pattern: helps you run clusters more reliably and efficiently..
+
+Share your hard-won wisdom below.
+
+📩 Get weekly DevOps insights delivered to your inbox!
+👉 Subscribe: https://is.gd/devopstechradarnewsletter
+📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
+
+#CICD #FinOps #SiteReliability #Resilience #SRE
+
+======================================================================
+RSS POST - Digest Style
+======================================================================
+📡 Industry signals worth your attention.
+Container orchestration strategies worth understanding. Pay attention to this.
+
+What stands out:
+1. Kubernetes 1.32 Introduces Sidecar Containers GA
+   Context: Native sidecar containers are now generally available, simplifying service mesh deployments.
+   Impact: Why it matters: helps you run clusters more reliably and efficiently.
+   🔗 https://kubernetes.io/blog/2026/kubernetes-1.32
+
+2. AWS Lambda Cost Reduction
+   Context: Amazon reduces Lambda pricing significantly for enterprise workloads.
+   Impact: Why it matters: helps you optimize cloud reliability and cost.
+   🔗 https://aws.amazon.com/blogs/compute/lambda-pricing
+
+
+Why this matters: Better observability, fewer surprises in prod.
+
+📩 Never miss a DevOps update - join the weekly newsletter!
+👉 Subscribe: https://is.gd/devopstechradarnewsletter
+📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
+
+#Cloud #IncidentManagement #SRE #Resilience #Observability
+
+What would you prioritize first?
+
+📚 Key resource: https://kubernetes.io/blog/2026/kubernetes-1.32

@@ -1,0 +1,471 @@
+{
+  "total_posts": 46,
+  "posts_today": 1,
+  "last_post_date": "2026-01-04",
+  "formats_used": {
+    "case_study": 10,
+    "deep_dive": 5,
+    "lessons": 10,
+    "digest": 12,
+    "lessons_learned": 2,
+    "technical_deep_dives": 3,
+    "industry_predictions": 3,
+    "career_advice": 1
+  },
+  "sources_used": {
+    "www.infoq.com": 34,
+    "kubernetes.io": 11,
+    "www.docker.com": 3,
+    "krebsonsecurity.com": 2,
+    "blog.pagerduty.com": 1,
+    "blog.newrelic.com": 1,
+    "engineering.fb.com": 2,
+    "blog.google": 2,
+    "blog.checkpoint.com": 5,
+    "www.crowdstrike.com": 12,
+    "blog.qualys.com": 1,
+    "aws.amazon.com": 1,
+    "www.cncf.io": 5,
+    "blog.rapid7.com": 1,
+    "feeds.feedburner.com": 3,
+    "www.mend.io": 1,
+    "unit42.paloaltonetworks.com": 1,
+    "www.hashicorp.com": 5,
+    "growth_plan": 9,
+    "snyk.io": 1,
+    "netflixtechblog.medium.com": 1
+  },
+  "errors": [],
+  "daily_history": [
+    {
+      "date": "2025-12-22",
+      "time": "2025-12-22T12:52:38.025154+00:00",
+      "format": "case_study",
+      "sources": [
+        "www.infoq.com",
+        "kubernetes.io",
+        "www.docker.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.docker.com"
+      ]
+    },
+    {
+      "date": "2025-12-22",
+      "time": "2025-12-22T13:12:14.492424+00:00",
+      "format": "deep_dive",
+      "sources": [
+        "krebsonsecurity.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "kubernetes.io"
+      ]
+    },
+    {
+      "date": "2025-12-22",
+      "time": "2025-12-22T15:14:41.509817+00:00",
+      "format": "deep_dive",
+      "sources": [
+        "www.infoq.com",
+        "www.docker.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T04:12:28.547722+00:00",
+      "format": "deep_dive",
+      "sources": [
+        "kubernetes.io",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T05:16:26.898604+00:00",
+      "format": "lessons",
+      "sources": [
+        "blog.pagerduty.com",
+        "blog.newrelic.com",
+        "engineering.fb.com",
+        "blog.google"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T05:30:22.508973+00:00",
+      "format": "lessons",
+      "sources": [
+        "blog.checkpoint.com"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T05:37:53.541126+00:00",
+      "format": "deep_dive",
+      "sources": [
+        "www.crowdstrike.com",
+        "www.crowdstrike.com",
+        "www.crowdstrike.com",
+        "www.crowdstrike.com",
+        "www.crowdstrike.com",
+        "www.crowdstrike.com"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T05:55:25.885208+00:00",
+      "format": "digest",
+      "sources": [
+        "www.crowdstrike.com",
+        "www.crowdstrike.com",
+        "www.crowdstrike.com",
+        "www.crowdstrike.com"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T06:14:18.406193+00:00",
+      "format": "lessons",
+      "sources": [
+        "blog.qualys.com",
+        "kubernetes.io",
+        "kubernetes.io",
+        "aws.amazon.com",
+        "www.cncf.io",
+        "www.cncf.io"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T06:50:20.655266+00:00",
+      "format": "case_study",
+      "sources": [
+        "blog.google"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T07:05:25.385753+00:00",
+      "format": "lessons",
+      "sources": [
+        "blog.checkpoint.com",
+        "blog.rapid7.com",
+        "www.crowdstrike.com"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T07:12:00.387521+00:00",
+      "format": "deep_dive",
+      "sources": [
+        "engineering.fb.com"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T13:12:53.485844+00:00",
+      "format": "lessons",
+      "sources": [
+        "www.cncf.io",
+        "www.infoq.com",
+        "www.infoq.com",
+        "feeds.feedburner.com"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T14:04:16.434510+00:00",
+      "format": "lessons",
+      "sources": [
+        "www.mend.io"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "time": "2025-12-23T15:08:27.426029+00:00",
+      "format": "case_study",
+      "sources": [
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-24",
+      "time": "2025-12-24T04:10:44.003732+00:00",
+      "format": "digest",
+      "sources": [
+        "kubernetes.io"
+      ]
+    },
+    {
+      "date": "2025-12-24",
+      "time": "2025-12-24T05:38:51.974080+00:00",
+      "format": "lessons",
+      "sources": [
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-24",
+      "time": "2025-12-24T05:50:59.554547+00:00",
+      "format": "digest",
+      "sources": [
+        "unit42.paloaltonetworks.com"
+      ]
+    },
+    {
+      "date": "2025-12-24",
+      "time": "2025-12-24T13:10:01.709295+00:00",
+      "format": "case_study",
+      "sources": [
+        "www.cncf.io",
+        "feeds.feedburner.com"
+      ]
+    },
+    {
+      "date": "2025-12-25",
+      "time": "2025-12-25T05:28:36.535056+00:00",
+      "format": "case_study",
+      "sources": [
+        "blog.checkpoint.com"
+      ]
+    },
+    {
+      "date": "2025-12-25",
+      "time": "2025-12-25T07:34:14.671071+00:00",
+      "format": "case_study",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-25",
+      "time": "2025-12-25T13:08:46.318517+00:00",
+      "format": "case_study",
+      "sources": [
+        "www.hashicorp.com"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "time": "2025-12-26T04:11:51.574051+00:00",
+      "format": "case_study",
+      "sources": [
+        "kubernetes.io"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "time": "2025-12-26T06:34:41.635151+00:00",
+      "format": "lessons",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "time": "2025-12-26T07:07:06.942880+00:00",
+      "format": "case_study",
+      "sources": [
+        "www.hashicorp.com"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "time": "2025-12-26T08:23:14.856862+00:00",
+      "format": "digest",
+      "sources": [
+        "kubernetes.io"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "time": "2025-12-26T09:28:34.436684+00:00",
+      "format": "case_study",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "time": "2025-12-26T11:05:38.684595+00:00",
+      "format": "digest",
+      "sources": [
+        "www.hashicorp.com"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "time": "2025-12-26T11:33:30.149990+00:00",
+      "format": "lessons",
+      "sources": [
+        "www.hashicorp.com"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "time": "2025-12-26T11:38:23.402526+00:00",
+      "format": "lessons",
+      "sources": [
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "time": "2025-12-26T12:03:45.449781+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "time": "2025-12-27T04:47:39.598573+00:00",
+      "format": "lessons_learned",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "time": "2025-12-27T06:54:43.070891+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2025-12-28",
+      "time": "2025-12-28T06:54:25.542685+00:00",
+      "format": "technical_deep_dives",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2025-12-29",
+      "time": "2025-12-29T04:35:50.091093+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2025-12-29",
+      "time": "2025-12-29T11:42:35.428562+00:00",
+      "format": "digest",
+      "sources": []
+    },
+    {
+      "date": "2025-12-30",
+      "time": "2025-12-30T04:15:42.263053+00:00",
+      "format": "technical_deep_dives",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2025-12-30",
+      "time": "2025-12-30T11:41:57.308672+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.checkpoint.com",
+        "feeds.feedburner.com",
+        "www.hashicorp.com",
+        "www.cncf.io",
+        "krebsonsecurity.com",
+        "www.crowdstrike.com"
+      ]
+    },
+    {
+      "date": "2025-12-31",
+      "time": "2025-12-31T04:15:37.232956+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2025-12-31",
+      "time": "2025-12-31T11:39:02.057034+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.checkpoint.com",
+        "snyk.io"
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "time": "2026-01-01T04:34:49.223417+00:00",
+      "format": "digest",
+      "sources": [
+        "kubernetes.io",
+        "kubernetes.io",
+        "kubernetes.io"
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "time": "2026-01-01T11:41:22.769943+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-02",
+      "time": "2026-01-02T04:29:24.483953+00:00",
+      "format": "digest",
+      "sources": [
+        "netflixtechblog.medium.com"
+      ]
+    },
+    {
+      "date": "2026-01-02",
+      "time": "2026-01-02T11:40:35.880172+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-03",
+      "time": "2026-01-03T06:54:12.600099+00:00",
+      "format": "lessons_learned",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "time": "2026-01-04T06:53:37.749800+00:00",
+      "format": "technical_deep_dives",
+      "sources": [
+        "growth_plan"
+      ]
+    }
+  ],
+  "posts_created": 19,
+  "last_post_content": "I architect observability for complex distributed systems and share lessons from the journey. Here's...\n\nThe hidden cost of building observability for 100+ microservices that no one calculates: as systems grow, so does the complexity of monitoring and understanding their behavior. I've seen many organizations struggle with this, and it's an issue that requires careful consideration. In my experience, it's not just about adding more tools, but about creating a cohesive strategy.\n\n\nTechnical constraints and requirements are numerous, including handling large volumes of data, providing real-time insights, and supporting multiple formats and protocols. Some key considerations include:\n* Scalability and performance\n* Data retention and storage\n* Security and access control\n\n\nOur solution architecture consists of a centralized logging and monitoring platform, with distributed agents and collectors to gather data from each microservice. This allows us to consolidate and analyze data from multiple sources, and provide a unified view of system performance.\n\n\nImplementation was not without challenges, including handling variations in data format and quality, and ensuring seamless integration with existing systems. However, by leveraging open-source tools and collaborating with cross-functional teams, we were able to overcome these hurdles and achieve significant results.\n\n\nOur performance metrics show a significant reduction in mean time to detect (MTTD) and mean time to resolve (MTTR) issues, as well as improved overall system uptime and availability. These results have been instrumental in informing our lessons learned and guiding future improvements.\n\n\nLooking back, one key takeaway is the importance of iterative development and continuous refinement. By embracing a culture of experimentation and learning, we can stay ahead of the curve and adapt to evolving system requirements.\n\n\nWhat other solutions have you used for similar problems?\n\n\ud83d\udce8 Subscribe to get weekly DevOps news and insights directly to your inbox!\n\ud83d\udc49 Subscribe: https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook\n\n#grafana #monitoring #cloudengineeering #microservices #observability",
+  "last_post_format": "technical_deep_dives",
+  "last_post_sources": [
+    "growth_plan"
+  ],
+  "last_post_timestamp": "2026-01-04T06:53:37.750452+00:00"
+}

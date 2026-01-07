@@ -1,0 +1,863 @@
+name: LinkedIn DevOps Growth & Engagement Automation
+
+on:
+  schedule:
+    # ⚠️ GitHub Actions uses UTC time! IST = UTC+5:30
+    #    9 AM IST  = 03:30 UTC
+    #    12 PM IST = 06:30 UTC
+    #    5 PM IST  = 11:30 UTC
+    - cron: '30 3 * * 1-5'   # 9 AM IST weekdays (morning posting)
+    - cron: '30 11 * * 1-5'  # 5 PM IST weekdays (evening engagement)
+    - cron: '30 6 * * 0,6'   # 12 PM IST weekends (weekend engagement)
+  
+  workflow_dispatch:
+    inputs:
+      engagement_mode:
+        description: 'Engagement mode to run'
+        required: true
+        default: 'full_automation'
+        type: choice
+        options:
+          - full_automation
+          - comments_only
+          - connections_only
+          - content_only
+          - growth_strategy_only
+      
+      max_comments:
+        description: 'Maximum comments per run'
+        required: false
+        default: '15'
+      
+      max_connections:
+        description: 'Maximum connections per run'
+        required: false
+        default: '10'
+      
+      dry_run:
+        description: 'Run in dry-run mode (no actual posting)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      
+      post_format:
+        description: 'Force specific post format'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - digest
+          - deep_dive
+          - quick_tip
+          - case_study
+          - hot_take
+          - lessons
+      
+      custom_message:
+        description: 'Custom post text (bypasses RSS)'
+        required: false
+        type: string
+      
+      bypass_rate_limits:
+        description: 'Bypass rate limiting for testing'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      
+      # =====================================================
+      # FEATURE TOGGLES - Enable/Disable specific features
+      # =====================================================
+      enable_trending_comments:
+        description: 'Enable commenting on trending posts (⚠️ NOT SUPPORTED by LinkedIn API)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      
+      enable_influencer_engagement:
+        description: 'Enable influencer engagement (⚠️ NOT SUPPORTED by LinkedIn API)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      
+      enable_hr_connections:
+        description: 'Enable HR connection requests (⚠️ NOT SUPPORTED by LinkedIn API)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      
+      enable_strategic_likes:
+        description: 'Enable strategic post liking (⚠️ NOT SUPPORTED by LinkedIn API)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      
+      enable_ai_comments:
+        description: 'Enable AI-generated comments (requires Groq API key)'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      
+      enable_content_posting:
+        description: 'Enable posting your own content (✅ SUPPORTED)'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      
+      enable_auto_reply_comments:
+        description: 'Enable auto-reply to comments on YOUR posts (✅ SUPPORTED)'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      
+      max_replies_per_run:
+        description: 'Maximum comment replies per run'
+        required: false
+        default: '10'
+      
+      growth_plan_probability:
+        description: 'Probability of using Growth Plan vs RSS (0=100% RSS, 0.7=70% Growth Plan, 1=100% Growth Plan)'
+        required: false
+        default: '0.7'
+        type: choice
+        options:
+          - '0'
+          - '0.3'
+          - '0.5'
+          - '0.7'
+          - '0.8'
+          - '1'
+
+permissions:
+  contents: write  # Allow pushing state updates back to repo
+
+env:
+  LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+  HF_API_KEY: ${{ secrets.HF_API_KEY }}
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+  DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+  
+  # Growth automation settings
+  MAX_COMMENTS_PER_RUN: ${{ github.event.inputs.max_comments || '15' }}
+  MAX_CONNECTIONS_PER_RUN: ${{ github.event.inputs.max_connections || '10' }}
+  MAX_LIKES_PER_RUN: 25
+  DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+  
+  # =====================================================
+  # FEATURE TOGGLES (controlled from workflow dispatch)
+  # ⚠️ Features marked as NOT SUPPORTED use unofficial API endpoints
+  # ✅ Features marked as SUPPORTED use official LinkedIn API
+  # =====================================================
+  ENABLE_TRENDING_COMMENTS: ${{ github.event.inputs.enable_trending_comments || 'false' }}       # ⚠️ NOT SUPPORTED
+  ENABLE_INFLUENCER_ENGAGEMENT: ${{ github.event.inputs.enable_influencer_engagement || 'false' }} # ⚠️ NOT SUPPORTED
+  ENABLE_HR_CONNECTIONS: ${{ github.event.inputs.enable_hr_connections || 'false' }}             # ⚠️ NOT SUPPORTED
+  ENABLE_STRATEGIC_LIKES: ${{ github.event.inputs.enable_strategic_likes || 'false' }}           # ⚠️ NOT SUPPORTED
+  ENABLE_AI_COMMENTS: ${{ github.event.inputs.enable_ai_comments || 'true' }}                    # ✅ SUPPORTED (local AI)
+  ENABLE_CONTENT_POSTING: ${{ github.event.inputs.enable_content_posting || 'true' }}            # ✅ SUPPORTED
+  ENABLE_AUTO_REPLY_COMMENTS: ${{ github.event.inputs.enable_auto_reply_comments || 'true' }}    # ✅ SUPPORTED
+  MAX_REPLIES_PER_RUN: ${{ github.event.inputs.max_replies_per_run || '10' }}
+
+jobs:
+  # =====================================================
+  # CONFIGURATION & SETUP (Determines which jobs run)
+  # =====================================================
+  
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      run_content_posting: ${{ steps.config.outputs.run_content_posting }}
+      run_engagement: ${{ steps.config.outputs.run_engagement }}
+      run_network_building: ${{ steps.config.outputs.run_network_building }}
+      run_growth_strategy: ${{ steps.config.outputs.run_growth_strategy }}
+      is_dry_run: ${{ steps.config.outputs.is_dry_run }}
+    
+    steps:
+      - name: Determine Job Configuration
+        id: config
+        run: |
+          echo "🔧 Configuring workflow for event: ${{ github.event_name }}"
+          
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            # =====================================================
+            # SCHEDULED RUNS: Only SUPPORTED features enabled
+            # =====================================================
+            echo "📅 Scheduled run - using production defaults"
+            echo "run_content_posting=true" >> $GITHUB_OUTPUT      # ✅ SUPPORTED
+            echo "run_engagement=true" >> $GITHUB_OUTPUT           # ✅ SUPPORTED (auto-reply only)
+            echo "run_network_building=false" >> $GITHUB_OUTPUT    # ⚠️ NOT SUPPORTED - disabled
+            echo "run_growth_strategy=true" >> $GITHUB_OUTPUT      # ✅ SUPPORTED (local analytics)
+            echo "is_dry_run=false" >> $GITHUB_OUTPUT
+          else
+            # =====================================================
+            # MANUAL DISPATCH: Respect all user inputs
+            # =====================================================
+            echo "👤 Manual dispatch - respecting user inputs"
+            
+            MODE="${{ github.event.inputs.engagement_mode }}"
+            CONTENT="${{ github.event.inputs.enable_content_posting }}"
+            ENGAGEMENT="${{ github.event.inputs.enable_auto_reply_comments }}"
+            NETWORK="${{ github.event.inputs.enable_hr_connections }}"
+            DRY_RUN="${{ github.event.inputs.dry_run }}"
+            
+            # Content posting: enabled if mode allows AND toggle is not false
+            if [[ ("$MODE" == "full_automation" || "$MODE" == "content_only") && "$CONTENT" != "false" ]]; then
+              echo "run_content_posting=true" >> $GITHUB_OUTPUT
+            else
+              echo "run_content_posting=false" >> $GITHUB_OUTPUT
+            fi
+            
+            # Engagement: enabled if mode allows AND toggle is not false
+            if [[ ("$MODE" == "full_automation" || "$MODE" == "comments_only") && "$ENGAGEMENT" != "false" ]]; then
+              echo "run_engagement=true" >> $GITHUB_OUTPUT
+            else
+              echo "run_engagement=false" >> $GITHUB_OUTPUT
+            fi
+            
+            # Network building: ONLY if explicitly enabled (unsupported API)
+            if [[ ("$MODE" == "full_automation" || "$MODE" == "connections_only") && "$NETWORK" == "true" ]]; then
+              echo "run_network_building=true" >> $GITHUB_OUTPUT
+              echo "⚠️ WARNING: Network building uses unsupported LinkedIn API"
+            else
+              echo "run_network_building=false" >> $GITHUB_OUTPUT
+            fi
+            
+            # Growth strategy: enabled if mode allows
+            if [[ "$MODE" == "full_automation" || "$MODE" == "growth_strategy_only" ]]; then
+              echo "run_growth_strategy=true" >> $GITHUB_OUTPUT
+            else
+              echo "run_growth_strategy=false" >> $GITHUB_OUTPUT
+            fi
+            
+            echo "is_dry_run=${DRY_RUN:-false}" >> $GITHUB_OUTPUT
+          fi
+          
+          echo "✅ Configuration complete"
+
+  # =====================================================
+  # ADVANCED GROWTH STRATEGY EXECUTION (RUNS FIRST)
+  # =====================================================
+  
+  growth_strategy_execution:
+    needs: setup
+    # ✅ SUPPORTED: Generates content ideas BEFORE posting
+    if: needs.setup.outputs.run_growth_strategy == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Python Environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install Dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Load Growth Strategy Cache
+      uses: actions/cache@v4
+      with:
+        path: |
+          growth_strategies_cache.json
+          content_series_cache.json
+        key: linkedin-growth-${{ github.run_id }}
+        restore-keys: |
+          linkedin-growth-
+    
+    - name: Execute Advanced Growth Strategies
+      run: |
+        echo "🚀 Executing advanced growth strategies..."
+        python advanced_growth_strategies.py
+        
+        echo "💡 Generating content ideas for automated posting..."
+        python run_growth_strategies.py
+        
+        echo "📋 Growth plan generated:"
+        cat weekly_growth_plan.json | head -50
+    
+    - name: Upload Growth Strategy Results
+      if: always()
+      continue-on-error: true
+      uses: actions/upload-artifact@v4
+      with:
+        name: growth-strategy-results
+        path: |
+          growth_strategies_cache.json
+          weekly_growth_plan.json
+        retention-days: 1
+        if-no-files-found: ignore
+
+  # =====================================================
+  # MAIN CONTENT POSTING (Uses Growth Strategy Ideas)
+  # =====================================================
+  
+  post_devops_content:
+    needs: [setup, growth_strategy_execution]
+    # ✅ SUPPORTED: Runs AFTER growth strategy generates ideas
+    if: |
+      always() && 
+      needs.setup.outputs.run_content_posting == 'true' &&
+      (needs.growth_strategy_execution.result == 'success' || needs.growth_strategy_execution.result == 'skipped')
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Python Environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Install Dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Download Growth Strategy Plan
+      uses: actions/download-artifact@v4
+      with:
+        name: growth-strategy-results
+        path: .
+      continue-on-error: true
+    
+    - name: Load Cache for Content State
+      uses: actions/cache@v4
+      with:
+        path: |
+          posted_links.json
+          metrics.json
+          engagement_cache.json
+          growth_strategies_cache.json
+        key: linkedin-automation-${{ github.run_id }}
+        restore-keys: |
+          linkedin-automation-
+    
+    - name: Generate and Post DevOps Content
+      run: |
+        # Check if growth plan exists
+        if [ -f "weekly_growth_plan.json" ]; then
+          echo "✅ Growth plan found - will use AI-generated content ideas"
+          export USE_GROWTH_PLAN=true
+        else
+          echo "⚠️ No growth plan found - using RSS-based content"
+          export USE_GROWTH_PLAN=false
+        fi
+        python post_devops_news.py
+      env:
+        GITHUB_ACTIONS: 'true'
+        RUNNER_ENVIRONMENT: 'github'
+        
+        # LinkedIn authentication
+        LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+        LINKEDIN_MEMBER_ID: ${{ secrets.LINKEDIN_MEMBER_ID }}
+        LINKEDIN_AUTHOR_URN: ${{ secrets.LINKEDIN_AUTHOR_URN }}
+        
+        # AI enhancement system
+        ENABLE_AI_ENHANCE: "true"
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        HF_API_KEY: ${{ secrets.HF_API_KEY }}
+        AI_MODEL: "facebook/bart-large-cnn"
+        AI_GENERATION_MODEL: "distilgpt2"
+        AI_MAX_TOKENS: "150"
+        AI_TIMEOUT_SECONDS: "30"
+        AI_FALLBACK_ENABLED: "true"
+        AI_SUMMARIZATION_MODELS: "facebook/bart-large-cnn,google-t5/t5-small,google-t5/t5-base"
+        AI_GENERATION_MODELS: "distilgpt2,gpt2"
+        
+        # Content sources
+        SOURCE_PACKS: "devops,sre,platform,kubernetes,architecture,devsecops,security,finops"
+        KEYWORDS_INCLUDE: "devops,scaling,performance,production,engineering,infra,reliability,devsecops,sre,kubernetes,cloud,platform,terraform,helm,gitops,cicd,observability,incident,reliability,aws,gcp,azure,docker,security,vulnerability,compliance,shift-left"
+        KEYWORDS_EXCLUDE: "sponsored,advertisement,marketing,pricing,trial"
+        MIN_ARTICLE_AGE_HOURS: "0"
+        MAX_ARTICLE_AGE_HOURS: "96"
+        FEED_TIMEOUT_SECONDS: "15"
+        SKIP_MALFORMED_FEEDS: "true"
+        MAX_FEED_RETRIES: "2"
+        MAX_FEED_LIMIT: "30"
+        PREFER_RECENT: "true"
+        
+        # Post format & style
+        POST_FORMATS: "deep_dive,case_study,lessons,digest"
+        FORCE_FORMAT: "${{ github.event.inputs.post_format || 'auto' }}"
+        CUSTOM_MESSAGE: "${{ github.event.inputs.custom_message || '' }}"
+        HASHTAGS: "#DevOps #SRE #CloudNative #Platform #Kubernetes #DevSecOps #Architecture #Engineering #Systems #Infrastructure #Observability #Security"
+        MAX_HASHTAGS: "7"
+        ROTATE_HASHTAGS: "true"
+        EMOJI_STYLE: "moderate"
+        TONE: "professional"
+        USE_DYNAMIC_PERSONA: "true"
+        PERSONA_LINE: "I architect enterprise-scale systems and share deep insights from the trenches. Let's dive into what really matters."
+        INCLUDE_PERSONA: "true"
+        
+        # Link handling
+        INCLUDE_LINKS: "true"
+        ALWAYS_INCLUDE_LINKS: "false"
+        MAX_LINKS: "3"
+        SHORTEN_LINKS: "false"
+        UTM_SOURCE: "linkedin"
+        UTM_MEDIUM: "social"
+        UTM_CAMPAIGN: "devops-automation"
+        ADD_UTM_PARAMS: "false"
+        
+        # Newsletter & product promotion
+        INCLUDE_SUBSCRIPTION: "true"
+        NEWSLETTER_URL: "https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a"
+        INCLUDE_PLAYBOOK: "true"
+        PLAYBOOK_URL: "https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook"
+        
+        # Growth Plan vs RSS probability (0=100% RSS, 1=100% Growth Plan)
+        GROWTH_PLAN_PROBABILITY: "${{ github.event.inputs.growth_plan_probability || '0.5' }}"
+        
+        # Timing & rate limiting
+        DRY_RUN: "${{ github.event.inputs.dry_run || 'false' }}"
+        MAX_ITEMS: "5"
+        MAX_JITTER_SECONDS: "180"
+        MIN_POST_INTERVAL_HOURS: "4"
+        BYPASS_RATE_LIMITS: "${{ github.event.inputs.bypass_rate_limits || 'true' }}"
+        COOLDOWN_ON_ERROR_MINUTES: "30"
+        
+        # Analytics & metrics
+        TRACK_METRICS: "true"
+        METRICS_FILE: "metrics.json"
+        LOG_LEVEL: "INFO"
+        
+        # Safety & controls
+        KILL_SWITCH: "false"
+        MAX_POSTS_PER_DAY: "12"
+        REQUIRE_MANUAL_APPROVAL: "false"
+        BLOCK_DUPLICATE_TOPICS: "true"
+        DUPLICATE_WINDOW_DAYS: "7"
+    
+    - name: Upload Content Metrics
+      if: always()
+      continue-on-error: true
+      uses: actions/upload-artifact@v4
+      with:
+        name: content-posting-metrics
+        path: |
+          metrics.json
+          posted_links.json
+        retention-days: 1
+
+  # =====================================================
+  # INTELLIGENT ENGAGEMENT AUTOMATION
+  # =====================================================
+  
+  intelligent_engagement:
+    needs: setup
+    # ✅ SUPPORTED (auto-reply only): Runs based on setup job configuration
+    if: needs.setup.outputs.run_engagement == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Python Environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Install Dependencies for Engagement
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: 🔑 Validate LinkedIn Token
+      run: |
+        echo "Testing LinkedIn API access..."
+        RESPONSE=$(curl -s -w "\n%{http_code}" -H "Authorization: Bearer $LINKEDIN_ACCESS_TOKEN" https://api.linkedin.com/v2/me)
+        HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+        BODY=$(echo "$RESPONSE" | head -n-1)
+        
+        if [ "$HTTP_CODE" = "200" ]; then
+          echo "✅ LinkedIn Token is VALID!"
+          echo "📧 Profile ID: $(echo $BODY | python3 -c "import sys,json; print(json.load(sys.stdin).get('id','unknown'))")"
+          echo "TOKEN_VALID=true" >> $GITHUB_ENV
+        else
+          echo "❌ LinkedIn Token FAILED! HTTP Code: $HTTP_CODE"
+          echo "Response: $BODY"
+          echo ""
+          echo "🔧 FIX: Your token is missing 'openid' and 'profile' scopes."
+          echo "   Regenerate token with scopes: openid profile w_member_social"
+          echo "TOKEN_VALID=false" >> $GITHUB_ENV
+        fi
+      env:
+        LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+    
+    - name: Load Engagement Cache
+      uses: actions/cache@v4
+      with:
+        path: |
+          engagement_cache.json
+          growth_strategies_cache.json
+        key: linkedin-engagement-${{ github.run_id }}
+        restore-keys: |
+          linkedin-engagement-
+    
+    - name: Run Intelligent Commenting on Trending Posts
+      run: |
+        echo "Starting intelligent engagement automation..."
+        echo "Feature Toggles:"
+        echo "  ENABLE_TRENDING_COMMENTS: $ENABLE_TRENDING_COMMENTS"
+        echo "  ENABLE_INFLUENCER_ENGAGEMENT: $ENABLE_INFLUENCER_ENGAGEMENT"
+        echo "  ENABLE_HR_CONNECTIONS: $ENABLE_HR_CONNECTIONS"
+        echo "  ENABLE_STRATEGIC_LIKES: $ENABLE_STRATEGIC_LIKES"
+        echo "  ENABLE_AI_COMMENTS: $ENABLE_AI_COMMENTS"
+        echo "  ENABLE_CONTENT_POSTING: $ENABLE_CONTENT_POSTING"
+        python linkedin_engagement_automation.py
+      env:
+        ENGAGEMENT_MODE: 'comments_and_likes'
+        GITHUB_ACTIONS: 'true'
+        # Feature toggles from workflow dispatch inputs
+        ENABLE_TRENDING_COMMENTS: ${{ env.ENABLE_TRENDING_COMMENTS }}
+        ENABLE_INFLUENCER_ENGAGEMENT: ${{ env.ENABLE_INFLUENCER_ENGAGEMENT }}
+        ENABLE_HR_CONNECTIONS: ${{ env.ENABLE_HR_CONNECTIONS }}
+        ENABLE_STRATEGIC_LIKES: ${{ env.ENABLE_STRATEGIC_LIKES }}
+        ENABLE_AI_COMMENTS: ${{ env.ENABLE_AI_COMMENTS }}
+        ENABLE_CONTENT_POSTING: ${{ env.ENABLE_CONTENT_POSTING }}
+        ENABLE_AUTO_REPLY_COMMENTS: ${{ env.ENABLE_AUTO_REPLY_COMMENTS }}
+        MAX_REPLIES_PER_RUN: ${{ env.MAX_REPLIES_PER_RUN }}
+    
+    - name: Upload Engagement Metrics
+      if: always()
+      continue-on-error: true
+      uses: actions/upload-artifact@v4
+      with:
+        name: engagement-metrics
+        path: |
+          engagement_cache.json
+        retention-days: 1
+        if-no-files-found: ignore
+
+  # =====================================================
+  # HR & PROFESSIONAL NETWORK BUILDING
+  # =====================================================
+  
+  network_building:
+    needs: setup
+    # ⚠️ NOT SUPPORTED: HR connections use unofficial API
+    # Only runs when explicitly enabled via setup job
+    if: needs.setup.outputs.run_network_building == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Python Environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install Dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Load Network Cache
+      uses: actions/cache@v4
+      with:
+        path: |
+          engagement_cache.json
+          network_building_cache.json
+        key: linkedin-network-${{ github.run_id }}
+        restore-keys: |
+          linkedin-network-
+    
+    - name: Automated HR & Professional Connections
+      run: |
+        echo "Starting network building automation..."
+        python run_network_building.py
+      env:
+        CONNECTION_FOCUS: 'hr_professionals'
+    
+    - name: Upload Network Building Results
+      if: always()
+      continue-on-error: true
+      uses: actions/upload-artifact@v4
+      with:
+        name: network-building-results
+        path: |
+          engagement_cache.json
+        retention-days: 1
+        if-no-files-found: ignore
+
+  # =====================================================
+  # COMPREHENSIVE REPORTING & ANALYTICS
+  # =====================================================
+  
+  generate_analytics_report:
+    runs-on: ubuntu-latest
+    needs: [setup, post_devops_content, intelligent_engagement, network_building, growth_strategy_execution]
+    if: always()
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Python Environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install Dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Download All Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        merge-multiple: true
+    
+    - name: Generate Comprehensive Analytics Report
+      run: |
+        echo "Generating comprehensive analytics report..."
+        python generate_analytics_report.py
+    
+    - name: Send Comprehensive Slack Notification
+      if: always() && env.SLACK_WEBHOOK_URL
+      run: |
+        TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+        GITHUB_RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        
+        # Determine mode (LIVE vs DRY RUN)
+        if [ "$DRY_RUN" = "true" ]; then
+          MODE_EMOJI="🟡"
+          MODE_TEXT="DRY RUN"
+          STATUS_MSG="Dry run completed - no actual changes made"
+        else
+          MODE_EMOJI="🔴"
+          MODE_TEXT="LIVE"
+          STATUS_MSG="Completed successfully - live changes made!"
+        fi
+        
+        # Extract metrics from metrics.json
+        POSTS_CREATED=0
+        POST_FORMAT="N/A"
+        SOURCES="N/A"
+        POST_CONTENT="No content available"
+        REPLIES=0
+        
+        if [ -f "metrics.json" ]; then
+          POSTS_CREATED=$(python3 -c "import json; print(json.load(open('metrics.json')).get('posts_created', 0))" 2>/dev/null || echo "0")
+          POST_FORMAT=$(python3 -c "import json; print(json.load(open('metrics.json')).get('last_post_format', 'N/A'))" 2>/dev/null || echo "N/A")
+          SOURCES=$(python3 -c "import json; s=json.load(open('metrics.json')).get('last_post_sources',[]); print(', '.join(s[:3]) if s else 'N/A')" 2>/dev/null || echo "N/A")
+          POST_CONTENT=$(python3 -c "import json; c=json.load(open('metrics.json')).get('last_post_content','No content')[:1800]; print(c.replace('\\\\','\\\\\\\\').replace('\"','\\\\\"').replace('\n','\\\\n').replace('\r',''))" 2>/dev/null || echo "No content available")
+        fi
+        
+        if [ -f "engagement_cache.json" ]; then
+          REPLIES=$(python3 -c "import json; print(len(json.load(open('engagement_cache.json')).get('replied_comments', [])))" 2>/dev/null || echo "0")
+        fi
+        
+        # Build activities summary
+        ACTIVITIES=""
+        if [ "$ENABLE_CONTENT_POSTING" = "true" ]; then
+          ACTIVITIES="${ACTIVITIES}• ✅ Posted ${POSTS_CREATED} content (${POST_FORMAT})\\n"
+        fi
+        if [ "$ENABLE_AUTO_REPLY_COMMENTS" = "true" ]; then
+          ACTIVITIES="${ACTIVITIES}• ✅ Replied to ${REPLIES} comments\\n"
+        fi
+        if [ -z "$ACTIVITIES" ]; then
+          ACTIVITIES="No features were enabled."
+        fi
+        
+        # Send single comprehensive notification
+        curl -X POST -H 'Content-type: application/json' --data "{\"text\":\"${MODE_EMOJI} LinkedIn Automation Complete - ${MODE_TEXT}\",\"blocks\":[{\"type\":\"header\",\"text\":{\"type\":\"plain_text\",\"text\":\"${MODE_EMOJI} LinkedIn Automation - ${MODE_TEXT}\"}},{\"type\":\"section\",\"fields\":[{\"type\":\"mrkdwn\",\"text\":\"*📅 Time:* ${TIMESTAMP}\"},{\"type\":\"mrkdwn\",\"text\":\"*⏱ Status:* ${STATUS_MSG}\"},{\"type\":\"mrkdwn\",\"text\":\"*📝 Format:* ${POST_FORMAT}\"},{\"type\":\"mrkdwn\",\"text\":\"*📰 Sources:* ${SOURCES}\"}]},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*📊 Activities:*\\n${ACTIVITIES}\"}},{\"type\":\"divider\"},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*📄 Post Content:*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"\`\`\`${POST_CONTENT}\`\`\`\"}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"<${GITHUB_RUN_URL}|View Workflow Logs> | Next: per cron schedule\"}]}]}" ${{ env.SLACK_WEBHOOK_URL }}
+      env:
+        DRY_RUN: ${{ env.DRY_RUN }}
+        ENABLE_CONTENT_POSTING: ${{ env.ENABLE_CONTENT_POSTING }}
+        ENABLE_AUTO_REPLY_COMMENTS: ${{ env.ENABLE_AUTO_REPLY_COMMENTS }}
+    
+    - name: Upload Final Analytics Report
+      if: always()
+      continue-on-error: true
+      uses: actions/upload-artifact@v4
+      with:
+        name: comprehensive-analytics-report
+        path: |
+          daily_automation_report.json
+        retention-days: 1
+    
+    # Commit updated state files back to repository
+    - name: Commit State Files
+      if: success() || failure()
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add posted_links.json metrics.json engagement_cache.json growth_strategies_cache.json || true
+        git diff --staged --quiet || git commit -m "chore: update automation state [skip ci]"
+        git push || echo "Nothing to push"
+
+  # =====================================================
+  # ERROR HANDLING & RECOVERY
+  # =====================================================
+  
+  handle_failures:
+    runs-on: ubuntu-latest
+    needs: [setup, post_devops_content, intelligent_engagement, network_building, growth_strategy_execution]
+    if: failure()
+    
+    steps:
+    - name: Send Failure Notification
+      if: env.SLACK_WEBHOOK_URL
+      run: |
+        TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+        GITHUB_RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        
+        curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"text\": \"🚨 LinkedIn DevOps Automation Failed\",
+            \"blocks\": [
+              {
+                \"type\": \"header\",
+                \"text\": {
+                  \"type\": \"plain_text\",
+                  \"text\": \"LinkedIn Automation Alert - Action Required\"
+                }
+              },
+              {
+                \"type\": \"section\",
+                \"fields\": [
+                  {
+                    \"type\": \"mrkdwn\",
+                    \"text\": \"*📅 Failed At:*\\n${TIMESTAMP}\"
+                  },
+                  {
+                    \"type\": \"mrkdwn\",
+                    \"text\": \"*🔗 Workflow:*\\n<${GITHUB_RUN_URL}|View Logs>\"
+                  }
+                ]
+              },
+              {
+                \"type\": \"section\",
+                \"text\": {
+                  \"type\": \"mrkdwn\",
+                  \"text\": \"*🔍 Common Issues to Check:*\"
+                }
+              },
+              {
+                \"type\": \"section\",
+                \"fields\": [
+                  {
+                    \"type\": \"mrkdwn\",
+                    \"text\": \"*🔑 Authentication:*\\n• LinkedIn API token expired\\n• API rate limits exceeded\"
+                  },
+                  {
+                    \"type\": \"mrkdwn\",
+                    \"text\": \"*🌐 Network Issues:*\\n• API connectivity problems\\n• Timeout errors\"
+                  }
+                ]
+              },
+              {
+                \"type\": \"section\",
+                \"fields\": [
+                  {
+                    \"type\": \"mrkdwn\",
+                    \"text\": \"*📊 Data Issues:*\\n• Content parsing errors\\n• Profile access restrictions\"
+                  },
+                  {
+                    \"type\": \"mrkdwn\",
+                    \"text\": \"*🔧 System Issues:*\\n• Unicode encoding errors\\n• Missing dependencies\"
+                  }
+                ]
+              },
+              {
+                \"type\": \"section\",
+                \"text\": {
+                  \"type\": \"mrkdwn\",
+                  \"text\": \"*⚡ Immediate Actions:*\\n1. Check workflow logs for specific errors\\n2. Verify LinkedIn API token validity\\n3. Review rate limit status\\n4. Restart automation if transient issue\\n\\n*💡 Auto-retry will attempt in next scheduled run (8 hours)*\"
+                }
+              }
+            ]
+          }" \
+          ${{ env.SLACK_WEBHOOK_URL }}
+    
+    - name: Collect Error Logs for Debugging
+      if: always()
+      run: |
+        echo "Collecting error information for debugging..."
+        echo "Workflow run: ${{ github.run_id }}"
+        echo "Timestamp: $(date)"
+        echo "Event: ${{ github.event_name }}"
+
+# =====================================================
+# ADDITIONAL GROWTH AUTOMATION IDEAS
+# =====================================================
+
+# FUTURE ENHANCEMENTS TO CONSIDER:
+# 
+# 1. Advanced Analytics Integration:
+#    - Track follower quality metrics
+#    - Monitor engagement rate trends
+#    - A/B test different content formats
+#    - Analyze optimal posting times by audience
+#
+# 2.  AI-Powered Content Optimization:
+#    - Generate content based on trending topics
+#    - Optimize hashtag selection using AI
+#    - Personalize engagement messages
+#    - Auto-adjust strategy based on performance
+#
+# 3. Micro-Targeting Strategies:
+#    - Target specific companies for connections
+#    - Engage with posts from target industries
+#    - Focus on emerging DevOps technologies
+#    - Build relationships with conference speakers
+#
+# 4. Viral Content Amplification:
+#    - Detect high-performing posts early
+#    - Cross-promote on other platforms
+#    - Engage influencers for amplification
+#    - Create content series for sustained engagement
+#
+# 5. Community Building:
+#    - Create DevOps discussion groups
+#    - Host virtual networking events
+#    - Start LinkedIn newsletter
+#    - Collaborate with other thought leaders
+#
+# 6.  Predictive Growth Analytics:
+#    - Predict optimal posting schedules
+#    - Forecast follower growth
+#    - Identify trending topics before they peak
+#    - Recommend connection targets based on activity
