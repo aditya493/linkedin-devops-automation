@@ -2665,7 +2665,7 @@ def get_subscription_cta() -> str:
         ]
     
     # Newsletter subscription URL
-    subscription_url = os.environ.get("NEWSLETTER_URL", "https://is.gd/devopstechradarnewsletter")
+    subscription_url = os.environ.get("NEWSLETTER_URL", "https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a")
     
     # DevOps LinkedIn Playbook URL
     playbook_url = os.environ.get("PLAYBOOK_URL", "https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook")

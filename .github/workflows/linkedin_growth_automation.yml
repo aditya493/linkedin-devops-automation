@@ -439,7 +439,7 @@ jobs:
         
         # Newsletter & product promotion
         INCLUDE_SUBSCRIPTION: "true"
-        NEWSLETTER_URL: "https://is.gd/devopstechradarnewsletter"
+        NEWSLETTER_URL: "https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a"
         INCLUDE_PLAYBOOK: "true"
         PLAYBOOK_URL: "https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook"
         
