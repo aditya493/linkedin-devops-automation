@@ -1,3 +1,9 @@
+import itertools
+# --- Track used header and subheader lines across posts ---
+_USED_INTRO_LINES = []
+_USED_SUBHEADER_LINES = []
+# --- Track used footer questions across posts ---
+_USED_FOOTER_QUESTIONS = []
 # --- Default config for missing variables ---
 import os
 
@@ -344,29 +350,137 @@ def get_dynamic_persona(post_format=None, content=None, title=None, items=None):
     
     # Step 4: Try random from extended persona lists
     if post_format and post_format in DYNAMIC_PERSONAS:
-        lines = ["🛠️ What high-perf teams are watching this week.",
-                 "I optimize tech stacks and debunk myths in the DevOps trenches. Here's...",
-                 "",
-                 "What caught my attention:"]
+        # Dynamic industry-leader style intro/header lines
+        # Context-aware intro and subheader
+        main_topics = []
+        tools_techs = []
+        # Common DevOps/cloud tools and technologies for detection
+        KNOWN_TOOLS_TECHS = [
+            "Kubernetes", "Docker", "Terraform", "Ansible", "Prometheus", "Grafana", "Jenkins", "GitHub", "GitLab", "Azure", "AWS", "GCP", "ArgoCD", "Helm", "Istio", "Linkerd", "Vault", "Consul", "OpenShift", "CircleCI", "PagerDuty", "Slack", "Snyk", "SonarQube", "Datadog", "Splunk", "ELK", "Fluentd", "Cloudflare", "Fastly", "New Relic", "ServiceNow", "Bitbucket", "Trivy", "Sysdig", "Falco", "CloudFormation", "Pulumi", "Octopus Deploy", "Opsgenie", "Sumo Logic", "AppDynamics", "Dynatrace", "Nagios", "Zabbix", "SaltStack", "Chef", "Puppet"
+        ]
+        for item in (items or []):
+            title = item.get("title", "")
+            summary = item.get("summary", "")
+            text = f"{title} {summary}"
+            # Extract main keywords (simple heuristic: first 2-3 words)
+            words = [w for w in re.split(r'\W+', title) if len(w) > 2][:3]
+            main_topics.extend(words)
+            # Detect tools/technologies
+            for tool in KNOWN_TOOLS_TECHS:
+                if tool.lower() in text.lower() and tool not in tools_techs:
+                    tools_techs.append(tool)
+        main_topics = list(dict.fromkeys(main_topics))  # Remove duplicates, preserve order
+        tools_techs = list(dict.fromkeys(tools_techs))
+        topics_str = ", ".join(main_topics[:3]) if main_topics else "DevOps, Cloud, Security"
+        tools_str = ", ".join(tools_techs[:4]) if tools_techs else "modern platforms"
+        # Paraphrase and synonym variations for intro/subheader
+        intro_templates = [
+            f"🛠️ **This week's signal:** {topics_str} | 🧰 **Tools:** {tools_str}",
+            f"🛠️ **Key signals this week:** {topics_str} | 🧰 **Stack:** {tools_str}",
+            f"🛠️ **Spotlight:** {topics_str} | 🧰 **Featured tech:** {tools_str}",
+            f"🛠️ **Trending now:** {topics_str} | 🧰 **Ecosystem:** {tools_str}",
+            f"🛠️ **Weekly highlights:** {topics_str} | 🧰 **Focus:** {tools_str}"
+        ]
+        subheader_templates = [
+            f"👀 **Industry leaders are watching:** {topics_str} | {tools_str}.",
+            f"👀 **What experts are tracking:** {topics_str} | {tools_str}.",
+            f"👀 **Signals shaping the field:** {topics_str} | {tools_str}.",
+            f"👀 **Strategic trends:** {topics_str} | {tools_str}.",
+            f"👀 **What matters for teams:** {topics_str} | {tools_str}."
+        ]
+        intro = random.choice(intro_templates)
+        subheader = random.choice(subheader_templates)
+        lines = [intro, subheader, ""]
 
         if items is None:
             items = []
-        for i, item in enumerate(items, 1):
+        section_emojis = ["🚀", "🔒", "☁️", "📈", "🧩", "⚡", "🔍", "🧠", "🛡️", "📦", "🧰", "🛠️", "💡", "📊", "🌐"]
+        used_impact_lines = set()
+        # Shuffle the order of items for extra uniqueness
+        shuffled_items = list(items) if items else []
+        random.shuffle(shuffled_items)
+        impact_templates = [
+            "Why it matters:",
+            "Key takeaway:",
+            "Industry impact:",
+            "Strategic insight:",
+            "For your roadmap:",
+            "Leadership lens:",
+            "What to watch:",
+            "Actionable insight:",
+            "Signal for teams:",
+            "Consider this:"
+        ]
+        for i, item in enumerate(shuffled_items, 1):
+            emoji = section_emojis[(i-1) % len(section_emojis)]
             takeaway = remix_title(item["title"])
             snippet = summarize_snippet(item.get("summary", ""))
+            # Try to generate a unique impact line for each section
+            attempts = 0
             value = ai_generate_value_line(item.get("title", ""), snippet)
-            link = item.get("link", "")
-            lines.append(f"{i}. {takeaway}\n Context: {snippet}\n Impact: Here's why: {value}\n 🔗 {link}\n")
+            while value in used_impact_lines and attempts < 5:
+                value = ai_generate_value_line(item.get("title", "") + f" {random.randint(0,9999)}", snippet)
+                attempts += 1
+            used_impact_lines.add(value)
+            impact_label = random.choice(impact_templates)
+            lines.append(f"{emoji} **{i}. {takeaway}**\n👉 _Context:_ {snippet}\n💡 _{impact_label}_ {value}\n🔗 {item.get('link', '')}\n")
 
+        # Context-aware footer question
+        if main_topics or tools_techs:
+            topic = main_topics[0].lower() if main_topics else "devops"
+            tool = tools_techs[0] if tools_techs else "modern platforms"
+            footer_templates = [
+                f"How is your team approaching {topic} and {tool} this quarter?",
+                f"Which {topic} or {tool} trend will impact your roadmap most?",
+                f"What challenges are you seeing in {topic} or {tool}?",
+                f"How are you measuring success in {topic} or {tool} initiatives?",
+                f"What would you add to this {topic} and {tool} watchlist?"
+            ]
+        else:
+            footer_templates = [
+                "What would your team prioritize?",
+                "Which of these trends will shape your roadmap?",
+                "What are your thoughts on these developments?",
+                "How is your organization responding to these signals?",
+                "Which signal resonates most with your strategy?"
+            ]
+        global _USED_FOOTER_QUESTIONS
+        available_questions = [q for q in footer_templates if q not in _USED_FOOTER_QUESTIONS]
+        if not available_questions:
+            _USED_FOOTER_QUESTIONS = []
+            available_questions = footer_templates.copy()
+        footer_question = random.choice(available_questions)
+        _USED_FOOTER_QUESTIONS.append(footer_question)
+        cta_templates = [
+            "💌 **Get weekly DevOps insights delivered to your inbox – subscribe to stay ahead!**",
+            "💌 **Stay ahead: subscribe for weekly DevOps insights!**",
+            "💌 **Don’t miss out – get DevOps news in your inbox!**",
+            "💌 **Level up your DevOps game – subscribe now!**"
+        ]
+        subscribe_templates = [
+            "👉 **Subscribe:** https://lnkd.in/g_mZKwxY",
+            "👉 **Join here:** https://lnkd.in/g_mZKwxY",
+            "👉 **Sign up:** https://lnkd.in/g_mZKwxY"
+        ]
+        playbook_templates = [
+            "📖 **DevOps LinkedIn Playbook:** https://lnkd.in/gzTACvZf",
+            "📖 **Get the Playbook:** https://lnkd.in/gzTACvZf",
+            "📖 **LinkedIn Playbook:** https://lnkd.in/gzTACvZf"
+        ]
+        hashtag_templates = [
+            "#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps",
+            "#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering",
+            "#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps"
+        ]
         lines.extend([
             "",
-            "💌 Get weekly DevOps insights delivered to your inbox - subscribe to stay ahead!",
-            "👉 Subscribe: https://lnkd.in/g_mZKwxY",
-            "📖 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf",
+            random.choice(cta_templates),
+            random.choice(subscribe_templates),
+            random.choice(playbook_templates),
             "",
-            "hashtag#Infrastructure hashtag#DevOps hashtag#Security hashtag#CloudNative hashtag#Kubernetes hashtag#Engineering hashtag#DevSecOps",
+            random.choice(hashtag_templates),
             "",
-            "What did we miss?"
+            f"❓ {footer_question}"
         ])
         post = "\n".join(lines)
         return clip(post, MAX_POST_CHARS)
