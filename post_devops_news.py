@@ -1,3 +1,16 @@
+# --- Default config for missing variables ---
+import os
+
+ENABLE_AI_ENHANCE = False
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+FREE_AI_PROVIDERS = {}
+AI_SUMMARIZATION_MODELS = []
+AI_GENERATION_MODELS = []
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+HF_API_KEY = os.environ.get("HF_API_KEY", "")
+
+def get_enabled_providers():
+    return []
 import feedparser
 import requests
 import os
@@ -288,7 +301,7 @@ FALLBACK_PERSONAS_BY_TOPIC = {
 }
 
 
-def get_dynamic_persona(post_format=None, content=None, title=None):
+def get_dynamic_persona(post_format=None, content=None, title=None, items=None):
     """Generate context-aware persona line using AI with smart fallbacks."""
     if not USE_DYNAMIC_PERSONA:
         return PERSONA_LINE
@@ -331,117 +344,40 @@ def get_dynamic_persona(post_format=None, content=None, title=None):
     
     # Step 4: Try random from extended persona lists
     if post_format and post_format in DYNAMIC_PERSONAS:
-        return random.choice(DYNAMIC_PERSONAS[post_format])
-    
-    # Step 5: Ultimate fallback
-    logger.info("📝 Using default fallback persona")
-    return random.choice(DYNAMIC_PERSONAS["deep_dive"])
+        lines = ["🛠️ What high-perf teams are watching this week.",
+                 "I optimize tech stacks and debunk myths in the DevOps trenches. Here's...",
+                 "",
+                 "What caught my attention:"]
 
-# ===================================================================
-# AI ENHANCEMENT SYSTEM - Multi-Provider Free APIs
-# ===================================================================
+        if items is None:
+            items = []
+        for i, item in enumerate(items, 1):
+            takeaway = remix_title(item["title"])
+            snippet = summarize_snippet(item.get("summary", ""))
+            value = ai_generate_value_line(item.get("title", ""), snippet)
+            link = item.get("link", "")
+            lines.append(f"{i}. {takeaway}\n Context: {snippet}\n Impact: Here's why: {value}\n 🔗 {link}\n")
 
-# API Keys - Add your free API keys here
-HF_API_KEY = os.environ.get("HF_API_KEY", "")  # Hugging Face (free tier)
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")  # Groq (free tier, very fast)
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")  # Google Gemini (free tier)
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")  # OpenRouter (some free models)
-
-ENABLE_AI_ENHANCE = os.environ.get("ENABLE_AI_ENHANCE", "true").lower() == "true"
-
-# Primary AI models (legacy for backward compatibility)
-AI_MODEL = os.environ.get("AI_MODEL", "facebook/bart-large-cnn")  
-AI_GENERATION_MODEL = os.environ.get("AI_GENERATION_MODEL", "distilgpt2")
-AI_MAX_TOKENS = safe_int(os.environ.get("AI_MAX_TOKENS", "80"), 80, 10, 500)
-
-# AI Model Fallback System - Multiple free models to handle rate limits
-AI_FALLBACK_ENABLED = os.environ.get("AI_FALLBACK_ENABLED", "true").lower() == "true"
-
-# Enhanced AI Provider System with Free APIs
-FREE_AI_PROVIDERS = {
-    # Provider 1: Groq (FASTEST - Production Ready)
-    "groq": {
-        "name": "Groq API",
-        "enabled": lambda: bool(GROQ_API_KEY),
-        "base_url": "https://api.groq.com/openai/v1/chat/completions",
-        "api_key": lambda: GROQ_API_KEY,
-        "models": {
-            "summarization": ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"],
-            "generation": ["llama-3.3-70b-versatile", "mixtral-8x7b-32768", "gemma-7b-it"]
-        },
-        "format": "openai",
-        "rate_limit": "high",
-        "priority": 1
-    },
-    # Provider 2: Google Gemini (High Quality)
-    "gemini": {
-        "name": "Google Gemini",
-        "enabled": lambda: bool(GEMINI_API_KEY),
-        "base_url": "https://generativelanguage.googleapis.com/v1beta/models",
-        "api_key": lambda: GEMINI_API_KEY,
-        "models": {
-            "summarization": ["gemini-2.5-flash", "gemini-2.0-flash"],
-            "generation": ["gemini-2.5-flash", "gemini-3-flash-preview"]
-        },
-        "format": "gemini",
-        "rate_limit": "medium",  # 500 requests/day free
-        "priority": 2
-    },
-    # Provider 3: OpenRouter Free Models
-    "openrouter": {
-        "name": "OpenRouter Free",
-        "enabled": lambda: bool(OPENROUTER_API_KEY),
-        "base_url": "https://openrouter.ai/api/v1/chat/completions",
-        "api_key": lambda: OPENROUTER_API_KEY,
-        "models": {
-            "summarization": ["xiaomi/mimo-v2-flash:free", "nvidia/nemotron-3-nano-30b-a3b:free"],
-            "generation": ["xiaomi/mimo-v2-flash:free", "allenai/olmo-3.1-32b-think:free"]
-        },
-        "format": "openai",
-        "rate_limit": "low",
-        "priority": 3
-    },
-    # Provider 4: Hugging Face (Backup)
-    "huggingface": {
-        "name": "Hugging Face",
-        "enabled": lambda: bool(HF_API_KEY),
-        "base_url": "https://api-inference.huggingface.co/models",
-        "api_key": lambda: HF_API_KEY,
-        "models": {
-            "summarization": ["facebook/bart-large-cnn", "sshleifer/distilbart-cnn-12-6", "google-t5/t5-small"],
-            "generation": ["distilgpt2", "openai-community/gpt2", "google-t5/t5-small"]
-        },
-        "format": "huggingface",
-        "rate_limit": "low",
-        "priority": 4
-    }
-}
-
-# Legacy model lists for backward compatibility
-FALLBACK_SUMMARIZATION_MODELS = os.environ.get(
-    "AI_SUMMARIZATION_MODELS", 
-    "facebook/bart-large-cnn,sshleifer/distilbart-cnn-12-6,google-t5/t5-small,google/flan-t5-small"
-).split(",")
-
-FALLBACK_GENERATION_MODELS = os.environ.get(
-    "AI_GENERATION_MODELS",
-    "distilgpt2,openai-community/gpt2,google-t5/t5-small,google/flan-t5-small"
-).split(",")
-
-AI_SUMMARIZATION_MODELS = [model.strip() for model in FALLBACK_SUMMARIZATION_MODELS if model.strip()]
-AI_GENERATION_MODELS = [model.strip() for model in FALLBACK_GENERATION_MODELS if model.strip()]
-
-def get_enabled_providers():
-    """Get list of enabled AI providers sorted by priority."""
+        lines.extend([
+            "",
+            "💌 Get weekly DevOps insights delivered to your inbox - subscribe to stay ahead!",
+            "👉 Subscribe: https://lnkd.in/g_mZKwxY",
+            "📖 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf",
+            "",
+            "hashtag#Infrastructure hashtag#DevOps hashtag#Security hashtag#CloudNative hashtag#Kubernetes hashtag#Engineering hashtag#DevSecOps",
+            "",
+            "What did we miss?"
+        ])
+        post = "\n".join(lines)
+        return clip(post, MAX_POST_CHARS)
     enabled = []
     for provider_id, config in FREE_AI_PROVIDERS.items():
-        is_enabled = config["enabled"]()
-        logger.debug(f"Provider {provider_id} ({config['name']}): {'enabled' if is_enabled else 'disabled'}")
+        is_enabled = config.get("enabled", lambda: False)()
+        logger.debug(f"Provider {provider_id} ({config.get('name', provider_id)}): {'enabled' if is_enabled else 'disabled'}")
         if is_enabled:
-            enabled.append((config["priority"], provider_id, config))
-    
+            enabled.append((config.get("priority", 0), provider_id, config))
     sorted_providers = [item[1:] for item in sorted(enabled)]
-    logger.debug(f"Final enabled providers (priority order): {[(pid, config['name']) for pid, config in sorted_providers]}")
+    logger.debug(f"Final enabled providers (priority order): {[(pid, config.get('name', pid)) for pid, config in sorted_providers]}")
     return sorted_providers
 
 def call_groq_api(api_key: str, model: str, prompt: str, max_tokens: int = 150, task_type: str = "summarization") -> Optional[str]:
