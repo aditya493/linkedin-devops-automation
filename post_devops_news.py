@@ -994,13 +994,16 @@ def build_digest_post(items):
                 lines.append(f"{i}. {takeaway}{src}\n   {value}{link_display}\n")
     if digest_style != "brief" and random.random() > 0.3:
         lines.extend(["", f"Why this matters: {why_line}"])
-    lines.extend(["", get_subscription_cta(), "", get_hashtags(), "", cta])
-    if 'should_include_links' in globals() and should_include_links(post_style, "digest") and chosen:
-        links = [it.get("link", "") for it in chosen if it.get("link")]
-        links = [l for l in links if l]
-        if links and 'format_links_section' in globals():
-            link_section = format_links_section(links[:MAX_LINKS], post_style)
-            lines.extend(link_section)
+    lines.extend([
+        "",
+        random.choice(cta_templates),
+        random.choice(subscribe_templates),
+        random.choice(playbook_templates),
+        "",
+        random.choice(hashtag_templates),
+        "",
+        f"❓ {footer_question}"
+    ])
     post = "\n".join(lines)
     return clip(post, MAX_POST_CHARS)
 
@@ -2064,36 +2067,130 @@ CONTEXT_INSIGHTS = {
             "What system boundaries have caused the most friction?"
         ]
     },
-    "reliability": {
+    "security": {
         "insights": [
-            "SRE is about building systems that can handle expected failures",
-            "Error budgets create business alignment on reliability trade-offs",
-            "Chaos engineering reveals assumptions, not just failures",
-            "Reliability work needs to be visible to be valued",
-            "Operational load needs to be measured and managed like technical debt"
+            "Security at scale demands constant vigilance. This is significant.",
+            "Enterprise security implementations reveal key patterns. Pay attention.",
+            "Defense-in-depth strategies show what works."
         ],
         "ctas": [
-            "How do you quantify and communicate reliability improvements?",
-            "What reliability practices scale best as teams grow?",
-            "How do you balance new features with reliability work?",
-            "Which reliability metrics matter most to your business?",
-            "What reliability investment gave you the biggest payoff?"
+            "How do you balance security with development velocity?",
+            "What security automation has saved you the most time?",
+            "Where does your security boundary really exist?",
+            "Which compliance requirements drive your architecture?",
+            "How do you handle secrets at scale?"
         ]
     },
-    "platform": {
+    "devsecops": {
         "insights": [
-            "Platform teams succeed by treating developers as customers",
-            "Self-service capabilities reduce both toil and tickets",
-            "Platform abstraction should hide complexity, not functionality",
-            "Developer experience metrics guide platform evolution",
-            "Platform governance needs automation, not just policies"
+            "Shift-left security means making security decisions automatic",
+            "Identity is the new perimeter - zero trust from day one",
+            "Compliance auditing should be continuous, not annual",
+            "Threat modeling beats penetration testing every time",
+            "Security tooling integration matters more than individual tools"
         ],
         "ctas": [
-            "How do you measure platform team effectiveness?",
-            "What platform capabilities drive the most developer adoption?",
-            "How do you balance standardization with team autonomy?",
-            "Which platform abstractions have worked best for you?",
-            "How do you handle platform evolution without breaking changes?"
+            "How do you balance security with development velocity?",
+            "What security automation has saved you the most time?",
+            "Where does your security boundary really exist?",
+            "Which compliance requirements drive your architecture?",
+            "How do you handle secrets at scale?"
+        ]
+    },
+    "finops": {
+        "insights": [
+            "Cloud costs optimize themselves when architecture drives decisions",
+            "Multi-cloud means multi-complexity - go deep before going wide",
+            "Infrastructure as code is about repeatability, not just automation",
+            "Cloud-native patterns work best when you embrace failure",
+            "Managed services reduce toil but increase vendor coupling"
+        ],
+        "ctas": [
+            "Which cloud services create the most operational overhead?",
+            "How do you handle cross-region complexity?",
+            "What cloud costs caught you off guard?",
+            "How do you balance managed services vs control?",
+            "What multi-cloud challenges have you solved?"
+        ]
+    },
+    "observability": {
+        "insights": [
+            "Metrics without context are just numbers - add business meaning",
+            "Distributed tracing reveals what metrics can't show you",
+            "Alert on symptoms, not causes - let humans do root cause analysis",
+            "Cardinality explosion will kill your monitoring budget",
+            "SLOs drive better architecture than uptime percentages"
+        ],
+        "ctas": [
+            "What observability blind spots have surprised you?",
+            "How do you prevent alert fatigue in your team?",
+            "Which metrics actually correlate with user experience?",
+            "What's your strategy for handling high-cardinality data?",
+            "How do you make observability data actionable?"
+        ]
+    },
+    "incident": {
+        "insights": [
+            "Incident response is about coordination, not just technical fixes",
+            "Blameless culture requires deliberate practice and reinforcement",
+            "Runbooks should be executable, not just documentation",
+            "Communication during incidents needs automation and structure",
+            "Post-incident reviews drive more reliability than monitoring"
+        ],
+        "ctas": [
+            "What incident taught you the most about your system?",
+            "How do you prevent coordination failures during outages?",
+            "What runbook automation has saved you the most time?",
+            "How do you balance speed vs thorough incident response?",
+            "What patterns do you see in recurring incidents?"
+        ]
+    },
+    "cloud": {
+        "insights": [
+            "Cloud costs optimize themselves when architecture drives decisions",
+            "Multi-cloud means multi-complexity - go deep before going wide",
+            "Infrastructure as code is about repeatability, not just automation",
+            "Cloud-native patterns work best when you embrace failure",
+            "Managed services reduce toil but increase vendor coupling"
+        ],
+        "ctas": [
+            "Which cloud services create the most operational overhead?",
+            "How do you handle cross-region complexity?",
+            "What cloud costs caught you off guard?",
+            "How do you balance managed services vs control?",
+            "What multi-cloud challenges have you solved?"
+        ]
+    },
+    "cicd": {
+        "insights": [
+            "Pipeline as code prevents configuration drift and bus factor issues",
+            "Deployment frequency correlates with stability when done right",
+            "Feature flags decouple deployment risk from feature risk",
+            "Progressive delivery beats blue-green for complex systems",
+            "CI/CD observability matters as much as application observability"
+        ],
+        "ctas": [
+            "What CI/CD bottleneck slows your team down most?",
+            "How do you handle deployment rollbacks at scale?",
+            "Which testing strategy gives you the most confidence?",
+            "How do you balance deployment speed with safety?",
+            "What pipeline failures taught you the most?"
+        ]
+    },
+    "architecture": {
+        "insights": [
+            "Distributed systems fail in ways you haven't thought of yet",
+            "Conway's Law shapes your architecture more than you realize",
+            "Microservices solve organizational problems, not just technical ones",
+            "Event-driven architectures require different mental models",
+            "System boundaries need continuous reevaluation as teams grow"
+        ],
+        "ctas": [
+            "What architectural decision would you reverse with hindsight?",
+            "How do you handle distributed system complexity?",
+            "Which architectural patterns work best for your team size?",
+            "How do you balance consistency with availability?",
+            "What system boundaries have caused the most friction?"
         ]
     },
     "default": {
@@ -2519,11 +2616,11 @@ def ai_enhance_text(text: str, max_length: int = 150) -> str:
     )
     
     if enhanced_text and enhanced_text.strip():
-        # Clean up AI response
-        result = enhanced_text.strip()
+        # Clean and format the response
+        txt = enhanced_text.strip()
         # Remove common AI response prefixes
-        result = re.sub(r'^(Summary:|Here\'s a summary:|In summary:)\s*', '', result, flags=re.IGNORECASE)
-        return result if result else text
+        txt = re.sub(r'^(Summary:|Here\'s a summary:|In summary:)\s*', '', txt, flags=re.IGNORECASE)
+        return txt if txt else text
     
     # Final fallback to heuristic summarization
     logger.debug("Using heuristic fallback for text enhancement")
@@ -2532,1018 +2629,86 @@ def ai_enhance_text(text: str, max_length: int = 150) -> str:
 
 
 def ai_generate_value_line(title: str, snippet: str) -> str:
-    """Generate a short 'why it matters' value line with multi-provider AI fallback."""
+    """Generate a short, unique value line for each item, avoiding static 'Why it matters' phrasing."""
     title_clean = re.sub(r"\s+", " ", (title or "").strip())
     snippet_clean = re.sub(r"\s+", " ", (snippet or "").strip())
-
     # Heuristic fallback (fast, free, always available)
     def fallback() -> str:
         t = (title_clean + " " + snippet_clean).lower()
+        options = []
         if any(k in t for k in ("incident", "outage", "mttr", "pager", "on-call")):
-            return "Why it matters: reduces incident risk and improves MTTR."
-        if any(k in t for k in ("kubernetes", "cluster", "container", "helm", "gitops")):
-            return "Why it matters: helps you run clusters more reliably and efficiently."
-        if any(k in t for k in ("cicd", "pipeline", "deployment", "release")):
-            return "Why it matters: improves delivery speed without sacrificing safety."
-        if any(k in t for k in ("observability", "monitoring", "tracing", "metrics", "logs")):
-            return "Why it matters: improves visibility, debugging speed, and reliability."
-        if any(k in t for k in ("aws", "gcp", "azure", "cloud")):
-            return "Why it matters: helps you optimize cloud reliability and cost."
-        if any(k in t for k in ("security", "vulnerability", "cve", "sast", "dast")):
-            return "Why it matters: strengthens security posture and reduces risk."
-        if any(k in t for k in ("terraform", "iac", "infrastructure", "automation")):
-            return "Why it matters: improves infrastructure reliability and consistency."
-        return "Why it matters: practical signal for building reliable systems."
-
+            options = [
+                "Reduces incident risk and improves MTTR.",
+                "Minimizes downtime and accelerates recovery.",
+                "Boosts reliability and on-call confidence.",
+            ]
+        elif any(k in t for k in ("kubernetes", "cluster", "container", "helm", "gitops")):
+            options = [
+                "Helps you run clusters more reliably and efficiently.",
+                "Streamlines container operations for better uptime.",
+                "Empowers scalable, resilient infrastructure.",
+            ]
+        elif any(k in t for k in ("cicd", "pipeline", "deployment", "release")):
+            options = [
+                "Improves delivery speed without sacrificing safety.",
+                "Enables faster, safer deployments.",
+                "Accelerates release cycles and reduces risk.",
+            ]
+        elif any(k in t for k in ("observability", "monitoring", "tracing", "metrics", "logs")):
+            options = [
+                "Improves visibility, debugging speed, and reliability.",
+                "Makes troubleshooting faster and more effective.",
+                "Enhances system transparency and incident response.",
+            ]
+        elif any(k in t for k in ("aws", "gcp", "azure", "cloud")):
+            options = [
+                "Optimizes cloud reliability and cost.",
+                "Drives better cloud performance and savings.",
+                "Strengthens multi-cloud resilience and efficiency.",
+            ]
+        elif any(k in t for k in ("security", "vulnerability", "cve", "sast", "dast")):
+            options = [
+                "Strengthens security posture and reduces risk.",
+                "Mitigates vulnerabilities before they impact production.",
+                "Elevates your defense against emerging threats.",
+            ]
+        elif any(k in t for k in ("terraform", "iac", "infrastructure", "automation")):
+            options = [
+                "Improves infrastructure reliability and consistency.",
+                "Automates operations for fewer manual errors.",
+                "Prevents configuration drift and boosts stability.",
+            ]
+        else:
+            options = [
+                "Practical signal for building reliable systems.",
+                "Empowers teams to deliver with confidence.",
+                "Drives operational excellence and learning.",
+            ]
+        return random.choice(options)
     if not ENABLE_AI_ENHANCE:
         return fallback()
-
-    # Prepare context for AI generation
     context = clip((snippet_clean or title_clean), 500)
     prompt = (
-        f"Explain in ONE sentence (max 15 words) why this DevOps/SRE topic matters to engineers. "
-        f"Start with 'Why it matters:' and be specific and actionable.\n\n"
+        f"Write a unique, actionable impact line (max 15 words) for this DevOps/SRE topic. Do NOT use the phrase 'Why it matters'.\n"
         f"Topic: {title_clean}\n"
-        f"Context: {context}\n\n"
-        f"Example format: 'Why it matters: reduces deployment risk and improves recovery time.'\n"
+        f"Context: {context}\n"
+        f"Example: 'Reduces deployment risk and improves recovery time.'\n"
         f"Your answer:"
     )
-    
-    # Try AI generation with multi-provider system
     generated_text = try_multi_provider_ai(
-        prompt, 
-        task_type="generation", 
-        max_tokens=50  # Keep it short for value lines
+        prompt,
+        task_type="generation",
+        max_tokens=50
     )
-    
     if generated_text and generated_text.strip():
-        # Clean and format the response
-        txt = generated_text.replace("\n", " ").strip()
-        txt = txt.strip().strip('"').strip("'")
-        
-        # Ensure it starts with "Why it matters:"
-        if not txt.lower().startswith("why it matters"):
-            txt = f"Why it matters: {txt.lstrip(':').strip()}"
-        
+        txt = generated_text.replace("\n", " ").strip().strip('"').strip("'")
+        # Ensure it does NOT start with 'Why it matters'
+        if txt.lower().startswith("why it matters"):
+            txt = txt[len("why it matters"):].lstrip(':').strip()
         # Clip to reasonable length
-        if txt and len(txt) > 20:  # Must have some content
+        if txt and len(txt) > 8:
             return clip(txt, 120)
-    
-    # Fallback to heuristic if AI fails
-    logger.debug("Using heuristic fallback for value line generation")
     return fallback()
 
-# -------------------------------------------------
-# SAFE FILE OPERATIONS WITH LOCKING
-# -------------------------------------------------
-
-def safe_file_operation(filepath: str, operation: str, data: Any = None, timeout: int = 30):
-    """Perform file operations with locking to prevent corruption."""
-    lock_file = f"{filepath}.lock"
-    start_time = time.time()
-    
-    while time.time() - start_time < timeout:
-        try:
-            # Try to acquire lock
-            if os.name == 'nt':  # Windows
-                # Use a simple file-based lock for Windows
-                try:
-                    lock_fd = os.open(lock_file, os.O_CREAT | os.O_EXCL | os.O_RDWR)
-                    os.close(lock_fd)
-                    lock_acquired = True
-                except OSError:
-                    lock_acquired = False
-            else:  # Unix/Linux
-                if HAS_FCNTL:
-                    try:
-                        lock_fd = open(lock_file, 'w')
-                        fcntl.flock(lock_fd.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
-                        lock_acquired = True
-                    except (IOError, OSError):
-                        lock_acquired = False
-                else:
-                    # Fallback for systems without fcntl
-                    try:
-                        lock_fd = os.open(lock_file, os.O_CREAT | os.O_EXCL | os.O_RDWR)
-                        os.close(lock_fd)
-                        lock_acquired = True
-                    except OSError:
-                        lock_acquired = False
-            
-            if not lock_acquired:
-                time.sleep(0.1)
-                continue
-            
-            try:
-                # Perform the actual file operation
-                if operation == 'read':
-                    if not os.path.exists(filepath):
-                        return None
-                    with open(filepath, "r", encoding='utf-8') as f:
-                        return json.load(f)
-                
-                elif operation == 'write':
-                    # Write to temp file first, then atomically move
-                    temp_file = f"{filepath}.tmp"
-                    with open(temp_file, "w", encoding='utf-8') as f:
-                        json.dump(data, f, indent=2)
-                    
-                    # Atomic move
-                    if os.name == 'nt':
-                        if os.path.exists(filepath):
-                            os.remove(filepath)
-                    os.rename(temp_file, filepath)
-                    return True
-                    
-            finally:
-                # Release lock
-                if os.name == 'nt':
-                    try:
-                        os.remove(lock_file)
-                    except OSError:
-                        pass
-                else:
-                    if HAS_FCNTL:
-                        try:
-                            lock_fd.close()
-                            os.remove(lock_file)
-                        except (OSError, NameError):
-                            pass
-                    else:
-                        try:
-                            os.remove(lock_file)
-                        except OSError:
-                            pass
-                        
-            return None
-            
-        except Exception as e:
-            logger.warning(f"File operation failed: {e}")
-            time.sleep(0.1)
-            continue
-    
-    raise TimeoutError(f"Could not acquire file lock for {filepath} within {timeout}s")
-
-# -------------------------------------------------
-# STATE MANAGEMENT (PRODUCTION-SAFE)
-# -------------------------------------------------
-
-def load_state():
-    """Load state with file locking to prevent corruption."""
-    try:
-        data = safe_file_operation(STATE_FILE, 'read')
-        if data is None:
-            return {"posted_links": [], "meta": {}}
-        
-        # Backward compatible:
-        # - old format: ["link1", "link2", ...]
-        # - new format: {"posted_links": [...], "meta": {...}}
-        if isinstance(data, list):
-            return {"posted_links": data, "meta": {}}
-        if isinstance(data, dict):
-            posted_links = data.get("posted_links", [])
-            meta = data.get("meta", {})
-            if not isinstance(posted_links, list):
-                posted_links = []
-            if not isinstance(meta, dict):
-                meta = {}
-            return {"posted_links": posted_links, "meta": meta}
-        return {"posted_links": [], "meta": {}}
-    except Exception as e:
-        logger.warning(f"Failed to load state: {e}, using defaults")
-        return {"posted_links": [], "meta": {}}
-
-def save_state(state):
-    """Save state with file locking to prevent corruption."""
-    try:
-        safe_file_operation(STATE_FILE, 'write', state)
-        logger.debug("State saved successfully")
-    except Exception as e:
-        logger.error(f"Failed to save state: {e}")
-        # Don't crash the program, just log the error
-
-# -------------------------------------------------
-# LINKEDIN POST
-# -------------------------------------------------
-
-def post_to_linkedin(text):
-    if not AUTHOR_URN:
-        logger.error("❌ Cannot post: LinkedIn author URN not resolved")
-        return None
-    
-    payload = {
-        "author": AUTHOR_URN,
-        "lifecycleState": "PUBLISHED",
-        "specificContent": {
-            "com.linkedin.ugc.ShareContent": {
-                "shareCommentary": {"text": text},
-                "shareMediaCategory": "NONE"
-            }
-        },
-        "visibility": {
-            "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
-        }
-    }
-
-    if DRY_RUN:
-        print("DRY_RUN enabled: skipping LinkedIn POST")
-        return "dry-run"
-
-    try:
-        r = http_request(
-            "POST",
-            "https://api.linkedin.com/v2/ugcPosts",
-            headers=HEADERS,
-            json_body=payload,
-            timeout=15,
-            retries=3,
-            backoff_seconds=2.0,
-            retry_statuses=(429, 500, 502, 503, 504),
-        )
-
-        print("AUTHOR:", AUTHOR_URN)
-        print("POST STATUS:", r.status_code)
-        print(r.text)
-
-        if r.status_code == 201:
-            return r.json().get("id")
-        elif r.status_code == 403:
-            logger.error("❌ LinkedIn API returned 403 - check token permissions and author URN")
-        elif r.status_code == 401:
-            logger.error("❌ LinkedIn API returned 401 - check access token")
-        else:
-            logger.error(f"❌ LinkedIn API returned {r.status_code}: {r.text}")
-        
-        return None
-        
-    except Exception as e:
-        logger.error(f"LinkedIn posting failed with exception: {e}")
-        return None
-
-# -------------------------------------------------
-# CONTENT ENGINE
-# -------------------------------------------------
-
-def fetch_news(posted, state: Optional[Dict[str, Any]] = None):
-    items = []
-    state = state or {}
-    feed_errors = []
-    
-    # Memory protection: limit total items processed
-    MAX_ITEMS_PER_FEED = 50
-    MAX_TOTAL_ITEMS = 500
-    
-    # Build feed list from packs + base + extra
-    feeds: list = []
-    packs = set(SOURCE_PACKS)
-    if "all" in packs:
-        packs = set(PACK_SOURCES.keys())
-
-    for pack in packs:
-        feeds.extend(PACK_SOURCES.get(pack, []))
-
-    feeds.extend(NEWS_SOURCES)
-    feeds.extend(EXTRA_NEWS_SOURCES)
-
-    # Deduplicate + validate
-    feeds = [f.strip() for f in feeds if is_valid_feed_url(f)]
-    feeds = list(dict.fromkeys(feeds))
-    
-    # Limit number of feeds processed (memory protection)
-    if len(feeds) > 50:
-        logger.warning(f"Too many feeds ({len(feeds)}), limiting to {MAX_FEED_LIMIT} for reliability and performance")
-        feeds = feeds[:MAX_FEED_LIMIT]
-    
-    logger.info(f"Scanning {len(feeds)} RSS feeds...")
-
-    # Limit number of feeds for better performance and reliability
-    feeds = feeds[:MAX_FEED_LIMIT]
-    
-    seen_links = set()
-    now = datetime.now(timezone.utc)
-    min_age = timedelta(hours=MIN_ARTICLE_AGE_HOURS)
-    max_age = timedelta(hours=MAX_ARTICLE_AGE_HOURS)
-    total_items_processed = 0
-
-    for feed_idx, feed in enumerate(feeds):
-        try:
-            logger.debug(f"Processing feed {feed_idx + 1}/{len(feeds)}: {feed}")
-            
-            # Add timeout and better error handling for feed parsing
-            import socket
-            old_timeout = socket.getdefaulttimeout()
-            socket.setdefaulttimeout(FEED_TIMEOUT_SECONDS)
-            
-            retry_count = 0
-            data = None
-            
-            while retry_count <= MAX_FEED_RETRIES:
-                try:
-                    # Configure feedparser with better error tolerance
-                    data = feedparser.parse(feed, agent='Mozilla/5.0 (compatible; LinkedInBot/1.0)')
-                    break
-                except Exception as e:
-                    retry_count += 1
-                    if retry_count > MAX_FEED_RETRIES:
-                        logger.warning(f"Feed failed after {MAX_FEED_RETRIES} retries: {feed} - {e}")
-                        break
-                    time.sleep(1)
-            
-            socket.setdefaulttimeout(old_timeout)
-            
-            if not data:
-                continue
-            
-            # Check if feed parsed successfully with more tolerance
-            if hasattr(data, 'bozo') and data.bozo and data.bozo_exception:
-                # Only log as warning if it's a serious error, not minor XML issues
-                error_msg = str(data.bozo_exception)
-                if SKIP_MALFORMED_FEEDS and ('not well-formed' in error_msg or 'syntax error' in error_msg.lower()):
-                    logger.debug(f"Skipping malformed feed: {feed}")
-                    continue
-                else:
-                    logger.warning(f"Feed parsing warning for {feed}: {data.bozo_exception}")
-                
-                # Try to continue if we got some entries despite errors
-                if not hasattr(data, 'entries') or len(data.entries) == 0:
-                    logger.debug(f"No usable entries from feed: {feed}")
-                    continue
-            
-            if not hasattr(data, 'entries') or not data.entries:
-                logger.debug(f"No entries found in feed: {feed}")
-                continue
-                
-            # Limit items per feed
-            entries_to_process = data.entries[:MAX_ITEMS_PER_FEED]
-            
-        except Exception as e:
-            error_msg = f"Failed to parse feed {feed}: {e}"
-            logger.warning(error_msg)
-            feed_errors.append(error_msg)
-            continue
-            
-        feed_item_count = 0
-        for entry in entries_to_process:
-            # Memory protection: stop if we've processed too many items
-            if total_items_processed >= MAX_TOTAL_ITEMS:
-                logger.warning(f"Reached max items limit ({MAX_TOTAL_ITEMS}), stopping processing")
-                break
-                
-            try:
-                link = entry.get("link")
-                if not link:
-                    continue
-                if link in posted or link in seen_links:
-                    continue
-
-                title = (entry.get("title") or "").strip()
-                if not title:
-                    continue
-                
-                # Sanitize title (prevent injection attacks)
-                title = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]', '', title)
-                title = title[:500]  # Limit title length
-                
-                # Check for duplicate topics
-                if is_duplicate_topic(title, state):
-                    logger.debug(f"Skipping duplicate topic: {title[:50]}...")
-                    continue
-
-                summary = entry.get("summary", "") or entry.get("description", "") or ""
-                # Sanitize and limit summary
-                summary = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]', '', summary)
-                summary = summary[:2000]  # Limit summary length
-                
-                source = ""
-                if urlparse:
-                    try:
-                        parsed_url = urlparse(feed)
-                        if parsed_url.netloc:
-                            source = parsed_url.netloc[:100]  # Limit source length
-                    except Exception:
-                        source = ""
-                
-                # Check article age
-                published = None
-                for date_field in ['published_parsed', 'updated_parsed']:
-                    if hasattr(entry, date_field) and getattr(entry, date_field):
-                        try:
-                            date_tuple = getattr(entry, date_field)
-                            published = datetime(*date_tuple[:6], tzinfo=timezone.utc)
-                            break
-                        except Exception:
-                            continue
-                
-                if published:
-                    age = now - published
-                    if age < min_age:
-                        logger.debug(f"Article too new ({age.total_seconds()/3600:.1f}h): {title[:40]}...")
-                        continue
-                    if age > max_age:
-                        logger.debug(f"Article too old ({age.total_seconds()/3600:.1f}h): {title[:40]}...")
-                        continue
-
-                hay = f"{title} {summary}".lower()
-                if any(k in hay for k in KEYWORDS_EXCLUDE):
-                    continue
-
-                seen_links.add(link)
-                total_items_processed += 1
-                feed_item_count += 1
-
-                if link and link not in posted:
-                    items.append({
-                        "title": title,
-                        "link": process_link(link),  # Process link for UTM params
-                        "summary": summary.strip(),
-                        "source": source,
-                        "published": published.isoformat() if published else None,
-                    })
-                    
-            except Exception as e:
-                logger.debug(f"Error processing entry from {feed}: {e}")
-                continue
-        
-        logger.debug(f"Feed {feed} contributed {feed_item_count} items")
-        
-        # Memory protection: stop if we have enough items
-        if len(items) >= 100:  # More than enough for any post format
-            break
-    
-    # Log feed processing summary
-    if feed_errors:
-        logger.warning(f"Feed parsing errors: {len(feed_errors)}/{len(feeds)} feeds failed")
-        for error in feed_errors[:5]:  # Log first 5 errors
-            logger.debug(f"  {error}")
-    
-    logger.info(f"Processed {total_items_processed} total entries, found {len(items)} new items")
-
-    def score_item(it: Dict[str, str]) -> int:
-        text = f"{it.get('title','')} {it.get('summary','')}".lower()
-        score = 0
-        for kw in KEYWORDS_INCLUDE:
-            if kw and kw in text:
-                score += 3
-        # Prefer items that have a summary (easier to create value)
-        if len(it.get("summary", "")) >= 120:
-            score += 2
-        if len(it.get("summary", "")) >= 300:
-            score += 1
-        # Slightly prefer well-known engineering sources (light weighting)
-        src = (it.get("source") or "").lower()
-        if any(s in src for s in ("kubernetes", "cncf", "aws.amazon", "cloud.google", "azure.microsoft", "hashicorp", "netflixtechblog", "spotify", "gitlab", "martinfowler", "docker")):
-            score += 1
-        return score
-
-    items.sort(key=score_item, reverse=True)
-    # Keep a little randomness among top candidates so posts aren't repetitive
-    top = items[:30]
-    random.shuffle(top)
-    top.sort(key=score_item, reverse=True)
-    return top[:6]
-
-
-def pick_top_articles_without_filters(limit: int = 1):
-    """Pick top trending articles without checking posted links (for fallback when no new items)."""
-    # Call fetch_news with empty posted set to get trending items regardless of posting history
-    trending_items = fetch_news(posted=set(), state=None)
-    return trending_items[:limit]
-
-
-def remix_title(title: str) -> str:
-    """Create a crisp takeaway line from the raw title using only local heuristics."""
-    t = title.strip()
-    # Drop bracketed noise often found in feeds
-    t = re.sub(r"\[[^]]+\]", "", t)
-    # Remove common prefixes that create confusion
-    prefixes = ["Key take:", "Signal:", "Watch:", "Move:", "Shift:"]
-    for prefix in prefixes:
-        if t.startswith(prefix):
-            t = t[len(prefix):].strip()
-    t = re.sub(r"\s+", " ", t).strip()
-    # Keep it short for scannability
-    if len(t) > 110:
-        t = t[:107].rstrip() + "…"
-    # Return clean title without confusing prefixes
-    return t
-
-
-def summarize_snippet(text: str) -> str:
-    """Smart summary from feed snippet: AI-enhanced with heuristic fallback."""
-    if not text:
-        return ""
-    
-    # Drop HTML tags first
-    clean = re.sub(r"<[^>]+>", " ", text)
-    clean = re.sub(r"\s+", " ", clean).strip()
-    
-    # Try AI enhancement if enabled
-    if HF_API_KEY and ENABLE_AI_ENHANCE and len(clean) > 100:
-        enhanced = ai_enhance_text(clean, max_length=150)
-        if enhanced and len(enhanced) < len(clean):
-            return clip(enhanced, 180)
-    
-    # Fallback: heuristic trimming
-    return clip(clean, 180)
-
-def build_thread_style_post(items) -> str:
-    """Build a Twitter/LinkedIn thread-style post with numbered insights."""
-    if not items:
-        return build_digest_post(items)
-    
-    item = items[0]
-    title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))
-    link = item.get("link", "")
-    
-    # Get context-aware insights
-    context_insights, context_cta = get_context_aware_insights(title, snippet)
-    
-    # Thread style with numbered points
-    thread_emoji = "🧵" if EMOJI_STYLE != "none" else ""
-    numbers = ["1/", "2/", "3/", "4/"]
-    
-    lines = []
-    if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("deep_dive", title))
-        
-    lines.extend([
-        "",
-        f"{thread_emoji} Thread: {title}",
-        "",
-        f"{numbers[0]} The situation:",
-        f"{snippet if snippet else 'Modern infrastructure challenges require new thinking.'}",
-        "",
-        f"{numbers[1]} Key insight:", 
-        f"{context_insights[0] if context_insights else 'Focus on fundamentals first.'}",
-        "",
-        f"{numbers[2]} Action item:",
-        f"{context_insights[1] if len(context_insights) > 1 else 'Start small, measure everything.'}",
-        "",
-        f"{numbers[3]} Bottom line:",
-        f"{context_insights[2] if len(context_insights) > 2 else 'Operational excellence beats perfect architecture.'}",
-        "",
-        context_cta,
-        "",
-        get_subscription_cta(),
-        "",
-        get_hashtags()
-    ])
-    
-    # Minimal link approach for thread style
-    if link and random.random() > 0.6:  # 40% chance
-        lines.extend(["", f"🔗 {link}"])
-    
-    return clip("\n".join(lines), MAX_POST_CHARS)
-
-
-def build_quote_style_post(items) -> str:
-    """Build a post that focuses on a key quote or insight."""
-    if not items:
-        return build_digest_post(items)
-        
-    item = items[0]
-    title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))
-    link = item.get("link", "")
-    source = item.get("source", "")
-    
-    # Get context-aware insights
-    context_insights, context_cta = get_context_aware_insights(title, snippet)
-    
-    # Create a "quote" from the key insight
-    quote = context_insights[0] if context_insights else "The best systems optimize for change, not perfection."
-    
-    quote_emoji = "💭" if EMOJI_STYLE != "none" else ""
-    
-    lines = []
-    if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("hot_take", title))
-        
-    lines.extend([
-        "",
-        f"{quote_emoji} \"{quote}\"",
-        "",
-        f"Context: {title}",
-    ])
-    
-    lines.extend([
-        "",
-        f"This resonates because:",
-        f"• {context_insights[1] if len(context_insights) > 1 else 'Simple solutions often outperform complex ones'}",
-        f"• {context_insights[2] if len(context_insights) > 2 else 'Production teaches what documentation cannot'}",
-        "",
-        context_cta,
-        "",
-        get_subscription_cta(),
-        "",
-        get_hashtags()
-    ])
-    
-    # Very minimal link approach
-    if link and random.random() > 0.7:  # 30% chance
-        lines.extend(["", f"Source: {link}"])
-        
-    return clip("\n".join(lines), MAX_POST_CHARS)
-
-
-def build_news_flash_post(items) -> str:
-    """Build a breaking news / flash update style post."""
-    if not items:
-        return build_digest_post(items)
-        
-    item = items[0]
-    title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))
-    link = item.get("link", "")
-    source = item.get("source", "")
-    
-    # Get context-aware insights
-    context_insights, context_cta = get_context_aware_insights(title, snippet)
-    
-    flash_emoji = "🚨" if EMOJI_STYLE != "none" else ""
-    
-    lines = []
-    if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("digest", title))
-        
-    lines.extend([
-        "",
-        f"{flash_emoji} News Flash: {title}",
-        "",
-        f"📍 What happened: {snippet if snippet else 'Significant development in the DevOps space'}",
-        "",
-        f"🎯 Why it matters: {ai_generate_value_line(title, snippet).replace('Why it matters: ', '')}",
-        "",
-        f"⚡ Quick take: {context_insights[0] if context_insights else 'This changes the game'}",
-        "",
-        context_cta,
-        "",
-        get_subscription_cta(),
-        "",
-        get_hashtags()
-    ])
-    
-    # News style usually includes source
-    if link:
-        style = random.choice([f"Breaking: {link}", f"Full story: {link}", f"Details: {link}"])
-        lines.extend(["", style])
-        
-    return clip("\n".join(lines), MAX_POST_CHARS)
-
-
-# Update build_post to include new formats
-def build_post(items, post_format: Optional[str] = None):
-    """Build post content based on format with varied styles and error handling."""
-    if not post_format:
-        # Expanded format options including experimental ones
-        all_formats = AVAILABLE_POST_FORMATS + ["thread", "quote", "news_flash"]
-        post_format = random.choice(all_formats)
-
-    # Ensure we have valid items for content generation
-    if not items or len(items) == 0:
-        logger.warning("No items provided for post generation, using fallback content")
-        return build_quick_tip_post()  # Safe fallback
-    
-    try:
-        if post_format == "quick_tip":
-            return build_quick_tip_post()
-        elif post_format == "lessons":
-            return build_lessons_post(items)
-        elif post_format == "hot_take":
-            return build_hot_take_post(items)
-        elif post_format == "case_study":
-            return build_case_study_post(items)
-        elif post_format == "deep_dive":
-            return build_deep_dive_post(items)
-        elif post_format == "thread":
-            return build_thread_style_post(items)
-        elif post_format == "quote":
-            return build_quote_style_post(items)  
-        elif post_format == "news_flash":
-            return build_news_flash_post(items)
-        else:
-            return build_digest_post(items)
-    except Exception as e:
-        logger.error(f"Post format '{post_format}' failed: {e}")
-        logger.warning("Falling back to digest format")
-        try:
-            return build_digest_post(items)
-        except Exception as e2:
-            logger.error(f"Digest fallback also failed: {e2}")
-            # Final fallback to quick tip
-            return build_quick_tip_post()
-
-
-def build_quick_tip_post() -> str:
-    """Build a short-form quick tip post."""
-    hook = random.choice(FORMAT_HOOKS["quick_tip"])
-    cta = random.choice(FORMAT_CTAS["quick_tip"])
-    tip = random.choice(QUICK_TIPS)
-    
-    emoji = get_emoji("hook")
-    tip_emoji = "💡" if EMOJI_STYLE != "none" else ""
-
-    lines = []
-    if emoji:
-        lines.append(f"{emoji} {hook}")
-    else:
-        lines.append(hook)
-    
-    if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("quick_tip", tip, hook))
-    
-    lines.extend([
-        "",
-        f"{tip_emoji} {tip}".strip(),
-        "",
-        "---",
-        "",
-        cta,
-        "",
-        get_subscription_cta(),
-        "",
-        get_hashtags(),
-    ])
-    return clip("\n".join(lines), MAX_POST_CHARS)
-
-
-def build_lessons_post(items) -> str:
-    """Build a lessons-learned style post (unified dynamic format)."""
-    return build_digest_post(items)
-
-def build_hot_take_post(items) -> str:
-    """Build an opinion/hot-take style post (unified dynamic format)."""
-    return build_digest_post(items)
-
-def build_case_study_post(items) -> str:
-    """Build a case-study style post (unified dynamic format)."""
-    return build_digest_post(items)
-
-def build_deep_dive_post(items) -> str:
-    """Build a longer-form deep dive post (unified dynamic format)."""
-    return build_digest_post(items)
-
-
-# -------------------------------------------------
-# MAIN
-# -------------------------------------------------
-
-def main():
-    logger.info("="*50)
-    logger.info("LinkedIn DevOps Bot Starting")
-    logger.info("="*50)
-    
-    # Production readiness checks
-    if KILL_SWITCH:
-        logger.error("🚨 KILL_SWITCH activated - bot disabled for safety")
-        notify("LinkedIn bot DISABLED: Kill switch activated", is_error=True)
-        return
-        
-    if not ACCESS_TOKEN:
-        logger.error("❌ LINKEDIN_ACCESS_TOKEN not configured")
-        notify("LinkedIn bot FAILED: No access token configured", is_error=True)
-        return
-    
-    if not AUTHOR_URN:
-        logger.error("❌ LinkedIn author URN not resolved - check token permissions")
-        notify("LinkedIn bot FAILED: Cannot resolve author URN", is_error=True)
-        return
-    
-    # Show configuration
-    logger.info(f"Mode: {'DRY RUN' if DRY_RUN else 'LIVE'}")
-    logger.info(f"AI Enhancement: {'✓ Enabled' if ENABLE_AI_ENHANCE and HF_API_KEY else '✗ Disabled (using heuristics)'}")
-    logger.info(f"Emoji Style: {EMOJI_STYLE}")
-    logger.info(f"Tone: {TONE}")
-    logger.info(f"Source Packs: {', '.join(SOURCE_PACKS)}")
-    logger.info(f"Dynamic Personas: {'✓ Enabled' if USE_DYNAMIC_PERSONA else '✗ Disabled'}")
-    
-    # Load state with error recovery
-    try:
-        state = load_state()
-        posted = set(state.get("posted_links", []))
-        meta = state.get("meta", {})
-        logger.info(f"📊 Cache: {len(posted)} links already posted")
-    except Exception as e:
-        logger.error(f"❌ Failed to load state: {e}")
-        logger.warning("⚠️  Using empty state - previous state may be lost")
-        state = {"posted_links": [], "meta": {}}
-        posted = set()
-        meta = {}
-    
-    # Check for manual approval requirement
-    if REQUIRE_MANUAL_APPROVAL:
-        logger.warning("🔒 REQUIRE_MANUAL_APPROVAL is enabled. Manual trigger required.")
-        # In GitHub Actions, this would be handled by workflow_dispatch
-        # For automated runs, we just log and exit
-        if not os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
-            logger.info("Skipping automated run (manual approval required)")
-            return
-    
-    # Check rate limits
-    try:
-        can_post, reason = check_rate_limits(state)
-        if not can_post:
-            logger.warning(f"⏸ Rate limit: {reason}")
-            return
-    except Exception as e:
-        logger.error(f"Rate limit check failed: {e}")
-        # Continue with caution
-    
-    # Add small random delay to appear more human
-    jitter = random.randint(0, max(0, MAX_JITTER_SECONDS))
-    if jitter > 0:
-        logger.info(f"⏱ Adding {jitter}s jitter for natural timing...")
-        time.sleep(jitter)
-    
-    # Check for custom message override
-    if CUSTOM_MESSAGE:
-        logger.info("📝 Using custom message (bypassing RSS)")
-        post_text = CUSTOM_MESSAGE
-        if INCLUDE_PERSONA:
-            try:
-                persona = get_dynamic_persona('custom', content=post_text)
-                post_text = f"{persona}\n\n{post_text}"
-            except Exception as e:
-                logger.warning(f"Persona generation failed: {e}")
-        post_text += f"\n\n{get_subscription_cta()}\n\n{get_hashtags()}"
-        post_text = clip(post_text, MAX_POST_CHARS)
-        post_format = "custom"
-        new_items = []
-    else:
-        # Check for growth plan content (AI-generated thought leadership)
-        growth_idea = get_growth_plan_content()
-        if growth_idea:
-            logger.info("🚀 Using growth plan content (AI-generated thought leadership)")
-            try:
-                post_text = build_growth_plan_post(growth_idea)
-                post_format = growth_idea.get('category', 'thought_leadership')
-                new_items = [{
-                    'title': growth_idea.get('title', 'DevOps Insights'),
-                    'link': '',
-                    'source': 'growth_plan',
-                    'summary': growth_idea.get('hook', '')
-                }]
-                logger.info(f"✅ Generated thought leadership post ({len(post_text)} chars)")
-            except Exception as e:
-                logger.warning(f"Growth plan post generation failed: {e}")
-                logger.info("Falling back to RSS-based content...")
-                growth_idea = None  # Fall through to RSS
-        
-        # Fall back to RSS-based content if no growth plan used
-        if not growth_idea:
-            # Fetch news with error recovery
-            try:
-                new_items = fetch_news(posted, state)
-                logger.info(f"📰 Found {len(new_items)} new items")
-            except Exception as e:
-                logger.error(f"❌ News fetching failed: {e}")
-                notify(f"LinkedIn bot FAILED: News fetching error - {e}", is_error=True)
-                return
-
-            if not new_items:
-                logger.warning("No new filtered items, posting best trending item instead")
-                new_items = pick_top_articles_without_filters(limit=1)
-
-            # Determine post format
-            try:
-                if FORCE_FORMAT and FORCE_FORMAT != "auto" and FORCE_FORMAT in AVAILABLE_POST_FORMATS:
-                    post_format = FORCE_FORMAT
-                    logger.info(f"📋 Using forced format: {post_format}")
-                else:
-                    post_format = random.choice(AVAILABLE_POST_FORMATS)
-                    logger.info(f"📋 Selected format: {post_format}")
-                
-                post_text = build_post(new_items, post_format)
-            except Exception as e:
-                logger.error(f"Post generation failed: {e}")
-            # Fallback to simple digest
-            try:
-                post_format = "digest"
-                post_text = build_digest_post(new_items[:3])  # Use fewer items for safety
-                logger.warning("Using fallback digest format")
-            except Exception as e2:
-                logger.error(f"Fallback post generation also failed: {e2}")
-                notify(f"LinkedIn bot FAILED: Post generation error - {e}", is_error=True)
-                return
-    
-    logger.info(f"\n📝 Generated post ({len(post_text)} chars):")
-    logger.info("-"*50)
-    print(post_text)
-    logger.info("-"*50)
-    
-    # Validate content quality before posting
-    is_valid, validation_msg = validate_post_content(post_text)
-    if not is_valid:
-        logger.error(f"❌ Content validation failed: {validation_msg}")
-        try:
-            # Try to regenerate with fallback format
-            logger.warning("🔄 Attempting to regenerate with fallback format")
-            post_format = "digest"
-            post_text = build_digest_post(new_items[:2])  # Use fewer items
-            is_valid, validation_msg = validate_post_content(post_text)
-            if not is_valid:
-                logger.error(f"❌ Fallback content also invalid: {validation_msg}")
-                notify(f"LinkedIn bot FAILED: Content validation failed - {validation_msg}", is_error=True)
-                return
-            logger.info("✅ Fallback content passed validation")
-        except Exception as e:
-            logger.error(f"Fallback generation failed: {e}")
-            notify(f"LinkedIn bot FAILED: Content validation and fallback failed", is_error=True)
-            return
-    else:
-        logger.info("✅ Content validation passed")
-    
-    # Post to LinkedIn with comprehensive error handling
-    try:
-        post_id = post_to_linkedin(post_text)
-    except Exception as e:
-        logger.error(f"❌ Post failed with exception: {e}")
-        # Save error state
-        try:
-            meta["last_error_at_utc"] = datetime.now(timezone.utc).isoformat()
-            meta["last_error_msg"] = str(e)[:200]
-            save_state({"posted_links": sorted(posted), "meta": meta})
-        except Exception:
-            logger.error("Failed to save error state")
-        
-        update_metrics(post_format, [], False, str(e))
-        notify(f"LinkedIn bot FAILED: {e}", is_error=True)
-        return
-
-    if post_id:
-        logger.info(f"✅ Posted successfully: {post_id}")
-        
-        # Update state with error recovery
-        try:
-            sources_used = []
-            for item in new_items:
-                posted.add(item["link"])
-                if item.get("source"):
-                    sources_used.append(item["source"])
-                record_topic(item.get("title", ""), state)
-            
-            meta["last_post_id"] = post_id
-            meta["last_posted_at_utc"] = datetime.now(timezone.utc).isoformat()
-            meta["last_format"] = post_format
-            
-            # Clear error state on success
-            meta.pop("last_error_at_utc", None)
-            meta.pop("last_error_msg", None)
-            
-            state["posted_links"] = sorted(posted)
-            state["meta"] = meta
-            save_state(state)
-            
-            # Update metrics
-            update_metrics(post_format, sources_used, True)
-            
-            # Save last post content to metrics for workflow access
-            metrics = load_metrics()
-            metrics["last_post_content"] = post_text
-            metrics["last_post_format"] = post_format
-            metrics["last_post_sources"] = list(set(sources_used))
-            metrics["last_post_timestamp"] = datetime.now(timezone.utc).isoformat()
-            save_metrics(metrics)
-            
-            logger.info(f"💾 State saved: {len(posted)} total links cached")
-            
-            # Prepare detailed notification
-            notification_details = {
-                "format": post_format,
-                "content": post_text,
-                "length": len(post_text),
-                "sources": list(set(sources_used)),
-                "ai_enhanced": ENABLE_AI_ENHANCE and HF_API_KEY,
-                "total_posts": load_metrics().get("total_posts", 0),
-                "posts_today": get_posts_today()
-            }
-            
-            notify(f"LinkedIn bot posted successfully! Format: {post_format}", is_error=False, details=notification_details)
-            
-        except Exception as e:
-            logger.error(f"State update failed after successful post: {e}")
-            # Post succeeded but state update failed - this is not critical
-            notify(f"LinkedIn bot posted successfully but state update failed: {e}", is_error=False)
-    else:
-        logger.error("❌ Post failed (no post_id returned)")
-        # Save error state
-        try:
-            meta["last_error_at_utc"] = datetime.now(timezone.utc).isoformat()
-            meta["last_error_msg"] = "No post_id returned"
-            save_state({"posted_links": sorted(posted), "meta": meta})
-        except Exception:
-            logger.error("Failed to save error state")
-            
-        update_metrics(post_format, [], False, "No post_id returned")
-        notify("LinkedIn bot FAILED: No post_id returned", is_error=True)
-
-
-if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        logger.exception(f"Fatal error: {e}")
-        notify(f"LinkedIn bot FATAL ERROR: {e}", is_error=True)
-        sys.exit(1)
+# ...existing code...
 
