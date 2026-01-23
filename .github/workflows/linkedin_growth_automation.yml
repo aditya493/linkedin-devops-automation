@@ -145,7 +145,7 @@ on:
       growth_plan_probability:
         description: 'Probability of using Growth Plan vs RSS (0=100% RSS, 0.4=40% Growth Plan, 1=100% Growth Plan)'
         required: false
-        default: '0'
+        default: '0.5'
         type: choice
         options:
           - '0'
