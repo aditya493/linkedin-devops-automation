@@ -3574,8 +3574,9 @@ def build_quote_style_post(items) -> str:
         "",
         f"❓ {footer_question}"
     ])
+    # Only show the link, never the domain or 'Source:'
     if link and random.random() > 0.7:
-        lines.extend(["", f"Source: {link}"])
+        lines.extend(["", f"{link}"])
     return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
 
 
@@ -4293,12 +4294,8 @@ def build_digest_post(items):
         if value.lower().startswith('why it matters:'):
             value = value[len('Why it matters:'):].strip()
         link_display = f"\n 🔗 {item.get('link', '')}" if item.get('link') else ""
-        # Only show source if it is meaningful (not a generic domain)
-        generic_sources = {"about.gitlab.com", "www.gitlab.com", "www.github.com", "github.com", "linkedin.com", "www.linkedin.com", "medium.com", "www.medium.com"}
-        src = ""
-        if item.get('source') and item.get('source').lower() not in generic_sources:
-            src = f" ({item.get('source')})"
-        lines.append(f"{i}. {takeaway}{src}\n Context: {snippet}\n Impact: {value}{link_display}\n")
+        # Never show the domain or 'Source:' label, only the link if present
+        lines.append(f"{i}. {takeaway}\n Context: {snippet}\n Impact: {value}{link_display}\n")
     lines.extend(["", cta, "", hashtags, "", footer_question])
     post = "\n".join(lines)
     return format_post_content(clip(post, MAX_POST_CHARS))
