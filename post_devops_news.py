@@ -997,6 +997,7 @@ def build_digest_post(items):
 
 # -------------------------------------------------
 # GROWTH PLAN INTEGRATION
+
 # -------------------------------------------------
 
 def load_growth_plan() -> Optional[Dict]:
@@ -1005,20 +1006,16 @@ def load_growth_plan() -> Optional[Dict]:
         if not os.path.exists(GROWTH_PLAN_FILE):
             logger.info(f"No growth plan file found at {GROWTH_PLAN_FILE}")
             return None
-        
         with open(GROWTH_PLAN_FILE, 'r', encoding='utf-8') as f:
             plan = json.load(f)
-        
         logger.info(f"✅ Loaded growth plan with {len(plan.get('post_ideas', []))} post ideas")
         return plan
     except Exception as e:
         logger.warning(f"Failed to load growth plan: {e}")
         return None
 
-
 def get_growth_plan_content() -> Optional[Dict]:
     """Get content from growth plan for posting.
-    
     Returns a dict with:
     - title: Post title/topic
     - hook: Engagement hook
@@ -1029,28 +1026,22 @@ def get_growth_plan_content() -> Optional[Dict]:
     """
     if not USE_GROWTH_PLAN:
         return None
-    
     # Random chance to use growth plan (to maintain variety with RSS content)
     if random.random() > GROWTH_PLAN_PROBABILITY:
         logger.info(f"Skipping growth plan this run (probability: {GROWTH_PLAN_PROBABILITY})")
         return None
-    
     plan = load_growth_plan()
     if not plan:
         return None
-    
     post_ideas = plan.get('post_ideas', [])
     if not post_ideas:
         logger.info("No post ideas in growth plan")
         return None
-    
     # Pick a random idea from the plan
     idea = random.choice(post_ideas)
-    
     logger.info(f"📝 Using growth plan idea: {idea.get('title', 'Unknown')}")
     logger.info(f"   Category: {idea.get('category', 'Unknown')}")
     logger.info(f"   Hook: {idea.get('hook', 'None')[:50]}...")
-    
     return idea
 
 
