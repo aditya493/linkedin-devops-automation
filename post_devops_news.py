@@ -7,7 +7,7 @@ _USED_FOOTER_QUESTIONS = []
 # --- Default config for missing variables ---
 import os
 
-ENABLE_AI_ENHANCE = False
+ENABLE_AI_ENHANCE = True
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 FREE_AI_PROVIDERS = {}
 AI_SUMMARIZATION_MODELS = []
@@ -89,6 +89,52 @@ MAX_JITTER_SECONDS = safe_int(os.environ.get("MAX_JITTER_SECONDS", "180"), 180, 
 
 # Source packs let you include lots of relevant RSS feeds without editing code.
 # Use: SOURCE_PACKS="devops,sre,platform,kubernetes" (or "all")
+
+# Expanded real-world data sources and news feeds
+DEFAULT_FEEDS = [
+    # DevOps & Engineering
+    "https://devops.com/feed/",
+    "https://www.infoq.com/devops/rss/",
+    "https://www.thoughtworks.com/insights/blog/rss.xml",
+    "https://www.stackoverflow.blog/feed/",
+    "https://www.sreweekly.com/feed/",
+    "https://feeds.feedburner.com/GoogleCloudPlatformBlog",
+    "https://aws.amazon.com/blogs/opensource/feed/",
+    "https://azure.microsoft.com/en-us/blog/feed/",
+    "https://kubernetes.io/blog/feed.xml",
+    "https://www.cncf.io/feed/",
+    # Security
+    "https://www.darkreading.com/rss.xml",
+    "https://www.schneier.com/blog/atom.xml",
+    "https://www.zdnet.com/topic/security/rss.xml",
+    # AI & Automation
+    "https://ai.googleblog.com/feeds/posts/default",
+    "https://www.oreilly.com/radar/feed/",
+    "https://www.analyticsvidhya.com/blog/feed/",
+    # Observability & SRE
+    "https://www.datadoghq.com/blog/feed/",
+    "https://www.honeycomb.io/blog/feed.xml",
+    # General Tech News
+    "https://techcrunch.com/feed/",
+    "https://www.wired.com/feed/rss",
+    "https://www.theverge.com/rss/index.xml",
+    "https://www.cio.com/index.rss",
+    "https://www.zdnet.com/news/rss.xml",
+    # Leadership & Culture
+    "https://leaddev.com/rss.xml",
+    "https://rework.withgoogle.com/blog/feed/",
+    # Cloud Native & Platform
+    "https://www.cncf.io/feed/",
+    "https://www.redhat.com/en/blog/feed",
+    "https://www.vmware.com/radius/rss.xml",
+    # Automation & Architecture
+    "https://martinfowler.com/feed.atom",
+    "https://www.infoq.com/architecture/rss/",
+    # Edge & IoT
+    "https://www.iotforall.com/feed",
+    "https://www.edgecomputing-news.com/feed/"
+]
+
 SOURCE_PACKS = [
     p.strip().lower()
     for p in os.environ.get("SOURCE_PACKS", "all").split(",")
@@ -700,51 +746,23 @@ def try_multi_provider_ai(prompt: str, task_type: str = "summarization", max_tok
     if not ENABLE_AI_ENHANCE:
         logger.debug("AI enhancement disabled")
         return None
-    
-    enabled_providers = get_enabled_providers()
-    logger.debug(f"Enabled providers: {[(pid, config['name']) for pid, config in enabled_providers]}")
-    
-    if not enabled_providers:
-        logger.warning("⚠ No AI providers enabled - add API keys to enable AI features")
-        return None
-    
-    providers_tried = []
-    
-    for provider_id, config in enabled_providers:
-        models = config["models"].get(task_type, [])
-        if not models:
-            logger.debug(f"No {task_type} models for provider {provider_id}")
+    # Try all providers regardless of API key presence
+    providers = [
+        ("groq", GROQ_API_KEY, call_groq_api, "llama-3.1-8b-instant"),
+        ("gemini", GEMINI_API_KEY, call_gemini_api, "gemini-2.0-flash"),
+        ("openrouter", HF_API_KEY, call_openrouter_api, "openrouter-default"),
+        ("huggingface", HF_API_KEY, call_huggingface_api, "HuggingFaceH4/zephyr-7b-beta"),
+    ]
+    for provider_id, api_key, fn, model in providers:
+        try:
+            result = fn(api_key, model, prompt, max_tokens, task_type)
+            if result and result.strip():
+                logger.info(f"✓ AI success: {provider_id} ({model})")
+                return result.strip()
+        except Exception as e:
+            logger.debug(f"Provider {provider_id} model {model} failed: {e}")
             continue
-            
-        api_key = config["api_key"]()
-        if not api_key:
-            logger.debug(f"No API key for provider {provider_id}")
-            continue
-            
-        for model in models:
-            try:
-                providers_tried.append(f"{provider_id}:{model}")
-                logger.info(f"Trying {config['name']} with {model}")
-                
-                result = None
-                if provider_id == "groq":
-                    result = call_groq_api(api_key, model, prompt, max_tokens, task_type)
-                elif provider_id == "gemini":
-                    result = call_gemini_api(api_key, model, prompt, max_tokens, task_type)
-                elif provider_id == "openrouter":
-                    result = call_openrouter_api(api_key, model, prompt, max_tokens, task_type)
-                elif provider_id == "huggingface":
-                    result = call_huggingface_api(api_key, model, prompt, max_tokens, task_type)
-                
-                if result and result.strip():
-                    logger.info(f"✓ AI success: {config['name']} ({model}) - tried {len(providers_tried)}")
-                    return result.strip()
-                    
-            except Exception as e:
-                logger.debug(f"Provider {provider_id} model {model} failed: {e}")
-                continue
-    
-    logger.warning(f"⚠ All AI providers failed. Tried: {', '.join(providers_tried[:5])}")
+    logger.warning("⚠ All AI providers failed.")
     return None
 
 def get_available_ai_models(model_type="summarization"):
@@ -3430,28 +3448,47 @@ def build_thread_style_post(items) -> str:
     context_insights, context_cta = get_context_aware_insights(title, snippet)
     
     # Thread style with numbered points
-    thread_emoji = "🧵" if EMOJI_STYLE != "none" else ""
+    thread_headers = [
+        "🧵 Thread: Key signals for engineering teams.",
+        "🚦 Thread: SRE and reliability highlights.",
+        "🤖 Thread: AI and automation breakthroughs.",
+        "📡 Thread: Cloud-native and platform updates.",
+        "🔒 Thread: Security and compliance signals.",
+        "📊 Thread: Observability and metrics focus.",
+        "🌐 Thread: Global tech perspectives.",
+        "💡 Thread: Leadership and culture insights."
+    ]
     numbers = ["1/", "2/", "3/", "4/"]
-    
-    lines = []
+    lines = [random.choice(thread_headers), ""]
     if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("deep_dive", title))
-        
+        persona_lines = [
+            "Industry leaders are sharing actionable insights.",
+            "SRE teams are spotlighting reliability wins.",
+            "AI innovators are mapping the future of automation.",
+            "Cloud architects are decoding platform trends.",
+            "Security champions are surfacing compliance essentials.",
+            "Observability advocates are highlighting what teams measure.",
+            "Tech strategists are decoding transformation signals.",
+            "Collaboration experts are spotlighting culture breakthroughs."
+        ]
+        lines.append(random.choice(persona_lines))
+    ai_snippet = try_multi_provider_ai(item.get('summary', ''), task_type='summarization', max_tokens=60) or snippet
+    ai_insight_1 = try_multi_provider_ai(title + ' ' + (item.get('summary', '') or ''), task_type='insight', max_tokens=40) or (context_insights[0] if context_insights else 'Focus on fundamentals first.')
+    ai_insight_2 = try_multi_provider_ai(title + ' ' + (item.get('summary', '') or ''), task_type='insight', max_tokens=40) or (context_insights[1] if len(context_insights) > 1 else 'Start small, measure everything.')
+    ai_insight_3 = try_multi_provider_ai(title + ' ' + (item.get('summary', '') or ''), task_type='insight', max_tokens=40) or (context_insights[2] if len(context_insights) > 2 else 'Operational excellence beats perfect architecture.')
     lines.extend([
         "",
-        f"{thread_emoji} Thread: {title}",
-        "",
         f"{numbers[0]} The situation:",
-        f"{snippet if snippet else 'Modern infrastructure challenges require new thinking.'}",
+        f"{ai_snippet if ai_snippet else 'Modern infrastructure challenges require new thinking.'}",
         "",
         f"{numbers[1]} Key insight:", 
-        f"{context_insights[0] if context_insights else 'Focus on fundamentals first.'}",
+        f"{ai_insight_1}",
         "",
         f"{numbers[2]} Action item:",
-        f"{context_insights[1] if len(context_insights) > 1 else 'Start small, measure everything.'}",
+        f"{ai_insight_2}",
         "",
         f"{numbers[3]} Bottom line:",
-        f"{context_insights[2] if len(context_insights) > 2 else 'Operational excellence beats perfect architecture.'}",
+        f"{ai_insight_3}",
         "",
         context_cta,
         "",
@@ -3459,11 +3496,8 @@ def build_thread_style_post(items) -> str:
         "",
         get_hashtags()
     ])
-    
-    # Minimal link approach for thread style
-    if link and random.random() > 0.6:  # 40% chance
+    if link:
         lines.extend(["", f"🔗 {link}"])
-    
     return clip("\n".join(lines), MAX_POST_CHARS)
 
 
@@ -3484,20 +3518,31 @@ def build_quote_style_post(items) -> str:
     # Create a "quote" from the key insight
     quote = context_insights[0] if context_insights else "The best systems optimize for change, not perfection."
     
+    quote_headers = [
+        "💬 Quote: Industry wisdom for teams.",
+        "🧠 Quote: Leadership lessons from the field.",
+        "🔗 Quote: Collaboration and process breakthroughs.",
+        "📈 Quote: Data-driven insights for engineering.",
+        "🚀 Quote: Innovation in cloud and infra.",
+        "🛡️ Quote: Security and trust essentials."
+    ]
     quote_emoji = "💭" if EMOJI_STYLE != "none" else ""
-    
-    lines = []
+    lines = [random.choice(quote_headers)]
     if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("hot_take", title))
-        
+        persona_lines = [
+            "Industry leaders are sharing actionable insights.",
+            "Leadership teams are surfacing culture wins.",
+            "Collaboration experts are spotlighting process breakthroughs.",
+            "Data strategists are decoding engineering signals.",
+            "Innovation architects are mapping cloud and infra trends.",
+            "Security champions are sharing trust essentials."
+        ]
+        lines.append(random.choice(persona_lines))
     lines.extend([
         "",
         f"{quote_emoji} \"{quote}\"",
         "",
         f"Context: {title}",
-    ])
-    
-    lines.extend([
         "",
         f"This resonates because:",
         f"• {context_insights[1] if len(context_insights) > 1 else 'Simple solutions often outperform complex ones'}",
@@ -3509,11 +3554,8 @@ def build_quote_style_post(items) -> str:
         "",
         get_hashtags()
     ])
-    
-    # Very minimal link approach
-    if link and random.random() > 0.7:  # 30% chance
+    if link:
         lines.extend(["", f"Source: {link}"])
-        
     return clip("\n".join(lines), MAX_POST_CHARS)
 
 
@@ -3531,12 +3573,25 @@ def build_news_flash_post(items) -> str:
     # Get context-aware insights
     context_insights, context_cta = get_context_aware_insights(title, snippet)
     
+    news_headers = [
+        "⚡ News Flash: This week's top stories.",
+        "🚨 News Flash: Urgent updates for tech teams.",
+        "📢 News Flash: Platform and cloud highlights.",
+        "🔍 News Flash: Security and compliance alerts.",
+        "🤖 News Flash: AI and automation news.",
+        "🧩 News Flash: Architecture and scale breakthroughs."
+    ]
     flash_emoji = "🚨" if EMOJI_STYLE != "none" else ""
-    
-    lines = []
+    lines = [random.choice(news_headers)]
     if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("digest", title))
-        
+        persona_lines = [
+            "Industry leaders are sharing urgent updates.",
+            "Platform teams are surfacing cloud highlights.",
+            "Security experts are spotlighting compliance alerts.",
+            "AI innovators are mapping automation news.",
+            "Architecture strategists are decoding scale breakthroughs."
+        ]
+        lines.append(random.choice(persona_lines))
     lines.extend([
         "",
         f"{flash_emoji} News Flash: {title}",
@@ -3553,12 +3608,9 @@ def build_news_flash_post(items) -> str:
         "",
         get_hashtags()
     ])
-    
-    # News style usually includes source
     if link:
         style = random.choice([f"Breaking: {link}", f"Full story: {link}", f"Details: {link}"])
         lines.extend(["", style])
-        
     return clip("\n".join(lines), MAX_POST_CHARS)
 
 
@@ -3703,15 +3755,25 @@ def build_lessons_post(items) -> str:
     random.shuffle(lesson_texts) 
     lessons = [f"{numbers[i]} {lesson_texts[i]}" for i in range(min(3, len(lesson_texts)))]
 
-    lines = []
+    lessons_headers = [
+        "📚 Lessons Learned: Insights from the field.",
+        "🧠 Lessons Learned: Leadership and culture wins.",
+        "🔒 Lessons Learned: Security and reliability takeaways.",
+        "📊 Lessons Learned: Observability and metrics focus.",
+        "🚀 Lessons Learned: Innovation and transformation stories.",
+        "🛠️ Lessons Learned: Platform and automation strategies."
+    ]
+    lines = [random.choice(lessons_headers)]
     if emoji:
-        lines.append(f"{emoji} {hook}")
-    else:
-        lines.append(hook)
-    
-    if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("lessons", " ".join([item["title"] for item in items[:3]])))
-    
+        persona_lines = [
+            "Industry leaders are sharing lessons from the trenches.",
+            "Leadership teams are surfacing culture wins.",
+            "Security experts are spotlighting reliability takeaways.",
+            "Observability advocates are highlighting metrics focus.",
+            "Innovation architects are mapping transformation stories.",
+            "Platform strategists are decoding automation strategies."
+        ]
+        lines.append(random.choice(persona_lines))
     lines.extend([
         "",
         f"Topic: {topic}",
@@ -3754,15 +3816,24 @@ def build_hot_take_post(items) -> str:
     target_emoji = "🎯" if EMOJI_STYLE != "none" else ""
     arrow = get_emoji("arrow")
     
-    lines = []
+    hot_take_headers = [
+        "🔥 Hot Take: Unpopular opinions in tech.",
+        "💡 Hot Take: Challenging conventional wisdom.",
+        "🚦 Hot Take: SRE and reliability perspectives.",
+        "🤖 Hot Take: AI and automation debates.",
+        "📡 Hot Take: Cloud-native and platform insights.",
+        "🛡️ Hot Take: Security and compliance challenges."
+    ]
+    lines = [random.choice(hot_take_headers)]
     if get_emoji("hook"):
-        lines.append(f"{get_emoji('hook')} {hook}")
-    else:
-        lines.append(hook)
-    
-    if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("hot_take", " ".join([item["title"] for item in items[:3]])))
-    
+        persona_lines = [
+            "Industry leaders are sharing bold perspectives.",
+            "SRE teams are spotlighting reliability debates.",
+            "AI innovators are mapping automation challenges.",
+            "Cloud architects are decoding platform insights.",
+            "Security champions are surfacing compliance challenges."
+        ]
+        lines.append(random.choice(persona_lines))
     lines.extend([
         "",
         f"{target_emoji} {take}".strip(),
@@ -3804,19 +3875,27 @@ def build_case_study_post(items) -> str:
     # Get context-aware insights and CTA
     context_insights, context_cta = get_context_aware_insights(title, snippet)
 
-    lines = []
+    case_study_headers = [
+        "📝 Case Study: Real-world engineering patterns.",
+        "🔍 Case Study: Platform and cloud transformations.",
+        "🧠 Case Study: Leadership and culture in action.",
+        "📊 Case Study: Observability and metrics wins.",
+        "🚀 Case Study: Innovation and automation at scale.",
+        "🛡️ Case Study: Security and reliability lessons."
+    ]
+    lines = [random.choice(case_study_headers)]
     if get_emoji("hook"):
-        lines.append(f"{get_emoji('hook')} {hook}")
-    else:
-        lines.append(hook)
-    
-    if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("case_study", " ".join([item["title"] for item in items[:3]])))
-    
-    # Vary case study presentation
+        persona_lines = [
+            "Industry leaders are sharing real-world patterns.",
+            "Platform teams are surfacing cloud transformations.",
+            "Leadership teams are mapping culture in action.",
+            "Observability advocates are highlighting metrics wins.",
+            "Innovation architects are decoding automation at scale.",
+            "Security champions are surfacing reliability lessons."
+        ]
+        lines.append(random.choice(persona_lines))
     case_formats = ["traditional", "story", "breakdown", "timeline"]
     case_format = random.choice(case_formats)
-    
     if case_format == "traditional":
         lines.extend([
             "",
@@ -3830,7 +3909,6 @@ def build_case_study_post(items) -> str:
             "Key takeaway:",
             f"↳ {value}",
         ])
-        
     elif case_format == "story":
         lines.extend([
             "",
@@ -3916,16 +3994,25 @@ def build_deep_dive_post(items) -> str:
     # Get context-aware insights and CTA
     context_insights, context_cta = get_context_aware_insights(title, snippet)
 
-    lines = []
+    deep_dive_headers = [
+        "🔎 Deep Dive: What matters in modern engineering.",
+        "🧠 Deep Dive: Leadership and culture insights.",
+        "📡 Deep Dive: Cloud-native and platform analysis.",
+        "🚦 Deep Dive: SRE and reliability focus.",
+        "🤖 Deep Dive: AI and automation exploration.",
+        "🛡️ Deep Dive: Security and compliance breakdowns."
+    ]
+    lines = [random.choice(deep_dive_headers)]
     if get_emoji("hook"):
-        lines.append(f"{get_emoji('hook')} {hook}")
-    else:
-        lines.append(hook)
-    
-    if INCLUDE_PERSONA:
-        lines.append(get_dynamic_persona("deep_dive", " ".join([item["title"] for item in items[:3]])))
-    
-    # Vary the topic introduction
+        persona_lines = [
+            "Industry leaders are sharing deep insights.",
+            "Leadership teams are surfacing culture lessons.",
+            "Platform architects are decoding cloud analysis.",
+            "SRE teams are spotlighting reliability focus.",
+            "AI innovators are mapping automation exploration.",
+            "Security champions are surfacing compliance breakdowns."
+        ]
+        lines.append(random.choice(persona_lines))
     topic_styles = [
         f"{search_emoji} Topic: {title}",
         f"{search_emoji} Focus: {title}", 
@@ -3933,15 +4020,11 @@ def build_deep_dive_post(items) -> str:
         f"📌 {title}",
         f"🎯 {title}"
     ]
-    
     lines.extend([
         "",
         random.choice(topic_styles).strip(),
     ])
-    
-    # Vary content structure
     content_structure = random.choice(["standard", "bullet_points", "numbered", "minimal"])
-    
     if content_structure == "standard":
         lines.extend([
             "",
@@ -4009,123 +4092,106 @@ def build_digest_post(items):
 
     # Vary post presentation style
     digest_styles = ["numbered", "bulleted", "themed", "brief", "detailed"]
-    digest_style = random.choice(digest_styles)
-    
-    # Determine items to show based on style
-    if digest_style == "brief":
-        chosen = items[:min(3, len(items))]
-        show_snippets = False
-    elif digest_style == "detailed":
-        chosen = items[:min(4, len(items))]
-        show_snippets = True
-    else:
-        chosen = items[:min(5, len(items))]
-        show_snippets = random.random() > 0.5
-
-    lines = [hook, get_dynamic_persona("digest", " ".join([item["title"] for item in items[:5]])), ""]
-    
-    # Vary section headers
-    section_headers = [
-        "Today's high-signal reads:",
-        "This week's standouts:", 
-        "What stands out:",
-        "Signal vs noise:",
-        "Worth your time:",
-        "Key developments:",
-        "Industry pulse:"
+    # Always use the requested format
+    # Industry leader voice, emoji-rich, varied headers
+    intro_headers = [
+        "🛠️ What high-perf teams are watching this week.",
+        "🚀 Signals shaping modern engineering.",
+        "📡 This week's essential DevOps signals.",
+        "🔍 Key trends in platform reliability.",
+        "⚡️ Strategic moves in cloud and infra.",
+        "🌐 What matters for builders and operators.",
+        "📊 Data-driven insights for engineering teams.",
+        "🔒 Security, scale, and innovation: the highlights.",
+        "☁️ Cloud-native breakthroughs to watch.",
+        "🎯 Platform engineering: what stands out now.",
+        "🤖 AI and automation: practical impacts.",
+        "🧠 Leadership lessons from the field.",
+        "🛡️ Security, compliance, and trust: the essentials.",
+        "🚦 SRE and reliability: what’s trending.",
+        "📈 Observability and metrics: actionable insights.",
+        "🔗 Collaboration and culture: team wins.",
+        "💡 Innovation in cloud-native and edge computing.",
+        "🧩 Architecture patterns for scale and resilience.",
+        "🦾 Automation strategies for modern teams.",
+        "🌍 Global tech trends to watch."
     ]
-    
+    persona_lines = [
+        "Industry leaders are optimizing tech stacks and debunking myths in the DevOps trenches.",
+        "Top teams are separating signal from noise in modern infrastructure.",
+        "Strategic thinkers are tracking what moves the reliability needle.",
+        "Engineering visionaries are spotlighting what matters most this week.",
+        "Platform architects are surfacing actionable insights for resilient systems.",
+        "DevOps experts are curating the signals that drive innovation.",
+        "Cloud pioneers are highlighting key developments for practitioners.",
+        "Security champions are sharing what shapes the future of operations.",
+        "AI innovators are mapping the future of intelligent systems.",
+        "SRE leaders are sharing reliability wins and lessons.",
+        "Observability advocates are surfacing what teams measure and why.",
+        "Tech strategists are decoding the next wave of transformation.",
+        "Collaboration experts are spotlighting culture and process breakthroughs.",
+        "Automation architects are driving efficiency and scale across industries."
+    ]
+    section_headers = [
+        "What caught our attention:",
+        "This week's standouts:",
+        "Key developments:",
+        "Signal vs noise:",
+        "Industry pulse:",
+        "Strategic highlights:",
+        "Essential reads:",
+        "Must-watch trends:",
+        "Spotlight stories:",
+        "Top picks for teams:",
+        "AI and automation highlights:",
+        "Security and compliance updates:",
+        "SRE and reliability signals:",
+        "Observability and metrics focus:",
+        "Leadership and culture insights:",
+        "Architecture and scale breakthroughs:",
+        "Cloud-native and edge innovations:",
+        "Automation and efficiency wins:",
+        "Global tech perspectives:",
+        "Collaboration and process improvements:"
+    ]
+    lines = []
+    lines.append(random.choice(intro_headers))
+    lines.append(random.choice(persona_lines))
+    lines.append("")
     lines.append(random.choice(section_headers))
-    
-    # Present items with varied formatting
-    for i, item in enumerate(chosen, 1):
-        takeaway = remix_title(item["title"])
-        source = item.get("source", "").strip()
-        
-        if digest_style == "numbered":
-            if show_snippets:
-                snippet = summarize_snippet(item.get("summary", ""))
-                if snippet:
-                    value = ai_generate_value_line(item.get("title", ""), snippet)
-                    src = ""
-                    link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-                    lines.append(f"{i}. {takeaway}{src}\n   ↳ {snippet}\n   ↳ {value}{link_display}\n")
-                else:
-                    value = ai_generate_value_line(item.get("title", ""), "")
-                    src = ""
-                    link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-                    lines.append(f"{i}. {takeaway}{src}\n   ↳ {value}{link_display}\n")
-            else:
-                value = ai_generate_value_line(item.get("title", ""), "")
-                src = ""
-                link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-                lines.append(f"{i}. {takeaway}{src}\n   → {value}{link_display}\n")
-                
-        elif digest_style == "bulleted":
-            value = ai_generate_value_line(item.get("title", ""), item.get("summary", ""))
-            bullet = get_emoji("bullet")
-            src = ""
-            link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-            lines.append(f"{bullet} {takeaway}{src}\n   {value}{link_display}\n")
-            
-        elif digest_style == "themed":
-            # Group by theme/domain
-            emoji_map = {
-                "kubernetes": "☸️", "security": "🛡️", "cloud": "☁️", 
-                "observability": "📊", "devops": "🔧", "sre": "🚨"
-            }
-            theme_emoji = ""
-            for theme, emoji in emoji_map.items():
-                if theme in (item.get("title", "") + item.get("summary", "")).lower():
-                    theme_emoji = emoji + " "
-                    break
-            
-            value = ai_generate_value_line(item.get("title", ""), "")
-            src = ""
-            link_display = f"\n🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-            lines.append(f"{theme_emoji}{takeaway}{src}\n{value}{link_display}\n")
-            
-        elif digest_style == "brief":
-            # Minimal format
-            src = ""
-            link_display = f" {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-            lines.append(f"• {takeaway}{src}{link_display}\n")
-            
-        else:  # detailed
-            snippet = summarize_snippet(item.get("summary", ""))
-            value = ai_generate_value_line(item.get("title", ""), snippet)
-            src = ""
-            link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-            if snippet:
-                lines.append(f"{i}. {takeaway}{src}\n   Context: {snippet}\n   Impact: {value}{link_display}\n")
-            else:
-                lines.append(f"{i}. {takeaway}{src}\n   {value}{link_display}\n")
-
-    # Sometimes include why it matters, sometimes not
-    if digest_style != "brief" and random.random() > 0.3:
-        lines.extend(["", f"Why this matters: {why_line}"])
-    
-    lines.extend(["", get_subscription_cta(), "", get_hashtags(), "", cta])
-
-    # Handle links with variety for digest
-    if should_include_links(post_style, "digest") and chosen:
-        links = [it.get("link", "") for it in chosen if it.get("link")]
-        links = [l for l in links if l]
-        if links:
-            link_section = format_links_section(links[:MAX_LINKS], post_style)
-            lines.extend(link_section)
-    
+    chosen = items[:min(5, len(items))]
+    for idx, item in enumerate(chosen, 1):
+        title = item.get("title", "")
+        # Use AI for summarization if enabled
+        if ENABLE_AI_ENHANCE:
+            summary = try_multi_provider_ai(item.get("summary", ""), task_type="summarization", max_tokens=60) or summarize_snippet(item.get("summary", ""))
+            impact = try_multi_provider_ai(title + " " + (item.get("summary", "") or ""), task_type="insight", max_tokens=40) or ai_generate_value_line(title, summary)
+        else:
+            summary = summarize_snippet(item.get("summary", ""))
+            impact = ai_generate_value_line(title, summary)
+        link = item.get("link", "")
+        lines.append(f"{idx}. {title}\n   📝 Context: {summary}\n   💡 Impact: {impact}\n   🔗 {link}\n")
+    lines.append("")
+    lines.append("💌 Get weekly DevOps insights delivered to your inbox – subscribe to stay ahead!")
+    lines.append("👉 Subscribe: https://lnkd.in/g_mZKwxY")
+    lines.append("📖 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf")
+    lines.append("")
+    hashtag_lines = [
+        "#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps",
+        "#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering",
+        "#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps",
+        "#Platform #Systems #Architecture #DevSecOps #Kubernetes #Observability #Engineering"
+    ]
+    lines.append(random.choice(hashtag_lines))
+    lines.append("")
+    lines.append("What did we miss?")
+    lines.append("")
+    lines.append("Sources:")
+    for idx, item in enumerate(chosen, 1):
+        if item.get("link"):
+            lines.append(f"{idx}. {item['link']}")
     post = "\n".join(lines)
     return clip(post, MAX_POST_CHARS)
-
-# -------------------------------------------------
-# MAIN
-# -------------------------------------------------
-
-def main():
-    logger.info("="*50)
-    logger.info("LinkedIn DevOps Bot Starting")
-    logger.info("="*50)
     
     # Production readiness checks
     if KILL_SWITCH:
@@ -4373,6 +4439,12 @@ def main():
 
 
 if __name__ == "__main__":
+
+    def main():
+        logger.info("LinkedIn DevOps Automation script started.")
+        # TODO: Add main workflow logic here (e.g., fetch news, build post, publish)
+        pass
+
     try:
         main()
     except Exception as e:
