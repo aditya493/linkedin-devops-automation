@@ -129,8 +129,6 @@ def main():
         logger.info("🚀 Starting LinkedIn DevOps post automation...")
         # 1. Try growth plan content first
         idea = get_growth_plan_content()
-        if __name__ == "__main__":
-            main()
         # 3. Print or post
         if DRY_RUN:
             logger.info(f"[DRY RUN] Would post the following {post_type} content:")
@@ -164,8 +162,7 @@ def main():
 
 
 
-if __name__ == "__main__":
-    main()
+
 
 def generate_ai_persona(post_format: str = None, content: str = None, title: str = None) -> Optional[str]:
     """Generate a dynamic persona using AI based on content context."""
