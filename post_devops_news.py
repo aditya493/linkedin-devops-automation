@@ -4012,109 +4012,22 @@ def build_digest_post(items):
     digest_style = random.choice(digest_styles)
     
     # Determine items to show based on style
-    if digest_style == "brief":
-        chosen = items[:min(3, len(items))]
-        show_snippets = False
-    elif digest_style == "detailed":
-        chosen = items[:min(4, len(items))]
-        show_snippets = True
-    else:
-        chosen = items[:min(5, len(items))]
-        show_snippets = random.random() > 0.5
-
-    lines = [hook, get_dynamic_persona("digest", " ".join([item["title"] for item in items[:5]])), ""]
-    
-    # Vary section headers
-    section_headers = [
-        "Today's high-signal reads:",
-        "This week's standouts:", 
-        "What stands out:",
-        "Signal vs noise:",
-        "Worth your time:",
-        "Key developments:",
-        "Industry pulse:"
-    ]
-    
-    lines.append(random.choice(section_headers))
-    
-    # Present items with varied formatting
-    for i, item in enumerate(chosen, 1):
+    # Enforce detailed, industry-leader format for every digest post
+    intro_header = "🛠️ What high-perf teams are watching this week."
+    persona_line = "I optimize tech stacks and debunk myths in the DevOps trenches. Here's..."
+    section_header = "What caught my attention:"
+    cta = "💌 Get weekly DevOps insights delivered to your inbox - subscribe to stay ahead!\n👉 Subscribe: https://lnkd.in/g_mZKwxY\n📖 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf"
+    hashtags = "hashtag#Infrastructure hashtag#DevOps hashtag#Security hashtag#CloudNative hashtag#Kubernetes hashtag#Engineering hashtag#DevSecOps"
+    footer_question = "What did we miss?"
+    lines = [intro_header, persona_line, "", section_header]
+    for i, item in enumerate(items, 1):
         takeaway = remix_title(item["title"])
-        source = item.get("source", "").strip()
-        
-        if digest_style == "numbered":
-            if show_snippets:
-                snippet = summarize_snippet(item.get("summary", ""))
-                if snippet:
-                    value = ai_generate_value_line(item.get("title", ""), snippet)
-                    src = ""
-                    link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-                    lines.append(f"{i}. {takeaway}{src}\n   ↳ {snippet}\n   ↳ {value}{link_display}\n")
-                else:
-                    value = ai_generate_value_line(item.get("title", ""), "")
-                    src = ""
-                    link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-                    lines.append(f"{i}. {takeaway}{src}\n   ↳ {value}{link_display}\n")
-            else:
-                value = ai_generate_value_line(item.get("title", ""), "")
-                src = ""
-                link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-                lines.append(f"{i}. {takeaway}{src}\n   → {value}{link_display}\n")
-                
-        elif digest_style == "bulleted":
-            value = ai_generate_value_line(item.get("title", ""), item.get("summary", ""))
-            bullet = get_emoji("bullet")
-            src = ""
-            link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-            lines.append(f"{bullet} {takeaway}{src}\n   {value}{link_display}\n")
-            
-        elif digest_style == "themed":
-            # Group by theme/domain
-            emoji_map = {
-                "kubernetes": "☸️", "security": "🛡️", "cloud": "☁️", 
-                "observability": "📊", "devops": "🔧", "sre": "🚨"
-            }
-            theme_emoji = ""
-            for theme, emoji in emoji_map.items():
-                if theme in (item.get("title", "") + item.get("summary", "")).lower():
-                    theme_emoji = emoji + " "
-                    break
-            
-            value = ai_generate_value_line(item.get("title", ""), "")
-            src = ""
-            link_display = f"\n🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-            lines.append(f"{theme_emoji}{takeaway}{src}\n{value}{link_display}\n")
-            
-        elif digest_style == "brief":
-            # Minimal format
-            src = ""
-            link_display = f" {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-            lines.append(f"• {takeaway}{src}{link_display}\n")
-            
-        else:  # detailed
-            snippet = summarize_snippet(item.get("summary", ""))
-            value = ai_generate_value_line(item.get("title", ""), snippet)
-            src = ""
-            link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') and style_config.get("include_links", True) else ""
-            if snippet:
-                lines.append(f"{i}. {takeaway}{src}\n   Context: {snippet}\n   Impact: {value}{link_display}\n")
-            else:
-                lines.append(f"{i}. {takeaway}{src}\n   {value}{link_display}\n")
-
-    # Sometimes include why it matters, sometimes not
-    if digest_style != "brief" and random.random() > 0.3:
-        lines.extend(["", f"Why this matters: {why_line}"])
-    
-    lines.extend(["", get_subscription_cta(), "", get_hashtags(), "", cta])
-
-    # Handle links with variety for digest
-    if should_include_links(post_style, "digest") and chosen:
-        links = [it.get("link", "") for it in chosen if it.get("link")]
-        links = [l for l in links if l]
-        if links:
-            link_section = format_links_section(links[:MAX_LINKS], post_style)
-            lines.extend(link_section)
-    
+        snippet = summarize_snippet(item.get("summary", ""))
+        value = ai_generate_value_line(item["title"], snippet)
+        link_display = f"\n 🔗 {item.get('link', '')}" if item.get('link') else ""
+        src = f" ({item.get('source')})" if item.get('source') else ""
+        lines.append(f"{i}. {takeaway}{src}\n Context: {snippet}\n Impact: Here's why: {value}{link_display}\n")
+    lines.extend(["", cta, "", hashtags, "", footer_question])
     post = "\n".join(lines)
     return clip(post, MAX_POST_CHARS)
 
