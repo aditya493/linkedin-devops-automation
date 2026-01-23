@@ -20,7 +20,46 @@ import google.generativeai as genai
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-from typing import Optional
+from typing import Optional, Dict, Any, Tuple
+
+# --- Add missing constants, variables, and stubs for robust execution ---
+ENABLE_AI_ENHANCE = os.environ.get("ENABLE_AI_ENHANCE", "true").lower() == "true"
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+USE_DYNAMIC_PERSONA = os.environ.get("USE_DYNAMIC_PERSONA", "true").lower() == "true"
+PERSONA_LINE = os.environ.get("PERSONA_LINE", "As an industry leader, I share insights and strategies for DevOps excellence.")
+DYNAMIC_PERSONAS = {
+    "deep_dive": "As an industry leader, let's explore this topic in depth.",
+    "case_study": "Industry leaders analyze real-world scenarios for actionable insights.",
+    "lessons": "Key lessons from the field, shared by an industry leader.",
+    "digest": "A concise industry leader's digest of the latest in DevOps."
+}
+def remix_title(title):
+    return f"Key Takeaway: {title}"
+def summarize_snippet(snippet):
+    return snippet[:100] + ("..." if len(snippet) > 100 else "")
+def clip(text, max_chars):
+    return text[:max_chars]
+MAX_POST_CHARS = 1300
+FREE_AI_PROVIDERS = {}
+def get_enabled_providers():
+    return []
+AI_SUMMARIZATION_MODELS = ["facebook/bart-large-cnn", "google-t5/t5-small", "google-t5/t5-base"]
+AI_GENERATION_MODELS = ["distilgpt2", "gpt2"]
+cta_templates = ["What are your thoughts?", "Share your experience below!"]
+subscribe_templates = ["Subscribe for more insights."]
+playbook_templates = ["Download the DevOps Playbook!"]
+hashtag_templates = ["#DevOps #SRE #CloudNative"]
+footer_question = "How do you approach this in your organization?"
+API_VERSION = "20240101"
+ALWAYS_INCLUDE_LINKS = os.environ.get("ALWAYS_INCLUDE_LINKS", "false").lower() == "true"
+INCLUDE_LINKS = os.environ.get("INCLUDE_LINKS", "true").lower() == "true"
+GROWTH_PLAN_FILE = os.environ.get("GROWTH_PLAN_FILE", "weekly_growth_plan.json")
+USE_GROWTH_PLAN = os.environ.get("USE_GROWTH_PLAN", "true").lower() == "true"
+try:
+    GROWTH_PLAN_PROBABILITY = float(os.environ.get("GROWTH_PLAN_PROBABILITY", "1"))
+except Exception:
+    GROWTH_PLAN_PROBABILITY = 1.0
 LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
 logging.basicConfig(
     level=getattr(logging, LOG_LEVEL, logging.INFO),
