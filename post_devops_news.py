@@ -8,44 +8,6 @@ import json
 import random
 import re
 import logging
-import hashlib
-import time
-import tempfile
-from datetime import datetime, timezone, timedelta
-from typing import Any, Dict, List, Optional, Tuple
-from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
-
-# Minimal stubs for digest post templates and footer_question (must be top-level)
-cta_templates = ["Check it out!"]
-subscribe_templates = ["Subscribe for more insights."]
-playbook_templates = ["See the full playbook."]
-hashtag_templates = ["#DevOps #Cloud"]
-footer_question = "What are your thoughts?"
-# =====================
-# MISSING CONSTANTS & DEFAULTS
-# =====================
-ENABLE_AI_ENHANCE = True
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-HF_API_KEY = os.environ.get("HF_API_KEY", "")
-MAX_POST_CHARS = 1300
-PERSONA_LINE = "Industry leader perspective."
-USE_DYNAMIC_PERSONA = False
-DYNAMIC_PERSONAS = {}
-FREE_AI_PROVIDERS = {}
-AI_SUMMARIZATION_MODELS = []
-AI_GENERATION_MODELS = []
-API_VERSION = "202401"
-ALWAYS_INCLUDE_LINKS = True
-INCLUDE_LINKS = True
-
-# Provide minimal stubs for undefined helpers if missing
-def remix_title(title):
-    return title
-def summarize_snippet(snippet):
-    return snippet
-def get_enabled_providers():
-    return []
 
 # Import fcntl for Unix systems only
 try:
