@@ -4282,20 +4282,39 @@ def build_digest_post(items):
     if len(_USED_FOOTER_QUESTIONS) > len(footer_questions) // 2:
         _USED_FOOTER_QUESTIONS = _USED_FOOTER_QUESTIONS[-len(footer_questions)//2:]
     lines = [intro_header, persona_line, "", section_header]
+    MAX_CONTEXT_LEN = 200  # Limit context/summary to 200 chars
+    MAX_ITEMS = len(items)
+    # Try to fit as many items as possible, but always include links
     for i, item in enumerate(items, 1):
         takeaway = remix_title(item["title"])
-        snippet = summarize_snippet(item.get("summary", ""))
+        snippet = summarize_snippet(item.get("summary", ""))[:MAX_CONTEXT_LEN].rstrip()
         value = ai_generate_value_line(item["title"], snippet)
         # Remove duplicate 'Why it matters:' if present
         if value.lower().count('why it matters:') > 1:
             value = value.replace('Why it matters: ', '', 1)
-        # Remove leading/trailing 'Why it matters:'
         value = value.strip()
         if value.lower().startswith('why it matters:'):
             value = value[len('Why it matters:'):].strip()
         link_display = f"\n 🔗 {item.get('link', '')}" if item.get('link') else ""
-        # Never show the domain or 'Source:' label, only the link if present
-        lines.append(f"{i}. {takeaway}\n Context: {snippet}\n Impact: {value}{link_display}\n")
+        entry = f"{i}. {takeaway}\n Context: {snippet}\n Impact: {value}{link_display}\n"
+        lines.append(entry)
+        # Check if adding another item would exceed the post limit
+        preview_post = "\n".join(lines + ["", cta, "", hashtags, "", footer_question])
+        if len(clip(preview_post, MAX_POST_CHARS)) >= MAX_POST_CHARS - 200:
+            break
+    # Always include all links at the end if any were omitted
+    all_links = [item.get('link', '') for item in items if item.get('link', '')]
+    shown_links = set()
+    for l in lines:
+        if '🔗' in l:
+            for link in all_links:
+                if link in l:
+                    shown_links.add(link)
+    missing_links = [l for l in all_links if l not in shown_links]
+    if missing_links:
+        lines.append("\nAdditional links:")
+        for link in missing_links:
+            lines.append(f"🔗 {link}")
     lines.extend(["", cta, "", hashtags, "", footer_question])
     post = "\n".join(lines)
     return format_post_content(clip(post, MAX_POST_CHARS))
