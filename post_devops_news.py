@@ -4245,7 +4245,7 @@ def build_digest_post(items):
         "💌 Level up your DevOps game – subscribe now!\n👉 Subscribe: https://lnkd.in/g_mZKwxY\n📖 DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf"
     ]
     hashtags_list = [
-        "hashtag#Infrastructure hashtag#DevOps hashtag#Security hashtag#CloudNative hashtag#Kubernetes hashtag#Engineering hashtag#DevSecOps",
+        "#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps",
         "#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering",
         "#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps"
     ]
