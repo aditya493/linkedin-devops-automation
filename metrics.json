@@ -1,202 +1,57 @@
 {
-  "total_posts": 46,
+  "total_posts": 105,
   "posts_today": 1,
-  "last_post_date": "2026-01-04",
+  "last_post_date": "2026-02-01",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 12,
-    "lessons_learned": 2,
+    "digest": 67,
+    "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 3,
-    "career_advice": 1
+    "career_advice": 1,
+    "controversial_takes": 1
   },
   "sources_used": {
-    "www.infoq.com": 34,
-    "kubernetes.io": 11,
-    "www.docker.com": 3,
-    "krebsonsecurity.com": 2,
+    "www.infoq.com": 98,
+    "kubernetes.io": 22,
+    "www.docker.com": 15,
+    "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
-    "blog.newrelic.com": 1,
-    "engineering.fb.com": 2,
-    "blog.google": 2,
-    "blog.checkpoint.com": 5,
-    "www.crowdstrike.com": 12,
-    "blog.qualys.com": 1,
-    "aws.amazon.com": 1,
-    "www.cncf.io": 5,
-    "blog.rapid7.com": 1,
-    "feeds.feedburner.com": 3,
-    "www.mend.io": 1,
-    "unit42.paloaltonetworks.com": 1,
-    "www.hashicorp.com": 5,
-    "growth_plan": 9,
-    "snyk.io": 1,
-    "netflixtechblog.medium.com": 1
+    "blog.newrelic.com": 5,
+    "engineering.fb.com": 5,
+    "blog.google": 3,
+    "blog.checkpoint.com": 18,
+    "www.crowdstrike.com": 20,
+    "blog.qualys.com": 4,
+    "aws.amazon.com": 8,
+    "www.cncf.io": 27,
+    "blog.rapid7.com": 12,
+    "feeds.feedburner.com": 8,
+    "www.mend.io": 2,
+    "unit42.paloaltonetworks.com": 7,
+    "www.hashicorp.com": 14,
+    "growth_plan": 16,
+    "snyk.io": 6,
+    "netflixtechblog.medium.com": 2,
+    "about.gitlab.com": 17,
+    "martinfowler.com": 5,
+    "www.aquasec.com": 1,
+    "azure.microsoft.com": 3,
+    "www.sonarsource.com": 3,
+    "blog.gitguardian.com": 6,
+    "engineering.atspotify.com": 2,
+    "microservices.io": 3,
+    "blogs.microsoft.com": 9,
+    "www.paloaltonetworks.com": 2,
+    "github.blog": 2,
+    "googleprojectzero.blogspot.com": 2,
+    "blog.cloudflare.com": 3,
+    "dropbox.tech": 1
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-22",
-      "time": "2025-12-22T12:52:38.025154+00:00",
-      "format": "case_study",
-      "sources": [
-        "www.infoq.com",
-        "kubernetes.io",
-        "www.docker.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.docker.com"
-      ]
-    },
-    {
-      "date": "2025-12-22",
-      "time": "2025-12-22T13:12:14.492424+00:00",
-      "format": "deep_dive",
-      "sources": [
-        "krebsonsecurity.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "kubernetes.io"
-      ]
-    },
-    {
-      "date": "2025-12-22",
-      "time": "2025-12-22T15:14:41.509817+00:00",
-      "format": "deep_dive",
-      "sources": [
-        "www.infoq.com",
-        "www.docker.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T04:12:28.547722+00:00",
-      "format": "deep_dive",
-      "sources": [
-        "kubernetes.io",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T05:16:26.898604+00:00",
-      "format": "lessons",
-      "sources": [
-        "blog.pagerduty.com",
-        "blog.newrelic.com",
-        "engineering.fb.com",
-        "blog.google"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T05:30:22.508973+00:00",
-      "format": "lessons",
-      "sources": [
-        "blog.checkpoint.com"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T05:37:53.541126+00:00",
-      "format": "deep_dive",
-      "sources": [
-        "www.crowdstrike.com",
-        "www.crowdstrike.com",
-        "www.crowdstrike.com",
-        "www.crowdstrike.com",
-        "www.crowdstrike.com",
-        "www.crowdstrike.com"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T05:55:25.885208+00:00",
-      "format": "digest",
-      "sources": [
-        "www.crowdstrike.com",
-        "www.crowdstrike.com",
-        "www.crowdstrike.com",
-        "www.crowdstrike.com"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T06:14:18.406193+00:00",
-      "format": "lessons",
-      "sources": [
-        "blog.qualys.com",
-        "kubernetes.io",
-        "kubernetes.io",
-        "aws.amazon.com",
-        "www.cncf.io",
-        "www.cncf.io"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T06:50:20.655266+00:00",
-      "format": "case_study",
-      "sources": [
-        "blog.google"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T07:05:25.385753+00:00",
-      "format": "lessons",
-      "sources": [
-        "blog.checkpoint.com",
-        "blog.rapid7.com",
-        "www.crowdstrike.com"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T07:12:00.387521+00:00",
-      "format": "deep_dive",
-      "sources": [
-        "engineering.fb.com"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T13:12:53.485844+00:00",
-      "format": "lessons",
-      "sources": [
-        "www.cncf.io",
-        "www.infoq.com",
-        "www.infoq.com",
-        "feeds.feedburner.com"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T14:04:16.434510+00:00",
-      "format": "lessons",
-      "sources": [
-        "www.mend.io"
-      ]
-    },
-    {
-      "date": "2025-12-23",
-      "time": "2025-12-23T15:08:27.426029+00:00",
-      "format": "case_study",
-      "sources": [
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2025-12-24",
       "time": "2025-12-24T04:10:44.003732+00:00",
@@ -459,13 +314,683 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-01-05",
+      "time": "2026-01-05T04:56:07.895557+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-05",
+      "time": "2026-01-05T05:52:23.041597+00:00",
+      "format": "digest",
+      "sources": [
+        "krebsonsecurity.com",
+        "unit42.paloaltonetworks.com"
+      ]
+    },
+    {
+      "date": "2026-01-05",
+      "time": "2026-01-05T11:43:35.467732+00:00",
+      "format": "lessons_learned",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-06",
+      "time": "2026-01-06T04:16:58.771930+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "www.cncf.io",
+        "blog.rapid7.com",
+        "blog.checkpoint.com",
+        "www.crowdstrike.com"
+      ]
+    },
+    {
+      "date": "2026-01-06",
+      "time": "2026-01-06T11:41:18.490963+00:00",
+      "format": "lessons_learned",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "time": "2026-01-07T04:26:11.369952+00:00",
+      "format": "digest",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "time": "2026-01-07T11:43:01.787522+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "kubernetes.io",
+        "www.hashicorp.com",
+        "about.gitlab.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-08",
+      "time": "2026-01-08T04:16:45.339892+00:00",
+      "format": "digest",
+      "sources": [
+        "www.cncf.io",
+        "kubernetes.io",
+        "www.cncf.io",
+        "www.cncf.io",
+        "www.docker.com"
+      ]
+    },
+    {
+      "date": "2026-01-08",
+      "time": "2026-01-08T11:43:53.987486+00:00",
+      "format": "digest",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-09",
+      "time": "2026-01-09T04:27:23.316765+00:00",
+      "format": "digest",
+      "sources": [
+        "martinfowler.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "snyk.io",
+        "kubernetes.io"
+      ]
+    },
+    {
+      "date": "2026-01-09",
+      "time": "2026-01-09T11:43:42.514793+00:00",
+      "format": "digest",
+      "sources": [
+        "aws.amazon.com",
+        "www.aquasec.com",
+        "azure.microsoft.com",
+        "snyk.io",
+        "www.sonarsource.com",
+        "blog.gitguardian.com"
+      ]
+    },
+    {
+      "date": "2026-01-10",
+      "time": "2026-01-10T06:53:35.450828+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "about.gitlab.com",
+        "www.hashicorp.com",
+        "about.gitlab.com",
+        "engineering.atspotify.com",
+        "kubernetes.io"
+      ]
+    },
+    {
+      "date": "2026-01-11",
+      "time": "2026-01-11T06:54:46.261454+00:00",
+      "format": "lessons_learned",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-12",
+      "time": "2026-01-12T04:38:37.412256+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "martinfowler.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-12",
+      "time": "2026-01-12T11:43:42.298281+00:00",
+      "format": "digest",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-01-13",
+      "time": "2026-01-13T04:26:33.053824+00:00",
+      "format": "digest",
+      "sources": [
+        "www.docker.com",
+        "azure.microsoft.com",
+        "www.cncf.io",
+        "www.cncf.io",
+        "blog.gitguardian.com"
+      ]
+    },
+    {
+      "date": "2026-01-13",
+      "time": "2026-01-13T11:43:13.365151+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "blog.rapid7.com",
+        "blog.checkpoint.com",
+        "www.infoq.com",
+        "microservices.io"
+      ]
+    },
+    {
+      "date": "2026-01-14",
+      "time": "2026-01-14T04:37:04.915443+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.checkpoint.com",
+        "www.hashicorp.com",
+        "www.hashicorp.com",
+        "blogs.microsoft.com",
+        "blog.qualys.com",
+        "unit42.paloaltonetworks.com"
+      ]
+    },
+    {
+      "date": "2026-01-14",
+      "time": "2026-01-14T11:44:07.550382+00:00",
+      "format": "digest",
+      "sources": [
+        "engineering.fb.com",
+        "www.hashicorp.com",
+        "blog.gitguardian.com",
+        "www.cncf.io",
+        "www.hashicorp.com",
+        "blog.google"
+      ]
+    },
+    {
+      "date": "2026-01-15",
+      "time": "2026-01-15T04:30:38.070399+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.rapid7.com",
+        "www.docker.com",
+        "blog.rapid7.com",
+        "krebsonsecurity.com",
+        "blog.checkpoint.com",
+        "www.crowdstrike.com"
+      ]
+    },
+    {
+      "date": "2026-01-15",
+      "time": "2026-01-15T11:43:46.830686+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "about.gitlab.com",
+        "about.gitlab.com",
+        "about.gitlab.com",
+        "about.gitlab.com",
+        "about.gitlab.com"
+      ]
+    },
+    {
+      "date": "2026-01-16",
+      "time": "2026-01-16T04:27:22.407569+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "blog.checkpoint.com",
+        "blog.qualys.com",
+        "www.paloaltonetworks.com",
+        "blogs.microsoft.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-16",
+      "time": "2026-01-16T11:42:07.732559+00:00",
+      "format": "digest",
+      "sources": [
+        "aws.amazon.com",
+        "github.blog",
+        "www.cncf.io",
+        "blogs.microsoft.com",
+        "www.docker.com",
+        "googleprojectzero.blogspot.com"
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "time": "2026-01-17T06:53:34.547274+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "about.gitlab.com",
+        "about.gitlab.com",
+        "www.cncf.io",
+        "www.cncf.io",
+        "engineering.fb.com"
+      ]
+    },
+    {
+      "date": "2026-01-18",
+      "time": "2026-01-18T06:54:31.536180+00:00",
+      "format": "digest",
+      "sources": [
+        "www.docker.com",
+        "blog.rapid7.com",
+        "unit42.paloaltonetworks.com",
+        "blog.checkpoint.com",
+        "blog.cloudflare.com",
+        "www.docker.com"
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "time": "2026-01-19T04:37:42.437033+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "time": "2026-01-19T11:43:59.746280+00:00",
+      "format": "digest",
+      "sources": [
+        "www.crowdstrike.com",
+        "feeds.feedburner.com",
+        "www.crowdstrike.com",
+        "www.crowdstrike.com",
+        "www.crowdstrike.com",
+        "www.crowdstrike.com"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "time": "2026-01-20T04:34:47.927982+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.cncf.io"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "time": "2026-01-21T08:28:23.810702+00:00",
+      "format": "digest",
+      "sources": [
+        "microservices.io",
+        "www.infoq.com",
+        "www.infoq.com",
+        "blog.cloudflare.com",
+        "blog.checkpoint.com",
+        "blog.qualys.com"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "time": "2026-01-21T09:49:22.224363+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "www.cncf.io",
+        "www.cncf.io",
+        "www.paloaltonetworks.com",
+        "www.mend.io",
+        "blogs.microsoft.com"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "time": "2026-01-21T11:47:02.958655+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.cncf.io",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "time": "2026-01-22T04:36:33.809504+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.rapid7.com",
+        "blog.checkpoint.com",
+        "blog.newrelic.com",
+        "blog.newrelic.com"
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "time": "2026-01-22T09:14:10.431855+00:00",
+      "format": "digest",
+      "sources": [
+        "www.cncf.io",
+        "kubernetes.io",
+        "kubernetes.io",
+        "kubernetes.io"
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "time": "2026-01-22T11:45:51.781261+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "snyk.io",
+        "martinfowler.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "time": "2026-01-22T12:23:49.768213+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "unit42.paloaltonetworks.com",
+        "blogs.microsoft.com",
+        "blogs.microsoft.com",
+        "www.infoq.com",
+        "www.crowdstrike.com"
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "time": "2026-01-22T12:49:13.245362+00:00",
+      "format": "digest",
+      "sources": [
+        "unit42.paloaltonetworks.com",
+        "feeds.feedburner.com"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "time": "2026-01-23T09:50:32.833008+00:00",
+      "format": "digest",
+      "sources": [
+        "martinfowler.com",
+        "www.docker.com",
+        "www.infoq.com",
+        "www.cncf.io",
+        "www.docker.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "time": "2026-01-23T10:04:03.091842+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.rapid7.com",
+        "blog.checkpoint.com",
+        "blog.checkpoint.com",
+        "engineering.atspotify.com",
+        "blogs.microsoft.com",
+        "www.hashicorp.com"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "time": "2026-01-23T10:15:51.997098+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.newrelic.com"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "time": "2026-01-23T10:27:24.144985+00:00",
+      "format": "digest",
+      "sources": [
+        "www.cncf.io"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "time": "2026-01-23T10:49:02.835622+00:00",
+      "format": "digest",
+      "sources": [
+        "www.sonarsource.com",
+        "blog.gitguardian.com",
+        "www.sonarsource.com"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "time": "2026-01-23T11:04:00.173633+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "time": "2026-01-23T11:46:19.842702+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "time": "2026-01-23T12:04:59.385298+00:00",
+      "format": "digest",
+      "sources": [
+        "www.cncf.io",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-24",
+      "time": "2026-01-24T06:54:54.948219+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.rapid7.com",
+        "blog.checkpoint.com",
+        "krebsonsecurity.com"
+      ]
+    },
+    {
+      "date": "2026-01-24",
+      "time": "2026-01-24T13:15:23.268035+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-25",
+      "time": "2026-01-25T06:57:27.418527+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-26",
+      "time": "2026-01-26T04:43:34.509336+00:00",
+      "format": "digest",
+      "sources": [
+        "blogs.microsoft.com",
+        "unit42.paloaltonetworks.com",
+        "feeds.feedburner.com",
+        "feeds.feedburner.com",
+        "feeds.feedburner.com"
+      ]
+    },
+    {
+      "date": "2026-01-26",
+      "time": "2026-01-26T11:44:11.693733+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.rapid7.com"
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "time": "2026-01-27T04:35:36.596599+00:00",
+      "format": "digest",
+      "sources": [
+        "www.docker.com",
+        "www.docker.com",
+        "www.docker.com",
+        "www.cncf.io",
+        "krebsonsecurity.com"
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "time": "2026-01-27T11:48:23.267530+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "time": "2026-01-28T04:34:12.680780+00:00",
+      "format": "digest",
+      "sources": [
+        "kubernetes.io",
+        "kubernetes.io",
+        "netflixtechblog.medium.com",
+        "engineering.fb.com",
+        "www.hashicorp.com",
+        "blog.gitguardian.com"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "time": "2026-01-28T11:47:38.791353+00:00",
+      "format": "digest",
+      "sources": [
+        "aws.amazon.com",
+        "blog.rapid7.com",
+        "azure.microsoft.com",
+        "blog.checkpoint.com",
+        "blog.cloudflare.com",
+        "blog.newrelic.com"
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "time": "2026-01-29T04:54:34.110701+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "blog.rapid7.com",
+        "blog.checkpoint.com",
+        "snyk.io",
+        "martinfowler.com"
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "time": "2026-01-29T11:55:24.940819+00:00",
+      "format": "digest",
+      "sources": [
+        "aws.amazon.com",
+        "aws.amazon.com",
+        "aws.amazon.com",
+        "www.cncf.io",
+        "www.infoq.com",
+        "about.gitlab.com"
+      ]
+    },
+    {
+      "date": "2026-01-30",
+      "time": "2026-01-30T04:57:03.035159+00:00",
+      "format": "digest",
+      "sources": [
+        "www.cncf.io",
+        "www.cncf.io",
+        "github.blog",
+        "snyk.io",
+        "dropbox.tech",
+        "blog.gitguardian.com"
+      ]
+    },
+    {
+      "date": "2026-01-30",
+      "time": "2026-01-30T11:51:23.337008+00:00",
+      "format": "digest",
+      "sources": [
+        "www.hashicorp.com"
+      ]
+    },
+    {
+      "date": "2026-01-31",
+      "time": "2026-01-31T07:05:51.874286+00:00",
+      "format": "digest",
+      "sources": [
+        "kubernetes.io",
+        "aws.amazon.com",
+        "kubernetes.io",
+        "blogs.microsoft.com",
+        "googleprojectzero.blogspot.com",
+        "www.docker.com"
+      ]
+    },
+    {
+      "date": "2026-02-01",
+      "time": "2026-02-01T07:14:37.993413+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "microservices.io",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
     }
   ],
-  "posts_created": 19,
-  "last_post_content": "I architect observability for complex distributed systems and share lessons from the journey. Here's...\n\nThe hidden cost of building observability for 100+ microservices that no one calculates: as systems grow, so does the complexity of monitoring and understanding their behavior. I've seen many organizations struggle with this, and it's an issue that requires careful consideration. In my experience, it's not just about adding more tools, but about creating a cohesive strategy.\n\n\nTechnical constraints and requirements are numerous, including handling large volumes of data, providing real-time insights, and supporting multiple formats and protocols. Some key considerations include:\n* Scalability and performance\n* Data retention and storage\n* Security and access control\n\n\nOur solution architecture consists of a centralized logging and monitoring platform, with distributed agents and collectors to gather data from each microservice. This allows us to consolidate and analyze data from multiple sources, and provide a unified view of system performance.\n\n\nImplementation was not without challenges, including handling variations in data format and quality, and ensuring seamless integration with existing systems. However, by leveraging open-source tools and collaborating with cross-functional teams, we were able to overcome these hurdles and achieve significant results.\n\n\nOur performance metrics show a significant reduction in mean time to detect (MTTD) and mean time to resolve (MTTR) issues, as well as improved overall system uptime and availability. These results have been instrumental in informing our lessons learned and guiding future improvements.\n\n\nLooking back, one key takeaway is the importance of iterative development and continuous refinement. By embracing a culture of experimentation and learning, we can stay ahead of the curve and adapt to evolving system requirements.\n\n\nWhat other solutions have you used for similar problems?\n\n\ud83d\udce8 Subscribe to get weekly DevOps news and insights directly to your inbox!\n\ud83d\udc49 Subscribe: https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook\n\n#grafana #monitoring #cloudengineeering #microservices #observability",
-  "last_post_format": "technical_deep_dives",
+  "posts_created": 78,
+  "last_post_content": "\ud83d\ude80 Signals shaping modern engineering.\nPlatform architects surface actionable insights for resilient systems.\n\nCollaboration wins:\n1. Presentation: WASM Components are a FaaS' Best Friend\nContext: Laurent Doguin shares why Wasm\u2019s cold-start performance and security model make it the ideal FaaS runtime. He discusses the WebAssembly Component Model for polyglot...\nImpact: strengthens security posture and reduces risk.\n\ud83d\udd17 https://www.infoq.com/presentations/wasm-components-faas/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2. OpenEverest: Open Source Platform for Database Automation\nContext: Percona recently announced OpenEverest, an open-source platform for automated database provisioning and management that supports multiple database technologies.\nImpact: improves infrastructure reliability and consistency.\n\ud83d\udd17 https://www.infoq.com/news/2026/01/openeverest-kubernetes-databases/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n3. My GenAI development workflow: Idea to Code\nContext: Idea to Code is my GenAI-based development workflow. For example, I recently used this workflow to implement distributed tracing support for the Eventuate platform using...\nImpact: improves visibility, debugging speed, and reliability.\n\ud83d\udd17 http://microservices.io//post/architecture/2026/01/29/about-idea-to-code.html\n\n\ud83d\udc8c Don\u2019t miss out \u2013 get DevOps news in your inbox!\n\ud83d\udc49 Sign up: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\nWhich trend resonates most with your team?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "microservices.io",
+    "www.infoq.com"
   ],
-  "last_post_timestamp": "2026-01-04T06:53:37.750452+00:00"
+  "last_post_timestamp": "2026-02-01T07:14:37.994371+00:00"
 }
