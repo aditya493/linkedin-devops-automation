@@ -1,12 +1,12 @@
 {
-  "total_posts": 106,
-  "posts_today": 1,
+  "total_posts": 107,
+  "posts_today": 2,
   "last_post_date": "2026-02-02",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 68,
+    "digest": 69,
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 3,
@@ -14,7 +14,7 @@
     "controversial_takes": 1
   },
   "sources_used": {
-    "www.infoq.com": 102,
+    "www.infoq.com": 107,
     "kubernetes.io": 22,
     "www.docker.com": 15,
     "krebsonsecurity.com": 6,
@@ -34,7 +34,7 @@
     "www.hashicorp.com": 14,
     "growth_plan": 16,
     "snyk.io": 6,
-    "netflixtechblog.medium.com": 2,
+    "netflixtechblog.medium.com": 3,
     "about.gitlab.com": 17,
     "martinfowler.com": 5,
     "www.aquasec.com": 1,
@@ -52,14 +52,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-24",
-      "time": "2025-12-24T05:38:51.974080+00:00",
-      "format": "lessons",
-      "sources": [
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2025-12-24",
       "time": "2025-12-24T05:50:59.554547+00:00",
@@ -988,14 +980,27 @@
         "www.infoq.com",
         "www.infoq.com"
       ]
+    },
+    {
+      "date": "2026-02-02",
+      "time": "2026-02-02T11:58:35.745006+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "netflixtechblog.medium.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
     }
   ],
-  "posts_created": 79,
-  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nIndustry leaders optimize tech stacks and debunk myths in the DevOps trenches. Here\u2019s what matters.\n\nAutomation strategies:\n1. Preventing network outages: How we use New Relic to monitor our multi-cloud infrastructure\nContext: Learn how we built Weather Station, an internal network monitoring system that achieved 90% faster incident detection across our multi-cloud infrastructure.\nImpact: reduces incident risk and improves MTTR.\n\ud83d\udd17 https://newrelic.com/blog/observability/preventing-network-outages-how-we-use-new-relic-to-monitor-our-multi-cloud-infrastructure\n\n2. Setting Up AWS Distro for OpenTelemetry with Container-Based Lambda Functions and New Relic\nContext: Learn how to implement AWS Distro for OpenTelemetry in container-based Lambda functions using multi-stage Docker builds for full observability.\nImpact: helps you run clusters more reliably and efficiently.\n\ud83d\udd17 https://newrelic.com/blog/infrastructure-monitoring/setting-up-aws-distro-for-opentelemetry-with-container-based-lambda-functions-and-new-relic\n\n3. Anthropic Releases Updated Constitution for Claude\nContext: Anthropic has published an updated constitution for Claude, its AI assistant, providing a structured framework that guides behavior, reasoning, and training.\nImpact: improves delivery speed without sacrificing safety.\n\ud83d\udd17 https://www.infoq.com/news/2026/01/anthropic-constitution/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udc8c Get weekly DevOps insights delivered to your inbox \u2013 subscribe to stay ahead!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\nWhat did we miss?",
+  "posts_created": 80,
+  "last_post_content": "\ud83e\udde9 Architecture patterns for scale and resilience.\nPlatform architects surface actionable insights for resilient systems.\n\nWhat caught our attention:\n1. Cloudflare's Matrix Homeserver Demo Sparks Debate over AI-Generated Code Claims\nContext: A Cloudflare blog post claiming a \"production-grade\" Matrix homeserver on Workers didn't survive community scrutiny. Missing federation, incomplete encryption, and TODO...\nImpact: helps you optimize cloud reliability and cost.\n\ud83d\udd17 https://www.infoq.com/news/2026/02/cloudflare-matrix-homeserver-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2. Data Bridge: How Netflix simplifies data movement\nContext: By Emmie Dong , Vlad Sydorenko , Leandro Taveras , Puneet Zaroo In this post, we introduce Data Bridge \u2014 Netflix\u2019s unified control plane that simplifies and standardizes data...\nImpact: practical signal for building reliable systems.\n\ud83d\udd17 https://netflixtechblog.com/data-bridge-how-netflix-simplifies-data-movement-36d10d91c313?source=rss-c3aeaf49d8a4------2\n\n3. Podcast: Developers Can Improve the ESG Aspects of Software By Tackling Early Ethical Debt\nContext: Erica Pisani, host of the Performance and Sustainability track at QCon London 2025, reflects on lessons from assembling the track and from attending the talks.\nImpact: practical signal for building reliable systems.\n\ud83d\udd17 https://www.infoq.com/podcasts/developers-improve-software-aspects/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udc8c Level up your DevOps game \u2013 subscribe now!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\nWhat\u2019s your take on these developments?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "blog.newrelic.com",
-    "www.infoq.com"
+    "www.infoq.com",
+    "netflixtechblog.medium.com"
   ],
-  "last_post_timestamp": "2026-02-02T05:15:49.199604+00:00"
+  "last_post_timestamp": "2026-02-02T11:58:35.746006+00:00"
 }
