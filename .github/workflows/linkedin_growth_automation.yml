@@ -145,7 +145,7 @@ on:
       growth_plan_probability:
         description: 'Probability of using Growth Plan vs RSS (0=100% RSS, 0.4=40% Growth Plan, 1=100% Growth Plan)'
         required: false
-        default: '0.5'
+        default: '0.8'
         type: choice
         options:
           - '0'
@@ -444,7 +444,7 @@ jobs:
         PLAYBOOK_URL: "https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook"
         
         # Growth Plan vs RSS probability (0=100% RSS, 1=100% Growth Plan)
-        GROWTH_PLAN_PROBABILITY: "${{ github.event.inputs.growth_plan_probability || '0' }}"
+        GROWTH_PLAN_PROBABILITY: "${{ github.event.inputs.growth_plan_probability || '0.8' }}"
         
         # Timing & rate limiting
         DRY_RUN: "${{ github.event.inputs.dry_run || 'false' }}"
