@@ -1,6 +1,6 @@
 {
-  "total_posts": 108,
-  "posts_today": 1,
+  "total_posts": 109,
+  "posts_today": 2,
   "last_post_date": "2026-02-03",
   "formats_used": {
     "case_study": 10,
@@ -10,7 +10,7 @@
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 3,
-    "career_advice": 1,
+    "career_advice": 2,
     "controversial_takes": 1
   },
   "sources_used": {
@@ -32,7 +32,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 15,
-    "growth_plan": 16,
+    "growth_plan": 17,
     "snyk.io": 6,
     "netflixtechblog.medium.com": 3,
     "about.gitlab.com": 18,
@@ -52,15 +52,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-24",
-      "time": "2025-12-24T13:10:01.709295+00:00",
-      "format": "case_study",
-      "sources": [
-        "www.cncf.io",
-        "feeds.feedburner.com"
-      ]
-    },
     {
       "date": "2025-12-25",
       "time": "2025-12-25T05:28:36.535056+00:00",
@@ -998,17 +989,21 @@
         "www.hashicorp.com",
         "blogs.microsoft.com"
       ]
+    },
+    {
+      "date": "2026-02-03",
+      "time": "2026-02-03T11:58:07.356551+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 81,
-  "last_post_content": "\ud83d\udd12 Security, scale, and innovation: the highlights.\nSecurity champions share what shapes the future of operations.\n\nKey developments:\n1. The Chrysalis Backdoor: A Deep Dive into Lotus Blossom\u2019s toolkit\nContext: Rapid7 Labs, together with the Rapid7 MDR team, has uncovered a sophisticated campaign attributed to the Chinese APT group Lotus Blossom.\nImpact: practical signal for building reliable systems.\n\ud83d\udd17 https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit\n\n2. Infostealers without borders: macOS, Python stealers, and platform abuse\nContext: How modern infostealers target macOS systems, leverage Python\u2011based stealers, and abuse trusted platforms and utilities to distribute credential\u2011stealing payloads.\nImpact: practical signal for building reliable systems.\n\ud83d\udd17 https://www.microsoft.com/en-us/security/blog/2026/02/02/infostealers-without-borders-macos-python-stealers-and-platform-abuse/\n\n3. OpenTelemetry Collector vs agent: How to choose the right telemetry approach\nContext: As cloud-native architectures continue to mature, observability has become a foundational requirement rather than an optional add-on.\nImpact: improves visibility, debugging speed, and reliability.\n\ud83d\udd17 https://www.cncf.io/blog/2026/02/02/opentelemetry-collector-vs-agent-how-to-choose-the-right-telemetry-approach/\n\n\ud83d\udc8c Get weekly DevOps insights delivered to your inbox \u2013 subscribe to stay ahead!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\nWhich trend resonates most with your team?",
-  "last_post_format": "digest",
+  "posts_created": 82,
+  "last_post_content": "DevOps practices at scale reveal key patterns. Let's break this down.\n\nAfter analyzing 5 years of DevOps data, here's the truth about from devops to platform engineering: career transition guide:\n\nThe reality is that many DevOps professionals are looking to transition into platform engineering roles, seeking new challenges and opportunities for growth. Teams often find that this transition requires a unique set of skills and strategies. Production experience shows that a well-planned approach is essential for success.\n\n\u2022 Develop a deep understanding of cloud-native technologies\n\u2022 Focus on building skills in areas like Kubernetes and containerization\n\u2022 Stay up-to-date with industry trends and emerging technologies\n\nThe data shows that common mistakes to avoid include lacking a clear understanding of platform engineering principles and failing to develop a strong foundation in programming languages like Java or Python. Evidence suggests that a comprehensive approach to learning and professional development is crucial for success.\n\nResources for getting started include online courses, industry conferences, and professional networking events. Experience reveals that a typical transition timeline can range from 6-18 months, depending on individual circumstances and goals.\n\nWhat's the best career advice you've received in tech?\n\n\ud83d\udce9 Want more DevOps insights like this? Subscribe to my newsletter!\n\ud83d\udc49 Subscribe: https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a\n\ud83d\udcd6 Grab my DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook\n\n#infrastructure #gitops #idp #cloudengineering #automation",
+  "last_post_format": "career_advice",
   "last_post_sources": [
-    "blog.rapid7.com",
-    "www.cncf.io",
-    "blogs.microsoft.com",
-    "www.hashicorp.com",
-    "about.gitlab.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-03T05:04:12.986646+00:00"
+  "last_post_timestamp": "2026-02-03T11:58:07.357476+00:00"
 }
