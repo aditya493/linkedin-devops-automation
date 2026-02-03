@@ -20,6 +20,7 @@
     "https://about.gitlab.com/blog/understanding-agents-foundational-custom-external/",
     "https://about.gitlab.com/blog/understanding-flows-multi-agent-workflows/",
     "https://about.gitlab.com/blog/vulnerability-triage-made-simple-with-gitlab-security-analyst-agent/",
+    "https://about.gitlab.com/blog/whats-new-in-git-2-53-0/",
     "https://aws.amazon.com/blogs/devops/automating-aws-sdk-for-java-v1-to-v2-upgrades-with-aws-transform/",
     "https://aws.amazon.com/blogs/devops/aws-cloudformation-2025-year-in-review/",
     "https://aws.amazon.com/blogs/devops/best-practices-for-deploying-aws-devops-agent-in-production/",
@@ -155,6 +156,7 @@
     "https://www.cncf.io/blog/2026/01/27/navigating-the-ingress-nginx-archival-why-now-is-the-time-to-move-to-cilium/",
     "https://www.cncf.io/blog/2026/01/28/introducing-kthena-llm-inference-for-the-cloud-native-era/",
     "https://www.cncf.io/blog/2026/01/29/from-global-stages-to-a-local-landmark-organizing-kcd-sri-lanka-2025/",
+    "https://www.cncf.io/blog/2026/02/02/opentelemetry-collector-vs-agent-how-to-choose-the-right-telemetry-approach/",
     "https://www.crowdstrike.com/en-us/blog/ai-tool-poisoning/",
     "https://www.crowdstrike.com/en-us/blog/architecture-of-agentic-defense-inside-the-falcon-platform/",
     "https://www.crowdstrike.com/en-us/blog/built-for-scale-powered-by-ai-innovation-driving-falcon-exposure-management/",
@@ -190,6 +192,7 @@
     "https://www.docker.com/blog/run-claude-code-locally-docker-model-runner/",
     "https://www.docker.com/blog/safer-docker-hub-pulls-via-a-sonatype-protected-proxy/",
     "https://www.docker.com/blog/security-is-a-developer-experience-problem-rooted-in-our-foundations/",
+    "https://www.hashicorp.com/blog/hcp-vault-performance-replication-at-global-scale-better-than-diy",
     "https://www.hashicorp.com/blog/how-airfrance-klm-built-secure-automation-platform-global-scale-terraform-vault-ansible",
     "https://www.hashicorp.com/blog/how-geico-lowered-its-300m-cloud-spend-and-decoupled-security-from-the-network",
     "https://www.hashicorp.com/blog/how-resilient-is-hcp-vault-during-real-aws-regional-outages",
@@ -318,6 +321,8 @@
     "https://www.microsoft.com/en-us/security/blog/2026/01/22/microsoft-security-success-stories-why-integrated-security-is-the-foundation-of-ai-transformation/",
     "https://www.microsoft.com/en-us/security/blog/2026/01/23/runtime-risk-realtime-defense-securing-ai-agents/",
     "https://www.microsoft.com/en-us/security/blog/2026/01/29/turning-threat-reports-detection-insights-ai/",
+    "https://www.microsoft.com/en-us/security/blog/2026/01/30/case-study-securing-ai-application-supply-chains/",
+    "https://www.microsoft.com/en-us/security/blog/2026/02/02/infostealers-without-borders-macos-python-stealers-and-platform-abuse/",
     "https://www.pagerduty.com/blog/ai/scaling-ai-operations-beyond-the-pilot-phase/",
     "https://www.paloaltonetworks.com/blog/cloud-security/ai-security-gap-cloud-models-agents/",
     "https://www.paloaltonetworks.com/blog/cloud-security/application-security-veracode-partnership/",
@@ -331,6 +336,7 @@
     "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-01-16-2025",
     "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-01-23-2026",
     "https://www.rapid7.com/blog/post/tr-beyond-devices-exploring-new-security-risks-interconnected-iot-ces-2026",
+    "https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit",
     "https://www.rapid7.com/blog/post/ve-patch-tuesday-windows-backwards-compatibility-challenge",
     "https://www.sonarsource.com/blog/ai-coding-trust-gap/",
     "https://www.sonarsource.com/blog/secrets-detection-cli-beta/",
@@ -346,12 +352,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "b4ababdc4e3b": "2026-01-20T04:34:47.926881+00:00",
-      "67b0a2fb20ed": "2026-01-20T04:34:47.926986+00:00",
-      "38bbece5d2a3": "2026-01-20T04:34:47.927062+00:00",
-      "d851243c5041": "2026-01-20T04:34:47.927137+00:00",
-      "0d2bfb01c6f2": "2026-01-20T04:34:47.927205+00:00",
-      "1b4ede017199": "2026-01-20T04:34:47.927260+00:00",
       "d3baa0b0ab58": "2026-01-21T08:28:23.809553+00:00",
       "041fcc386118": "2026-01-21T08:28:23.809692+00:00",
       "e9b65cbbfac2": "2026-01-21T08:28:23.809779+00:00",
@@ -490,10 +490,16 @@
       "85ef8ced4d94": "2026-02-02T11:58:35.743630+00:00",
       "0607ba6d1219": "2026-02-02T11:58:35.743736+00:00",
       "bde263559e83": "2026-02-02T11:58:35.743801+00:00",
-      "cccebd2de8bf": "2026-02-02T11:58:35.743873+00:00"
+      "cccebd2de8bf": "2026-02-02T11:58:35.743873+00:00",
+      "d769b62f7b90": "2026-02-03T05:04:12.984150+00:00",
+      "56567ab12ef3": "2026-02-03T05:04:12.984269+00:00",
+      "77b0463cf9f8": "2026-02-03T05:04:12.984361+00:00",
+      "77554d0475ec": "2026-02-03T05:04:12.984456+00:00",
+      "45db025a4e36": "2026-02-03T05:04:12.984540+00:00",
+      "fbefbde73888": "2026-02-03T05:04:12.984619+00:00"
     },
-    "last_post_id": "urn:li:share:7424058654334689280",
-    "last_posted_at_utc": "2026-02-02T11:58:35.743920+00:00",
+    "last_post_id": "urn:li:share:7424316760176209920",
+    "last_posted_at_utc": "2026-02-03T05:04:12.984722+00:00",
     "last_format": "digest"
   }
 }

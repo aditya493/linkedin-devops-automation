@@ -1,12 +1,12 @@
 {
-  "total_posts": 107,
-  "posts_today": 2,
-  "last_post_date": "2026-02-02",
+  "total_posts": 108,
+  "posts_today": 1,
+  "last_post_date": "2026-02-03",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 69,
+    "digest": 70,
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 3,
@@ -26,16 +26,16 @@
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 8,
-    "www.cncf.io": 27,
-    "blog.rapid7.com": 12,
+    "www.cncf.io": 28,
+    "blog.rapid7.com": 13,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
-    "www.hashicorp.com": 14,
+    "www.hashicorp.com": 15,
     "growth_plan": 16,
     "snyk.io": 6,
     "netflixtechblog.medium.com": 3,
-    "about.gitlab.com": 17,
+    "about.gitlab.com": 18,
     "martinfowler.com": 5,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 3,
@@ -43,7 +43,7 @@
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 2,
     "microservices.io": 3,
-    "blogs.microsoft.com": 9,
+    "blogs.microsoft.com": 11,
     "www.paloaltonetworks.com": 2,
     "github.blog": 2,
     "googleprojectzero.blogspot.com": 2,
@@ -52,14 +52,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-24",
-      "time": "2025-12-24T05:50:59.554547+00:00",
-      "format": "digest",
-      "sources": [
-        "unit42.paloaltonetworks.com"
-      ]
-    },
     {
       "date": "2025-12-24",
       "time": "2025-12-24T13:10:01.709295+00:00",
@@ -993,14 +985,30 @@
         "www.infoq.com",
         "www.infoq.com"
       ]
+    },
+    {
+      "date": "2026-02-03",
+      "time": "2026-02-03T05:04:12.985658+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.rapid7.com",
+        "blogs.microsoft.com",
+        "www.cncf.io",
+        "about.gitlab.com",
+        "www.hashicorp.com",
+        "blogs.microsoft.com"
+      ]
     }
   ],
-  "posts_created": 80,
-  "last_post_content": "\ud83e\udde9 Architecture patterns for scale and resilience.\nPlatform architects surface actionable insights for resilient systems.\n\nWhat caught our attention:\n1. Cloudflare's Matrix Homeserver Demo Sparks Debate over AI-Generated Code Claims\nContext: A Cloudflare blog post claiming a \"production-grade\" Matrix homeserver on Workers didn't survive community scrutiny. Missing federation, incomplete encryption, and TODO...\nImpact: helps you optimize cloud reliability and cost.\n\ud83d\udd17 https://www.infoq.com/news/2026/02/cloudflare-matrix-homeserver-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2. Data Bridge: How Netflix simplifies data movement\nContext: By Emmie Dong , Vlad Sydorenko , Leandro Taveras , Puneet Zaroo In this post, we introduce Data Bridge \u2014 Netflix\u2019s unified control plane that simplifies and standardizes data...\nImpact: practical signal for building reliable systems.\n\ud83d\udd17 https://netflixtechblog.com/data-bridge-how-netflix-simplifies-data-movement-36d10d91c313?source=rss-c3aeaf49d8a4------2\n\n3. Podcast: Developers Can Improve the ESG Aspects of Software By Tackling Early Ethical Debt\nContext: Erica Pisani, host of the Performance and Sustainability track at QCon London 2025, reflects on lessons from assembling the track and from attending the talks.\nImpact: practical signal for building reliable systems.\n\ud83d\udd17 https://www.infoq.com/podcasts/developers-improve-software-aspects/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udc8c Level up your DevOps game \u2013 subscribe now!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\nWhat\u2019s your take on these developments?",
+  "posts_created": 81,
+  "last_post_content": "\ud83d\udd12 Security, scale, and innovation: the highlights.\nSecurity champions share what shapes the future of operations.\n\nKey developments:\n1. The Chrysalis Backdoor: A Deep Dive into Lotus Blossom\u2019s toolkit\nContext: Rapid7 Labs, together with the Rapid7 MDR team, has uncovered a sophisticated campaign attributed to the Chinese APT group Lotus Blossom.\nImpact: practical signal for building reliable systems.\n\ud83d\udd17 https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit\n\n2. Infostealers without borders: macOS, Python stealers, and platform abuse\nContext: How modern infostealers target macOS systems, leverage Python\u2011based stealers, and abuse trusted platforms and utilities to distribute credential\u2011stealing payloads.\nImpact: practical signal for building reliable systems.\n\ud83d\udd17 https://www.microsoft.com/en-us/security/blog/2026/02/02/infostealers-without-borders-macos-python-stealers-and-platform-abuse/\n\n3. OpenTelemetry Collector vs agent: How to choose the right telemetry approach\nContext: As cloud-native architectures continue to mature, observability has become a foundational requirement rather than an optional add-on.\nImpact: improves visibility, debugging speed, and reliability.\n\ud83d\udd17 https://www.cncf.io/blog/2026/02/02/opentelemetry-collector-vs-agent-how-to-choose-the-right-telemetry-approach/\n\n\ud83d\udc8c Get weekly DevOps insights delivered to your inbox \u2013 subscribe to stay ahead!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\nWhich trend resonates most with your team?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "www.infoq.com",
-    "netflixtechblog.medium.com"
+    "blog.rapid7.com",
+    "www.cncf.io",
+    "blogs.microsoft.com",
+    "www.hashicorp.com",
+    "about.gitlab.com"
   ],
-  "last_post_timestamp": "2026-02-02T11:58:35.746006+00:00"
+  "last_post_timestamp": "2026-02-03T05:04:12.986646+00:00"
 }
