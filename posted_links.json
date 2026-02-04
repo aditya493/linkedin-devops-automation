@@ -99,6 +99,7 @@
     "https://kubernetes.io/blog/2026/01/28/experimenting-gateway-api-with-kind/",
     "https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/",
     "https://kubernetes.io/blog/2026/01/30/new-cgroup-v1-to-v2-cpu-conversion-formula/",
+    "https://kubernetes.io/blog/2026/02/03/introducing-node-readiness-controller/",
     "https://martinfowler.com/articles/2025-music.html",
     "https://martinfowler.com/articles/convo-what-how.html",
     "https://martinfowler.com/bliki/ExcessiveBold.html",
@@ -110,6 +111,7 @@
     "https://newrelic.com/blog/ai/new-relic-ai-impact-report-2026",
     "https://newrelic.com/blog/dem/observability-for-chatgpt-apps-in-the-age-of-agentic-ai",
     "https://newrelic.com/blog/infrastructure-monitoring/network-observability-for-engineers-01",
+    "https://newrelic.com/blog/infrastructure-monitoring/network-observability-for-engineers-03",
     "https://newrelic.com/blog/infrastructure-monitoring/setting-up-aws-distro-for-opentelemetry-with-container-based-lambda-functions-and-new-relic",
     "https://newrelic.com/blog/news/browser-consent-mode-allows-for-flexibility-in-evolving-privacy-regulations",
     "https://newrelic.com/blog/observability/aws-reinvent-2025-updates",
@@ -129,6 +131,7 @@
     "https://unit42.paloaltonetworks.com/real-time-malicious-javascript-through-llms/",
     "https://unit42.paloaltonetworks.com/social-engineering-payroll-pirates/",
     "https://unit42.paloaltonetworks.com/vvs-stealer/",
+    "https://uptimerobot.com/blog/website-maintenance-guide/",
     "https://www.aquasec.com/blog/cloud-threat-detection-and-the-growing-role-of-secops/",
     "https://www.cncf.io/announcements/2025/12/17/cncf-welcomes-12-new-silver-members-emphasizing-a-growing-need-for-observability-and-automation/",
     "https://www.cncf.io/announcements/2026/01/07/viettel-joins-the-cloud-native-computing-foundation-as-a-gold-member/",
@@ -209,6 +212,7 @@
     "https://www.infoq.com/articles/evolution-backend-streaming-application/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/friction-fix/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/preventing-data-exfiltration-google-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/articles/skeleton-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/why-ml-projects-fail-production/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/minibooks/architecture-age-ai-opportunity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2025/12/agentic-ai-foundation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -289,6 +293,7 @@
     "https://www.infoq.com/news/2026/01/uber-mobile-analytics-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/01/uber-network-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/01/x402-agentic-http-payments/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/02/airbnb-global-payaslocal/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/02/cloudflare-matrix-homeserver-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/2025-year-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/ai-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -307,6 +312,7 @@
     "https://www.infoq.com/presentations/liquid-theme-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/llm-ai-africa/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/one-testing-environment/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/presentations/patterns-organizational-change/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/solving-cloud-infrastructure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/wasm-components-faas/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.mend.io/blog/introducing-mend-io-ai-security-maturity-survey/",
@@ -497,10 +503,16 @@
       "77554d0475ec": "2026-02-03T05:04:12.984456+00:00",
       "45db025a4e36": "2026-02-03T05:04:12.984540+00:00",
       "fbefbde73888": "2026-02-03T05:04:12.984619+00:00",
-      "59389dbaafd0": "2026-02-03T11:58:07.355444+00:00"
+      "59389dbaafd0": "2026-02-03T11:58:07.355444+00:00",
+      "82504fed9ecf": "2026-02-04T04:57:04.415469+00:00",
+      "2f32127c5fa4": "2026-02-04T04:57:04.415583+00:00",
+      "aa7befda8896": "2026-02-04T04:57:04.415671+00:00",
+      "4889ffe4446c": "2026-02-04T04:57:04.415777+00:00",
+      "f9073ee734e4": "2026-02-04T04:57:04.415864+00:00",
+      "55bf2ee51b8b": "2026-02-04T04:57:04.415937+00:00"
     },
-    "last_post_id": "urn:li:share:7424420923035922432",
-    "last_posted_at_utc": "2026-02-03T11:58:07.355574+00:00",
-    "last_format": "career_advice"
+    "last_post_id": "urn:li:share:7424677350069678080",
+    "last_posted_at_utc": "2026-02-04T04:57:04.415982+00:00",
+    "last_format": "digest"
   }
 }
