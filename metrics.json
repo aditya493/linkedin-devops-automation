@@ -1,6 +1,6 @@
 {
-  "total_posts": 110,
-  "posts_today": 1,
+  "total_posts": 111,
+  "posts_today": 2,
   "last_post_date": "2026-02-04",
   "formats_used": {
     "case_study": 10,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 3,
     "industry_predictions": 3,
     "career_advice": 2,
-    "controversial_takes": 1
+    "controversial_takes": 2
   },
   "sources_used": {
     "www.infoq.com": 110,
@@ -32,7 +32,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 15,
-    "growth_plan": 17,
+    "growth_plan": 18,
     "snyk.io": 6,
     "netflixtechblog.medium.com": 3,
     "about.gitlab.com": 18,
@@ -53,18 +53,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-25",
-      "time": "2025-12-25T07:34:14.671071+00:00",
-      "format": "case_study",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2025-12-25",
       "time": "2025-12-25T13:08:46.318517+00:00",
@@ -1003,16 +991,21 @@
         "www.infoq.com",
         "blog.uptimerobot.com"
       ]
+    },
+    {
+      "date": "2026-02-04",
+      "time": "2026-02-04T11:57:27.535472+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 83,
-  "last_post_content": "\ud83d\udd12 Security, scale, and innovation: the highlights.\nSecurity champions share what shapes the future of operations.\n\nKey developments:\n1. Airbnb Expands Global Checkout with \u201cPay as a Local,\u201d Scaling to 220 Markets in 14 Months\nContext: Airbnb expands its global checkout with the \u201cPay as a Local\u201d initiative, supporting over 20 locally preferred payment methods across 220 markets.\nImpact: practical signal for building reliable systems.\n\ud83d\udd17 https://www.infoq.com/news/2026/02/airbnb-global-payaslocal/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2. Introducing Node Readiness Controller\nContext: In the standard Kubernetes model, a node\u2019s suitability for workloads hinges on a single binary &quot;Ready&quot; condition. However, in modern Kubernetes environments, nodes...\nImpact: helps you run clusters more reliably and efficiently.\n\ud83d\udd17 https://kubernetes.io/blog/2026/02/03/introducing-node-readiness-controller/\n\n3. Unified Observability: Seeing the Whole Picture\nContext: Break down data silos and end the blame game. Learn how a unified platform correlates network, infrastructure, and app data to solve issues in minutes.\nImpact: improves visibility, debugging speed, and reliability.\n\ud83d\udd17 https://newrelic.com/blog/infrastructure-monitoring/network-observability-for-engineers-03\n\n\ud83d\udc8c Level up your DevOps game \u2013 subscribe now!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\nWhat did we miss?",
-  "last_post_format": "digest",
+  "posts_created": 84,
+  "last_post_content": "In 2026, the microservices hype: when monoliths win is no longer optional. Here's why:\n\n**Monolithic architectures are often more efficient than microservices**. The data shows that monoliths can be more effective in certain situations, such as small-scale applications or those with simple functionality.\n\n\u2022 Teams often find that monoliths are easier to develop and maintain\n\u2022 The reality is that microservices can introduce unnecessary complexity\n\u2022 Production experience shows that monoliths can be more reliable in certain contexts\n\nThe counterargument is that microservices provide greater scalability and flexibility, but evidence suggests that this is not always the case.\n\nExperience reveals that monoliths can be a better choice when the requirements are well-defined and unlikely to change.\n\nChallenge this thinking - what's missing here?\n\n\ud83d\udce9 Get weekly DevOps insights delivered to your inbox!\n\ud83d\udc49 Subscribe: https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a\n\ud83d\udcd6 Grab my DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook\n\n#sre #serverless #automation #scalability #devops",
+  "last_post_format": "controversial_takes",
   "last_post_sources": [
-    "www.infoq.com",
-    "blog.newrelic.com",
-    "blog.uptimerobot.com",
-    "kubernetes.io"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-04T04:57:04.417913+00:00"
+  "last_post_timestamp": "2026-02-04T11:57:27.536404+00:00"
 }
