@@ -4,11 +4,9 @@ on:
   schedule:
     # GitHub Actions uses UTC time! IST = UTC+5:30
     #    9 AM IST  = 03:30 UTC
-    #    12 PM IST = 06:30 UTC
     #    5 PM IST  = 11:30 UTC
-    - cron: '30 3 * * 1-5'   # 9 AM IST weekdays (morning posting)
-    - cron: '30 11 * * 1-5'  # 5 PM IST weekdays (evening engagement)
-    - cron: '30 6 * * 0,6'   # 2 PM IST weekends (weekend engagement)
+    - cron: '30 3 * * *'    # 9 AM IST daily (morning posting)
+    - cron: '30 11 * * *'   # 5 PM IST daily (evening engagement)
   
   workflow_dispatch:
     inputs:
