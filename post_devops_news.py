@@ -809,7 +809,7 @@ ROTATE_HASHTAGS = os.environ.get("ROTATE_HASHTAGS", "true").lower() == "true"
 INCLUDE_PERSONA = os.environ.get("INCLUDE_PERSONA", "true").lower() == "true"
 
 # Post formats
-POST_FORMATS_STR = os.environ.get("POST_FORMATS", "digest,deep_dive,quick_tip,case_study,hot_take,lessons,trend_watch,tool_spotlight,did_you_know,community_question,problem_solved,poll,this_vs_that,myth_buster,weekly_recap,milestone,cheat_sheet,before_after,prediction")
+POST_FORMATS_STR = os.environ.get("POST_FORMATS", "digest,deep_dive,quick_tip,case_study,hot_take,lessons,trend_watch,tool_spotlight,did_you_know,community_question,problem_solved,poll,this_vs_that,myth_buster,weekly_recap,milestone,cheat_sheet,before_after,prediction,resource_list,beginner_guide,expert_quote,unpopular_opinion")
 AVAILABLE_POST_FORMATS = [f.strip() for f in POST_FORMATS_STR.split(",") if f.strip()]
 FORCE_FORMAT = os.environ.get("FORCE_FORMAT", "auto")  # auto, or specific format name
 CUSTOM_MESSAGE = os.environ.get("CUSTOM_MESSAGE", "")  # Override with custom message
@@ -1746,6 +1746,10 @@ POST_FORMATS = [
     "cheat_sheet",      # Quick reference cards (high saves)
     "before_after",     # Transformation stories
     "prediction",       # Future trends/forecasts
+    "resource_list",    # Curated resource lists (high saves)
+    "beginner_guide",   # 101-style introductory content
+    "expert_quote",     # Industry leader quotes
+    "unpopular_opinion", # Controversial takes for debates
 ]
 
 # Templates for different formats
@@ -1876,6 +1880,34 @@ FORMAT_HOOKS = {
         "🌅 **WHAT'S NEXT** 🌅",
         "⚡ **2026 OUTLOOK** ⚡",
     ],
+    "resource_list": [
+        "📚 **RESOURCE LIST** 📚",
+        "🔗 **CURATED LINKS** 🔗",
+        "💎 **TOP PICKS** 💎",
+        "📖 **READING LIST** 📖",
+        "🗃️ **RESOURCE VAULT** 🗃️",
+    ],
+    "beginner_guide": [
+        "🌱 **BEGINNER GUIDE** 🌱",
+        "📘 **101 SERIES** 📘",
+        "🎓 **START HERE** 🎓",
+        "🚀 **GETTING STARTED** 🚀",
+        "💡 **FUNDAMENTALS** 💡",
+    ],
+    "expert_quote": [
+        "💬 **EXPERT WISDOM** 💬",
+        "🎤 **INDUSTRY INSIGHT** 🎤",
+        "🧠 **THOUGHT LEADERSHIP** 🧠",
+        "⭐ **WORDS OF WISDOM** ⭐",
+        "🏆 **FROM THE EXPERTS** 🏆",
+    ],
+    "unpopular_opinion": [
+        "🔥 **UNPOPULAR OPINION** 🔥",
+        "💥 **CONTROVERSIAL TAKE** 💥",
+        "🎯 **HOT TAKE ALERT** 🎯",
+        "⚡ **GOING AGAINST THE GRAIN** ⚡",
+        "🤔 **CHANGE MY MIND** 🤔",
+    ],
 }
 
 FORMAT_CTAS = {
@@ -1973,6 +2005,26 @@ FORMAT_CTAS = {
         "Do you agree with this prediction?",
         "What's your bold prediction for this year?",
         "Will this come true? Share your take!",
+    ],
+    "resource_list": [
+        "What resources would you add?",
+        "Bookmark and share with your team!",
+        "Which resource has helped you most?",
+    ],
+    "beginner_guide": [
+        "What would you tell your past self?",
+        "What's the first thing beginners should learn?",
+        "Share your beginner tips below!",
+    ],
+    "expert_quote": [
+        "Do you agree with this perspective?",
+        "What's a quote that shaped your career?",
+        "Share wisdom that changed your thinking!",
+    ],
+    "unpopular_opinion": [
+        "Agree or disagree? Fight me in comments!",
+        "Change my mind - I dare you!",
+        "What's YOUR unpopular opinion?",
     ],
 }
 
@@ -4701,12 +4753,322 @@ def build_prediction_post(items) -> str:
     return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
 
 
+def build_resource_list_post(items) -> str:
+    """Build a curated resource list post - highly saveable."""
+    if not items:
+        return build_digest_post(items)
+    
+    # Resource categories
+    resource_lists = [
+        ("DevOps Learning", [
+            ("📘 The Phoenix Project", "Novel that explains DevOps culture"),
+            ("🎓 Linux Foundation Courses", "Free K8s & cloud training"),
+            ("📺 TechWorld with Nana", "YouTube DevOps tutorials"),
+            ("📖 SRE Book by Google", "Site Reliability Engineering bible"),
+            ("🔧 Katacoda", "Interactive learning scenarios"),
+        ]),
+        ("Kubernetes Resources", [
+            ("📘 Kubernetes Up & Running", "The definitive K8s book"),
+            ("🎮 killer.sh", "CKA/CKAD exam practice"),
+            ("📺 Nana's K8s Course", "Comprehensive video series"),
+            ("🔧 k9s", "Terminal UI for clusters"),
+            ("📖 Learnk8s", "Visual K8s guides"),
+        ]),
+        ("Terraform & IaC", [
+            ("📘 Terraform Up & Running", "Gruntwork's essential guide"),
+            ("🔧 tflint", "Terraform linter"),
+            ("📺 HashiCorp Learn", "Official tutorials"),
+            ("🎮 Spacelift", "IaC management platform"),
+            ("📖 tfenv", "Terraform version manager"),
+        ]),
+        ("Observability Stack", [
+            ("📊 Grafana", "Dashboards and visualization"),
+            ("📈 Prometheus", "Metrics and alerting"),
+            ("🔍 Jaeger", "Distributed tracing"),
+            ("📝 Loki", "Log aggregation"),
+            ("🔔 Alertmanager", "Alert routing"),
+        ]),
+        ("CI/CD Tools", [
+            ("🔄 GitHub Actions", "Native GitHub CI/CD"),
+            ("🚀 ArgoCD", "GitOps for Kubernetes"),
+            ("🔧 Tekton", "Cloud-native pipelines"),
+            ("📦 Harbor", "Container registry"),
+            ("🔐 Vault", "Secrets management"),
+        ]),
+    ]
+    
+    category, resources = random.choice(resource_lists)
+    
+    hooks = [
+        "📚 **RESOURCE LIST** 📚",
+        "🔗 **CURATED LINKS** 🔗",
+        "💎 **TOP PICKS** 💎",
+        "📖 **READING LIST** 📖",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    lines = [
+        hook,
+        f"Essential {category} resources.",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"🎯 **{category}**",
+        "",
+    ]
+    
+    for name, desc in resources:
+        lines.append(f"   {name}")
+        lines.append(f"   _{desc}_")
+        lines.append("")
+    
+    lines.extend([
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        "💡 **Pro tip:** Bookmark this list and revisit when starting new projects!",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **What resources would you add?**"
+    ])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_beginner_guide_post(items) -> str:
+    """Build a beginner-friendly 101 guide post."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    link = item.get("link", "")
+    
+    # Beginner topics
+    beginner_guides = [
+        ("Docker", [
+            "Container = isolated process with its own filesystem",
+            "Image = blueprint, Container = running instance",
+            "Dockerfile = recipe to build images",
+            "docker-compose = run multi-container apps",
+            "Start with official images, customize later",
+        ]),
+        ("Kubernetes", [
+            "Pod = smallest deployable unit (1+ containers)",
+            "Deployment = manages pod replicas",
+            "Service = stable network endpoint",
+            "ConfigMap/Secret = externalize config",
+            "Start with managed K8s (EKS, GKE, AKS)",
+        ]),
+        ("Terraform", [
+            "Infrastructure as Code = version-controlled infra",
+            "State file = source of truth for resources",
+            "Plan before apply - always review changes",
+            "Modules = reusable infrastructure patterns",
+            "Remote state = team collaboration",
+        ]),
+        ("CI/CD", [
+            "CI = Continuous Integration (test on every commit)",
+            "CD = Continuous Delivery/Deployment",
+            "Pipeline = series of automated steps",
+            "Artifacts = build outputs to deploy",
+            "Start simple, add stages as needed",
+        ]),
+        ("Git", [
+            "Commit often, push regularly",
+            "Branches = isolated workspaces",
+            "Pull requests = code review workflow",
+            "Merge vs Rebase - know when to use each",
+            "git stash = save work temporarily",
+        ]),
+    ]
+    
+    topic, concepts = random.choice(beginner_guides)
+    
+    hooks = [
+        "🌱 **BEGINNER GUIDE** 🌱",
+        "📘 **101 SERIES** 📘",
+        "🎓 **START HERE** 🎓",
+        "🚀 **GETTING STARTED** 🚀",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    lines = [
+        hook,
+        f"{topic} fundamentals in 60 seconds.",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"📚 **{topic} 101**",
+        "",
+    ]
+    
+    for i, concept in enumerate(concepts, 1):
+        lines.append(f"   {i}. {concept}")
+    
+    lines.extend([
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"💡 **Next step:** Pick ONE concept and build something small today.",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **What would you tell your past self when starting out?**"
+    ])
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_expert_quote_post(items) -> str:
+    """Build an expert quote / wisdom post."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    link = item.get("link", "")
+    
+    # Industry quotes
+    expert_quotes = [
+        ("Werner Vogels", "CTO, Amazon", 
+         "Everything fails, all the time.", 
+         "Design for failure from day one. Resilience isn't optional."),
+        ("Kelsey Hightower", "Developer Advocate", 
+         "The future of Kubernetes is no Kubernetes.", 
+         "Abstractions will hide complexity. Focus on developer experience."),
+        ("Charity Majors", "CTO, Honeycomb", 
+         "Observability is about being able to ask arbitrary questions.", 
+         "Logs and metrics aren't enough. You need to understand unknown-unknowns."),
+        ("Gene Kim", "Author, The Phoenix Project", 
+         "Improvement of daily work is more important than daily work itself.", 
+         "Invest in automation and tooling. It compounds over time."),
+        ("Liz Rice", "Chief Open Source Officer, Isovalent", 
+         "Security should be built in, not bolted on.", 
+         "Shift-left security catches issues when they're cheapest to fix."),
+        ("Martin Fowler", "ThoughtWorks", 
+         "Any fool can write code that a computer can understand.", 
+         "Good programmers write code that humans can understand."),
+        ("Nicole Forsgren", "Author, Accelerate", 
+         "High performers deploy 208x more frequently.", 
+         "Speed and stability aren't tradeoffs. They reinforce each other."),
+        ("Jez Humble", "Author, Continuous Delivery", 
+         "If it hurts, do it more frequently.", 
+         "Pain in deployments means you need to deploy more, not less."),
+    ]
+    
+    name, title, quote, insight = random.choice(expert_quotes)
+    
+    hooks = [
+        "💬 **EXPERT WISDOM** 💬",
+        "🎤 **INDUSTRY INSIGHT** 🎤",
+        "🧠 **THOUGHT LEADERSHIP** 🧠",
+        "⭐ **WORDS OF WISDOM** ⭐",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    lines = [
+        hook,
+        "Wisdom from industry leaders.",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"📌 **\"{quote}\"**",
+        "",
+        f"   — {name}, {title}",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"💡 **The insight:** {insight}",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **What quote has shaped your engineering career?**"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_unpopular_opinion_post(items) -> str:
+    """Build an unpopular/controversial opinion post to spark debates."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    link = item.get("link", "")
+    
+    # Unpopular opinions
+    opinions = [
+        ("Most startups don't need Kubernetes", 
+         "K8s adds operational complexity most small teams can't handle. Start with managed services or simple containers.",
+         "Sometimes a boring Postgres on a VM beats a sophisticated cloud-native stack."),
+        ("100% code coverage is a waste of time", 
+         "Chasing coverage metrics leads to testing implementation, not behavior. Focus on critical paths.",
+         "A well-tested 60% beats a poorly-tested 100% every time."),
+        ("Microservices are oversold", 
+         "Most teams would ship faster with a well-structured monolith. Distributed systems are hard.",
+         "If you can't build a good monolith, microservices won't save you."),
+        ("YAML is not the problem", 
+         "The problem is lack of abstraction, not the file format. JSON and HCL have the same issues.",
+         "Blame the tooling, not the syntax."),
+        ("DevOps engineers shouldn't exist", 
+         "DevOps is a culture, not a role. Every engineer should own their code in production.",
+         "Platform teams enable, but don't build silos."),
+        ("On-call doesn't have to be painful", 
+         "If on-call is miserable, your architecture and processes need work, not your team.",
+         "Invest in reliability and on-call becomes boring."),
+        ("Most dashboards are useless", 
+         "Teams build dashboards they never look at. Start with alerts, add dashboards for investigation.",
+         "If no one is looking at it, delete it."),
+        ("Terraform state is fine", 
+         "State management is actually well-designed. The problem is teams not following best practices.",
+         "Lock your state, use workspaces properly, stop complaining."),
+    ]
+    
+    opinion, explanation, takeaway = random.choice(opinions)
+    
+    hooks = [
+        "🔥 **UNPOPULAR OPINION** 🔥",
+        "💥 **CONTROVERSIAL TAKE** 💥",
+        "🎯 **HOT TAKE ALERT** 🎯",
+        "🤔 **CHANGE MY MIND** 🤔",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    lines = [
+        hook,
+        "Brace yourself. This might sting.",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"📌 **{opinion}**",
+        "",
+        f"💭 _{explanation}_",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"🎯 **Bottom line:** {takeaway}",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **Agree or disagree? Fight me in comments!**"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
 # Update build_post to include new formats
 def build_post(items, post_format: Optional[str] = None):
     """Build post content based on format with varied styles and error handling."""
     if not post_format:
         # Expanded format options including experimental ones
-        all_formats = AVAILABLE_POST_FORMATS + ["thread", "quote", "news_flash", "trend_watch", "tool_spotlight", "did_you_know", "community_question", "problem_solved", "poll", "this_vs_that", "myth_buster", "weekly_recap", "milestone", "cheat_sheet", "before_after", "prediction"]
+        all_formats = AVAILABLE_POST_FORMATS + ["thread", "quote", "news_flash", "trend_watch", "tool_spotlight", "did_you_know", "community_question", "problem_solved", "poll", "this_vs_that", "myth_buster", "weekly_recap", "milestone", "cheat_sheet", "before_after", "prediction", "resource_list", "beginner_guide", "expert_quote", "unpopular_opinion"]
         # Track and rotate formats for maximum variety
         if not hasattr(build_post, "_used_formats"):
             build_post._used_formats = []
@@ -4767,6 +5129,14 @@ def build_post(items, post_format: Optional[str] = None):
             return build_before_after_post(items)
         elif post_format == "prediction":
             return build_prediction_post(items)
+        elif post_format == "resource_list":
+            return build_resource_list_post(items)
+        elif post_format == "beginner_guide":
+            return build_beginner_guide_post(items)
+        elif post_format == "expert_quote":
+            return build_expert_quote_post(items)
+        elif post_format == "unpopular_opinion":
+            return build_unpopular_opinion_post(items)
         else:
             return build_digest_post(items)
     except Exception as e:
