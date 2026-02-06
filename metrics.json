@@ -1,16 +1,16 @@
 {
-  "total_posts": 113,
+  "total_posts": 115,
   "posts_today": 2,
-  "last_post_date": "2026-02-05",
+  "last_post_date": "2026-02-06",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 71,
+    "digest": 72,
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 4,
-    "career_advice": 3,
+    "career_advice": 4,
     "controversial_takes": 2
   },
   "sources_used": {
@@ -32,7 +32,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 15,
-    "growth_plan": 20,
+    "growth_plan": 22,
     "snyk.io": 6,
     "netflixtechblog.medium.com": 3,
     "about.gitlab.com": 18,
@@ -53,23 +53,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-26",
-      "time": "2025-12-26T06:34:41.635151+00:00",
-      "format": "lessons",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
-    {
-      "date": "2025-12-26",
-      "time": "2025-12-26T07:07:06.942880+00:00",
-      "format": "case_study",
-      "sources": [
-        "www.hashicorp.com"
-      ]
-    },
     {
       "date": "2025-12-26",
       "time": "2025-12-26T08:23:14.856862+00:00",
@@ -999,13 +982,29 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-06",
+      "time": "2026-02-06T05:03:59.954980+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "time": "2026-02-06T12:52:39.872931+00:00",
+      "format": "digest",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 86,
-  "last_post_content": "Container orchestration strategies worth understanding. Let's break this down.\n\nIn 2026, kubernetes vs. the next generation of orchestration is no longer optional. Here's why: the landscape of container management is rapidly evolving. The reality is that new technologies are emerging to challenge the status quo.\n\nThe data shows that several key trends will shape the future of orchestration, including:\n\u2022 Increased adoption of serverless architectures\n\u2022 Greater emphasis on edge computing\n\u2022 Rising demand for more efficient resource utilization\n\nProduction experience shows that teams often find themselves struggling to keep pace with these changes. Evidence suggests that the next generation of orchestration will prioritize flexibility, scalability, and simplicity.\n\nThe timeline for these changes is already underway, with significant shifts expected within the next 12-18 months. Teams should prepare by upskilling and reskilling to stay ahead of the curve.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n\ud83d\udce9 Never miss a DevOps update - join my weekly newsletter!\n\ud83d\udc49 Subscribe: https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a\n\ud83d\udcd6 Grab my DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook\n\n#kubernetes #devops #cloudengineering #sre #platformengineering",
-  "last_post_format": "industry_predictions",
+  "posts_created": 88,
+  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nTop teams separate signal from noise in modern infrastructure. Insights below.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n**Essential reads:**\n\n1\ufe0f\u20e3 **AI-powered code reviews: 6 months of real-world data**\n\ud83d\udcd6 _Many engineers remain skeptical about ai-powered code reviews: 6 months of real-world data. The data tells a different story:_\n\ud83d\udca1 practical signal for building reliable systems.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udcac **\ud83d\udc8c Don\u2019t miss out \u2013 get DevOps news in your inbox!\n\ud83d\udc49 Sign up: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 LinkedIn Playbook: https://lnkd.in/gzTACvZf**\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 **Which trend resonates most with your team?**",
+  "last_post_format": "digest",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-05T11:59:07.237072+00:00"
+  "last_post_timestamp": "2026-02-06T12:52:39.873885+00:00"
 }
