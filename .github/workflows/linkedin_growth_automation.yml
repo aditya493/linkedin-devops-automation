@@ -8,7 +8,7 @@ on:
     #    5 PM IST  = 11:30 UTC
     - cron: '30 3 * * 1-5'   # 9 AM IST weekdays (morning posting)
     - cron: '30 11 * * 1-5'  # 5 PM IST weekdays (evening engagement)
-    - cron: '30 6 * * 0,6'   # 12 PM IST weekends (weekend engagement)
+    - cron: '30 6 * * 0,6'   # 2 PM IST weekends (weekend engagement)
   
   workflow_dispatch:
     inputs:
@@ -27,12 +27,12 @@ on:
       max_comments:
         description: 'Maximum comments per run'
         required: false
-        default: '15'
+        default: '5'
       
       max_connections:
         description: 'Maximum connections per run'
         required: false
-        default: '10'
+        default: '0'
       
       dry_run:
         description: 'Run in dry-run mode (no actual posting)'
@@ -140,12 +140,12 @@ on:
       max_replies_per_run:
         description: 'Maximum comment replies per run'
         required: false
-        default: '10'
+        default: '0'
       
       growth_plan_probability:
-        description: 'Probability of using Growth Plan vs RSS (0=100% RSS, 0.4=40% Growth Plan, 1=100% Growth Plan)'
+        description: 'Probability of using Growth Plan vs RSS (0=00% RSS, 0.4=40% Growth Plan, 1=100% Growth Plan)'
         required: false
-        default: '0.8'
+        default: '0.5'
         type: choice
         options:
           - '0'
@@ -444,7 +444,7 @@ jobs:
         PLAYBOOK_URL: "https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook"
         
         # Growth Plan vs RSS probability (0=100% RSS, 1=100% Growth Plan)
-        GROWTH_PLAN_PROBABILITY: "${{ github.event.inputs.growth_plan_probability || '0.8' }}"
+        GROWTH_PLAN_PROBABILITY: "${{ github.event.inputs.growth_plan_probability || '0.5' }}"
         
         # Timing & rate limiting
         DRY_RUN: "${{ github.event.inputs.dry_run || 'false' }}"
