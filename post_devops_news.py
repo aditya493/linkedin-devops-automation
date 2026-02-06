@@ -809,7 +809,7 @@ ROTATE_HASHTAGS = os.environ.get("ROTATE_HASHTAGS", "true").lower() == "true"
 INCLUDE_PERSONA = os.environ.get("INCLUDE_PERSONA", "true").lower() == "true"
 
 # Post formats
-POST_FORMATS_STR = os.environ.get("POST_FORMATS", "digest,deep_dive,quick_tip,case_study,hot_take,lessons,trend_watch,tool_spotlight,did_you_know,community_question,problem_solved,poll,this_vs_that,myth_buster,weekly_recap,milestone")
+POST_FORMATS_STR = os.environ.get("POST_FORMATS", "digest,deep_dive,quick_tip,case_study,hot_take,lessons,trend_watch,tool_spotlight,did_you_know,community_question,problem_solved,poll,this_vs_that,myth_buster,weekly_recap,milestone,cheat_sheet,before_after,prediction")
 AVAILABLE_POST_FORMATS = [f.strip() for f in POST_FORMATS_STR.split(",") if f.strip()]
 FORCE_FORMAT = os.environ.get("FORCE_FORMAT", "auto")  # auto, or specific format name
 CUSTOM_MESSAGE = os.environ.get("CUSTOM_MESSAGE", "")  # Override with custom message
@@ -1743,6 +1743,9 @@ POST_FORMATS = [
     "myth_buster",      # Debunk common misconceptions
     "weekly_recap",     # Weekly summary digest
     "milestone",        # Celebrate achievements and milestones
+    "cheat_sheet",      # Quick reference cards (high saves)
+    "before_after",     # Transformation stories
+    "prediction",       # Future trends/forecasts
 ]
 
 # Templates for different formats
@@ -1852,6 +1855,27 @@ FORMAT_HOOKS = {
         "🚀 **ACHIEVEMENT UNLOCKED** 🚀",
         "🎊 **PROGRESS UPDATE** 🎊",
     ],
+    "cheat_sheet": [
+        "📋 **CHEAT SHEET** 📋",
+        "🗂️ **QUICK REFERENCE** 🗂️",
+        "📌 **BOOKMARK THIS** 📌",
+        "💾 **SAVE FOR LATER** 💾",
+        "🔖 **REFERENCE CARD** 🔖",
+    ],
+    "before_after": [
+        "🔄 **BEFORE & AFTER** 🔄",
+        "⬅️ **THEN vs NOW** ➡️",
+        "📈 **TRANSFORMATION** 📈",
+        "✨ **THE GLOW UP** ✨",
+        "🚀 **EVOLUTION** 🚀",
+    ],
+    "prediction": [
+        "🔮 **PREDICTION** 🔮",
+        "📈 **FUTURE FORECAST** 📈",
+        "🎯 **BOLD PREDICTION** 🎯",
+        "🌅 **WHAT'S NEXT** 🌅",
+        "⚡ **2026 OUTLOOK** ⚡",
+    ],
 }
 
 FORMAT_CTAS = {
@@ -1934,6 +1958,21 @@ FORMAT_CTAS = {
         "What milestones are you celebrating?",
         "Share your wins in the comments!",
         "What's your next goal?",
+    ],
+    "cheat_sheet": [
+        "Save this for your next project!",
+        "What would you add to this list?",
+        "Bookmark and share with your team!",
+    ],
+    "before_after": [
+        "What transformation are you most proud of?",
+        "Share your before/after story!",
+        "What changed the game for your team?",
+    ],
+    "prediction": [
+        "Do you agree with this prediction?",
+        "What's your bold prediction for this year?",
+        "Will this come true? Share your take!",
     ],
 }
 
@@ -4437,12 +4476,237 @@ def build_milestone_post(items) -> str:
     return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
 
 
+def build_cheat_sheet_post(items) -> str:
+    """Build a cheat sheet / quick reference post - highly saveable."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    link = item.get("link", "")
+    
+    # Cheat sheet topics
+    cheat_sheets = [
+        ("Docker Commands", [
+            "docker ps -a → List all containers",
+            "docker logs -f <id> → Follow logs",
+            "docker exec -it <id> bash → Shell access",
+            "docker system prune -a → Clean up",
+            "docker-compose up -d → Start stack",
+        ]),
+        ("Kubernetes Essentials", [
+            "kubectl get pods -A → All pods",
+            "kubectl describe pod <name> → Debug",
+            "kubectl logs -f <pod> → Stream logs",
+            "kubectl exec -it <pod> -- sh → Shell",
+            "kubectl rollout restart → Restart",
+        ]),
+        ("Git Productivity", [
+            "git stash → Save changes",
+            "git cherry-pick <sha> → Pick commit",
+            "git rebase -i HEAD~3 → Squash",
+            "git reflog → Recovery history",
+            "git bisect → Find bad commit",
+        ]),
+        ("Linux Debugging", [
+            "htop → Process monitor",
+            "netstat -tulpn → Open ports",
+            "lsof -i :8080 → Port usage",
+            "df -h → Disk space",
+            "tail -f /var/log/syslog → Live logs",
+        ]),
+        ("Terraform Tips", [
+            "terraform plan -out=plan → Save plan",
+            "terraform state list → Show resources",
+            "terraform import → Import existing",
+            "terraform fmt → Format code",
+            "terraform validate → Check syntax",
+        ]),
+    ]
+    
+    topic, commands = random.choice(cheat_sheets)
+    
+    hooks = [
+        "📋 **CHEAT SHEET** 📋",
+        "🗂️ **QUICK REFERENCE** 🗂️",
+        "📌 **BOOKMARK THIS** 📌",
+        "💾 **SAVE FOR LATER** 💾",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    lines = [
+        hook,
+        f"Your {topic} quick reference.",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"🎯 **{topic}**",
+        "",
+    ]
+    
+    for cmd in commands:
+        lines.append(f"   `{cmd}`")
+    
+    lines.extend([
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        "💡 **Pro tip:** Bookmark this and share with your team!",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **What would you add to this cheat sheet?**"
+    ])
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_before_after_post(items) -> str:
+    """Build a before/after transformation story post."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    snippet = summarize_snippet(item.get("summary", ""))[:150]
+    link = item.get("link", "")
+    
+    # Transformation stories
+    transformations = [
+        ("Manual Deployments", "GitOps Pipeline", 
+         "Hours of manual work, frequent errors", 
+         "Automated, consistent, 10-minute deploys"),
+        ("Monolithic App", "Microservices", 
+         "6-month release cycles, team bottlenecks", 
+         "Weekly releases, independent teams"),
+        ("Alert Fatigue", "Intelligent Observability", 
+         "1000+ alerts daily, ignored dashboards", 
+         "Actionable alerts, <50/day, faster MTTR"),
+        ("Manual Scaling", "Auto-scaling", 
+         "Over-provisioned servers, $50K/month waste", 
+         "Right-sized resources, 40% cost reduction"),
+        ("Siloed Teams", "Platform Engineering", 
+         "Ticket queues, weeks of waiting", 
+         "Self-service, minutes to provision"),
+        ("Legacy Terraform", "Modern IaC", 
+         "State file conflicts, drift everywhere", 
+         "Clean modules, automated drift detection"),
+    ]
+    
+    before_label, after_label, before_desc, after_desc = random.choice(transformations)
+    
+    hooks = [
+        "🔄 **BEFORE & AFTER** 🔄",
+        "⬅️ **THEN vs NOW** ➡️",
+        "📈 **TRANSFORMATION** 📈",
+        "✨ **THE GLOW UP** ✨",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    lines = [
+        hook,
+        "Real transformation. Real results.",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        "❌ **BEFORE:**",
+        f"   {before_label}",
+        f"   _{before_desc}_",
+        "",
+        "✅ **AFTER:**",
+        f"   {after_label}",
+        f"   _{after_desc}_",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        "🔑 **Key lesson:** Small consistent improvements compound into massive transformations.",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **What transformation are you most proud of?**"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_prediction_post(items) -> str:
+    """Build a prediction / forecast post for thought leadership."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    link = item.get("link", "")
+    
+    # Bold predictions
+    predictions = [
+        ("Platform Engineering", "By 2027, 80% of enterprises will have dedicated platform teams.", 
+         "Developer experience is becoming a competitive advantage."),
+        ("AI in DevOps", "AI-assisted incident response will cut MTTR by 60% within 2 years.", 
+         "Pattern recognition and automated runbooks are game-changers."),
+        ("Kubernetes Complexity", "K8s abstraction layers will become the norm, not the exception.", 
+         "Most teams don't need to touch raw YAML anymore."),
+        ("FinOps Maturity", "Cloud cost optimization will be a core engineering responsibility.", 
+         "CFOs are demanding accountability from tech teams."),
+        ("Shift-Left Security", "Security scanning in CI/CD will be as standard as unit tests.", 
+         "DevSecOps is no longer optional."),
+        ("GitOps Dominance", "GitOps will be the default deployment model for 70% of new projects.", 
+         "Declarative, auditable, and developer-friendly."),
+        ("Serverless Growth", "Serverless will handle 50% of new workloads by 2028.", 
+         "Operational simplicity wins for many use cases."),
+        ("Observability Evolution", "OpenTelemetry will become the universal standard.", 
+         "Vendor lock-in in monitoring is dying."),
+    ]
+    
+    topic, prediction, reasoning = random.choice(predictions)
+    
+    hooks = [
+        "🔮 **PREDICTION** 🔮",
+        "📈 **FUTURE FORECAST** 📈",
+        "🎯 **BOLD PREDICTION** 🎯",
+        "🌅 **WHAT'S NEXT** 🌅",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    lines = [
+        hook,
+        f"Here's what's coming in {topic}.",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"📌 **The prediction:**",
+        f"   _{prediction}_",
+        "",
+        f"🔍 **Why this matters:**",
+        f"   {reasoning}",
+        "",
+        "⚡ **Signals pointing this way:**",
+        "   • Industry investments accelerating",
+        "   • Early adopters seeing 3-5x ROI",
+        "   • Talent market shifting in this direction",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **Do you agree? What's your bold prediction?**"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
 # Update build_post to include new formats
 def build_post(items, post_format: Optional[str] = None):
     """Build post content based on format with varied styles and error handling."""
     if not post_format:
         # Expanded format options including experimental ones
-        all_formats = AVAILABLE_POST_FORMATS + ["thread", "quote", "news_flash", "trend_watch", "tool_spotlight", "did_you_know", "community_question", "problem_solved", "poll", "this_vs_that", "myth_buster", "weekly_recap", "milestone"]
+        all_formats = AVAILABLE_POST_FORMATS + ["thread", "quote", "news_flash", "trend_watch", "tool_spotlight", "did_you_know", "community_question", "problem_solved", "poll", "this_vs_that", "myth_buster", "weekly_recap", "milestone", "cheat_sheet", "before_after", "prediction"]
         # Track and rotate formats for maximum variety
         if not hasattr(build_post, "_used_formats"):
             build_post._used_formats = []
@@ -4497,6 +4761,12 @@ def build_post(items, post_format: Optional[str] = None):
             return build_weekly_recap_post(items)
         elif post_format == "milestone":
             return build_milestone_post(items)
+        elif post_format == "cheat_sheet":
+            return build_cheat_sheet_post(items)
+        elif post_format == "before_after":
+            return build_before_after_post(items)
+        elif post_format == "prediction":
+            return build_prediction_post(items)
         else:
             return build_digest_post(items)
     except Exception as e:
