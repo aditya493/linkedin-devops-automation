@@ -809,7 +809,7 @@ ROTATE_HASHTAGS = os.environ.get("ROTATE_HASHTAGS", "true").lower() == "true"
 INCLUDE_PERSONA = os.environ.get("INCLUDE_PERSONA", "true").lower() == "true"
 
 # Post formats
-POST_FORMATS_STR = os.environ.get("POST_FORMATS", "digest,deep_dive,quick_tip,case_study,hot_take,lessons")
+POST_FORMATS_STR = os.environ.get("POST_FORMATS", "digest,deep_dive,quick_tip,case_study,hot_take,lessons,trend_watch,tool_spotlight,did_you_know,community_question,problem_solved")
 AVAILABLE_POST_FORMATS = [f.strip() for f in POST_FORMATS_STR.split(",") if f.strip()]
 FORCE_FORMAT = os.environ.get("FORCE_FORMAT", "auto")  # auto, or specific format name
 CUSTOM_MESSAGE = os.environ.get("CUSTOM_MESSAGE", "")  # Override with custom message
@@ -1727,12 +1727,17 @@ def format_links_section(links, style_name):
 
 # Post format types for variety
 POST_FORMATS = [
-    "digest",        # Classic multi-link digest
-    "deep_dive",     # Single topic, longer explanation
-    "quick_tip",     # One actionable tip
-    "case_study",    # Framed as a case study
-    "hot_take",      # Opinion/perspective piece
-    "lessons",       # Lessons learned format
+    "digest",           # Classic multi-link digest
+    "deep_dive",        # Single topic, longer explanation
+    "quick_tip",        # One actionable tip
+    "case_study",       # Framed as a case study
+    "hot_take",         # Opinion/perspective piece
+    "lessons",          # Lessons learned format
+    "trend_watch",      # Viral DevOps/AI/cloud trends
+    "tool_spotlight",   # Feature a useful tool
+    "did_you_know",     # Surprising stats or facts
+    "community_question", # Provocative question to spark comments
+    "problem_solved",   # How-to or hack story
 ]
 
 # Templates for different formats
@@ -1772,6 +1777,41 @@ FORMAT_HOOKS = {
         "🎯 What teams wish they knew earlier.",
         "💡 Patterns that keep showing up in incidents.",
     ],
+    "trend_watch": [
+        "🔥 Trending now in DevOps and cloud.",
+        "📈 This topic is exploding across the industry.",
+        "🌊 The wave everyone is riding right now.",
+        "⚡ What top teams are buzzing about this week.",
+        "🚀 The trend reshaping modern engineering.",
+    ],
+    "tool_spotlight": [
+        "🛠️ Tool of the week: worth adding to the stack.",
+        "🔧 This open-source gem deserves more attention.",
+        "💎 Hidden tool that 10x teams swear by.",
+        "🧰 Spotlight on a tool that solves real problems.",
+        "⚙️ Game-changing utility for DevOps workflows.",
+    ],
+    "did_you_know": [
+        "🤯 Did you know? This stat might surprise you.",
+        "📊 Eye-opening fact from the field.",
+        "💡 Surprising insight most teams overlook.",
+        "🔍 The data says something unexpected.",
+        "🧠 Industry fact that changes the conversation.",
+    ],
+    "community_question": [
+        "❓ Big question for the community.",
+        "🗣️ The debate that never gets old.",
+        "💬 Curious: what's your take on this?",
+        "🤔 A question that splits engineering teams.",
+        "🎤 Open mic: share your perspective.",
+    ],
+    "problem_solved": [
+        "✅ Problem solved: a quick win worth sharing.",
+        "🛠️ How this challenge got tackled.",
+        "💡 Hack that saved hours (or days).",
+        "🎯 Practical fix that actually works.",
+        "🚀 From problem to solution: the shortcut.",
+    ],
 }
 
 FORMAT_CTAS = {
@@ -1804,6 +1844,31 @@ FORMAT_CTAS = {
         "What's a lesson that changed how you work?",
         "What would you add to this list?",
         "Share your hard-won wisdom below.",
+    ],
+    "trend_watch": [
+        "Is your team riding this wave yet?",
+        "Will this trend last or fade?",
+        "How is your organization responding?",
+    ],
+    "tool_spotlight": [
+        "Have you tried this tool?",
+        "What's missing from your toolchain?",
+        "Drop your favorite alternative below.",
+    ],
+    "did_you_know": [
+        "Were you surprised by this?",
+        "What's another stat that blew your mind?",
+        "Does this match your experience?",
+    ],
+    "community_question": [
+        "Drop your answer in the comments.",
+        "Tag someone who should weigh in.",
+        "Let's hear the best take.",
+    ],
+    "problem_solved": [
+        "What's a hack that saved your week?",
+        "Have you solved this differently?",
+        "Share your go-to fix below.",
     ],
 }
 
@@ -3653,12 +3718,284 @@ def build_news_flash_post(items) -> str:
     return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
 
 
+def build_trend_watch_post(items) -> str:
+    """Build a viral trend / hot topic post with eye-catching format."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    link = item.get("link", "")
+    
+    context_insights, context_cta = get_context_aware_insights(title, snippet)
+    
+    trend_hooks = [
+        "🔥 This is blowing up across DevOps circles.",
+        "📈 Trending: The topic everyone is talking about.",
+        "🚀 The wave reshaping modern engineering practices.",
+        "⚡ Hot topic alert: worth paying attention.",
+        "🌊 Industry shift: this trend is gaining serious momentum.",
+    ]
+    trend_ctas = [
+        "Is your team on this trend yet?",
+        "Will this reshape your roadmap?",
+        "How is the industry responding?",
+        "What's your take on this shift?",
+    ]
+    
+    hook = random.choice(trend_hooks)
+    cta = random.choice(trend_ctas)
+    
+    lines = [
+        hook,
+        "",
+        f"**📌 {remix_title(title)}**",
+        "",
+        f"💡 {snippet}" if snippet else "",
+        "",
+        f"🎯 {context_insights[0] if context_insights else 'This signals a major shift in how teams operate.'}",
+        "",
+        get_subscription_cta(),
+        "",
+        get_hashtags(),
+        "",
+        f"❓ {cta}"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_tool_spotlight_post(items) -> str:
+    """Build a tool spotlight post featuring a useful DevOps tool."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    link = item.get("link", "")
+    
+    tool_hooks = [
+        "🛠️ Tool of the week that deserves more attention.",
+        "🔧 This open-source gem is a game-changer.",
+        "💎 Spotlight: A tool 10x teams swear by.",
+        "🧰 Underrated utility that solves real problems.",
+        "⚙️ Add this to the toolchain: worth exploring.",
+    ]
+    tool_ctas = [
+        "Have you tried this tool?",
+        "What's missing from your stack?",
+        "Drop your favorite alternative below.",
+        "Which tool has saved your team the most time?",
+    ]
+    
+    hook = random.choice(tool_hooks)
+    cta = random.choice(tool_ctas)
+    
+    lines = [
+        hook,
+        "",
+        f"**🔹 {remix_title(title)}**",
+        "",
+        f"📖 {snippet}" if snippet else "",
+        "",
+        "✨ Why it stands out:",
+        "• Solves a real pain point in DevOps workflows.",
+        "• Easy to integrate with existing stacks.",
+        "• Actively maintained and community-driven.",
+        "",
+        get_subscription_cta(),
+        "",
+        get_hashtags(),
+        "",
+        f"❓ {cta}"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_did_you_know_post(items) -> str:
+    """Build a surprising stat/fact post to grab attention."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    link = item.get("link", "")
+    
+    context_insights, _ = get_context_aware_insights(title, snippet)
+    
+    fact_hooks = [
+        "🤯 Did you know? This stat might surprise you.",
+        "📊 Eye-opening fact from the field.",
+        "💡 Surprising insight most teams overlook.",
+        "🔍 The data says something unexpected.",
+        "🧠 Industry fact that changes the conversation.",
+    ]
+    fact_ctas = [
+        "Were you surprised by this?",
+        "What's another stat that blew your mind?",
+        "Does this match your experience?",
+        "Share a surprising fact from your work.",
+    ]
+    
+    hook = random.choice(fact_hooks)
+    cta = random.choice(fact_ctas)
+    
+    surprising_stats = [
+        "70% of outages are caused by config changes.",
+        "Most teams spend 30% of time on incident response.",
+        "Only 25% of organizations have mature observability.",
+        "The average MTTR in high-performing teams is under 1 hour.",
+        "GitOps adoption has grown 300% in the last 3 years.",
+    ]
+    stat = random.choice(surprising_stats)
+    
+    lines = [
+        hook,
+        "",
+        f"**📌 {stat}**",
+        "",
+        f"🔍 Context: {snippet if snippet else 'This trend is reshaping DevOps strategy.'}",
+        "",
+        f"💡 {context_insights[0] if context_insights else 'Data-driven decisions lead to better outcomes.'}",
+        "",
+        get_subscription_cta(),
+        "",
+        get_hashtags(),
+        "",
+        f"❓ {cta}"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_community_question_post(items) -> str:
+    """Build a provocative question post to spark engagement."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    link = item.get("link", "")
+    
+    question_hooks = [
+        "❓ Big question for the community.",
+        "🗣️ The debate that never gets old.",
+        "💬 Curious: what's your take on this?",
+        "🤔 A question that splits engineering teams.",
+        "🎤 Open mic: share your perspective.",
+    ]
+    question_ctas = [
+        "Drop your answer in the comments.",
+        "Tag someone who should weigh in.",
+        "Let's hear the best take.",
+        "No wrong answers—share your view.",
+    ]
+    
+    community_questions = [
+        "Kubernetes vs serverless for new projects—what's the call?",
+        "What's the most overrated DevOps tool?",
+        "Monorepo or multi-repo: which side are you on?",
+        "Should platform teams own developer experience?",
+        "Is 100% uptime a myth or a realistic goal?",
+        "What's the biggest mistake teams make with CI/CD?",
+        "Should every engineer be on-call?",
+        "Is GitOps actually better, or just trendy?",
+    ]
+    
+    hook = random.choice(question_hooks)
+    cta = random.choice(question_ctas)
+    question = random.choice(community_questions)
+    
+    lines = [
+        hook,
+        "",
+        f"**🔹 {question}**",
+        "",
+        f"💭 {snippet if snippet else 'This topic sparks strong opinions across the industry.'}",
+        "",
+        "👇 Vote with your comment:",
+        "• Drop your take below.",
+        "• Tag a colleague with a strong opinion.",
+        "",
+        get_subscription_cta(),
+        "",
+        get_hashtags(),
+        "",
+        f"❓ {cta}"
+    ]
+    if link:
+        lines.extend(["", f"🔗 Related: {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_problem_solved_post(items) -> str:
+    """Build a how-to / hack story post with practical value."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    link = item.get("link", "")
+    
+    context_insights, _ = get_context_aware_insights(title, snippet)
+    
+    problem_hooks = [
+        "✅ Problem solved: a quick win worth sharing.",
+        "🛠️ How this challenge got tackled.",
+        "💡 Hack that saved hours (or days).",
+        "🎯 Practical fix that actually works.",
+        "🚀 From problem to solution: the shortcut.",
+    ]
+    problem_ctas = [
+        "What's a hack that saved your week?",
+        "Have you solved this differently?",
+        "Share your go-to fix below.",
+        "What's your favorite engineering shortcut?",
+    ]
+    
+    hook = random.choice(problem_hooks)
+    cta = random.choice(problem_ctas)
+    
+    lines = [
+        hook,
+        "",
+        f"**📌 {remix_title(title)}**",
+        "",
+        f"🔍 The challenge: {snippet if snippet else 'A common pain point in DevOps workflows.'}",
+        "",
+        f"✨ The fix: {context_insights[0] if context_insights else 'Simplify, automate, iterate.'}",
+        "",
+        "💡 Key takeaway:",
+        "• Start with the simplest solution.",
+        "• Automate repetitive steps.",
+        "• Document for the next engineer.",
+        "",
+        get_subscription_cta(),
+        "",
+        get_hashtags(),
+        "",
+        f"❓ {cta}"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
 # Update build_post to include new formats
 def build_post(items, post_format: Optional[str] = None):
     """Build post content based on format with varied styles and error handling."""
     if not post_format:
         # Expanded format options including experimental ones
-        all_formats = AVAILABLE_POST_FORMATS + ["thread", "quote", "news_flash"]
+        all_formats = AVAILABLE_POST_FORMATS + ["thread", "quote", "news_flash", "trend_watch", "tool_spotlight", "did_you_know", "community_question", "problem_solved"]
         # Track and rotate formats for maximum variety
         if not hasattr(build_post, "_used_formats"):
             build_post._used_formats = []
@@ -3693,6 +4030,16 @@ def build_post(items, post_format: Optional[str] = None):
             return build_quote_style_post(items)  
         elif post_format == "news_flash":
             return build_news_flash_post(items)
+        elif post_format == "trend_watch":
+            return build_trend_watch_post(items)
+        elif post_format == "tool_spotlight":
+            return build_tool_spotlight_post(items)
+        elif post_format == "did_you_know":
+            return build_did_you_know_post(items)
+        elif post_format == "community_question":
+            return build_community_question_post(items)
+        elif post_format == "problem_solved":
+            return build_problem_solved_post(items)
         else:
             return build_digest_post(items)
     except Exception as e:
