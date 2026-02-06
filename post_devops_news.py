@@ -809,7 +809,7 @@ ROTATE_HASHTAGS = os.environ.get("ROTATE_HASHTAGS", "true").lower() == "true"
 INCLUDE_PERSONA = os.environ.get("INCLUDE_PERSONA", "true").lower() == "true"
 
 # Post formats
-POST_FORMATS_STR = os.environ.get("POST_FORMATS", "digest,deep_dive,quick_tip,case_study,hot_take,lessons,trend_watch,tool_spotlight,did_you_know,community_question,problem_solved")
+POST_FORMATS_STR = os.environ.get("POST_FORMATS", "digest,deep_dive,quick_tip,case_study,hot_take,lessons,trend_watch,tool_spotlight,did_you_know,community_question,problem_solved,poll,this_vs_that,myth_buster,weekly_recap,milestone")
 AVAILABLE_POST_FORMATS = [f.strip() for f in POST_FORMATS_STR.split(",") if f.strip()]
 FORCE_FORMAT = os.environ.get("FORCE_FORMAT", "auto")  # auto, or specific format name
 CUSTOM_MESSAGE = os.environ.get("CUSTOM_MESSAGE", "")  # Override with custom message
@@ -1738,6 +1738,11 @@ POST_FORMATS = [
     "did_you_know",     # Surprising stats or facts
     "community_question", # Provocative question to spark comments
     "problem_solved",   # How-to or hack story
+    "poll",             # Poll-style post (high engagement)
+    "this_vs_that",     # Comparison posts that spark debates
+    "myth_buster",      # Debunk common misconceptions
+    "weekly_recap",     # Weekly summary digest
+    "milestone",        # Celebrate achievements and milestones
 ]
 
 # Templates for different formats
@@ -1812,6 +1817,41 @@ FORMAT_HOOKS = {
         "🎯 Practical fix that actually works.",
         "🚀 From problem to solution: the shortcut.",
     ],
+    "poll": [
+        "📊 **POLL TIME** 📊",
+        "🗳️ **VOTE NOW** 🗳️",
+        "📢 **COMMUNITY POLL** 📢",
+        "🎯 **QUICK POLL** 🎯",
+        "💬 **YOUR VOTE MATTERS** 💬",
+    ],
+    "this_vs_that": [
+        "⚔️ **THIS VS THAT** ⚔️",
+        "🥊 **HEAD TO HEAD** 🥊",
+        "🔥 **THE GREAT DEBATE** 🔥",
+        "💥 **SHOWDOWN** 💥",
+        "🏆 **BATTLE ROYALE** 🏆",
+    ],
+    "myth_buster": [
+        "🚫 **MYTH BUSTED** 🚫",
+        "💥 **REALITY CHECK** 💥",
+        "🔍 **FACT vs FICTION** 🔍",
+        "⚡ **MYTH ALERT** ⚡",
+        "🎯 **DEBUNKED** 🎯",
+    ],
+    "weekly_recap": [
+        "📅 **WEEKLY RECAP** 📅",
+        "🗓️ **THIS WEEK IN DEVOPS** 🗓️",
+        "📰 **WEEKLY ROUNDUP** 📰",
+        "🔄 **WEEK IN REVIEW** 🔄",
+        "📋 **7-DAY DIGEST** 📋",
+    ],
+    "milestone": [
+        "🎉 **MILESTONE ACHIEVED** 🎉",
+        "🏆 **CELEBRATING SUCCESS** 🏆",
+        "⭐ **BIG WIN** ⭐",
+        "🚀 **ACHIEVEMENT UNLOCKED** 🚀",
+        "🎊 **PROGRESS UPDATE** 🎊",
+    ],
 }
 
 FORMAT_CTAS = {
@@ -1869,6 +1909,31 @@ FORMAT_CTAS = {
         "What's a hack that saved your week?",
         "Have you solved this differently?",
         "Share your go-to fix below.",
+    ],
+    "poll": [
+        "Vote in the comments!",
+        "Cast your vote below.",
+        "Which option gets your vote?",
+    ],
+    "this_vs_that": [
+        "Which side are you on?",
+        "Drop your pick in the comments.",
+        "Let the debate begin!",
+    ],
+    "myth_buster": [
+        "Did you believe this myth?",
+        "What other myths need busting?",
+        "Share misconceptions you've encountered.",
+    ],
+    "weekly_recap": [
+        "What was your biggest win this week?",
+        "What would you add to this list?",
+        "Which story stood out to you?",
+    ],
+    "milestone": [
+        "What milestones are you celebrating?",
+        "Share your wins in the comments!",
+        "What's your next goal?",
     ],
 }
 
@@ -4060,12 +4125,324 @@ def build_problem_solved_post(items) -> str:
     return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
 
 
+def build_poll_post(items) -> str:
+    """Build a poll-style post that drives high engagement through voting."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    snippet = summarize_snippet(item.get("summary", ""))[:150]
+    link = item.get("link", "")
+    
+    # Poll topics based on DevOps themes
+    poll_topics = [
+        ("Best CI/CD Tool", ["GitHub Actions", "GitLab CI", "Jenkins", "CircleCI"]),
+        ("Container Orchestration", ["Kubernetes", "Docker Swarm", "Nomad", "ECS"]),
+        ("IaC Tool of Choice", ["Terraform", "Pulumi", "CloudFormation", "Ansible"]),
+        ("Monitoring Stack", ["Prometheus + Grafana", "Datadog", "New Relic", "Splunk"]),
+        ("Cloud Provider", ["AWS", "GCP", "Azure", "Multi-cloud"]),
+        ("GitOps Tool", ["ArgoCD", "Flux", "Jenkins X", "Spinnaker"]),
+        ("Secret Management", ["HashiCorp Vault", "AWS Secrets Manager", "Doppler", "SOPS"]),
+        ("API Gateway", ["Kong", "NGINX", "Traefik", "AWS API Gateway"]),
+    ]
+    
+    topic, options = random.choice(poll_topics)
+    
+    poll_hooks = [
+        "📊 **POLL TIME** 📊",
+        "🗳️ **VOTE NOW** 🗳️",
+        "📢 **COMMUNITY POLL** 📢",
+        "🎯 **QUICK POLL** 🎯",
+    ]
+    poll_subheads = [
+        "The community decides!",
+        "Cast your vote below.",
+        "Help settle this debate.",
+        "Your opinion matters.",
+    ]
+    poll_ctas = [
+        "Comment with your number (1-4)!",
+        "Drop your vote in the comments!",
+        "Which option gets your vote?",
+    ]
+    
+    hook = random.choice(poll_hooks)
+    subhead = random.choice(poll_subheads)
+    cta = random.choice(poll_ctas)
+    
+    lines = [
+        hook,
+        subhead,
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"🎯 **{topic}**",
+        "",
+        f"1️⃣ {options[0]}",
+        f"2️⃣ {options[1]}",
+        f"3️⃣ {options[2]}",
+        f"4️⃣ {options[3]}",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"💬 **{cta}**",
+        "",
+        get_hashtags(),
+        "",
+        "🔥 Tag someone who should vote!"
+    ]
+    if link:
+        lines.extend(["", f"🔗 Related: {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_this_vs_that_post(items) -> str:
+    """Build a comparison post that sparks debates."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    link = item.get("link", "")
+    
+    # Comparison topics
+    comparisons = [
+        ("Terraform", "Pulumi", "IaC approach", "HCL declarative", "Real programming languages"),
+        ("Kubernetes", "Serverless", "Compute model", "Full control, complexity", "Simplicity, vendor lock-in"),
+        ("Microservices", "Monolith", "Architecture", "Scalability, complexity", "Simplicity, tight coupling"),
+        ("Jenkins", "GitHub Actions", "CI/CD", "Flexibility, maintenance", "Native integration, vendor lock"),
+        ("Docker", "Podman", "Containers", "Ecosystem, daemon", "Daemonless, rootless"),
+        ("REST", "GraphQL", "API design", "Simple, over-fetching", "Flexible, complexity"),
+        ("NoSQL", "SQL", "Databases", "Scale, flexibility", "ACID, structure"),
+        ("ArgoCD", "Flux", "GitOps", "UI, features", "Lightweight, Kubernetes-native"),
+        ("Prometheus", "Datadog", "Monitoring", "Open-source, control", "Managed, cost"),
+        ("AWS", "GCP", "Cloud", "Market leader, services", "Innovation, Kubernetes"),
+    ]
+    
+    comp = random.choice(comparisons)
+    option_a, option_b, category, pros_a, pros_b = comp
+    
+    hooks = [
+        "⚔️ **THIS VS THAT** ⚔️",
+        "🥊 **HEAD TO HEAD** 🥊",
+        "🔥 **THE GREAT DEBATE** 🔥",
+        "💥 **SHOWDOWN** 💥",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    lines = [
+        hook,
+        f"The {category} battle continues!",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"🅰️ **{option_a}**",
+        f"   ✅ {pros_a}",
+        "",
+        "           **VS**",
+        "",
+        f"🅱️ **{option_b}**",
+        f"   ✅ {pros_b}",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        "💡 **The truth:** Context matters. What works for one team may not work for another.",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **Which side are you on? Comment 🅰️ or 🅱️!**"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_myth_buster_post(items) -> str:
+    """Build a myth-busting post that debunks common misconceptions."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    link = item.get("link", "")
+    
+    # DevOps myths to bust
+    myths = [
+        ("DevOps is just about tools", "DevOps is a culture and practice that emphasizes collaboration, automation, and continuous improvement."),
+        ("Kubernetes solves all problems", "K8s adds complexity. It's powerful but not always necessary. Start simple."),
+        ("100% test coverage means bug-free code", "Coverage measures quantity, not quality. Focus on meaningful tests."),
+        ("CI/CD means deploying every commit", "CI/CD means changes are production-ready. Deployment strategy varies."),
+        ("Microservices are always better", "Microservices add distributed system complexity. Start with a modular monolith."),
+        ("Cloud is always cheaper", "Cloud costs can spiral. On-prem may be cheaper for predictable workloads."),
+        ("Automation replaces engineers", "Automation frees engineers for higher-value work. It augments, not replaces."),
+        ("Zero downtime is always achievable", "Some maintenance requires downtime. Plan for it transparently."),
+        ("More monitoring is always better", "Alert fatigue is real. Quality over quantity in observability."),
+        ("DevSecOps slows development", "Shift-left security catches issues earlier, saving time in the long run."),
+    ]
+    
+    myth, reality = random.choice(myths)
+    
+    hooks = [
+        "🚫 **MYTH BUSTED** 🚫",
+        "💥 **REALITY CHECK** 💥",
+        "🔍 **FACT vs FICTION** 🔍",
+        "⚡ **MYTH ALERT** ⚡",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    lines = [
+        hook,
+        "Time to challenge conventional wisdom.",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"❌ **THE MYTH:**",
+        f"   \"{myth}\"",
+        "",
+        f"✅ **THE REALITY:**",
+        f"   {reality}",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        "💡 **Key insight:** Always question \"best practices.\" Context matters more than dogma.",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **Did you believe this myth? What other myths need busting?**"
+    ]
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_weekly_recap_post(items) -> str:
+    """Build a weekly recap summarizing top stories."""
+    if not items or len(items) < 2:
+        return build_digest_post(items)
+    
+    hooks = [
+        "📅 **WEEKLY RECAP** 📅",
+        "🗓️ **THIS WEEK IN DEVOPS** 🗓️",
+        "📰 **WEEKLY ROUNDUP** 📰",
+        "🔄 **WEEK IN REVIEW** 🔄",
+    ]
+    subheads = [
+        "The stories that shaped the week.",
+        "Everything worth knowing in one post.",
+        "Catch up on what you might have missed.",
+        "Your weekly dose of DevOps insights.",
+    ]
+    
+    hook = random.choice(hooks)
+    subhead = random.choice(subheads)
+    
+    lines = [
+        hook,
+        subhead,
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+    ]
+    
+    item_emojis = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
+    max_items = min(5, len(items))
+    
+    for i, item in enumerate(items[:max_items]):
+        title = remix_title(item["title"])
+        link = item.get("link", "")
+        emoji = item_emojis[i] if i < len(item_emojis) else f"{i+1}."
+        lines.append(f"{emoji} **{title}**")
+        if link:
+            lines.append(f"   🔗 {link}")
+        lines.append("")
+    
+    lines.extend([
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        get_subscription_cta(),
+        "",
+        get_hashtags(),
+        "",
+        "❓ **What was your biggest win this week?**"
+    ])
+    
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
+def build_milestone_post(items) -> str:
+    """Build a milestone celebration post."""
+    if not items:
+        return build_digest_post(items)
+    
+    item = items[0]
+    title = item["title"]
+    link = item.get("link", "")
+    
+    # Milestone templates
+    milestones = [
+        ("🎯 100 posts shared", "Consistency compounds. Every post is a learning opportunity."),
+        ("📈 Growing this community", "Thank you for engaging, sharing, and learning together."),
+        ("🚀 Another week of learning", "Engineering excellence is a journey, not a destination."),
+        ("💡 Knowledge shared", "The DevOps community grows stronger when we share openly."),
+        ("🔥 Engagement milestone", "Your comments and shares make this worthwhile."),
+    ]
+    
+    milestone, message = random.choice(milestones)
+    
+    hooks = [
+        "🎉 **MILESTONE ACHIEVED** 🎉",
+        "🏆 **CELEBRATING SUCCESS** 🏆",
+        "⭐ **BIG WIN** ⭐",
+        "🚀 **ACHIEVEMENT UNLOCKED** 🚀",
+    ]
+    
+    hook = random.choice(hooks)
+    
+    gratitude_points = [
+        "• Every like, comment, and share matters",
+        "• The thoughtful discussions in comments",
+        "• Engineers who challenge and question",
+        "• Those who share posts with their teams",
+        "• The DMs with great questions and feedback",
+    ]
+    
+    selected_gratitude = random.sample(gratitude_points, 3)
+    
+    lines = [
+        hook,
+        milestone,
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        f"💬 **{message}**",
+        "",
+        "🙏 **Grateful for:**",
+    ]
+    lines.extend([f"   {g}" for g in selected_gratitude])
+    lines.extend([
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+        "",
+        "🔮 **What's next:** More deep dives, practical tips, and honest takes on DevOps.",
+        "",
+        get_hashtags(),
+        "",
+        "❓ **What milestones are you celebrating? Share your wins!**"
+    ])
+    if link:
+        lines.extend(["", f"🔗 {link}"])
+    return format_post_content(clip("\n".join(lines), MAX_POST_CHARS))
+
+
 # Update build_post to include new formats
 def build_post(items, post_format: Optional[str] = None):
     """Build post content based on format with varied styles and error handling."""
     if not post_format:
         # Expanded format options including experimental ones
-        all_formats = AVAILABLE_POST_FORMATS + ["thread", "quote", "news_flash", "trend_watch", "tool_spotlight", "did_you_know", "community_question", "problem_solved"]
+        all_formats = AVAILABLE_POST_FORMATS + ["thread", "quote", "news_flash", "trend_watch", "tool_spotlight", "did_you_know", "community_question", "problem_solved", "poll", "this_vs_that", "myth_buster", "weekly_recap", "milestone"]
         # Track and rotate formats for maximum variety
         if not hasattr(build_post, "_used_formats"):
             build_post._used_formats = []
@@ -4110,6 +4487,16 @@ def build_post(items, post_format: Optional[str] = None):
             return build_community_question_post(items)
         elif post_format == "problem_solved":
             return build_problem_solved_post(items)
+        elif post_format == "poll":
+            return build_poll_post(items)
+        elif post_format == "this_vs_that":
+            return build_this_vs_that_post(items)
+        elif post_format == "myth_buster":
+            return build_myth_buster_post(items)
+        elif post_format == "weekly_recap":
+            return build_weekly_recap_post(items)
+        elif post_format == "milestone":
+            return build_milestone_post(items)
         else:
             return build_digest_post(items)
     except Exception as e:
