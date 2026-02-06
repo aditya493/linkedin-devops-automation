@@ -3731,36 +3731,50 @@ def build_trend_watch_post(items) -> str:
     context_insights, context_cta = get_context_aware_insights(title, snippet)
     
     trend_hooks = [
-        "🔥 This is blowing up across DevOps circles.",
-        "📈 Trending: The topic everyone is talking about.",
-        "🚀 The wave reshaping modern engineering practices.",
-        "⚡ Hot topic alert: worth paying attention.",
-        "🌊 Industry shift: this trend is gaining serious momentum.",
+        "🔥 **TRENDING NOW** 🔥",
+        "📈 **HOT TOPIC ALERT** 📈",
+        "🚀 **THE WAVE EVERYONE IS RIDING** 🚀",
+        "⚡ **BREAKING TREND** ⚡",
+        "🌊 **INDUSTRY SHIFT** 🌊",
+    ]
+    trend_subheads = [
+        "This is blowing up across DevOps circles.",
+        "The topic top teams are talking about.",
+        "A shift reshaping modern engineering.",
+        "Worth paying attention right now.",
+        "Gaining serious momentum in the industry.",
     ]
     trend_ctas = [
         "Is your team on this trend yet?",
         "Will this reshape your roadmap?",
         "How is the industry responding?",
-        "What's your take on this shift?",
+        "What’s your take on this shift?",
     ]
     
     hook = random.choice(trend_hooks)
+    subhead = random.choice(trend_subheads)
     cta = random.choice(trend_ctas)
     
     lines = [
         hook,
+        subhead,
         "",
-        f"**📌 {remix_title(title)}**",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
-        f"💡 {snippet}" if snippet else "",
+        f"📌 **{remix_title(title)}**",
         "",
-        f"🎯 {context_insights[0] if context_insights else 'This signals a major shift in how teams operate.'}",
+        f"💡 _{snippet}_" if snippet else "",
+        "",
+        f"🎯 **Why it matters:**",
+        f"   {context_insights[0] if context_insights else 'This signals a major shift in how teams operate.'}",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
         get_subscription_cta(),
         "",
         get_hashtags(),
         "",
-        f"❓ {cta}"
+        f"❓ **{cta}**"
     ]
     if link:
         lines.extend(["", f"🔗 {link}"])
@@ -3778,39 +3792,52 @@ def build_tool_spotlight_post(items) -> str:
     link = item.get("link", "")
     
     tool_hooks = [
-        "🛠️ Tool of the week that deserves more attention.",
-        "🔧 This open-source gem is a game-changer.",
-        "💎 Spotlight: A tool 10x teams swear by.",
-        "🧰 Underrated utility that solves real problems.",
-        "⚙️ Add this to the toolchain: worth exploring.",
+        "🛠️ **TOOL OF THE WEEK** 🛠️",
+        "🔧 **OPEN-SOURCE GEM** 🔧",
+        "💎 **TOOL SPOTLIGHT** 💎",
+        "🧰 **UNDERRATED UTILITY** 🧰",
+        "⚙️ **GAME-CHANGER ALERT** ⚙️",
+    ]
+    tool_subheads = [
+        "This deserves more attention.",
+        "A gem that 10x teams swear by.",
+        "Solves real problems, elegantly.",
+        "Worth adding to the stack.",
+        "The productivity boost teams need.",
     ]
     tool_ctas = [
         "Have you tried this tool?",
-        "What's missing from your stack?",
+        "What’s missing from your stack?",
         "Drop your favorite alternative below.",
         "Which tool has saved your team the most time?",
     ]
     
     hook = random.choice(tool_hooks)
+    subhead = random.choice(tool_subheads)
     cta = random.choice(tool_ctas)
     
     lines = [
         hook,
+        subhead,
         "",
-        f"**🔹 {remix_title(title)}**",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
-        f"📖 {snippet}" if snippet else "",
+        f"🔹 **{remix_title(title)}**",
         "",
-        "✨ Why it stands out:",
-        "• Solves a real pain point in DevOps workflows.",
-        "• Easy to integrate with existing stacks.",
-        "• Actively maintained and community-driven.",
+        f"📖 _{snippet}_" if snippet else "",
+        "",
+        "✨ **Why it stands out:**",
+        "   • Solves a real pain point in DevOps workflows",
+        "   • Easy to integrate with existing stacks",
+        "   • Actively maintained and community-driven",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
         get_subscription_cta(),
         "",
         get_hashtags(),
         "",
-        f"❓ {cta}"
+        f"❓ **{cta}**"
     ]
     if link:
         lines.extend(["", f"🔗 {link}"])
@@ -3830,20 +3857,28 @@ def build_did_you_know_post(items) -> str:
     context_insights, _ = get_context_aware_insights(title, snippet)
     
     fact_hooks = [
-        "🤯 Did you know? This stat might surprise you.",
-        "📊 Eye-opening fact from the field.",
-        "💡 Surprising insight most teams overlook.",
-        "🔍 The data says something unexpected.",
-        "🧠 Industry fact that changes the conversation.",
+        "🤯 **DID YOU KNOW?** 🤯",
+        "📊 **EYE-OPENING FACT** 📊",
+        "💡 **SURPRISING INSIGHT** 💡",
+        "🔍 **THE DATA SPEAKS** 🔍",
+        "🧠 **INDUSTRY FACT** 🧠",
+    ]
+    fact_subheads = [
+        "This stat might change your perspective.",
+        "Numbers that tell a story.",
+        "Most teams overlook this insight.",
+        "The data says something unexpected.",
+        "A fact that changes the conversation.",
     ]
     fact_ctas = [
         "Were you surprised by this?",
-        "What's another stat that blew your mind?",
+        "What’s another stat that blew your mind?",
         "Does this match your experience?",
         "Share a surprising fact from your work.",
     ]
     
     hook = random.choice(fact_hooks)
+    subhead = random.choice(fact_subheads)
     cta = random.choice(fact_ctas)
     
     surprising_stats = [
@@ -3857,18 +3892,25 @@ def build_did_you_know_post(items) -> str:
     
     lines = [
         hook,
+        subhead,
         "",
-        f"**📌 {stat}**",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
-        f"🔍 Context: {snippet if snippet else 'This trend is reshaping DevOps strategy.'}",
+        f"📌 **{stat}**",
         "",
-        f"💡 {context_insights[0] if context_insights else 'Data-driven decisions lead to better outcomes.'}",
+        f"🔍 **Context:**",
+        f"   _{snippet if snippet else 'This trend is reshaping DevOps strategy.'}_",
+        "",
+        f"💡 **Takeaway:**",
+        f"   {context_insights[0] if context_insights else 'Data-driven decisions lead to better outcomes.'}",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
         get_subscription_cta(),
         "",
         get_hashtags(),
         "",
-        f"❓ {cta}"
+        f"❓ **{cta}**"
     ]
     if link:
         lines.extend(["", f"🔗 {link}"])
@@ -3886,50 +3928,63 @@ def build_community_question_post(items) -> str:
     link = item.get("link", "")
     
     question_hooks = [
-        "❓ Big question for the community.",
-        "🗣️ The debate that never gets old.",
-        "💬 Curious: what's your take on this?",
-        "🤔 A question that splits engineering teams.",
-        "🎤 Open mic: share your perspective.",
+        "❓ **COMMUNITY QUESTION** ❓",
+        "🗣️ **THE GREAT DEBATE** 🗣️",
+        "💬 **YOUR TAKE?** 💬",
+        "🤔 **HOT TOPIC POLL** 🤔",
+        "🎤 **OPEN MIC** 🎤",
+    ]
+    question_subheads = [
+        "This sparks strong opinions.",
+        "The debate that never gets old.",
+        "Curious: where do you stand?",
+        "A question that splits teams.",
+        "Share your perspective.",
     ]
     question_ctas = [
         "Drop your answer in the comments.",
         "Tag someone who should weigh in.",
-        "Let's hear the best take.",
+        "Let’s hear the best take.",
         "No wrong answers—share your view.",
     ]
     
     community_questions = [
-        "Kubernetes vs serverless for new projects—what's the call?",
-        "What's the most overrated DevOps tool?",
+        "Kubernetes vs serverless for new projects—what’s the call?",
+        "What’s the most overrated DevOps tool?",
         "Monorepo or multi-repo: which side are you on?",
         "Should platform teams own developer experience?",
         "Is 100% uptime a myth or a realistic goal?",
-        "What's the biggest mistake teams make with CI/CD?",
+        "What’s the biggest mistake teams make with CI/CD?",
         "Should every engineer be on-call?",
         "Is GitOps actually better, or just trendy?",
     ]
     
     hook = random.choice(question_hooks)
+    subhead = random.choice(question_subheads)
     cta = random.choice(question_ctas)
     question = random.choice(community_questions)
     
     lines = [
         hook,
+        subhead,
         "",
-        f"**🔹 {question}**",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
-        f"💭 {snippet if snippet else 'This topic sparks strong opinions across the industry.'}",
+        f"🔹 **{question}**",
         "",
-        "👇 Vote with your comment:",
-        "• Drop your take below.",
-        "• Tag a colleague with a strong opinion.",
+        f"💭 _{snippet if snippet else 'This topic sparks strong opinions across the industry.'}_",
+        "",
+        "👇 **Vote with your comment:**",
+        "   • Drop your take below",
+        "   • Tag a colleague with a strong opinion",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
         get_subscription_cta(),
         "",
         get_hashtags(),
         "",
-        f"❓ {cta}"
+        f"❓ **{cta}**"
     ]
     if link:
         lines.extend(["", f"🔗 Related: {link}"])
@@ -3949,41 +4004,56 @@ def build_problem_solved_post(items) -> str:
     context_insights, _ = get_context_aware_insights(title, snippet)
     
     problem_hooks = [
-        "✅ Problem solved: a quick win worth sharing.",
-        "🛠️ How this challenge got tackled.",
-        "💡 Hack that saved hours (or days).",
-        "🎯 Practical fix that actually works.",
-        "🚀 From problem to solution: the shortcut.",
+        "✅ **PROBLEM SOLVED** ✅",
+        "🛠️ **HOW THIS GOT FIXED** 🛠️",
+        "💡 **HACK THAT WORKS** 💡",
+        "🎯 **PRACTICAL FIX** 🎯",
+        "🚀 **FROM PROBLEM TO SOLUTION** 🚀",
+    ]
+    problem_subheads = [
+        "A quick win worth sharing.",
+        "This challenge got tackled elegantly.",
+        "Saved hours (or days) with this hack.",
+        "Practical fix that actually works.",
+        "The shortcut top teams use.",
     ]
     problem_ctas = [
-        "What's a hack that saved your week?",
+        "What’s a hack that saved your week?",
         "Have you solved this differently?",
         "Share your go-to fix below.",
-        "What's your favorite engineering shortcut?",
+        "What’s your favorite engineering shortcut?",
     ]
     
     hook = random.choice(problem_hooks)
+    subhead = random.choice(problem_subheads)
     cta = random.choice(problem_ctas)
     
     lines = [
         hook,
+        subhead,
         "",
-        f"**📌 {remix_title(title)}**",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
-        f"🔍 The challenge: {snippet if snippet else 'A common pain point in DevOps workflows.'}",
+        f"📌 **{remix_title(title)}**",
         "",
-        f"✨ The fix: {context_insights[0] if context_insights else 'Simplify, automate, iterate.'}",
+        f"🔍 **The challenge:**",
+        f"   _{snippet if snippet else 'A common pain point in DevOps workflows.'}_",
         "",
-        "💡 Key takeaway:",
-        "• Start with the simplest solution.",
-        "• Automate repetitive steps.",
-        "• Document for the next engineer.",
+        f"✨ **The fix:**",
+        f"   {context_insights[0] if context_insights else 'Simplify, automate, iterate.'}",
+        "",
+        "💡 **Key takeaway:**",
+        "   • Start with the simplest solution",
+        "   • Automate repetitive steps",
+        "   • Document for the next engineer",
+        "",
+        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
         get_subscription_cta(),
         "",
         get_hashtags(),
         "",
-        f"❓ {cta}"
+        f"❓ **{cta}**"
     ]
     if link:
         lines.extend(["", f"🔗 {link}"])
@@ -4628,10 +4698,11 @@ def build_digest_post(items):
     _USED_FOOTER_QUESTIONS.append(footer_question)
     if len(_USED_FOOTER_QUESTIONS) > len(footer_questions) // 2:
         _USED_FOOTER_QUESTIONS = _USED_FOOTER_QUESTIONS[-len(footer_questions)//2:]
-    lines = [intro_header, persona_line, "", section_header]
+    lines = [intro_header, persona_line, "", "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", "", f"**{section_header}**"]
     MAX_CONTEXT_LEN = 200  # Limit context/summary to 200 chars
     MAX_ITEMS = len(items)
     # Try to fit as many items as possible, but always include links
+    item_emojis = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
     for i, item in enumerate(items, 1):
         takeaway = remix_title(item["title"])
         snippet = summarize_snippet(item.get("summary", ""))[:MAX_CONTEXT_LEN].rstrip()
@@ -4642,8 +4713,9 @@ def build_digest_post(items):
         value = value.strip()
         if value.lower().startswith('why it matters:'):
             value = value[len('Why it matters:'):].strip()
-        link_display = f"\n 🔗 {item.get('link', '')}" if item.get('link') else ""
-        entry = f"{i}. {takeaway}\n Context: {snippet}\n Impact: {value}{link_display}\n"
+        link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') else ""
+        item_emoji = item_emojis[i-1] if i <= len(item_emojis) else f"{i}."
+        entry = f"\n{item_emoji} **{takeaway}**\n   📖 _{snippet}_\n   💡 {value}{link_display}\n"
         lines.append(entry)
         # Check if adding another item would exceed the post limit
         preview_post = "\n".join(lines + ["", cta, "", hashtags, "", footer_question])
@@ -4659,10 +4731,10 @@ def build_digest_post(items):
                     shown_links.add(link)
     missing_links = [l for l in all_links if l not in shown_links]
     if missing_links:
-        lines.append("\nAdditional links:")
+        lines.append("\n📎 **Additional Resources:**")
         for link in missing_links:
-            lines.append(f"🔗 {link}")
-    lines.extend(["", cta, "", hashtags, "", footer_question])
+            lines.append(f"   🔗 {link}")
+    lines.extend(["", "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", "", f"💬 **{cta}**", "", hashtags, "", f"❓ **{footer_question}**"])
     post = "\n".join(lines)
     return format_post_content(clip(post, MAX_POST_CHARS))
 
