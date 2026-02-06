@@ -3,10 +3,16 @@ name: LinkedIn DevOps Growth & Engagement Automation
 on:
   schedule:
     # GitHub Actions uses UTC time! IST = UTC+5:30
-    #    9 AM IST  = 03:30 UTC
-    #    5 PM IST  = 11:30 UTC
-    - cron: '30 3 * * *'    # 9 AM IST daily (morning posting)
-    - cron: '30 11 * * *'   # 5 PM IST daily (evening engagement)
+    # OPTIMIZED FOR MAXIMUM LINKEDIN ENGAGEMENT
+    #
+    # Peak Days (Tue-Thu): 3 posts/day at best times
+    # Regular Days (Mon, Fri): 2 posts/day
+    # Weekends: 1 post/day (late morning)
+    #
+    - cron: '0 3 * * 1-5'    # 8:30 AM IST weekdays (morning commute - highest engagement)
+    - cron: '0 7 * * 2-4'    # 12:30 PM IST Tue-Thu only (lunch break - peak days bonus)
+    - cron: '0 12 * * 1-5'   # 5:30 PM IST weekdays (end of workday scroll)
+    - cron: '0 5 * * 0,6'    # 10:30 AM IST weekends (late morning catch-up)
   
   workflow_dispatch:
     inputs:
