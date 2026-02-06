@@ -56,6 +56,11 @@ on:
           - case_study
           - hot_take
           - lessons
+          - trend_watch
+          - tool_spotlight
+          - did_you_know
+          - community_question
+          - problem_solved
       
       custom_message:
         description: 'Custom post text (bypasses RSS)'
@@ -415,7 +420,7 @@ jobs:
         PREFER_RECENT: "true"
         
         # Post format & style
-        POST_FORMATS: "deep_dive,case_study,lessons,digest"
+        POST_FORMATS: "digest,deep_dive,quick_tip,case_study,hot_take,lessons,trend_watch,tool_spotlight,did_you_know,community_question,problem_solved"
         FORCE_FORMAT: "${{ github.event.inputs.post_format || 'auto' }}"
         CUSTOM_MESSAGE: "${{ github.event.inputs.custom_message || '' }}"
         HASHTAGS: "#DevOps #SRE #CloudNative #Platform #Kubernetes #DevSecOps #Architecture #Engineering #Systems #Infrastructure #Observability #Security"
