@@ -1,12 +1,12 @@
 {
-  "total_posts": 120,
-  "posts_today": 5,
+  "total_posts": 121,
+  "posts_today": 6,
   "last_post_date": "2026-02-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 77,
+    "digest": 78,
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 4,
@@ -22,12 +22,12 @@
     "blog.newrelic.com": 8,
     "engineering.fb.com": 6,
     "blog.google": 3,
-    "blog.checkpoint.com": 18,
+    "blog.checkpoint.com": 21,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 13,
     "www.cncf.io": 30,
-    "blog.rapid7.com": 13,
+    "blog.rapid7.com": 15,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
@@ -38,7 +38,7 @@
     "about.gitlab.com": 18,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
-    "azure.microsoft.com": 3,
+    "azure.microsoft.com": 4,
     "www.sonarsource.com": 3,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 2,
@@ -53,14 +53,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-26",
-      "time": "2025-12-26T12:03:45.449781+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2025-12-27",
       "time": "2025-12-27T04:47:39.598573+00:00",
@@ -1017,15 +1009,28 @@
         "aws.amazon.com",
         "www.cncf.io"
       ]
+    },
+    {
+      "date": "2026-02-07",
+      "time": "2026-02-07T09:50:29.943870+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.checkpoint.com",
+        "blog.rapid7.com",
+        "blog.checkpoint.com",
+        "blog.rapid7.com",
+        "azure.microsoft.com",
+        "blog.checkpoint.com"
+      ]
     }
   ],
-  "posts_created": 93,
-  "last_post_content": "\ud83e\udde0 Leadership lessons from the field.\nCollaboration experts spotlight culture and process breakthroughs.\n\n\ud83d\udccc STRATEGIC HIGHLIGHTS:\n\n1\ufe0f\u20e3 REDUCE VULNERABILITY NOISE WITH VEX: WIZ + DOCKER HARDENED IMAGES\n\nOpen source components power most modern applications. A new generation of hardened container images can establish a more secure foundation, but even with hardened images,...\n\n\ud83d\udca1 KEY INSIGHT: Production-tested patterns for running containers at scale with fewer headaches.\n\ud83d\udd17 Read more: https://www.docker.com/blog/reduce-vulnerability-noise-with-vex-wiz-docker-hardened-images/\n\n2\ufe0f\u20e3 BUILDING A SCALABLE CODE MODERNIZATION SOLUTION WITH AWS TRANSFORM CUSTOM\n\nIntroduction Software maintenance and modernization is a critical challenge for enterprises managing hundreds or thousands of repositories.\n\n\ud83d\udca1 KEY INSIGHT: Cloud strategies that balance performance, reliability, and cost.\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/devops/building-a-scalable-code-modernization-solution-with-aws-transform-custom/\n\n3\ufe0f\u20e3 THE 3CS: A FRAMEWORK FOR AI AGENT SECURITY\n\nEvery time execution models change, security frameworks need to change with them. Agents force the next shift. The Unattended Laptop Problem No developer would leave their...\n\n\ud83d\udca1 KEY INSIGHT: Catch security issues early - before they become expensive incidents.\n\ud83d\udd17 Read more: https://www.docker.com/blog/the-3cs-a-framework-for-ai-agent-security/\n\n\ud83d\udcac \ud83d\udc8c Get weekly DevOps insights delivered to your inbox \u2013 subscribe to stay ahead!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
+  "posts_created": 94,
+  "last_post_content": "\ud83e\udd16 AI and automation: practical impacts.\nAI innovators map the future of intelligent systems.\n\n\ud83d\udccc CLOUD-NATIVE BREAKTHROUGHS:\n\n1\ufe0f\u20e3 THE THREE MOST DISRUPTIVE CYBER TRENDS IMPACTING THE FINANCIAL INDUSTRY TODAY\n\n...\nThe financial sector experienced an unprecedented rise in cyber incidents in 2025, with attacks more than doubling from 864 in 2024 to 1,858 in 2025. This acceleration reflects a dramatic shift in threat actor behavior, ranging from ideologically-motivated disruptions to commercialized cyber crime as a service. Below is a concise snapshot of the three dominant trends before we unpack them in d\n\n\ud83d\udca1 KEY INSIGHT: Reduces incident response time and helps teams learn from failures faster.\n\ud83d\udd17 Read more: https://blog.checkpoint.com/research/the-three-most-disruptive-cyber-trends-impacting-the-financial-industry-today/\n\n2\ufe0f\u20e3 ICYMI: EXPERTS ON EXPERTS \u2013 SEASON ONE ROUNDUP\n\nIn 2025, we launched Experts on Experts: Commanding Perspectives as a pilot video series designed to spotlight the ideas shaping cybersecurity, directly from the people driving...\n\n\ud83d\udca1 KEY INSIGHT: Catch security issues early - before they become expensive incidents.\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/it-icymi-rapid7-experts-on-experts-season-one-roundup\n\n3\ufe0f\u20e3 AMARANTH-DRAGON: TARGETED CYBER ESPIONAGE CAMPAIGNS ACROSS SOUTHEAST ASIA\n\n...\nExecutive Summary Check Point Research uncovered highly targeted cyber espionage campaigns aimed at government and law enforcement agencies across the ASEAN region throughout 2025. The activity is attributed to Amaranth-Dragon, a previously untracked threat actor assessed to be closely linked to the China-affiliated APT 41 ecosystem. The group weaponized newly disclosed vulnerabilities within\n\n\ud83d\udca1 KEY INSIGHT: AI-powered workflows that actually save engineering time.\n\ud83d\udd17 Read more: https://blog.checkpoint.com/research/amaranth-dragon-targeted-cyber-espionage-campaigns-across-southeast-asia/\n\n\ud83d\udcac \ud83d\udc8c Get weekly DevOps insights delivered to your inbox \u2013 subscribe to stay ahead!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "www.cncf.io",
-    "aws.amazon.com",
-    "www.docker.com"
+    "blog.checkpoint.com",
+    "blog.rapid7.com",
+    "azure.microsoft.com"
   ],
-  "last_post_timestamp": "2026-02-07T09:34:17.740286+00:00"
+  "last_post_timestamp": "2026-02-07T09:50:29.944836+00:00"
 }
