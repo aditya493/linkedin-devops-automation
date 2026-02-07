@@ -942,6 +942,11 @@ def format_post_content(text: str) -> str:
     # Also handle remaining single asterisks if any
     text = re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'\1', text)
     
+    # Remove heavy separator lines - keep posts clean and trendy
+    text = text.replace('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', '')
+    # Remove any lines that are just dashes or equals
+    text = re.sub(r'\n[-=─━]{5,}\n', '\n\n', text)
+    
     # Get the bullet style from emoji settings
     bullet = get_emoji("bullet") if 'get_emoji' in dir() else "•"
     if not bullet:
@@ -5759,7 +5764,7 @@ def build_digest_post(items):
     _USED_FOOTER_QUESTIONS.append(footer_question)
     if len(_USED_FOOTER_QUESTIONS) > len(footer_questions) // 2:
         _USED_FOOTER_QUESTIONS = _USED_FOOTER_QUESTIONS[-len(footer_questions)//2:]
-    lines = [intro_header, persona_line, "", "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", "", f"📌 {section_header.upper()}"]
+    lines = [intro_header, persona_line, "", f"📌 {section_header.upper()}", ""]
     MAX_CONTEXT_LEN = 350  # Increased for more substantive content
     MAX_ITEMS = len(items)
     # Try to fit as many items as possible, but always include links
