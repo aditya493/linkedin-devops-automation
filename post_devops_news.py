@@ -458,14 +458,14 @@ def get_dynamic_persona(post_format=None, content=None, title=None, items=None):
             "💌 **Level up your DevOps game – subscribe now!**"
         ]
         subscribe_templates = [
-            "👉 **Subscribe:** https://lnkd.in/g_mZKwxY",
-            "👉 **Join here:** https://lnkd.in/g_mZKwxY",
-            "👉 **Sign up:** https://lnkd.in/g_mZKwxY"
+            # "👉 **Subscribe:** https://lnkd.in/g_mZKwxY",
+            # "👉 **Join here:** https://lnkd.in/g_mZKwxY",
+            # "👉 **Sign up:** https://lnkd.in/g_mZKwxY"
         ]
         playbook_templates = [
-            "📖 **DevOps LinkedIn Playbook:** https://lnkd.in/gzTACvZf",
-            "📖 **Get the Playbook:** https://lnkd.in/gzTACvZf",
-            "📖 **LinkedIn Playbook:** https://lnkd.in/gzTACvZf"
+            # "📖 **DevOps LinkedIn Playbook:** https://lnkd.in/gzTACvZf",
+            # "📖 **Get the Playbook:** https://lnkd.in/gzTACvZf",
+            # "📖 **LinkedIn Playbook:** https://lnkd.in/gzTACvZf"
         ]
         hashtag_templates = [
             "#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps",
