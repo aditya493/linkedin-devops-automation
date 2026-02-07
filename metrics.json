@@ -1,12 +1,12 @@
 {
-  "total_posts": 119,
-  "posts_today": 4,
+  "total_posts": 120,
+  "posts_today": 5,
   "last_post_date": "2026-02-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 76,
+    "digest": 77,
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 4,
@@ -16,7 +16,7 @@
   "sources_used": {
     "www.infoq.com": 118,
     "kubernetes.io": 23,
-    "www.docker.com": 15,
+    "www.docker.com": 18,
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
     "blog.newrelic.com": 8,
@@ -25,8 +25,8 @@
     "blog.checkpoint.com": 18,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 11,
-    "www.cncf.io": 29,
+    "aws.amazon.com": 13,
+    "www.cncf.io": 30,
     "blog.rapid7.com": 13,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -53,14 +53,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-26",
-      "time": "2025-12-26T11:38:23.402526+00:00",
-      "format": "lessons",
-      "sources": [
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2025-12-26",
       "time": "2025-12-26T12:03:45.449781+00:00",
@@ -1012,16 +1004,28 @@
         "www.infoq.com",
         "www.cncf.io"
       ]
+    },
+    {
+      "date": "2026-02-07",
+      "time": "2026-02-07T09:34:17.739296+00:00",
+      "format": "digest",
+      "sources": [
+        "www.docker.com",
+        "aws.amazon.com",
+        "www.docker.com",
+        "www.docker.com",
+        "aws.amazon.com",
+        "www.cncf.io"
+      ]
     }
   ],
-  "posts_created": 92,
-  "last_post_content": "\ud83d\udd0d Key trends in platform reliability.\nAutomation architects drive efficiency and scale across industries.\n\n\ud83d\udccc PLATFORM WINS:\n\n1\ufe0f\u20e3 CONTEXT ENGINEERING FOR CODING AGENTS\n\n...\nThe number of options we have to configure and enrich a coding agent&#x2019;s context has exploded over the past few months. Claude Code is leading the charge with innovations in this space, but other coding assistants are quickly following suit. Powerful context engineering is becoming a huge part of the developer experience of these tools. Birgitta B&#xf6;ckeler explains the current state of\n\n\ud83d\udca1 KEY INSIGHT: AI-powered workflows that actually save engineering time.\n\ud83d\udd17 Read more: https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html\n\n2\ufe0f\u20e3 PRESENTATION: EXPANDING SWIFT FROM APPS TO SERVICES\n\nCory Benfield discusses the evolution of Swift from an app language to a critical tool for secure, high-scale services. He explains how Swift\u2019s lack of a garbage collector...\n\n\ud83d\udca1 KEY INSIGHT: AI-powered workflows that actually save engineering time.\n\ud83d\udd17 Read more: https://www.infoq.com/presentations/swift-apps-services/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n3\ufe0f\u20e3 MUI RELEASES BASE UI 1 WITH 35 ACCESSIBLE COMPONENTS\n\nBase UI 1.0 has officially launched! This unstyled React component library, backed by MUI, offers 35 accessible components with a commitment to long-term maintenance.\n\n\ud83d\udca1 KEY INSIGHT: Ship faster with confidence - automated testing and deployment done right.\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/02/baseui-v1-accessible/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac \ud83d\udc8c Level up your DevOps game \u2013 subscribe now!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 How is your organization responding to these signals?",
+  "posts_created": 93,
+  "last_post_content": "\ud83e\udde0 Leadership lessons from the field.\nCollaboration experts spotlight culture and process breakthroughs.\n\n\ud83d\udccc STRATEGIC HIGHLIGHTS:\n\n1\ufe0f\u20e3 REDUCE VULNERABILITY NOISE WITH VEX: WIZ + DOCKER HARDENED IMAGES\n\nOpen source components power most modern applications. A new generation of hardened container images can establish a more secure foundation, but even with hardened images,...\n\n\ud83d\udca1 KEY INSIGHT: Production-tested patterns for running containers at scale with fewer headaches.\n\ud83d\udd17 Read more: https://www.docker.com/blog/reduce-vulnerability-noise-with-vex-wiz-docker-hardened-images/\n\n2\ufe0f\u20e3 BUILDING A SCALABLE CODE MODERNIZATION SOLUTION WITH AWS TRANSFORM CUSTOM\n\nIntroduction Software maintenance and modernization is a critical challenge for enterprises managing hundreds or thousands of repositories.\n\n\ud83d\udca1 KEY INSIGHT: Cloud strategies that balance performance, reliability, and cost.\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/devops/building-a-scalable-code-modernization-solution-with-aws-transform-custom/\n\n3\ufe0f\u20e3 THE 3CS: A FRAMEWORK FOR AI AGENT SECURITY\n\nEvery time execution models change, security frameworks need to change with them. Agents force the next shift. The Unattended Laptop Problem No developer would leave their...\n\n\ud83d\udca1 KEY INSIGHT: Catch security issues early - before they become expensive incidents.\n\ud83d\udd17 Read more: https://www.docker.com/blog/the-3cs-a-framework-for-ai-agent-security/\n\n\ud83d\udcac \ud83d\udc8c Get weekly DevOps insights delivered to your inbox \u2013 subscribe to stay ahead!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "www.infoq.com",
-    "martinfowler.com",
-    "www.hashicorp.com",
-    "www.cncf.io"
+    "www.cncf.io",
+    "aws.amazon.com",
+    "www.docker.com"
   ],
-  "last_post_timestamp": "2026-02-07T09:25:07.262996+00:00"
+  "last_post_timestamp": "2026-02-07T09:34:17.740286+00:00"
 }
