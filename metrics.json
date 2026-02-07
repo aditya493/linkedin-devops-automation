@@ -1,12 +1,12 @@
 {
-  "total_posts": 115,
-  "posts_today": 2,
-  "last_post_date": "2026-02-06",
+  "total_posts": 116,
+  "posts_today": 1,
+  "last_post_date": "2026-02-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 72,
+    "digest": 73,
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 4,
@@ -20,12 +20,12 @@
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
     "blog.newrelic.com": 8,
-    "engineering.fb.com": 5,
+    "engineering.fb.com": 6,
     "blog.google": 3,
     "blog.checkpoint.com": 18,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 8,
+    "aws.amazon.com": 11,
     "www.cncf.io": 28,
     "blog.rapid7.com": 13,
     "feeds.feedburner.com": 8,
@@ -33,8 +33,8 @@
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 15,
     "growth_plan": 22,
-    "snyk.io": 6,
-    "netflixtechblog.medium.com": 3,
+    "snyk.io": 7,
+    "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
     "martinfowler.com": 5,
     "www.aquasec.com": 1,
@@ -53,14 +53,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-26",
-      "time": "2025-12-26T08:23:14.856862+00:00",
-      "format": "digest",
-      "sources": [
-        "kubernetes.io"
-      ]
-    },
     {
       "date": "2025-12-26",
       "time": "2025-12-26T09:28:34.436684+00:00",
@@ -998,13 +990,29 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-07",
+      "time": "2026-02-07T05:39:29.554481+00:00",
+      "format": "digest",
+      "sources": [
+        "netflixtechblog.medium.com",
+        "aws.amazon.com",
+        "aws.amazon.com",
+        "aws.amazon.com",
+        "engineering.fb.com",
+        "snyk.io"
+      ]
     }
   ],
-  "posts_created": 88,
-  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nTop teams separate signal from noise in modern infrastructure. Insights below.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n**Essential reads:**\n\n1\ufe0f\u20e3 **AI-powered code reviews: 6 months of real-world data**\n\ud83d\udcd6 _Many engineers remain skeptical about ai-powered code reviews: 6 months of real-world data. The data tells a different story:_\n\ud83d\udca1 practical signal for building reliable systems.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udcac **\ud83d\udc8c Don\u2019t miss out \u2013 get DevOps news in your inbox!\n\ud83d\udc49 Sign up: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 LinkedIn Playbook: https://lnkd.in/gzTACvZf**\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 **Which trend resonates most with your team?**",
+  "posts_created": 89,
+  "last_post_content": "\u2601\ufe0f Cloud-native breakthroughs to watch.\nTop teams separate signal from noise in modern infrastructure. Insights below.\n\n\ud83d\udccc GLOBAL TECH TRENDS:\n\n1\ufe0f\u20e3 THE DATA CANARY: HOW NETFLIX VALIDATES CATALOG METADATA\n\nBy Celina Amados At Netflix, our catalog metadata is crucial to our member experience, and a single corrupted data state can impact millions of viewers immediately.\n\n\ud83d\udca1 KEY INSIGHT: Real-world insights backed by data from production environments.\n\ud83d\udd17 Read more: https://netflixtechblog.medium.com/the-data-canary-how-netflix-validates-catalog-metadata-18b699d58e36?source=rss-c3aeaf49d8a4------2\n\n2\ufe0f\u20e3 DEPLOYING CUSTOM TERRAFORM TO LZA-MANAGED ACCOUNTS WITH AFT\n\nAs organizations scale their AWS environments, managing infrastructure consistently while enabling team autonomy becomes increasingly challenging.\n\n\ud83d\udca1 KEY INSIGHT: Cloud strategies that balance performance, reliability, and cost.\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/deploying-custom-terraform-to-lza-managed-accounts-with-aft/\n\n3\ufe0f\u20e3 OPTIMIZE COST AND AUTOMATE SECURITY REMEDIATION WITH AMS TRUSTED REMEDIATOR\n\nOrganizations leveraging&nbsp;Amazon Web Services (AWS)&nbsp;receive thousands of security and optimization recommendations monthly, yet many remain unimplemented due to...\n\n\ud83d\udca1 KEY INSIGHT: Cloud strategies that balance performance, reliability, and cost.\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/optimize-cost-and-automate-security-remediation-with-ams-trusted-remediator/\n\n\ud83d\udcac \ud83d\udc8c Get weekly DevOps insights delivered to your inbox \u2013 subscribe to stay ahead!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHAT DID WE MISS?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "snyk.io",
+    "aws.amazon.com",
+    "engineering.fb.com",
+    "netflixtechblog.medium.com"
   ],
-  "last_post_timestamp": "2026-02-06T12:52:39.873885+00:00"
+  "last_post_timestamp": "2026-02-07T05:39:29.555453+00:00"
 }
