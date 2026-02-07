@@ -12,12 +12,6 @@ Topic: Kubernetes 1.30 Introduces Enhanced Pod Scheduling
 
 The pattern: helps you run clusters more reliably and efficiently..
 
-What's a lesson that changed how you work?
-
-✉️ Never miss a DevOps update - join my weekly newsletter!
-👉 Subscribe: https://is.gd/devopstechradarnewsletter
-📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
-
 #Kubernetes #CloudNative #SRE #IncidentManagement #ReliabilityEngineering
 
 ============================================================
