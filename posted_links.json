@@ -66,6 +66,8 @@
     "https://blog.gitguardian.com/stop-leaking-api-keys-the-backend-for-frontend-bff-pattern-explained/",
     "https://blog.gitguardian.com/what-ai-agents-can-teach-us-about-nhi-governance/",
     "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/nrf-2026/",
+    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/",
+    "https://blog.google/innovation-and-ai/products/google-ai-updates-january-2026/",
     "https://blog.google/products/google-cloud/ai-business-trends-report-2026/",
     "https://blog.google/technology/ai/google-ai-news-recap-2025/",
     "https://blog.qualys.com/category/product-tech",
@@ -125,6 +127,7 @@
     "https://newrelic.com/blog/dem/observability-for-chatgpt-apps-in-the-age-of-agentic-ai",
     "https://newrelic.com/blog/infrastructure-monitoring/network-observability-for-engineers-01",
     "https://newrelic.com/blog/infrastructure-monitoring/network-observability-for-engineers-03",
+    "https://newrelic.com/blog/infrastructure-monitoring/optimize-databricks-full-visibility-with-new-relic",
     "https://newrelic.com/blog/infrastructure-monitoring/setting-up-aws-distro-for-opentelemetry-with-container-based-lambda-functions-and-new-relic",
     "https://newrelic.com/blog/news/browser-consent-mode-allows-for-flexibility-in-evolving-privacy-regulations",
     "https://newrelic.com/blog/observability/aws-reinvent-2025-updates",
@@ -176,6 +179,8 @@
     "https://www.cncf.io/blog/2026/02/02/opentelemetry-collector-vs-agent-how-to-choose-the-right-telemetry-approach/",
     "https://www.cncf.io/blog/2026/02/03/the-best-of-kubecon-cloudnativecon-watch-the-video/",
     "https://www.cncf.io/blog/2026/02/04/cncf-celebrates-successful-mentees-from-lfx-mentorship-2025-term-3/",
+    "https://www.cncf.io/blog/2026/02/04/conversing-with-large-language-models-using-dapr/",
+    "https://www.cncf.io/blog/2026/02/05/dragonfly-v2-4-0-is-released/",
     "https://www.crowdstrike.com/en-us/blog/ai-tool-poisoning/",
     "https://www.crowdstrike.com/en-us/blog/architecture-of-agentic-defense-inside-the-falcon-platform/",
     "https://www.crowdstrike.com/en-us/blog/built-for-scale-powered-by-ai-innovation-driving-falcon-exposure-management/",
@@ -512,10 +517,15 @@
       "6ff3883d72dc": "2026-02-07T09:50:29.942711+00:00",
       "f19d69272a8b": "2026-02-07T09:50:29.942764+00:00",
       "7ccb697d511d": "2026-02-07T09:50:29.942814+00:00",
-      "60056610b6eb": "2026-02-07T09:50:29.942865+00:00"
+      "60056610b6eb": "2026-02-07T09:50:29.942865+00:00",
+      "1184b5f52434": "2026-02-07T09:58:00.802284+00:00",
+      "484633970522": "2026-02-07T09:58:00.802386+00:00",
+      "f46f724baf2b": "2026-02-07T09:58:00.802439+00:00",
+      "33c788cd0fbb": "2026-02-07T09:58:00.802486+00:00",
+      "dd4f81c7616b": "2026-02-07T09:58:00.802532+00:00"
     },
-    "last_post_id": "urn:li:share:7425838356959485952",
-    "last_posted_at_utc": "2026-02-07T09:50:29.942905+00:00",
+    "last_post_id": "urn:li:share:7425840248036925441",
+    "last_posted_at_utc": "2026-02-07T09:58:00.802570+00:00",
     "last_format": "digest"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "total_posts": 121,
-  "posts_today": 6,
+  "total_posts": 122,
+  "posts_today": 7,
   "last_post_date": "2026-02-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 78,
+    "digest": 79,
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 4,
@@ -19,14 +19,14 @@
     "www.docker.com": 18,
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
-    "blog.newrelic.com": 8,
+    "blog.newrelic.com": 9,
     "engineering.fb.com": 6,
-    "blog.google": 3,
+    "blog.google": 5,
     "blog.checkpoint.com": 21,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 13,
-    "www.cncf.io": 30,
+    "www.cncf.io": 32,
     "blog.rapid7.com": 15,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -53,14 +53,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-27",
-      "time": "2025-12-27T04:47:39.598573+00:00",
-      "format": "lessons_learned",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2025-12-27",
       "time": "2025-12-27T06:54:43.070891+00:00",
@@ -1022,15 +1014,27 @@
         "azure.microsoft.com",
         "blog.checkpoint.com"
       ]
+    },
+    {
+      "date": "2026-02-07",
+      "time": "2026-02-07T09:58:00.803510+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.newrelic.com",
+        "www.cncf.io",
+        "www.cncf.io",
+        "blog.google",
+        "blog.google"
+      ]
     }
   ],
-  "posts_created": 94,
-  "last_post_content": "\ud83e\udd16 AI and automation: practical impacts.\nAI innovators map the future of intelligent systems.\n\n\ud83d\udccc CLOUD-NATIVE BREAKTHROUGHS:\n\n1\ufe0f\u20e3 THE THREE MOST DISRUPTIVE CYBER TRENDS IMPACTING THE FINANCIAL INDUSTRY TODAY\n\n...\nThe financial sector experienced an unprecedented rise in cyber incidents in 2025, with attacks more than doubling from 864 in 2024 to 1,858 in 2025. This acceleration reflects a dramatic shift in threat actor behavior, ranging from ideologically-motivated disruptions to commercialized cyber crime as a service. Below is a concise snapshot of the three dominant trends before we unpack them in d\n\n\ud83d\udca1 KEY INSIGHT: Reduces incident response time and helps teams learn from failures faster.\n\ud83d\udd17 Read more: https://blog.checkpoint.com/research/the-three-most-disruptive-cyber-trends-impacting-the-financial-industry-today/\n\n2\ufe0f\u20e3 ICYMI: EXPERTS ON EXPERTS \u2013 SEASON ONE ROUNDUP\n\nIn 2025, we launched Experts on Experts: Commanding Perspectives as a pilot video series designed to spotlight the ideas shaping cybersecurity, directly from the people driving...\n\n\ud83d\udca1 KEY INSIGHT: Catch security issues early - before they become expensive incidents.\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/it-icymi-rapid7-experts-on-experts-season-one-roundup\n\n3\ufe0f\u20e3 AMARANTH-DRAGON: TARGETED CYBER ESPIONAGE CAMPAIGNS ACROSS SOUTHEAST ASIA\n\n...\nExecutive Summary Check Point Research uncovered highly targeted cyber espionage campaigns aimed at government and law enforcement agencies across the ASEAN region throughout 2025. The activity is attributed to Amaranth-Dragon, a previously untracked threat actor assessed to be closely linked to the China-affiliated APT 41 ecosystem. The group weaponized newly disclosed vulnerabilities within\n\n\ud83d\udca1 KEY INSIGHT: AI-powered workflows that actually save engineering time.\n\ud83d\udd17 Read more: https://blog.checkpoint.com/research/amaranth-dragon-targeted-cyber-espionage-campaigns-across-southeast-asia/\n\n\ud83d\udcac \ud83d\udc8c Get weekly DevOps insights delivered to your inbox \u2013 subscribe to stay ahead!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
+  "posts_created": 95,
+  "last_post_content": "\ud83c\udfaf Platform engineering: what stands out now.\nTop teams separate signal from noise in modern infrastructure. Insights below.\n\n\ud83d\udccc KEY DEVELOPMENTS:\n\n1\ufe0f\u20e3 OPTIMIZE DATABRICKS: FULL VISIBILITY WITH NEW RELIC\n\nSupercharge your Databricks estate with our open-source integration. Get deep, in-context telemetry to optimize performance and master your data.\n\n\ud83d\udca1 KEY INSIGHT: Real-world insights backed by data from production environments.\n\ud83d\udd17 Read more: https://newrelic.com/blog/infrastructure-monitoring/optimize-databricks-full-visibility-with-new-relic\n\n2\ufe0f\u20e3 DRAGONFLY V2.4.0 IS RELEASED\n\nDragonfly v2.4.0 is released! Thanks to all of the contributors who made this Dragonfly release happen. New features and enhancements load-aware scheduling algorithm A...\n\n\ud83d\udca1 KEY INSIGHT: Ship faster with confidence - automated testing and deployment done right.\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/02/05/dragonfly-v2-4-0-is-released/\n\n3\ufe0f\u20e3 CONVERSING WITH LARGE LANGUAGE MODELS USING DAPR\n\nImagine you are running a bunch of microservices, each living within its own boundary. What are some of the challenges that come into mind when operating them? This is where...\n\n\ud83d\udca1 KEY INSIGHT: Architecture patterns for services that scale without surprises.\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/02/04/conversing-with-large-language-models-using-dapr/\n\n\ud83d\udcac \ud83d\udc8c Stay ahead: subscribe for weekly DevOps insights!\n\ud83d\udc49 Join here: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Get the Playbook: https://lnkd.in/gzTACvZf\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "blog.checkpoint.com",
-    "blog.rapid7.com",
-    "azure.microsoft.com"
+    "blog.newrelic.com",
+    "www.cncf.io",
+    "blog.google"
   ],
-  "last_post_timestamp": "2026-02-07T09:50:29.944836+00:00"
+  "last_post_timestamp": "2026-02-07T09:58:00.804501+00:00"
 }
