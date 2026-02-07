@@ -451,32 +451,14 @@ def get_dynamic_persona(post_format=None, content=None, title=None, items=None):
             available_questions = footer_templates.copy()
         footer_question = random.choice(available_questions)
         _USED_FOOTER_QUESTIONS.append(footer_question)
-        cta_templates = [
-            "💌 **Get weekly DevOps insights delivered to your inbox – subscribe to stay ahead!**",
-            "💌 **Stay ahead: subscribe for weekly DevOps insights!**",
-            "💌 **Don’t miss out – get DevOps news in your inbox!**",
-            "💌 **Level up your DevOps game – subscribe now!**"
-        ]
-        subscribe_templates = [
-            # "👉 **Subscribe:** https://lnkd.in/g_mZKwxY",
-            # "👉 **Join here:** https://lnkd.in/g_mZKwxY",
-            # "👉 **Sign up:** https://lnkd.in/g_mZKwxY"
-        ]
-        playbook_templates = [
-            # "📖 **DevOps LinkedIn Playbook:** https://lnkd.in/gzTACvZf",
-            # "📖 **Get the Playbook:** https://lnkd.in/gzTACvZf",
-            # "📖 **LinkedIn Playbook:** https://lnkd.in/gzTACvZf"
-        ]
+        # Subscription and promotional templates removed
+        # cta_templates, subscribe_templates, and playbook_templates intentionally disabled
         hashtag_templates = [
             "#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps",
             "#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering",
             "#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps"
         ]
         lines.extend([
-            "",
-            random.choice(cta_templates),
-            random.choice(subscribe_templates),
-            random.choice(playbook_templates),
             "",
             random.choice(hashtag_templates),
             "",
@@ -1287,10 +1269,7 @@ Write the post now:"""
             post_lines.insert(0, persona)
             post_lines.insert(1, "")
     
-    # Add subscription CTA
-    subscription_cta = get_subscription_cta()
-    if subscription_cta:
-        post_lines.extend(["", subscription_cta])
+    # Subscription CTA removed
     
     # Add hashtags
     if isinstance(hashtags, list):
@@ -3010,70 +2989,11 @@ def get_contextual_hashtags(topic: str, max_count: int = None) -> str:
 # -------------------------------------------------
 
 def get_subscription_cta() -> str:
-    """Get subscription call-to-action for Beehiiv newsletter.
+    """Get subscription call-to-action (disabled).
     
-    Respects EMOJI_STYLE setting for consistent branding.
+    Subscription and promotion CTAs have been removed.
     """
-    # Environment variable to control subscription CTA
-    INCLUDE_SUBSCRIPTION = os.environ.get("INCLUDE_SUBSCRIPTION", "true").lower() == "true"
-    
-    if not INCLUDE_SUBSCRIPTION:
-        return ""
-    
-    # Get emoji based on style setting
-    if EMOJI_STYLE == "none":
-        subscribe_emoji = ""
-        link_emoji = ""
-        book_emoji = ""
-    elif EMOJI_STYLE == "minimal":
-        subscribe_emoji = "→"
-        link_emoji = "→"
-        book_emoji = "→"
-    else:  # moderate or heavy
-        subscribe_emoji = "📩"
-        link_emoji = "👉"
-        book_emoji = "📖"
-    
-    # Subscription CTA messages - vary based on emoji style
-    if EMOJI_STYLE == "none":
-        subscription_messages = [
-            "Want more DevOps insights like this? Subscribe to my newsletter for weekly updates!",
-            "Get weekly DevOps insights delivered to your inbox - subscribe to stay ahead!",
-            "Subscribe for more deep dives into DevOps, SRE, and platform engineering!",
-            "Never miss a DevOps update - join my weekly newsletter!",
-        ]
-    else:
-        subscription_messages = [
-            f"{subscribe_emoji} Want more DevOps insights like this? Subscribe to my newsletter!",
-            f"{subscribe_emoji} Get weekly DevOps insights delivered to your inbox!",
-            f"{subscribe_emoji} Subscribe to my newsletter for deep dives into DevOps, SRE, and platform engineering!",
-            f"{subscribe_emoji} Never miss a DevOps update - join my weekly newsletter!",
-            f"{subscribe_emoji} Join thousands of DevOps professionals - subscribe to my newsletter for weekly insights!",
-        ]
-    
-    # Newsletter subscription URL
-    # subscription_url = os.environ.get("NEWSLETTER_URL", "https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a")
-    
-    # DevOps LinkedIn Playbook URL
-    # playbook_url = os.environ.get("PLAYBOOK_URL", "https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook")
-    # include_playbook = os.environ.get("INCLUDE_PLAYBOOK", "true").lower() == "true"
-
-    # Pick a random message and build the CTA
-    message = random.choice(subscription_messages)
-    
-    # Build the CTA with proper emoji formatting
-    if link_emoji:
-        cta = f"{message}\n{link_emoji} Subscribe: {subscription_url}"
-    else:
-        cta = f"{message}\nSubscribe: {subscription_url}"
-    
-    if include_playbook and playbook_url:
-        if book_emoji:
-            cta += f"\n{book_emoji} Grab my DevOps LinkedIn Playbook: {playbook_url}"
-        else:
-            cta += f"\nGrab my DevOps LinkedIn Playbook: {playbook_url}"
-    
-    return cta
+    return ""
 
 def http_request(
     method: str,
@@ -3753,8 +3673,6 @@ def build_thread_style_post(items) -> str:
         "",
         context_cta,
         "",
-        get_subscription_cta(),
-        "",
         get_hashtags(),
         "",
         f"❓ {footer_question}"
@@ -3828,8 +3746,6 @@ def build_quote_style_post(items) -> str:
         "",
         context_cta,
         "",
-        get_subscription_cta(),
-        "",
         get_hashtags(),
         "",
         f"❓ {footer_question}"
@@ -3901,8 +3817,6 @@ def build_news_flash_post(items) -> str:
         "",
         context_cta,
         "",
-        get_subscription_cta(),
-        "",
         get_hashtags(),
         "",
         f"❓ {footer_question}"
@@ -3965,8 +3879,6 @@ def build_trend_watch_post(items) -> str:
         "",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
-        get_subscription_cta(),
-        "",
         get_hashtags(),
         "",
         f"❓ **{cta}**"
@@ -4027,8 +3939,6 @@ def build_tool_spotlight_post(items) -> str:
         "   • Actively maintained and community-driven",
         "",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-        "",
-        get_subscription_cta(),
         "",
         get_hashtags(),
         "",
@@ -4100,8 +4010,6 @@ def build_did_you_know_post(items) -> str:
         f"   {context_insights[0] if context_insights else 'Data-driven decisions lead to better outcomes.'}",
         "",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-        "",
-        get_subscription_cta(),
         "",
         get_hashtags(),
         "",
@@ -4175,8 +4083,6 @@ def build_community_question_post(items) -> str:
         "",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "",
-        get_subscription_cta(),
-        "",
         get_hashtags(),
         "",
         f"❓ **{cta}**"
@@ -4243,8 +4149,6 @@ def build_problem_solved_post(items) -> str:
         "   • Document for the next engineer",
         "",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-        "",
-        get_subscription_cta(),
         "",
         get_hashtags(),
         "",
@@ -4491,8 +4395,6 @@ def build_weekly_recap_post(items) -> str:
     
     lines.extend([
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-        "",
-        get_subscription_cta(),
         "",
         get_hashtags(),
         "",
@@ -5237,8 +5139,6 @@ def build_quick_tip_post() -> str:
         "",
         cta,
         "",
-        get_subscription_cta(),
-        "",
         get_hashtags(),
         "",
         f"❓ {footer_question}"
@@ -5346,8 +5246,6 @@ def build_lessons_post(items) -> str:
         "",
         cta,
         "",
-        get_subscription_cta(),
-        "",
         get_contextual_hashtags(topic, MAX_HASHTAGS),
         "",
         f"❓ {footer_question}"
@@ -5416,8 +5314,6 @@ def build_hot_take_post(items) -> str:
         f"{arrow} Simple solutions usually outperform complex ones",
         "",
         cta,
-        "",
-        get_subscription_cta(),
         "",
         get_hashtags(),
         "",
@@ -5533,7 +5429,7 @@ def build_case_study_post(items) -> str:
             lines.append(f"{check} {insight}")
         check = "☑️" if EMOJI_STYLE != "none" else "[x]"
         lines.append(f"{check} Track results and optimize")
-    lines.extend(["", context_cta, "", get_subscription_cta(), "", get_hashtags(), "", f"❓ {footer_question}"])
+    lines.extend(["", context_cta, "", get_hashtags(), "", f"❓ {footer_question}"])
     links = [link] if link and should_include_links(post_style, "case_study") else []
     link_section = format_links_section(links, post_style)
     lines.extend(link_section)
@@ -5642,7 +5538,7 @@ def build_deep_dive_post(items) -> str:
             "",
             f"💡 {context_insights[0] if context_insights else 'Focus on what matters most.'}",
         ])
-    lines.extend(["", context_cta, "", get_subscription_cta(), "", get_hashtags(), "", f"❓ {footer_question}"])
+    lines.extend(["", context_cta, "", get_hashtags(), "", f"❓ {footer_question}"])
     links = [link] if link and should_include_links(post_style, "deep_dive") else []
     link_section = format_links_section(links, post_style)
     lines.extend(link_section)
@@ -5886,7 +5782,7 @@ def main():
                 post_text = f"{persona}\n\n{post_text}"
             except Exception as e:
                 logger.warning(f"Persona generation failed: {e}")
-        post_text += f"\n\n{get_subscription_cta()}\n\n{get_hashtags()}"
+        post_text += f"\n\n{get_hashtags()}"
         post_text = clip(post_text, MAX_POST_CHARS)
         post_format = "custom"
         new_items = []
