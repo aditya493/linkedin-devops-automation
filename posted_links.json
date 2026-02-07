@@ -109,6 +109,7 @@
     "https://martinfowler.com/bliki/ExcessiveBold.html",
     "https://martinfowler.com/fragments/2026-01-08.html",
     "https://martinfowler.com/fragments/2026-01-22.html",
+    "https://martinfowler.com/fragments/2026-02-04.html",
     "https://netflixtechblog.com/data-bridge-how-netflix-simplifies-data-movement-36d10d91c313?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.com/the-ai-evolution-of-graph-search-at-netflix-d416ec5b1151?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.medium.com/the-data-canary-how-netflix-validates-catalog-metadata-18b699d58e36?source=rss-c3aeaf49d8a4------2",
@@ -213,6 +214,7 @@
     "https://www.hashicorp.com/blog/the-future-of-secrets-and-identity-management",
     "https://www.hashicorp.com/blog/the-risks-of-cybersecurity-tool-sprawl-and-why-we-need-consolidation",
     "https://www.hashicorp.com/blog/the-top-5-sources-of-secret-sprawl-and-how-attackers-exploit-them",
+    "https://www.infoq.com/articles/agent-assisted-intelligent-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/ai-assisted-development-series/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/engineering-speed-scale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/evolution-backend-streaming-application/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -301,6 +303,10 @@
     "https://www.infoq.com/news/2026/01/x402-agentic-http-payments/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/02/airbnb-global-payaslocal/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/02/cloudflare-matrix-homeserver-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/02/datadog-google-llm-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/02/google-grpc-mcp-transport/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/02/linkedin-redesigns-sast-pipeline/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/02/linkedin-service-discovery/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/2025-year-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/ai-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/code-leadership-balance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -465,10 +471,16 @@
       "17d6da85d328": "2026-02-07T05:39:29.553317+00:00",
       "4c8b5461e954": "2026-02-07T05:39:29.553384+00:00",
       "55e2213edb0b": "2026-02-07T05:39:29.553452+00:00",
-      "fec444d66488": "2026-02-07T08:53:36.187193+00:00"
+      "fec444d66488": "2026-02-07T08:53:36.187193+00:00",
+      "a643ca37d512": "2026-02-07T09:09:05.528296+00:00",
+      "b590725a3a8b": "2026-02-07T09:09:05.528377+00:00",
+      "76a0c1e88ccb": "2026-02-07T09:09:05.528421+00:00",
+      "b728fb17c864": "2026-02-07T09:09:05.528458+00:00",
+      "62f00f307ba4": "2026-02-07T09:09:05.528493+00:00",
+      "c3c74976cea3": "2026-02-07T09:09:05.528527+00:00"
     },
-    "last_post_id": "urn:li:share:7425824038905856000",
-    "last_posted_at_utc": "2026-02-07T08:53:36.187270+00:00",
+    "last_post_id": "urn:li:share:7425827936580165633",
+    "last_posted_at_utc": "2026-02-07T09:09:05.528556+00:00",
     "last_format": "digest"
   }
 }
