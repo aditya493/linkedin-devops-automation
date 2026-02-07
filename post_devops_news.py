@@ -3920,7 +3920,7 @@ def build_trend_watch_post(items) -> str:
     
     item = items[0]
     title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    snippet = summarize_snippet(item.get("summary", ""))[:400]  # Longer content for more value
     link = item.get("link", "")
     
     context_insights, context_cta = get_context_aware_insights(title, snippet)
@@ -3983,7 +3983,7 @@ def build_tool_spotlight_post(items) -> str:
     
     item = items[0]
     title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    snippet = summarize_snippet(item.get("summary", ""))[:400]  # Longer content for more value
     link = item.get("link", "")
     
     tool_hooks = [
@@ -4046,7 +4046,7 @@ def build_did_you_know_post(items) -> str:
     
     item = items[0]
     title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    snippet = summarize_snippet(item.get("summary", ""))[:400]  # Longer content for more value
     link = item.get("link", "")
     
     context_insights, _ = get_context_aware_insights(title, snippet)
@@ -4119,7 +4119,7 @@ def build_community_question_post(items) -> str:
     
     item = items[0]
     title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    snippet = summarize_snippet(item.get("summary", ""))[:400]  # Longer content for more value
     link = item.get("link", "")
     
     question_hooks = [
@@ -4193,7 +4193,7 @@ def build_problem_solved_post(items) -> str:
     
     item = items[0]
     title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))[:200]
+    snippet = summarize_snippet(item.get("summary", ""))[:400]  # Longer content for more value
     link = item.get("link", "")
     
     context_insights, _ = get_context_aware_insights(title, snippet)
@@ -4262,7 +4262,7 @@ def build_poll_post(items) -> str:
     
     item = items[0]
     title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))[:150]
+    snippet = summarize_snippet(item.get("summary", ""))[:400]  # Longer content for more value
     link = item.get("link", "")
     
     # Poll topics based on DevOps themes
@@ -4661,7 +4661,7 @@ def build_before_after_post(items) -> str:
     
     item = items[0]
     title = item["title"]
-    snippet = summarize_snippet(item.get("summary", ""))[:150]
+    snippet = summarize_snippet(item.get("summary", ""))[:400]  # Longer content for more value
     link = item.get("link", "")
     
     # Transformation stories
@@ -5765,7 +5765,7 @@ def build_digest_post(items):
     if len(_USED_FOOTER_QUESTIONS) > len(footer_questions) // 2:
         _USED_FOOTER_QUESTIONS = _USED_FOOTER_QUESTIONS[-len(footer_questions)//2:]
     lines = [intro_header, persona_line, "", f"📌 {section_header.upper()}", ""]
-    MAX_CONTEXT_LEN = 350  # Increased for more substantive content
+    MAX_CONTEXT_LEN = 400  # Longer content for more useful posts
     MAX_ITEMS = len(items)
     # Try to fit as many items as possible, but always include links
     item_emojis = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
