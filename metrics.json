@@ -1,12 +1,12 @@
 {
-  "total_posts": 118,
-  "posts_today": 3,
+  "total_posts": 119,
+  "posts_today": 4,
   "last_post_date": "2026-02-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 75,
+    "digest": 76,
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 4,
@@ -14,7 +14,7 @@
     "controversial_takes": 2
   },
   "sources_used": {
-    "www.infoq.com": 115,
+    "www.infoq.com": 118,
     "kubernetes.io": 23,
     "www.docker.com": 15,
     "krebsonsecurity.com": 6,
@@ -26,17 +26,17 @@
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 11,
-    "www.cncf.io": 28,
+    "www.cncf.io": 29,
     "blog.rapid7.com": 13,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
-    "www.hashicorp.com": 15,
+    "www.hashicorp.com": 16,
     "growth_plan": 23,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
-    "martinfowler.com": 6,
+    "martinfowler.com": 7,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 3,
     "www.sonarsource.com": 3,
@@ -53,14 +53,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-26",
-      "time": "2025-12-26T11:33:30.149990+00:00",
-      "format": "lessons",
-      "sources": [
-        "www.hashicorp.com"
-      ]
-    },
     {
       "date": "2025-12-26",
       "time": "2025-12-26T11:38:23.402526+00:00",
@@ -1007,14 +999,29 @@
         "www.infoq.com",
         "martinfowler.com"
       ]
+    },
+    {
+      "date": "2026-02-07",
+      "time": "2026-02-07T09:25:07.261998+00:00",
+      "format": "digest",
+      "sources": [
+        "martinfowler.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.hashicorp.com",
+        "www.infoq.com",
+        "www.cncf.io"
+      ]
     }
   ],
-  "posts_created": 91,
-  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nTech strategists decode the next wave of transformation.\n\n\ud83d\udccc ARCHITECTURE PATTERNS:\n\n1\ufe0f\u20e3 LINKEDIN RE-ARCHITECTS SERVICE DISCOVERY: REPLACING ZOOKEEPER WITH KAFKA AND XDS AT SCALE\n\nLinkedIn's engineering team successfully upgraded its legacy ZooKeeper service discovery platform to enhance scalability and performance.\n\n\ud83d\udca1 KEY INSIGHT: Platform engineering that makes developers more productive, not frustrated.\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/02/linkedin-service-discovery/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2\ufe0f\u20e3 DATADOG INTEGRATES GOOGLE AGENT DEVELOPMENT KIT INTO LLM OBSERVABILITY TOOLS\n\nDatadog recently announced that its LLM Observability platform now provides automatic instrumentation for applications built with Google's Agent Development Kit (ADK), offering...\n\n\ud83d\udca1 KEY INSIGHT: See what's actually happening in production before your users complain.\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/02/datadog-google-llm-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n3\ufe0f\u20e3 LINKEDIN LEVERAGES GITHUB ACTIONS, CODEQL, AND SEMGREP FOR CODE SCANNING\n\nLinkedIn has rebuilt its static application security testing (SAST) pipeline using GitHub Actions and custom workflows, enabling consistent, enforceable code scanning across...\n\n\ud83d\udca1 KEY INSIGHT: Ship faster with confidence - automated testing and deployment done right.\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/02/linkedin-redesigns-sast-pipeline/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac \ud83d\udc8c Level up your DevOps game \u2013 subscribe now!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
+  "posts_created": 92,
+  "last_post_content": "\ud83d\udd0d Key trends in platform reliability.\nAutomation architects drive efficiency and scale across industries.\n\n\ud83d\udccc PLATFORM WINS:\n\n1\ufe0f\u20e3 CONTEXT ENGINEERING FOR CODING AGENTS\n\n...\nThe number of options we have to configure and enrich a coding agent&#x2019;s context has exploded over the past few months. Claude Code is leading the charge with innovations in this space, but other coding assistants are quickly following suit. Powerful context engineering is becoming a huge part of the developer experience of these tools. Birgitta B&#xf6;ckeler explains the current state of\n\n\ud83d\udca1 KEY INSIGHT: AI-powered workflows that actually save engineering time.\n\ud83d\udd17 Read more: https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html\n\n2\ufe0f\u20e3 PRESENTATION: EXPANDING SWIFT FROM APPS TO SERVICES\n\nCory Benfield discusses the evolution of Swift from an app language to a critical tool for secure, high-scale services. He explains how Swift\u2019s lack of a garbage collector...\n\n\ud83d\udca1 KEY INSIGHT: AI-powered workflows that actually save engineering time.\n\ud83d\udd17 Read more: https://www.infoq.com/presentations/swift-apps-services/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n3\ufe0f\u20e3 MUI RELEASES BASE UI 1 WITH 35 ACCESSIBLE COMPONENTS\n\nBase UI 1.0 has officially launched! This unstyled React component library, backed by MUI, offers 35 accessible components with a commitment to long-term maintenance.\n\n\ud83d\udca1 KEY INSIGHT: Ship faster with confidence - automated testing and deployment done right.\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/02/baseui-v1-accessible/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac \ud83d\udc8c Level up your DevOps game \u2013 subscribe now!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 How is your organization responding to these signals?",
   "last_post_format": "digest",
   "last_post_sources": [
     "www.infoq.com",
-    "martinfowler.com"
+    "martinfowler.com",
+    "www.hashicorp.com",
+    "www.cncf.io"
   ],
-  "last_post_timestamp": "2026-02-07T09:09:05.530180+00:00"
+  "last_post_timestamp": "2026-02-07T09:25:07.262996+00:00"
 }
