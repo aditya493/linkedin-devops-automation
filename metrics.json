@@ -1,12 +1,12 @@
 {
-  "total_posts": 116,
-  "posts_today": 1,
+  "total_posts": 117,
+  "posts_today": 2,
   "last_post_date": "2026-02-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 73,
+    "digest": 74,
     "lessons_learned": 5,
     "technical_deep_dives": 3,
     "industry_predictions": 4,
@@ -32,7 +32,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 15,
-    "growth_plan": 22,
+    "growth_plan": 23,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -53,15 +53,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-26",
-      "time": "2025-12-26T09:28:34.436684+00:00",
-      "format": "case_study",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2025-12-26",
       "time": "2025-12-26T11:05:38.684595+00:00",
@@ -1003,16 +994,21 @@
         "engineering.fb.com",
         "snyk.io"
       ]
+    },
+    {
+      "date": "2026-02-07",
+      "time": "2026-02-07T08:53:36.188135+00:00",
+      "format": "digest",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 89,
-  "last_post_content": "\u2601\ufe0f Cloud-native breakthroughs to watch.\nTop teams separate signal from noise in modern infrastructure. Insights below.\n\n\ud83d\udccc GLOBAL TECH TRENDS:\n\n1\ufe0f\u20e3 THE DATA CANARY: HOW NETFLIX VALIDATES CATALOG METADATA\n\nBy Celina Amados At Netflix, our catalog metadata is crucial to our member experience, and a single corrupted data state can impact millions of viewers immediately.\n\n\ud83d\udca1 KEY INSIGHT: Real-world insights backed by data from production environments.\n\ud83d\udd17 Read more: https://netflixtechblog.medium.com/the-data-canary-how-netflix-validates-catalog-metadata-18b699d58e36?source=rss-c3aeaf49d8a4------2\n\n2\ufe0f\u20e3 DEPLOYING CUSTOM TERRAFORM TO LZA-MANAGED ACCOUNTS WITH AFT\n\nAs organizations scale their AWS environments, managing infrastructure consistently while enabling team autonomy becomes increasingly challenging.\n\n\ud83d\udca1 KEY INSIGHT: Cloud strategies that balance performance, reliability, and cost.\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/deploying-custom-terraform-to-lza-managed-accounts-with-aft/\n\n3\ufe0f\u20e3 OPTIMIZE COST AND AUTOMATE SECURITY REMEDIATION WITH AMS TRUSTED REMEDIATOR\n\nOrganizations leveraging&nbsp;Amazon Web Services (AWS)&nbsp;receive thousands of security and optimization recommendations monthly, yet many remain unimplemented due to...\n\n\ud83d\udca1 KEY INSIGHT: Cloud strategies that balance performance, reliability, and cost.\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/optimize-cost-and-automate-security-remediation-with-ams-trusted-remediator/\n\n\ud83d\udcac \ud83d\udc8c Get weekly DevOps insights delivered to your inbox \u2013 subscribe to stay ahead!\n\ud83d\udc49 Subscribe: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHAT DID WE MISS?",
+  "posts_created": 90,
+  "last_post_content": "\ud83d\udd12 Security, scale, and innovation: the highlights.\nAI innovators map the future of intelligent systems.\n\n\ud83d\udccc SIGNAL VS NOISE:\n\n1\ufe0f\u20e3 BUILDING SELF-HEALING INFRASTRUCTURE WITH AI\n\nThe ROI from building self-healing infrastructure with ai is surprising industry leaders. Here's why:\n\n\ud83d\udca1 KEY INSIGHT: Reproducible infrastructure that doesn't break at 3 AM.\n\n\ud83d\udcac \ud83d\udc8c Stay ahead: subscribe for weekly DevOps insights!\n\ud83d\udc49 Join here: https://lnkd.in/g_mZKwxY\n\ud83d\udcd6 Get the Playbook: https://lnkd.in/gzTACvZf\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "snyk.io",
-    "aws.amazon.com",
-    "engineering.fb.com",
-    "netflixtechblog.medium.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-07T05:39:29.555453+00:00"
+  "last_post_timestamp": "2026-02-07T08:53:36.189125+00:00"
 }
