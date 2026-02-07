@@ -928,9 +928,19 @@ def format_post_content(text: str) -> str:
     - No excessive blank lines
     - Clean paragraph breaks
     - Proper emoji placement
+    - REMOVES MARKDOWN since LinkedIn doesn't render it
     """
     if not text:
         return text
+    
+    # STRIP MARKDOWN - LinkedIn doesn't render **bold** or _italic_
+    # Convert **bold text** to BOLD TEXT (uppercase for emphasis)
+    import re
+    text = re.sub(r'\*\*([^*]+)\*\*', lambda m: m.group(1).upper() if len(m.group(1)) < 50 else m.group(1), text)
+    # Convert _italic text_ to just the text (remove underscores)
+    text = re.sub(r'(?<!\w)_([^_]+)_(?!\w)', r'\1', text)
+    # Also handle remaining single asterisks if any
+    text = re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'\1', text)
     
     # Get the bullet style from emoji settings
     bullet = get_emoji("bullet") if 'get_emoji' in dir() else "•"
@@ -3139,24 +3149,48 @@ def ai_generate_value_line(title: str, snippet: str) -> str:
     title_clean = re.sub(r"\s+", " ", (title or "").strip())
     snippet_clean = re.sub(r"\s+", " ", (snippet or "").strip())
 
-    # Heuristic fallback (fast, free, always available)
+    # Heuristic fallback (fast, free, always available) - MORE SPECIFIC
     def fallback() -> str:
         t = (title_clean + " " + snippet_clean).lower()
         if any(k in t for k in ("incident", "outage", "mttr", "pager", "on-call")):
-            return "Why it matters: reduces incident risk and improves MTTR."
-        if any(k in t for k in ("kubernetes", "cluster", "container", "helm", "gitops")):
-            return "Why it matters: helps you run clusters more reliably and efficiently."
-        if any(k in t for k in ("cicd", "pipeline", "deployment", "release")):
-            return "Why it matters: improves delivery speed without sacrificing safety."
-        if any(k in t for k in ("observability", "monitoring", "tracing", "metrics", "logs")):
-            return "Why it matters: improves visibility, debugging speed, and reliability."
-        if any(k in t for k in ("aws", "gcp", "azure", "cloud")):
-            return "Why it matters: helps you optimize cloud reliability and cost."
-        if any(k in t for k in ("security", "vulnerability", "cve", "sast", "dast")):
-            return "Why it matters: strengthens security posture and reduces risk."
-        if any(k in t for k in ("terraform", "iac", "infrastructure", "automation")):
-            return "Why it matters: improves infrastructure reliability and consistency."
-        return "Why it matters: practical signal for building reliable systems."
+            return "Reduces incident response time and helps teams learn from failures faster."
+        if any(k in t for k in ("kubernetes", "k8s", "cluster", "container", "helm", "gitops")):
+            return "Production-tested patterns for running containers at scale with fewer headaches."
+        if any(k in t for k in ("cicd", "pipeline", "deployment", "release", "github actions")):
+            return "Ship faster with confidence - automated testing and deployment done right."
+        if any(k in t for k in ("observability", "monitoring", "tracing", "metrics", "logs", "grafana", "prometheus")):
+            return "See what's actually happening in production before your users complain."
+        if any(k in t for k in ("aws", "gcp", "azure", "cloud", "serverless", "lambda")):
+            return "Cloud strategies that balance performance, reliability, and cost."
+        if any(k in t for k in ("security", "vulnerability", "cve", "sast", "dast", "devsecops")):
+            return "Catch security issues early - before they become expensive incidents."
+        if any(k in t for k in ("terraform", "iac", "infrastructure", "pulumi", "ansible")):
+            return "Reproducible infrastructure that doesn't break at 3 AM."
+        if any(k in t for k in ("ai", "ml", "llm", "gpt", "copilot", "automation")):
+            return "AI-powered workflows that actually save engineering time."
+        if any(k in t for k in ("docker", "dockerfile", "image", "registry")):
+            return "Container best practices from teams running millions of containers daily."
+        if any(k in t for k in ("api", "microservice", "service mesh", "istio", "envoy")):
+            return "Architecture patterns for services that scale without surprises."
+        if any(k in t for k in ("database", "postgres", "mysql", "redis", "mongodb")):
+            return "Database strategies for high availability and performance at scale."
+        if any(k in t for k in ("cost", "finops", "optimization", "budget")):
+            return "Cut cloud costs without sacrificing reliability or developer experience."
+        if any(k in t for k in ("platform", "developer experience", "dx", "internal")):
+            return "Platform engineering that makes developers more productive, not frustrated."
+        if any(k in t for k in ("sre", "reliability", "slo", "sla", "error budget")):
+            return "Reliability engineering practices from teams running 99.99% uptime."
+        # More specific fallbacks based on content patterns
+        if "review" in t or "data" in t:
+            return "Real-world insights backed by data from production environments."
+        if "best practice" in t or "pattern" in t:
+            return "Battle-tested patterns from teams solving similar challenges."
+        if "tool" in t or "open source" in t:
+            return "Tools that solve real problems - vetted by the community."
+        if "migration" in t or "upgrade" in t:
+            return "Migration strategies that minimize risk and downtime."
+        # Default - still make it specific
+        return "Practical insights for engineers building production systems."
 
     if not ENABLE_AI_ENHANCE:
         return fallback()
@@ -5725,8 +5759,8 @@ def build_digest_post(items):
     _USED_FOOTER_QUESTIONS.append(footer_question)
     if len(_USED_FOOTER_QUESTIONS) > len(footer_questions) // 2:
         _USED_FOOTER_QUESTIONS = _USED_FOOTER_QUESTIONS[-len(footer_questions)//2:]
-    lines = [intro_header, persona_line, "", "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", "", f"**{section_header}**"]
-    MAX_CONTEXT_LEN = 200  # Limit context/summary to 200 chars
+    lines = [intro_header, persona_line, "", "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", "", f"📌 {section_header.upper()}"]
+    MAX_CONTEXT_LEN = 350  # Increased for more substantive content
     MAX_ITEMS = len(items)
     # Try to fit as many items as possible, but always include links
     item_emojis = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
@@ -5740,9 +5774,10 @@ def build_digest_post(items):
         value = value.strip()
         if value.lower().startswith('why it matters:'):
             value = value[len('Why it matters:'):].strip()
-        link_display = f"\n   🔗 {item.get('link', '')}" if item.get('link') else ""
+        link_display = f"\n   🔗 Read more: {item.get('link', '')}" if item.get('link') else ""
         item_emoji = item_emojis[i-1] if i <= len(item_emojis) else f"{i}."
-        entry = f"\n{item_emoji} **{takeaway}**\n   📖 _{snippet}_\n   💡 {value}{link_display}\n"
+        # More readable format without markdown
+        entry = f"\n{item_emoji} {takeaway.upper()}\n\n   {snippet}\n\n   💡 KEY INSIGHT: {value}{link_display}\n"
         lines.append(entry)
         # Check if adding another item would exceed the post limit
         preview_post = "\n".join(lines + ["", cta, "", hashtags, "", footer_question])
