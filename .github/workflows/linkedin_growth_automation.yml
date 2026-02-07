@@ -460,9 +460,9 @@ jobs:
         ADD_UTM_PARAMS: "false"
         
         # Newsletter & product promotion
-        INCLUDE_SUBSCRIPTION: "true"
+        INCLUDE_SUBSCRIPTION: "false"
         NEWSLETTER_URL: "https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a"
-        INCLUDE_PLAYBOOK: "true"
+        INCLUDE_PLAYBOOK: "false"
         PLAYBOOK_URL: "https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook"
         
         # Growth Plan vs RSS probability (0=100% RSS, 1=100% Growth Plan)
