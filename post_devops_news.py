@@ -5721,12 +5721,12 @@ def build_digest_post(items):
         "Architecture patterns:",
         "Global tech trends:"
     ]
-    ctas = [
-        "💌 Get weekly DevOps insights delivered to your inbox – subscribe to stay ahead!\n👉 Subscribe: https://lnkd.in/g_mZKwxY\n📖 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf",
-        "💌 Stay ahead: subscribe for weekly DevOps insights!\n👉 Join here: https://lnkd.in/g_mZKwxY\n📖 Get the Playbook: https://lnkd.in/gzTACvZf",
-        "💌 Don’t miss out – get DevOps news in your inbox!\n👉 Sign up: https://lnkd.in/g_mZKwxY\n📖 LinkedIn Playbook: https://lnkd.in/gzTACvZf",
-        "💌 Level up your DevOps game – subscribe now!\n👉 Subscribe: https://lnkd.in/g_mZKwxY\n📖 DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf"
-    ]
+    # ctas = [
+    #     "💌 Get weekly DevOps insights delivered to your inbox – subscribe to stay ahead!\n👉 Subscribe: https://lnkd.in/g_mZKwxY\n📖 Checkout DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf",
+    #     "💌 Stay ahead: subscribe for weekly DevOps insights!\n👉 Join here: https://lnkd.in/g_mZKwxY\n📖 Get the Playbook: https://lnkd.in/gzTACvZf",
+    #     "💌 Don’t miss out – get DevOps news in your inbox!\n👉 Sign up: https://lnkd.in/g_mZKwxY\n📖 LinkedIn Playbook: https://lnkd.in/gzTACvZf",
+    #     "💌 Level up your DevOps game – subscribe now!\n👉 Subscribe: https://lnkd.in/g_mZKwxY\n📖 DevOps LinkedIn Playbook: https://lnkd.in/gzTACvZf"
+    # ]
     hashtags_list = [
         "#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps",
         "#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering",
