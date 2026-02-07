@@ -46,9 +46,6 @@ The pattern: helps you run clusters more reliably and efficiently..
 
 Share your hard-won wisdom below.
 
-📩 Get weekly DevOps insights delivered to your inbox!
-👉 Subscribe: https://is.gd/devopstechradarnewsletter
-📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
 
 #CICD #FinOps #SiteReliability #Resilience #SRE
 
@@ -72,9 +69,6 @@ What stands out:
 
 Why this matters: Better observability, fewer surprises in prod.
 
-📩 Never miss a DevOps update - join the weekly newsletter!
-👉 Subscribe: https://is.gd/devopstechradarnewsletter
-📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
 
 #Cloud #IncidentManagement #SRE #Resilience #Observability
 
