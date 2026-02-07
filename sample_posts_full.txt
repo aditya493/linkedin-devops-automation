@@ -33,10 +33,6 @@ The pattern: helps you run clusters more reliably and efficiently..
 
 Share your hard-won wisdom below.
 
-📩 Never miss a DevOps update - join the weekly newsletter!
-👉 Subscribe: https://is.gd/devopstechradarnewsletter
-📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
-
 #ContainerOrchestration #Cloud #PlatformEngineering #IncidentManagement #DevOps
 
 
@@ -85,9 +81,5 @@ My reasoning:
 → Simple solutions usually outperform complex ones
 
 What's the counter-argument?
-
-📩 Subscribe for more deep dives into DevOps, SRE, and platform engineering!
-👉 Subscribe: https://is.gd/devopstechradarnewsletter
-📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
 
 #SRE #DevOps #Cloud #ReliabilityEngineering #PlatformEngineering
