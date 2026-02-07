@@ -1,12 +1,1 @@
-SUBSCRIPTION CTA OUTPUT:
---------------------------------------------------
-📩 Get weekly DevOps insights delivered to your inbox!
-👉 Subscribe: https://is.gd/devopstechradarnewsletter
-📖 Checkout DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
---------------------------------------------------
 
-VERIFICATION:
-  [PASS] Newsletter link
-  [PASS] Playbook link
-
-ALL CHECKS PASSED!
