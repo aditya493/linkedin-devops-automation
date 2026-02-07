@@ -3052,11 +3052,11 @@ def get_subscription_cta() -> str:
         ]
     
     # Newsletter subscription URL
-    subscription_url = os.environ.get("NEWSLETTER_URL", "https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a")
+    # subscription_url = os.environ.get("NEWSLETTER_URL", "https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a")
     
     # DevOps LinkedIn Playbook URL
-    playbook_url = os.environ.get("PLAYBOOK_URL", "https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook")
-    include_playbook = os.environ.get("INCLUDE_PLAYBOOK", "true").lower() == "true"
+    # playbook_url = os.environ.get("PLAYBOOK_URL", "https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook")
+    # include_playbook = os.environ.get("INCLUDE_PLAYBOOK", "true").lower() == "true"
 
     # Pick a random message and build the CTA
     message = random.choice(subscription_messages)
