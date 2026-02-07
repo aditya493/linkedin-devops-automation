@@ -2,13 +2,7 @@
 FINAL VERIFICATION - ALL SETTINGS
 ============================================================
 
-1. SUBSCRIPTION CTA:
-----------------------------------------
-📩 Subscribe to my newsletter for deep dives into DevOps, SRE, and platform engineering!
-👉 Subscribe: https://subscribe-forms.beehiiv.com/8c55da26-5925-46d6-9877-47c84af2c18a
-📖 Grab my DevOps LinkedIn Playbook: https://ajayverse34.gumroad.com/l/the-devops-linkedin-authority-playbook
-
-2. SAMPLE POST (Hot Take):
+1. SAMPLE POST (Hot Take):
 ----------------------------------------
 ⚡ 🔥 Hot take: unpopular opinion incoming.
 Container orchestration strategies worth understanding. This matters.
@@ -28,7 +22,7 @@ What's the counter-argument?
 
 #FinOps #IncidentManagement #DevOps #Kubernetes #Observability
 
-3. VERIFICATION CHECKLIST:
+2. VERIFICATION CHECKLIST:
 ----------------------------------------
   [PASS] Newsletter URL (beehiiv)
   [PASS] Playbook URL
