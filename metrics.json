@@ -1,7 +1,7 @@
 {
-  "total_posts": 123,
-  "posts_today": 8,
-  "last_post_date": "2026-02-07",
+  "total_posts": 124,
+  "posts_today": 1,
+  "last_post_date": "2026-02-08",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 3,
     "industry_predictions": 4,
     "career_advice": 4,
-    "controversial_takes": 2,
+    "controversial_takes": 3,
     "ai_and_automation": 1
   },
   "sources_used": {
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 24,
+    "growth_plan": 25,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-28",
-      "time": "2025-12-28T06:54:25.542685+00:00",
-      "format": "technical_deep_dives",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2025-12-29",
       "time": "2025-12-29T04:35:50.091093+00:00",
@@ -1025,13 +1017,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-08",
+      "time": "2026-02-08T06:12:20.502223+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 96,
-  "last_post_content": "DevOps practices at scale reveal key patterns. Here's the signal.\n\nThe ROI from how teams are using GitHub Copilot in DevOps workflows is surprising industry leaders. Here's why: teams often find that automating repetitive coding tasks is crucial for efficient DevOps workflows. The reality is that manual coding can be time-consuming and prone to errors.\n\nThe AI/automation problem being addressed is the need for faster and more accurate coding. Teams evaluate various tools and technologies, including GitHub Copilot, to streamline their workflows. Evidence suggests that GitHub Copilot is a popular choice due to its ability to automate coding tasks.\n\nImplementation approach involves integrating GitHub Copilot into existing DevOps workflows. The step-by-step process includes:\n\u2022 Setting up GitHub Copilot with existing code repositories\n\u2022 Configuring automation rules and workflows\n\u2022 Monitoring and optimizing GitHub Copilot performance\n\nWhat worked is the ability to automate repetitive coding tasks, while what didn't is the initial setup and configuration process. Production experience shows that GitHub Copilot can significantly reduce coding time and increase accuracy.\n\nThe data shows significant ROI and productivity metrics, including reduced coding time and increased deployment frequency. Future plans include expanding GitHub Copilot usage to more teams and workflows.\n\nHow is your team using AI in DevOps workflows? Share your experience!\n\n#genai #microservices #cloudengineering #llmops #sre",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 97,
+  "last_post_content": "DevOps culture transformation shows what works. Worth understanding.\n\nEveryone talks about why most companies aren't ready for devops in 2026, but nobody mentions this:\nmost organizations lack the foundational elements required for a successful DevOps transformation.\n\nThe data shows that teams often find it challenging to adopt DevOps due to several key factors.\nThe reality is that companies struggle with:\n\u2022 Insufficient automation\n\u2022 Inadequate testing strategies\n\u2022 Ineffective communication between teams\n\nThe reality is that some may argue that these challenges can be easily overcome with the right tools and training.\n\nProduction experience shows that even with the best intentions, companies can still struggle to implement DevOps effectively, and this is evident in the numerous failed attempts to adopt DevOps in the past.\n\nWhat's your take on this? Let's debate it professionally in the comments.\n\n#serverless #mlops #automation #scalability #cloudengineering",
+  "last_post_format": "controversial_takes",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-07T16:45:04.977458+00:00"
+  "last_post_timestamp": "2026-02-08T06:12:20.503152+00:00"
 }
