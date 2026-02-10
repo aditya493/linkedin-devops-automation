@@ -1,6 +1,6 @@
 {
-  "total_posts": 126,
-  "posts_today": 1,
+  "total_posts": 127,
+  "posts_today": 2,
   "last_post_date": "2026-02-10",
   "formats_used": {
     "case_study": 10,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 3,
     "industry_predictions": 4,
-    "career_advice": 4,
+    "career_advice": 5,
     "controversial_takes": 4,
     "ai_and_automation": 1
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 27,
+    "growth_plan": 28,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-30",
-      "time": "2025-12-30T04:15:42.263053+00:00",
-      "format": "technical_deep_dives",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2025-12-30",
       "time": "2025-12-30T11:41:57.308672+00:00",
@@ -1027,13 +1019,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-10",
+      "time": "2026-02-10T07:54:50.244203+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 99,
-  "last_post_content": "DevOps culture transformation shows what works. This matters.\n\nAfter analyzing 5 years of DevOps data, here's the truth about platform engineering is just devops rebranded - change my mind:\n\nThe reality is that platform engineering is merely a rebranding of DevOps. Teams often find that the principles and practices remain the same. Production experience shows that the core concepts of DevOps, such as automation and continuous delivery, are still at the heart of platform engineering.\n\nThe data shows that platform engineering is built on the foundations of DevOps, with three key similarities:\n\u2022 Shared goals of improving efficiency and reducing costs\n\u2022 Emphasis on automation and self-service\n\u2022 Focus on cross-functional collaboration and communication\n\nThe counterargument is that platform engineering brings new innovations and approaches, but evidence suggests that these are incremental improvements rather than revolutionary changes.\n\nExperience reveals that teams can achieve the same benefits by embracing DevOps principles and practices, without the need for rebranding. The truth is that DevOps and platform engineering are not mutually exclusive, but rather complementary approaches to achieving the same goals.\n\nAgree or disagree? Share your perspective in the comments.\n\n#scalability #infrastructure #infrastructureascode #finops #automation",
-  "last_post_format": "controversial_takes",
+  "posts_created": 100,
+  "last_post_content": "Bridging development and operations delivers value faster. Pay attention to this.\n\nAfter analyzing 5 years of DevOps data, here's the truth about how to transition from traditional IT to DevOps in 2026:\nTeams often find that transitioning to DevOps requires a significant shift in mindset and skills.\n\nThe data shows that successful transitions involve several key strategies, including:\n\u2022 Focusing on automation and efficiency\n\u2022 Building a culture of collaboration and continuous improvement\n\u2022 Developing skills in areas like cloud computing and containerization\n\nExperience reveals that common mistakes to avoid include trying to adopt DevOps tools and practices without a clear understanding of the underlying principles.\n\nEvidence suggests that getting started with DevOps requires access to the right resources, such as online training courses and industry conferences.\n\nProduction experience shows that the timeline for transitioning to DevOps can vary, but with a focused effort, teams can start seeing benefits within a few months.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#devops #automation #sre #cloudengineering #platformengineering",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-10T05:01:50.908513+00:00"
+  "last_post_timestamp": "2026-02-10T07:54:50.245185+00:00"
 }
