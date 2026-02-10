@@ -1,6 +1,6 @@
 {
-  "total_posts": 127,
-  "posts_today": 2,
+  "total_posts": 128,
+  "posts_today": 3,
   "last_post_date": "2026-02-10",
   "formats_used": {
     "case_study": 10,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 3,
     "industry_predictions": 4,
-    "career_advice": 5,
+    "career_advice": 6,
     "controversial_takes": 4,
     "ai_and_automation": 1
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 28,
+    "growth_plan": 29,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-30",
-      "time": "2025-12-30T11:41:57.308672+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.checkpoint.com",
-        "feeds.feedburner.com",
-        "www.hashicorp.com",
-        "www.cncf.io",
-        "krebsonsecurity.com",
-        "www.crowdstrike.com"
-      ]
-    },
     {
       "date": "2025-12-31",
       "time": "2025-12-31T04:15:37.232956+00:00",
@@ -1027,13 +1014,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-10",
+      "time": "2026-02-10T13:05:28.952190+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 100,
-  "last_post_content": "Bridging development and operations delivers value faster. Pay attention to this.\n\nAfter analyzing 5 years of DevOps data, here's the truth about how to transition from traditional IT to DevOps in 2026:\nTeams often find that transitioning to DevOps requires a significant shift in mindset and skills.\n\nThe data shows that successful transitions involve several key strategies, including:\n\u2022 Focusing on automation and efficiency\n\u2022 Building a culture of collaboration and continuous improvement\n\u2022 Developing skills in areas like cloud computing and containerization\n\nExperience reveals that common mistakes to avoid include trying to adopt DevOps tools and practices without a clear understanding of the underlying principles.\n\nEvidence suggests that getting started with DevOps requires access to the right resources, such as online training courses and industry conferences.\n\nProduction experience shows that the timeline for transitioning to DevOps can vary, but with a focused effort, teams can start seeing benefits within a few months.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#devops #automation #sre #cloudengineering #platformengineering",
+  "posts_created": 101,
+  "last_post_content": "DevOps practices at scale reveal key patterns. Let's break this down.\n\nMany thought how to prove roi for devops initiatives was overhyped. The evidence says otherwise. Teams often find that measuring DevOps ROI is crucial for justifying investments.\n\nThe data shows that several strategies can help prove ROI for DevOps initiatives, including:\n\u2022 Establishing clear metrics and benchmarks\n\u2022 Implementing continuous monitoring and feedback\n\u2022 Focusing on customer-centric outcomes\n\nExperience reveals that common mistakes to avoid include failing to set realistic expectations and not engaging stakeholders throughout the process. Production experience shows that having a well-planned approach is key to success.\n\nThe reality is that getting started with proving DevOps ROI requires access to the right resources, such as industry reports and case studies. Timeline expectations vary, but most teams see significant improvements within 6-12 months.\n\nWhat's the best career advice you've received in tech?\n\n#sre #infrastructure #automation #devops #artificialintelligence",
   "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-10T07:54:50.245185+00:00"
+  "last_post_timestamp": "2026-02-10T13:05:28.953156+00:00"
 }
