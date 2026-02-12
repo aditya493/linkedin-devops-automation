@@ -1,7 +1,7 @@
 {
-  "total_posts": 129,
+  "total_posts": 130,
   "posts_today": 1,
-  "last_post_date": "2026-02-11",
+  "last_post_date": "2026-02-12",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 4,
     "career_advice": 6,
     "controversial_takes": 4,
-    "ai_and_automation": 2
+    "ai_and_automation": 3
   },
   "sources_used": {
     "www.infoq.com": 118,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 30,
+    "growth_plan": 31,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,15 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2025-12-31",
-      "time": "2025-12-31T11:39:02.057034+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.checkpoint.com",
-        "snyk.io"
-      ]
-    },
     {
       "date": "2026-01-01",
       "time": "2026-01-01T04:34:49.223417+00:00",
@@ -1022,13 +1013,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-12",
+      "time": "2026-02-12T13:00:39.196775+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 102,
-  "last_post_content": "DevOps practices at scale reveal key patterns. Pay attention to this.\n\nMany engineers remain skeptical about how teams are using github copilot in devops workflows. The data tells a different story: teams are leveraging GitHub Copilot to streamline development and improve productivity. This is achieved by automating repetitive coding tasks.\n\nThe AI/automation problem being addressed is the need for faster and more efficient coding. Teams often find that manual coding is time-consuming and prone to errors. Automation tools like GitHub Copilot can help mitigate these issues.\n\nTools and technologies evaluated include GitHub Copilot, Jenkins, and Docker.\n\u2022 GitHub Copilot for automated coding\n\u2022 Jenkins for continuous integration\n\u2022 Docker for containerization\n\nImplementation approach involves integrating GitHub Copilot with existing DevOps tools. Production experience shows that this can be done in a step-by-step manner, starting with small pilot projects. The reality is that careful planning is key to successful implementation.\n\nWhat worked is the automation of repetitive coding tasks, while what didn't is the initial skepticism from some team members. Evidence suggests that this skepticism can be overcome with proper training and support.\n\nROI and productivity metrics show significant improvements in development speed and accuracy. The data shows that teams can expect to see a substantial reduction in coding errors and an increase in overall productivity.\n\nFuture plans and recommendations include further integration of AI tools into DevOps workflows. Experience reveals that teams should continuously monitor and evaluate the effectiveness of these tools.\n\nWhat AI tools have made the biggest impact on your productivity?\n\n#mlops #llmops #gitops #artificialintelligence #genai",
+  "posts_created": 103,
+  "last_post_content": "Teams using AI for building self-healing infrastructure with ai are seeing surprising results. Here's the data:\nThe AI/automation problem being addressed is the need for efficient and automated systems that can detect and fix issues without human intervention, reducing downtime and increasing overall productivity.\n\nExperience reveals that teams often find success with tools and technologies such as machine learning algorithms and automation software, which help identify and resolve problems quickly.\n\n\u2022 Machine learning algorithms for predictive maintenance\n\u2022 Automation software for streamlined incident management\n\u2022 Data analytics platforms for performance monitoring\n\nThe implementation approach involves a step-by-step process of assessing current infrastructure, identifying areas for improvement, and integrating AI-powered tools to automate and optimize systems.\n\nThe reality is that what works is a combination of the right tools and a well-planned implementation strategy, while what doesn't is a lack of clear goals and inadequate training.\n\nProduction experience shows that teams can achieve significant ROI and productivity gains, with some reporting up to 30% reduction in downtime and 25% increase in efficiency.\n\nFuture plans involve continued investment in AI-powered infrastructure, with recommendations to start small, scale quickly, and continuously monitor and evaluate results.\n\nWhat AI tools have made the biggest impact on your productivity?\n\n#aiops #devops #microservices #cloudengineering #sre",
   "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-11T13:01:17.506269+00:00"
+  "last_post_timestamp": "2026-02-12T13:00:39.197780+00:00"
 }
