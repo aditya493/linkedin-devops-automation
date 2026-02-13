@@ -1,6 +1,6 @@
 {
-  "total_posts": 131,
-  "posts_today": 1,
+  "total_posts": 132,
+  "posts_today": 2,
   "last_post_date": "2026-02-13",
   "formats_used": {
     "case_study": 10,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 3,
     "industry_predictions": 5,
-    "career_advice": 6,
+    "career_advice": 7,
     "controversial_takes": 4,
     "ai_and_automation": 3
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 32,
+    "growth_plan": 33,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-01",
-      "time": "2026-01-01T11:41:22.769943+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-01-02",
       "time": "2026-01-02T04:29:24.483953+00:00",
@@ -1019,13 +1011,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-13",
+      "time": "2026-02-13T12:52:28.484546+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 104,
-  "last_post_content": "DevOps culture transformation shows what works. Let's break this down.\n\nIn 2026, why platform engineering is the future of devops in 2026 is no longer optional. Here's why: teams often find that traditional DevOps approaches are no longer sufficient to meet the demands of modern software development. The data shows that platform engineering can help bridge this gap.\n\nThe reality is that several key trends will drive the adoption of platform engineering, including:\n\u2022 Increased demand for self-service capabilities\n\u2022 Growing need for standardized workflows\n\u2022 Rising importance of security and compliance\n\nProduction experience shows that these trends are already having a significant impact, with many organizations expected to make major changes within the next 6-12 months. Evidence suggests that teams that adopt platform engineering will be better equipped to handle the challenges of modern software development.\n\nThe future of DevOps is platform engineering, and teams must prepare by developing the necessary skills and expertise. Teams should focus on building a strong foundation in platform engineering to stay ahead of the curve.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#gitops #scalability #devops #artificialintelligence #cloudengineering",
-  "last_post_format": "industry_predictions",
+  "posts_created": 105,
+  "last_post_content": "DevOps culture transformation shows what works. This matters.\n\nMany thought why finops knowledge will boost your devops career was overhyped. The evidence says otherwise. Teams often find that FinOps knowledge bridges the gap between development and finance, leading to more efficient and cost-effective operations.\n\nThe data shows that FinOps-trained professionals can implement strategies such as:\n\u2022 Optimizing cloud costs through rightsizing and reserved instances\n\u2022 Implementing cost allocation and chargeback models\n\u2022 Developing financial dashboards for real-time cost monitoring\n\nProduction experience shows that common mistakes to avoid include lack of communication between teams and inadequate cost tracking. Experience reveals that successful FinOps implementation requires a deep understanding of both financial and technical aspects of operations.\n\nThe reality is that getting started with FinOps requires access to the right resources, such as online courses and industry forums. Timeline expectations vary, but most teams see significant improvements within 6-12 months of implementation.\n\nWhat career advice would you add? Share your experience below.\n\n#aiops #automation #cloudengineering #infrastructure #sre",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-13T04:52:17.935631+00:00"
+  "last_post_timestamp": "2026-02-13T12:52:28.485438+00:00"
 }
