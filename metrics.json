@@ -1,7 +1,7 @@
 {
-  "total_posts": 132,
-  "posts_today": 2,
-  "last_post_date": "2026-02-13",
+  "total_posts": 133,
+  "posts_today": 1,
+  "last_post_date": "2026-02-14",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 5,
     "career_advice": 7,
     "controversial_takes": 4,
-    "ai_and_automation": 3
+    "ai_and_automation": 4
   },
   "sources_used": {
     "www.infoq.com": 118,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 33,
+    "growth_plan": 34,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-02",
-      "time": "2026-01-02T04:29:24.483953+00:00",
-      "format": "digest",
-      "sources": [
-        "netflixtechblog.medium.com"
-      ]
-    },
     {
       "date": "2026-01-02",
       "time": "2026-01-02T11:40:35.880172+00:00",
@@ -1019,13 +1011,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-14",
+      "time": "2026-02-14T11:48:02.962640+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 105,
-  "last_post_content": "DevOps culture transformation shows what works. This matters.\n\nMany thought why finops knowledge will boost your devops career was overhyped. The evidence says otherwise. Teams often find that FinOps knowledge bridges the gap between development and finance, leading to more efficient and cost-effective operations.\n\nThe data shows that FinOps-trained professionals can implement strategies such as:\n\u2022 Optimizing cloud costs through rightsizing and reserved instances\n\u2022 Implementing cost allocation and chargeback models\n\u2022 Developing financial dashboards for real-time cost monitoring\n\nProduction experience shows that common mistakes to avoid include lack of communication between teams and inadequate cost tracking. Experience reveals that successful FinOps implementation requires a deep understanding of both financial and technical aspects of operations.\n\nThe reality is that getting started with FinOps requires access to the right resources, such as online courses and industry forums. Timeline expectations vary, but most teams see significant improvements within 6-12 months of implementation.\n\nWhat career advice would you add? Share your experience below.\n\n#aiops #automation #cloudengineering #infrastructure #sre",
-  "last_post_format": "career_advice",
+  "posts_created": 106,
+  "last_post_content": "DevOps practices at scale reveal key patterns. Let's break this down.\n\nThe ROI from how teams are using GitHub Copilot in DevOps workflows is surprising industry leaders. Here's why: teams often find that automating repetitive coding tasks boosts productivity. The AI/automation problem being addressed is the need for efficient code completion and review.\n\nTeams evaluate various tools and technologies, including GitHub Copilot, to streamline DevOps workflows. Experience reveals that GitHub Copilot stands out for its ability to understand code context and provide accurate suggestions.\n\nThe implementation approach involves integrating GitHub Copilot into existing workflows, with steps including:\n\u2022 Setting up GitHub Copilot with the development team\n\u2022 Configuring permissions and access controls\n\u2022 Training team members to use the tool effectively\n\nWhat worked is the seamless integration of GitHub Copilot with existing tools, while what didn't is the initial learning curve for team members. The reality is that production experience shows significant ROI and productivity gains.\n\nThe data shows that teams using GitHub Copilot achieve higher code quality and faster deployment times. Evidence suggests that future plans include further integrating AI-powered tools into DevOps workflows.\n\nFuture plans and recommendations include expanding the use of GitHub Copilot to more teams and exploring other AI-powered tools. The reality is that AI adoption is becoming increasingly important in DevOps.\n\nAre you skeptical or optimistic about AI in DevOps? Let's discuss!\n\n#genai #mlops #sre #cloudengineering #aiops",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-13T12:52:28.485438+00:00"
+  "last_post_timestamp": "2026-02-14T11:48:02.963502+00:00"
 }
