@@ -1,7 +1,7 @@
 {
-  "total_posts": 134,
+  "total_posts": 135,
   "posts_today": 1,
-  "last_post_date": "2026-02-15",
+  "last_post_date": "2026-02-17",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 3,
     "industry_predictions": 5,
-    "career_advice": 7,
+    "career_advice": 8,
     "controversial_takes": 4,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 35,
+    "growth_plan": 36,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-03",
-      "time": "2026-01-03T06:54:12.600099+00:00",
-      "format": "lessons_learned",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-01-04",
       "time": "2026-01-04T06:53:37.749800+00:00",
@@ -1019,13 +1011,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-17",
+      "time": "2026-02-17T04:48:49.550066+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 107,
-  "last_post_content": "Everyone's talking about building self-healing infrastructure with ai, but few share real results. Here's what the data shows: Teams often find that automation alone is not enough to achieve true self-healing capabilities. The AI/automation problem being addressed is the need for proactive, predictive maintenance.\n\nThe data shows that several tools and technologies are being evaluated, including:\n\u2022 Machine learning algorithms\n\u2022 Anomaly detection software\n\u2022 Automation frameworks\nExperience reveals that the right combination of these tools can lead to significant improvements in infrastructure reliability.\n\nImplementation approach involves several step-by-step processes, including data collection, model training, and deployment. Evidence suggests that a phased approach works best, starting with small pilot projects and gradually scaling up.\n\nProduction experience shows that while some approaches work well, others do not. What worked is the use of machine learning algorithms to predict potential failures, while what didn't is the reliance on automation alone. The reality is that AI-driven self-healing infrastructure requires a holistic approach.\n\nROI and productivity metrics are impressive, with teams achieving significant reductions in downtime and increases in overall efficiency. The data shows that teams can expect to see returns on investment within a relatively short period.\n\nFuture plans and recommendations include continued investment in AI research and development, as well as the exploration of new use cases. Evidence suggests that the potential for AI in DevOps is vast and largely untapped.\n\nHow is your team using AI in DevOps workflows? Share your experience!\n\n#genai #aiops #artificialintelligence #sre #cloudengineering",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 108,
+  "last_post_content": "Hot take: the soft skills that matter more than technical expertise is more important than most people realize.\n\nTeams often find that career milestones are achieved by mastering non-technical skills, and this realization can be a game-changer in advancing careers. The reality is that technical expertise can only take professionals so far, and it is the soft skills that set them apart.\n\n\u2022 Effective communication\n\u2022 Emotional intelligence\n\u2022 Strong teamwork skills\n\nProduction experience shows that these skills are essential in achieving success, and common mistakes to avoid include neglecting to develop these skills and focusing solely on technical expertise.\n\nThe data shows that developing soft skills takes time and dedication, and a timeline of several months to a year is a realistic expectation for seeing significant improvement. Resources for getting started include online courses, workshops, and mentorship programs.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#idp #automation #devops #sre #cloudengineering",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-15T05:52:47.273466+00:00"
+  "last_post_timestamp": "2026-02-17T04:48:49.551033+00:00"
 }
