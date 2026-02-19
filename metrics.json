@@ -1,7 +1,7 @@
 {
-  "total_posts": 136,
+  "total_posts": 137,
   "posts_today": 1,
-  "last_post_date": "2026-02-18",
+  "last_post_date": "2026-02-19",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 3,
     "industry_predictions": 6,
-    "career_advice": 8,
+    "career_advice": 9,
     "controversial_takes": 4,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 37,
+    "growth_plan": 38,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-05",
-      "time": "2026-01-05T04:56:07.895557+00:00",
-      "format": "controversial_takes",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-01-05",
       "time": "2026-01-05T05:52:23.041597+00:00",
@@ -1019,13 +1011,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-19",
+      "time": "2026-02-19T07:43:23.497689+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 109,
-  "last_post_content": "Bridging development and operations delivers value faster. Worth understanding.\n\nUnpopular opinion: why platform engineering is the future of devops in 2026 matters more than most realize.\n\nThe data shows that platform engineering will revolutionize DevOps by streamlining workflows and enhancing productivity. Teams often find that traditional DevOps practices are no longer sufficient to meet the demands of modern software development.\n\n\u2022 Platform engineering will enable self-service capabilities for developers\n\u2022 Automate routine tasks and focus on high-value work\n\u2022 Improve collaboration between development and operations teams\n\nEvidence suggests that these changes will happen within the next 6-12 months. Production experience shows that companies that adopt platform engineering will have a significant competitive advantage.\n\nThe reality is that professionals must prepare by acquiring new skills and adapting to new workflows. Experience reveals that staying ahead of the curve is crucial in the rapidly evolving tech industry.\n\nWhat predictions do you have for DevOps in 2026? Share your thoughts below!\n\n#automation #infrastructure #sre #scalability #cloudengineering",
-  "last_post_format": "industry_predictions",
+  "posts_created": 110,
+  "last_post_content": "DevOps practices at scale reveal key patterns. Here's the signal.\n\nIn 2026, how to prove roi for devops initiatives is no longer optional. Here's why: teams often find that demonstrating return on investment is crucial for securing ongoing support and resources. The data shows that successful DevOps implementations can lead to significant cost savings and efficiency gains.\n\nThe reality is that calculating ROI requires a strategic approach. Teams can use the following strategies to prove ROI for DevOps initiatives:\n\u2022 Measure deployment frequency and lead time\n\u2022 Track mean time to recovery and defect density\n\u2022 Monitor customer satisfaction and retention rates\n\nProduction experience shows that common mistakes to avoid include failing to establish clear goals and metrics, not engaging stakeholders, and inadequate training. Evidence suggests that having the right tools and resources in place is essential for success.\n\nExperience reveals that getting started with ROI measurement can be challenging, but there are many resources available to support teams. The timeline for seeing results can vary, but most teams can expect to start seeing improvements within 6-12 months.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#sre #platformengineering #automation #scalability #devops",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-18T04:50:09.377155+00:00"
+  "last_post_timestamp": "2026-02-19T07:43:23.498669+00:00"
 }
