@@ -1,6 +1,6 @@
 {
-  "total_posts": 139,
-  "posts_today": 1,
+  "total_posts": 140,
+  "posts_today": 2,
   "last_post_date": "2026-02-24",
   "formats_used": {
     "case_study": 10,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 4,
     "industry_predictions": 7,
-    "career_advice": 9,
+    "career_advice": 10,
     "controversial_takes": 4,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 40,
+    "growth_plan": 41,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,18 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-06",
-      "time": "2026-01-06T04:16:58.771930+00:00",
-      "format": "digest",
-      "sources": [
-        "about.gitlab.com",
-        "www.cncf.io",
-        "blog.rapid7.com",
-        "blog.checkpoint.com",
-        "www.crowdstrike.com"
-      ]
-    },
     {
       "date": "2026-01-06",
       "time": "2026-01-06T11:41:18.490963+00:00",
@@ -1018,13 +1006,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-24",
+      "time": "2026-02-24T13:00:23.394362+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 112,
-  "last_post_content": "Container orchestration strategies worth understanding. Pay attention to this.\n\nEveryone talks about kubernetes vs. the next generation of orchestration, but nobody mentions this: the real challenge lies in the underlying infrastructure, not the orchestration tool itself. Teams often find that the complexity of the system is the main obstacle to adoption. The reality is that Kubernetes is just a symptom of a larger issue.\n\nThe data shows that the next generation of orchestration will bring significant changes, including:\n\u2022 Increased focus on serverless computing\n\u2022 Greater emphasis on edge computing\n\u2022 More automated deployment and management\n\nProduction experience shows that these changes will happen within the next 2-3 years, driven by the need for greater efficiency and scalability. Evidence suggests that teams that adapt quickly will be the ones to thrive in this new landscape.\n\nThe reality is that professionals need to start preparing now by acquiring skills in areas like cloud native applications and DevOps practices. Experience reveals that staying ahead of the curve is crucial in this rapidly evolving field.\n\nMissing any major trends? What would you add to this list?\n\n#docker #kubernetes #sre #devops #cloudengineering",
-  "last_post_format": "industry_predictions",
+  "posts_created": 113,
+  "last_post_content": "DevOps practices at scale reveal key patterns. Pay attention to this.\n\nEveryone's talking about essential ai/ml skills for devops engineers in 2026, but few share real results. Here's what the data shows: teams often find that acquiring these skills is crucial for career growth. The reality is that DevOps engineers need to stay up-to-date with the latest AI/ML trends.\n\nExperience reveals that the following strategies work:\n\u2022 Focusing on machine learning operations\n\u2022 Developing skills in natural language processing\n\u2022 Understanding computer vision\n\nThe data shows that common mistakes to avoid include neglecting to practice with real-world projects and not staying current with industry developments. Evidence suggests that these mistakes can hinder career progress.\n\nResources for getting started include online courses and industry conferences. Production experience shows that these resources can help DevOps engineers acquire essential AI/ML skills within 6-12 months.\n\nWhat's the best career advice you've received in tech?\n\n#artificialintelligence #aiops #devops #sre #genai",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-24T07:45:12.755760+00:00"
+  "last_post_timestamp": "2026-02-24T13:00:23.395348+00:00"
 }
