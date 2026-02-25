@@ -1,6 +1,6 @@
 {
-  "total_posts": 141,
-  "posts_today": 1,
+  "total_posts": 142,
+  "posts_today": 2,
   "last_post_date": "2026-02-25",
   "formats_used": {
     "case_study": 10,
@@ -9,7 +9,7 @@
     "digest": 79,
     "lessons_learned": 6,
     "technical_deep_dives": 4,
-    "industry_predictions": 7,
+    "industry_predictions": 8,
     "career_advice": 11,
     "controversial_takes": 4,
     "ai_and_automation": 5
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 42,
+    "growth_plan": 43,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-07",
-      "time": "2026-01-07T04:26:11.369952+00:00",
-      "format": "digest",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-01-07",
       "time": "2026-01-07T11:43:01.787522+00:00",
@@ -1014,13 +1006,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-02-25",
+      "time": "2026-02-25T12:59:28.285632+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 114,
-  "last_post_content": "Bridging development and operations delivers value faster. Pay attention to this.\n\nThe thing nobody tells engineers about building influence as a devops engineer:\n\nTeams often find that building influence in this role requires a combination of technical expertise and strategic communication. Production experience shows that engineers who can effectively articulate the value of their work to stakeholders are more likely to drive meaningful change.\n\nThe data shows that several strategies can help devops engineers build influence, including:\n\u2022 Establishing a strong track record of delivering high-quality solutions\n\u2022 Developing a deep understanding of the organization's goals and priorities\n\u2022 Fostering collaborative relationships with cross-functional teams\n\nExperience reveals that common mistakes to avoid include focusing too narrowly on technical details and neglecting to communicate the broader impact of devops work. The reality is that stakeholders care about outcomes, not just technical specifications.\n\nEvidence suggests that getting started with building influence requires access to resources such as industry blogs, conferences, and online communities. Timeline expectations vary, but teams often see significant progress within 6-12 months of focused effort.\n\nWhat career advice would you add? Share your experience below.\n\n#automation #cloudengineering #techin2026 #devops #infrastructure",
-  "last_post_format": "career_advice",
+  "posts_created": 115,
+  "last_post_content": "Teams using AI for aiops in 2026: from hype to production reality are seeing surprising results. Here's the data:\n\nThe reality is that AI-driven operations are becoming a key differentiator for organizations.\nProduction experience shows that this trend will continue to grow.\n\n\u2022 AI-powered monitoring and incident management will become more prevalent\n\u2022 Automation of routine tasks will free up resources for strategic initiatives\n\u2022 Data-driven decision making will become the norm\n\nThe data shows that these changes will happen quickly, with most organizations adopting AIops by the end of 2026.\nExperience reveals that professionals should develop skills in AI, machine learning, and data analysis to remain relevant.\n\nMissing any major trends? What would you add to this list?\n\n#cloudengineering #sre #artificialintelligence #mlops #idp",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-25T04:51:26.843543+00:00"
+  "last_post_timestamp": "2026-02-25T12:59:28.286576+00:00"
 }
