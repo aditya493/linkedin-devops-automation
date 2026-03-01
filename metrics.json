@@ -1,7 +1,7 @@
 {
-  "total_posts": 142,
-  "posts_today": 2,
-  "last_post_date": "2026-02-25",
+  "total_posts": 143,
+  "posts_today": 1,
+  "last_post_date": "2026-03-01",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 4,
     "industry_predictions": 8,
-    "career_advice": 11,
+    "career_advice": 12,
     "controversial_takes": 4,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 43,
+    "growth_plan": 44,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-07",
-      "time": "2026-01-07T11:43:01.787522+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "kubernetes.io",
-        "www.hashicorp.com",
-        "about.gitlab.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-08",
       "time": "2026-01-08T04:16:45.339892+00:00",
@@ -1014,13 +1001,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-01",
+      "time": "2026-03-01T05:47:23.683407+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 115,
-  "last_post_content": "Teams using AI for aiops in 2026: from hype to production reality are seeing surprising results. Here's the data:\n\nThe reality is that AI-driven operations are becoming a key differentiator for organizations.\nProduction experience shows that this trend will continue to grow.\n\n\u2022 AI-powered monitoring and incident management will become more prevalent\n\u2022 Automation of routine tasks will free up resources for strategic initiatives\n\u2022 Data-driven decision making will become the norm\n\nThe data shows that these changes will happen quickly, with most organizations adopting AIops by the end of 2026.\nExperience reveals that professionals should develop skills in AI, machine learning, and data analysis to remain relevant.\n\nMissing any major trends? What would you add to this list?\n\n#cloudengineering #sre #artificialintelligence #mlops #idp",
-  "last_post_format": "industry_predictions",
+  "posts_created": 116,
+  "last_post_content": "DevOps culture transformation shows what works. Here's the signal.\n\nAfter analyzing 5 years of DevOps data, here's the truth about the skills that take engineers from junior to senior DevOps:\n\nTeams often find that progressing to senior DevOps roles requires a combination of technical and soft skills. The data shows that junior engineers typically start with a foundation in scripting and programming languages. Production experience shows that these skills are essential for automating tasks and improving efficiency.\n\nThe skills that take engineers to the next level include:\n\u2022 Cloud computing and migration expertise\n\u2022 Containerization using Docker and Kubernetes\n\u2022 Continuous Integration and Continuous Deployment (CI/CD) pipeline management\n\u2022 Monitoring and logging using tools like Prometheus and Grafana\n\nCommon mistakes to avoid include neglecting to prioritize security and compliance in DevOps workflows. Experience reveals that this can lead to significant vulnerabilities and reputational damage. The reality is that security should be integrated into every stage of the DevOps pipeline.\n\nResources for getting started include online courses and certifications in DevOps and cloud computing. Timeline expectations vary, but most engineers can expect to take 2-5 years to progress to senior roles.\n\nWhat career advice would you add? Share your experience below.\n\n#devops #sre #gitops #scalability #infrastructureascode",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-02-25T12:59:28.286576+00:00"
+  "last_post_timestamp": "2026-03-01T05:47:23.684293+00:00"
 }
