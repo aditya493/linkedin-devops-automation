@@ -1,7 +1,7 @@
 {
-  "total_posts": 144,
+  "total_posts": 145,
   "posts_today": 1,
-  "last_post_date": "2026-03-03",
+  "last_post_date": "2026-03-04",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 4,
     "industry_predictions": 9,
-    "career_advice": 12,
+    "career_advice": 13,
     "controversial_takes": 4,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 45,
+    "growth_plan": 46,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-08",
-      "time": "2026-01-08T11:43:53.987486+00:00",
-      "format": "digest",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-01-09",
       "time": "2026-01-09T04:27:23.316765+00:00",
@@ -1005,13 +997,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-04",
+      "time": "2026-03-04T12:47:42.651228+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 117,
-  "last_post_content": "Reliability programs and failure patterns offer insights. Let's break this down.\n\nEveryone's talking about the rise of ai-powered incident response, but few share real results. Here's what the data shows:\n\nThe reality is that teams often find significant improvements in incident response times and accuracy with AI-powered tools. Evidence suggests this trend will continue, with predictions including:\n\n\u2022 Faster incident detection and resolution\n\u2022 Increased automation of routine response tasks\n\u2022 Enhanced incident analysis and reporting\n\nProduction experience shows these predictions are already becoming a reality, with many teams achieving notable results. The data indicates these changes will become more widespread over the next 6-12 months.\n\nTeams should prepare by investing in AI-powered incident response tools and training personnel to effectively utilize these solutions. Experience reveals that early adopters will gain a significant competitive advantage.\n\nMissing any major trends? What would you add to this list?\n\n#mlops #aiops #mlops #devops #artificialintelligence",
-  "last_post_format": "industry_predictions",
+  "posts_created": 118,
+  "last_post_content": "DevOps practices at scale reveal key patterns. Here's the signal.\n\nMany engineers remain skeptical about essential ai/ml skills for devops engineers in 2026. The data tells a different story: teams that adopt AI/ML skills see improved efficiency and productivity. This shift is transforming the industry.\n\nThe reality is that DevOps engineers need to acquire new skills to remain relevant. Teams often find that having expertise in areas like machine learning and data analysis is crucial. Production experience shows that these skills are essential for success.\n\nEssential AI/ML skills for DevOps engineers include:\n\u2022 Machine learning algorithms\n\u2022 Data analysis and visualization\n\u2022 Automation and scripting\n\nThe data shows that common mistakes to avoid include lack of investment in continuous learning and inadequate understanding of AI/ML fundamentals. Evidence suggests that staying up-to-date with industry trends and best practices is vital.\n\nResources for getting started include online courses and industry conferences. Experience reveals that hands-on practice and real-world applications are key to mastering these skills. Timeline expectations vary, but most teams see significant improvements within 6-12 months.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#aiops #serverless #mlops #llmops #artificialintelligence",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-03T12:45:54.268908+00:00"
+  "last_post_timestamp": "2026-03-04T12:47:42.652172+00:00"
 }
