@@ -1,14 +1,14 @@
 {
-  "total_posts": 145,
+  "total_posts": 146,
   "posts_today": 1,
-  "last_post_date": "2026-03-04",
+  "last_post_date": "2026-03-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 79,
     "lessons_learned": 6,
-    "technical_deep_dives": 4,
+    "technical_deep_dives": 5,
     "industry_predictions": 9,
     "career_advice": 13,
     "controversial_takes": 4,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 46,
+    "growth_plan": 47,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-09",
-      "time": "2026-01-09T04:27:23.316765+00:00",
-      "format": "digest",
-      "sources": [
-        "martinfowler.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "snyk.io",
-        "kubernetes.io"
-      ]
-    },
     {
       "date": "2026-01-09",
       "time": "2026-01-09T11:43:42.514793+00:00",
@@ -1005,13 +992,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-07",
+      "time": "2026-03-07T05:35:31.798799+00:00",
+      "format": "technical_deep_dives",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 118,
-  "last_post_content": "DevOps practices at scale reveal key patterns. Here's the signal.\n\nMany engineers remain skeptical about essential ai/ml skills for devops engineers in 2026. The data tells a different story: teams that adopt AI/ML skills see improved efficiency and productivity. This shift is transforming the industry.\n\nThe reality is that DevOps engineers need to acquire new skills to remain relevant. Teams often find that having expertise in areas like machine learning and data analysis is crucial. Production experience shows that these skills are essential for success.\n\nEssential AI/ML skills for DevOps engineers include:\n\u2022 Machine learning algorithms\n\u2022 Data analysis and visualization\n\u2022 Automation and scripting\n\nThe data shows that common mistakes to avoid include lack of investment in continuous learning and inadequate understanding of AI/ML fundamentals. Evidence suggests that staying up-to-date with industry trends and best practices is vital.\n\nResources for getting started include online courses and industry conferences. Experience reveals that hands-on practice and real-world applications are key to mastering these skills. Timeline expectations vary, but most teams see significant improvements within 6-12 months.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#aiops #serverless #mlops #llmops #artificialintelligence",
-  "last_post_format": "career_advice",
+  "posts_created": 119,
+  "last_post_content": "Hot take: the architecture behind automated recovery systems is more important than most people realize.\n\nThe reality is that automated recovery systems are critical in today's fast-paced digital landscape, where downtime can result in significant revenue loss. Teams often find that designing an effective architecture is a complex task.\n\n\u2022 Technical requirements include scalability and reliability\n\u2022 High availability is also a key consideration\n\u2022 Data consistency must be ensured across all systems\n\nProduction experience shows that a well-designed architecture can significantly reduce downtime. The data shows that automated recovery systems can be built using a combination of load balancers, auto-scaling groups, and cloud-based services.\n\nImplementation challenges include ensuring seamless failover and minimizing data loss. Evidence suggests that thorough testing and validation are crucial to overcoming these challenges.\n\nThe data shows that effective automated recovery systems can achieve uptime rates of 99.99% or higher. Performance metrics also reveal significant reductions in recovery time and mean time to resolve issues.\n\nLessons learned from production experience emphasize the importance of continuous monitoring and improvement. The reality is that automated recovery systems require ongoing maintenance and optimization to ensure optimal performance.\n\nWhat other solutions have you used for similar problems?\n\n#infrastructure #automation #scalability #aiops #devops",
+  "last_post_format": "technical_deep_dives",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-04T12:47:42.652172+00:00"
+  "last_post_timestamp": "2026-03-07T05:35:31.799751+00:00"
 }
