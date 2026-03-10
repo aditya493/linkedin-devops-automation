@@ -1,7 +1,7 @@
 {
-  "total_posts": 149,
-  "posts_today": 2,
-  "last_post_date": "2026-03-08",
+  "total_posts": 150,
+  "posts_today": 1,
+  "last_post_date": "2026-03-10",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 5,
     "industry_predictions": 10,
     "career_advice": 14,
-    "controversial_takes": 5,
+    "controversial_takes": 6,
     "ai_and_automation": 5
   },
   "sources_used": {
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 50,
+    "growth_plan": 51,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-12",
-      "time": "2026-01-12T04:38:37.412256+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "martinfowler.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-12",
       "time": "2026-01-12T11:43:42.298281+00:00",
@@ -990,13 +977,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-10",
+      "time": "2026-03-10T04:28:54.947642+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 122,
-  "last_post_content": "In 2026, the future of serverless in enterprise environments is no longer optional. Here's why: serverless computing enables teams to focus on writing code without worrying about infrastructure management. The reality is that this shift is already underway.\n\nThe data shows that several key trends will drive the adoption of serverless in enterprise environments, including:\n\u2022 Increased use of event-driven architectures\n\u2022 Greater emphasis on cost optimization and efficiency\n\u2022 More widespread adoption of cloud-native technologies\n\nExperience reveals that these trends are closely tied to the need for greater agility and scalability in modern enterprise environments. Production experience shows that serverless computing can deliver significant benefits in these areas.\n\nThe timeline for these changes is already in motion, with many enterprises expected to adopt serverless technologies within the next 12-18 months. Teams often find that preparing for this shift requires significant investments in training and development.\n\nEvidence suggests that professionals should focus on developing skills in areas like cloud computing, DevOps, and software development to prepare for the future of serverless. The reality is that those who adapt quickly will be well-positioned for success.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#techin2026 #automation #devops #scalability #sre",
-  "last_post_format": "industry_predictions",
+  "posts_created": 123,
+  "last_post_content": "Many thought the microservices hype: when monoliths win was overhyped. The evidence says otherwise.\n\nMonoliths are often the better choice for many applications, as they offer simplicity, ease of development, and reduced operational overhead.\n\n\u2022 Teams often find that monoliths are more suitable for small to medium-sized projects\n\u2022 The data shows that monoliths can be more efficient in terms of resource utilization\n\u2022 Production experience shows that monoliths can be easier to maintain and debug\n\nThe reality is that microservices are not a one-size-fits-all solution, and monoliths can be a better fit for certain use cases.\n\nExperience reveals that even the most ardent proponents of microservices acknowledge the benefits of monoliths in certain situations.\n\nAgree or disagree? Share your perspective in the comments.\n\n#mlops #sre #idp #cloudengineering #devops",
+  "last_post_format": "controversial_takes",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-08T11:47:43.827278+00:00"
+  "last_post_timestamp": "2026-03-10T04:28:54.948581+00:00"
 }
