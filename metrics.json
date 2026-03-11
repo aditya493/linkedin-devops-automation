@@ -1,7 +1,7 @@
 {
-  "total_posts": 151,
-  "posts_today": 2,
-  "last_post_date": "2026-03-10",
+  "total_posts": 152,
+  "posts_today": 1,
+  "last_post_date": "2026-03-11",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 5,
     "industry_predictions": 10,
-    "career_advice": 15,
+    "career_advice": 16,
     "controversial_takes": 6,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 52,
+    "growth_plan": 53,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,18 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-13",
-      "time": "2026-01-13T04:26:33.053824+00:00",
-      "format": "digest",
-      "sources": [
-        "www.docker.com",
-        "azure.microsoft.com",
-        "www.cncf.io",
-        "www.cncf.io",
-        "blog.gitguardian.com"
-      ]
-    },
     {
       "date": "2026-01-13",
       "time": "2026-01-13T11:43:13.365151+00:00",
@@ -985,13 +973,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-11",
+      "time": "2026-03-11T07:37:41.366833+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 124,
-  "last_post_content": "Bridging development and operations delivers value faster. Here's the signal.\n\nThe thing nobody tells engineers about building influence as a devops engineer:\n\nTeams often find that building influence requires more than just technical skills. Production experience shows that devops engineers need to develop strong communication and collaboration skills to effectively influence others. This can be a significant career milestone, as it requires a shift from focusing solely on technical expertise to also considering the social and organizational aspects of the role.\n\nThe data shows that several strategies can help devops engineers build influence, including:\n\u2022 Establishing a strong track record of delivering high-quality work\n\u2022 Developing a deep understanding of the organization's goals and priorities\n\u2022 Building relationships with key stakeholders and decision-makers\n\nThe reality is that many devops engineers make common mistakes, such as focusing too much on technical details and not enough on the broader organizational context. Evidence suggests that taking a more holistic approach can help devops engineers avoid these mistakes and build greater influence.\n\nResources such as industry blogs and conferences can provide valuable information and insights for devops engineers looking to build influence. The timeline for building influence can vary, but experience reveals that it often takes several months to a year or more to establish a strong reputation and build trust with key stakeholders.\n\nWhat career advice would you add? Share your experience below.\n\n#cloudengineering #sre #infrastructure #mlops #devops",
+  "posts_created": 125,
+  "last_post_content": "DevOps practices at scale reveal key patterns. Here's the signal.\n\nThe hidden cost of from devops to platform engineering: career transition guide that teams often miss:\n\nTeams often find that transitioning from DevOps to platform engineering requires a significant shift in skills and mindset. Production experience shows that this transition can be challenging, but with the right strategies, teams can navigate it successfully. The reality is that this transition requires careful planning and execution.\n\nThe data shows that several strategies can facilitate a successful transition, including:\n\u2022 Focusing on cloud-native technologies\n\u2022 Developing skills in automation and scripting\n\u2022 Emphasizing collaboration and communication\n\nEvidence suggests that common mistakes to avoid include neglecting to develop soft skills and failing to stay up-to-date with industry trends. The reality is that these mistakes can hinder career progress and make the transition more difficult.\n\nResources for getting started include online courses and industry conferences, which can provide valuable information and networking opportunities. Timeline expectations vary, but experience reveals that a successful transition can take several months to a year or more.\n\nWhat career advice would you add? Share your experience below.\n\n#scalability #cloudengineering #llmops #microservices #automation",
   "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-10T12:54:56.556263+00:00"
+  "last_post_timestamp": "2026-03-11T07:37:41.367805+00:00"
 }
