@@ -1,7 +1,7 @@
 {
-  "total_posts": 153,
-  "posts_today": 2,
-  "last_post_date": "2026-03-11",
+  "total_posts": 154,
+  "posts_today": 1,
+  "last_post_date": "2026-03-12",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 79,
     "lessons_learned": 6,
     "technical_deep_dives": 5,
-    "industry_predictions": 11,
+    "industry_predictions": 12,
     "career_advice": 16,
     "controversial_takes": 6,
     "ai_and_automation": 5
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 54,
+    "growth_plan": 55,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-14",
-      "time": "2026-01-14T04:37:04.915443+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.checkpoint.com",
-        "www.hashicorp.com",
-        "www.hashicorp.com",
-        "blogs.microsoft.com",
-        "blog.qualys.com",
-        "unit42.paloaltonetworks.com"
-      ]
-    },
     {
       "date": "2026-01-14",
       "time": "2026-01-14T11:44:07.550382+00:00",
@@ -976,13 +963,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-12",
+      "time": "2026-03-12T12:54:58.694244+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 126,
-  "last_post_content": "The hidden cost of the death of traditional IT operations that teams often miss: outdated processes and inefficient systems.\n\nTeams often find that traditional IT operations are no longer effective in today's fast-paced digital landscape.\nThe data shows that companies must adapt to new technologies and methodologies to remain competitive.\n\n\u2022 Automation will replace manual tasks\n\u2022 Artificial intelligence will enhance monitoring and analytics\n\u2022 Cloud-native applications will become the norm\n\nProduction experience shows that these changes are already underway, with many companies transitioning to more agile and flexible systems.\nThe reality is that teams must be prepared to upskill and reskill to remain relevant in this new landscape.\n\nTeams should focus on developing skills in areas like DevOps, cloud computing, and artificial intelligence to prepare for these changes, which are expected to accelerate over the next 12-18 months.\n\nWhat predictions do you have for DevOps in 2026? Share your thoughts below!\n\n#automation #scalability #serverless #cloudengineering #sre",
+  "posts_created": 127,
+  "last_post_content": "Bridging development and operations delivers value faster. This matters.\n\nHot take: why platform engineering is the future of devops in 2026 is more important than most people realize.\n\nThe data shows that platform engineering will revolutionize the way teams operate, with predictions including:\n\n\u2022 Increased adoption of automated pipelines to streamline workflows\n\u2022 Greater emphasis on self-service capabilities for developers\n\u2022 More focus on creating seamless user experiences across platforms\n\nProduction experience shows that these changes will have a significant impact on the industry, with major shifts expected to occur within the next 6-12 months.\n\nThe reality is that teams must be proactive in preparing for these changes, by investing in platform engineering talent and technology to stay ahead of the curve.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#infrastructure #cloudengineering #automation #devops #scalability",
   "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-11T12:54:53.337311+00:00"
+  "last_post_timestamp": "2026-03-12T12:54:58.695193+00:00"
 }
