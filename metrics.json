@@ -1,7 +1,7 @@
 {
-  "total_posts": 154,
+  "total_posts": 155,
   "posts_today": 1,
-  "last_post_date": "2026-03-12",
+  "last_post_date": "2026-03-13",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 79,
     "lessons_learned": 6,
     "technical_deep_dives": 5,
-    "industry_predictions": 12,
+    "industry_predictions": 13,
     "career_advice": 16,
     "controversial_takes": 6,
     "ai_and_automation": 5
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 55,
+    "growth_plan": 56,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-14",
-      "time": "2026-01-14T11:44:07.550382+00:00",
-      "format": "digest",
-      "sources": [
-        "engineering.fb.com",
-        "www.hashicorp.com",
-        "blog.gitguardian.com",
-        "www.cncf.io",
-        "www.hashicorp.com",
-        "blog.google"
-      ]
-    },
     {
       "date": "2026-01-15",
       "time": "2026-01-15T04:30:38.070399+00:00",
@@ -971,13 +958,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-13",
+      "time": "2026-03-13T12:51:26.559767+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 127,
-  "last_post_content": "Bridging development and operations delivers value faster. This matters.\n\nHot take: why platform engineering is the future of devops in 2026 is more important than most people realize.\n\nThe data shows that platform engineering will revolutionize the way teams operate, with predictions including:\n\n\u2022 Increased adoption of automated pipelines to streamline workflows\n\u2022 Greater emphasis on self-service capabilities for developers\n\u2022 More focus on creating seamless user experiences across platforms\n\nProduction experience shows that these changes will have a significant impact on the industry, with major shifts expected to occur within the next 6-12 months.\n\nThe reality is that teams must be proactive in preparing for these changes, by investing in platform engineering talent and technology to stay ahead of the curve.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#infrastructure #cloudengineering #automation #devops #scalability",
+  "posts_created": 128,
+  "last_post_content": "Everyone talks about the evolution of SRE: beyond Google's model, but nobody mentions this:\n\nThe reality is that SRE is undergoing a significant transformation, driven by changing business needs and technological advancements. Teams often find that traditional SRE models are no longer sufficient to meet the demands of modern software development.\n\n\u2022 The data shows that SRE will become more focused on cloud-native applications\n\u2022 Evidence suggests that automation will play a key role in SRE's future\n\u2022 Production experience shows that AI-driven incident management will become more prevalent\n\nThe timeline for these changes is expected to unfold over the next 2-3 years, with significant advancements in automation and AI-driven incident management.\n\nTeams should prepare by investing in training and upskilling their SRE professionals to work effectively with cloud-native applications and AI-driven tools.\n\nMissing any major trends? What would you add to this list?\n\n#cloudengineering #devops #platformengineering #mlops #sre",
   "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-12T12:54:58.695193+00:00"
+  "last_post_timestamp": "2026-03-13T12:51:26.560689+00:00"
 }
