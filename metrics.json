@@ -1,7 +1,7 @@
 {
-  "total_posts": 155,
+  "total_posts": 156,
   "posts_today": 1,
-  "last_post_date": "2026-03-13",
+  "last_post_date": "2026-03-14",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 79,
     "lessons_learned": 6,
     "technical_deep_dives": 5,
-    "industry_predictions": 13,
+    "industry_predictions": 14,
     "career_advice": 16,
     "controversial_takes": 6,
     "ai_and_automation": 5
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 56,
+    "growth_plan": 57,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-15",
-      "time": "2026-01-15T04:30:38.070399+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.rapid7.com",
-        "www.docker.com",
-        "blog.rapid7.com",
-        "krebsonsecurity.com",
-        "blog.checkpoint.com",
-        "www.crowdstrike.com"
-      ]
-    },
     {
       "date": "2026-01-15",
       "time": "2026-01-15T11:43:46.830686+00:00",
@@ -966,13 +953,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-14",
+      "time": "2026-03-14T05:41:53.667040+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 128,
-  "last_post_content": "Everyone talks about the evolution of SRE: beyond Google's model, but nobody mentions this:\n\nThe reality is that SRE is undergoing a significant transformation, driven by changing business needs and technological advancements. Teams often find that traditional SRE models are no longer sufficient to meet the demands of modern software development.\n\n\u2022 The data shows that SRE will become more focused on cloud-native applications\n\u2022 Evidence suggests that automation will play a key role in SRE's future\n\u2022 Production experience shows that AI-driven incident management will become more prevalent\n\nThe timeline for these changes is expected to unfold over the next 2-3 years, with significant advancements in automation and AI-driven incident management.\n\nTeams should prepare by investing in training and upskilling their SRE professionals to work effectively with cloud-native applications and AI-driven tools.\n\nMissing any major trends? What would you add to this list?\n\n#cloudengineering #devops #platformengineering #mlops #sre",
+  "posts_created": 129,
+  "last_post_content": "After analyzing 5 years of DevOps data, here's the truth about the death of traditional IT operations:\n\nThe data shows that traditional IT operations are becoming obsolete due to increased automation and cloud adoption. Teams often find that manual processes are no longer efficient, and The reality is that this shift is happening faster than expected.\n\n\u2022 Automation will replace most manual IT tasks\n\u2022 Cloud adoption will reduce the need for on-premise infrastructure\n\u2022 Artificial intelligence will enhance incident management\n\nProduction experience shows that these changes will occur within the next 2-3 years, and professionals should prepare by acquiring skills in automation, cloud computing, and AI.\n\nThe reality is that the IT landscape is changing rapidly, and Evidence suggests that teams must adapt quickly to remain relevant.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#scalability #infrastructure #llmops #automation #microservices",
   "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-13T12:51:26.560689+00:00"
+  "last_post_timestamp": "2026-03-14T05:41:53.669214+00:00"
 }
