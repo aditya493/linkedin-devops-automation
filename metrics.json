@@ -1,7 +1,7 @@
 {
-  "total_posts": 156,
+  "total_posts": 157,
   "posts_today": 1,
-  "last_post_date": "2026-03-14",
+  "last_post_date": "2026-03-15",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 5,
     "industry_predictions": 14,
     "career_advice": 16,
-    "controversial_takes": 6,
+    "controversial_takes": 7,
     "ai_and_automation": 5
   },
   "sources_used": {
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 57,
+    "growth_plan": 58,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-15",
-      "time": "2026-01-15T11:43:46.830686+00:00",
-      "format": "digest",
-      "sources": [
-        "about.gitlab.com",
-        "about.gitlab.com",
-        "about.gitlab.com",
-        "about.gitlab.com",
-        "about.gitlab.com",
-        "about.gitlab.com"
-      ]
-    },
     {
       "date": "2026-01-16",
       "time": "2026-01-16T04:27:22.407569+00:00",
@@ -961,13 +948,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-15",
+      "time": "2026-03-15T06:02:53.808617+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 129,
-  "last_post_content": "After analyzing 5 years of DevOps data, here's the truth about the death of traditional IT operations:\n\nThe data shows that traditional IT operations are becoming obsolete due to increased automation and cloud adoption. Teams often find that manual processes are no longer efficient, and The reality is that this shift is happening faster than expected.\n\n\u2022 Automation will replace most manual IT tasks\n\u2022 Cloud adoption will reduce the need for on-premise infrastructure\n\u2022 Artificial intelligence will enhance incident management\n\nProduction experience shows that these changes will occur within the next 2-3 years, and professionals should prepare by acquiring skills in automation, cloud computing, and AI.\n\nThe reality is that the IT landscape is changing rapidly, and Evidence suggests that teams must adapt quickly to remain relevant.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#scalability #infrastructure #llmops #automation #microservices",
-  "last_post_format": "industry_predictions",
+  "posts_created": 130,
+  "last_post_content": "Bridging development and operations delivers value faster. Here's the signal.\n\nHot take: platform engineering is just devops rebranded - change my mind is more important than most people realize.\n\nTHE REALITY IS that platform engineering shares many similarities with DevOps, leading some to view it as a rebranded concept. Teams often find that the core principles of DevOps, such as automation and collaboration, are still at the heart of platform engineering.\n\nThe data shows that platform engineering builds upon DevOps principles, with key aspects including:\n\u2022 Automated workflows and deployments\n\u2022 Cross-functional teams and collaboration\n\u2022 Focus on continuous improvement and feedback\n\nThe counterargument is that platform engineering has distinct characteristics, such as a focus on self-service capabilities and internal developer platforms. However, evidence suggests that these differences may be a matter of degree rather than kind.\n\nProduction experience shows that companies have achieved success by applying DevOps principles to platform engineering, highlighting the similarities between the two. The key to success lies in understanding the underlying principles and applying them effectively.\n\nWhat's your take on this? Let's debate it professionally in the comments.\n\n#devops #cloudengineering #infrastructure #genai #scalability",
+  "last_post_format": "controversial_takes",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-14T05:41:53.669214+00:00"
+  "last_post_timestamp": "2026-03-15T06:02:53.810484+00:00"
 }
