@@ -1,14 +1,14 @@
 {
-  "total_posts": 157,
+  "total_posts": 158,
   "posts_today": 1,
-  "last_post_date": "2026-03-15",
+  "last_post_date": "2026-03-16",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 79,
     "lessons_learned": 6,
-    "technical_deep_dives": 5,
+    "technical_deep_dives": 6,
     "industry_predictions": 14,
     "career_advice": 16,
     "controversial_takes": 7,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 58,
+    "growth_plan": 59,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-16",
-      "time": "2026-01-16T04:27:22.407569+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "blog.checkpoint.com",
-        "blog.qualys.com",
-        "www.paloaltonetworks.com",
-        "blogs.microsoft.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-16",
       "time": "2026-01-16T11:42:07.732559+00:00",
@@ -956,13 +943,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-16",
+      "time": "2026-03-16T05:10:37.744061+00:00",
+      "format": "technical_deep_dives",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 130,
-  "last_post_content": "Bridging development and operations delivers value faster. Here's the signal.\n\nHot take: platform engineering is just devops rebranded - change my mind is more important than most people realize.\n\nTHE REALITY IS that platform engineering shares many similarities with DevOps, leading some to view it as a rebranded concept. Teams often find that the core principles of DevOps, such as automation and collaboration, are still at the heart of platform engineering.\n\nThe data shows that platform engineering builds upon DevOps principles, with key aspects including:\n\u2022 Automated workflows and deployments\n\u2022 Cross-functional teams and collaboration\n\u2022 Focus on continuous improvement and feedback\n\nThe counterargument is that platform engineering has distinct characteristics, such as a focus on self-service capabilities and internal developer platforms. However, evidence suggests that these differences may be a matter of degree rather than kind.\n\nProduction experience shows that companies have achieved success by applying DevOps principles to platform engineering, highlighting the similarities between the two. The key to success lies in understanding the underlying principles and applying them effectively.\n\nWhat's your take on this? Let's debate it professionally in the comments.\n\n#devops #cloudengineering #infrastructure #genai #scalability",
-  "last_post_format": "controversial_takes",
+  "posts_created": 131,
+  "last_post_content": "After analyzing 5 years of DevOps data, here's the truth about the architecture behind automated recovery systems:\n\nThe reality is that automated recovery systems are crucial for minimizing downtime and ensuring business continuity. Teams often find that manual recovery processes are time-consuming and prone to errors. Experience reveals that automated systems can significantly reduce recovery time and improve overall system reliability.\n\nTechnical constraints and requirements include:\n\u2022 Scalability to handle large volumes of data and traffic\n\u2022 High availability to ensure continuous system operation\n\u2022 Security to protect sensitive data and prevent unauthorized access\n\nThe data shows that a well-designed architecture is key to successful automated recovery systems. Solution architecture typically involves multiple components, including data replication, backup systems, and automated failover mechanisms.\n\nImplementation challenges and solutions include:\n\u2022 Ensuring seamless integration with existing systems\n\u2022 Providing adequate training and support for operations teams\n\u2022 Continuously monitoring and optimizing system performance\n\nProduction experience shows that automated recovery systems can significantly improve system uptime and reduce downtime costs. Performance metrics and results demonstrate the effectiveness of these systems in minimizing losses and improving overall business resilience.\n\nThe reality is that automated recovery systems require ongoing maintenance and improvement. Lessons learned and future improvements include continuously monitoring system performance, updating software and hardware components, and refining automated workflows.\n\nQuestions about the implementation? Drop them in the comments!\n\n#infrastructure #scalability #devops #idp #finops",
+  "last_post_format": "technical_deep_dives",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-15T06:02:53.810484+00:00"
+  "last_post_timestamp": "2026-03-16T05:10:37.745020+00:00"
 }
