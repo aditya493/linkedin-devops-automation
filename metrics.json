@@ -1,7 +1,7 @@
 {
-  "total_posts": 159,
-  "posts_today": 2,
-  "last_post_date": "2026-03-16",
+  "total_posts": 160,
+  "posts_today": 1,
+  "last_post_date": "2026-03-17",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 6,
     "industry_predictions": 14,
-    "career_advice": 16,
+    "career_advice": 17,
     "controversial_takes": 8,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 60,
+    "growth_plan": 61,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-17",
-      "time": "2026-01-17T06:53:34.547274+00:00",
-      "format": "digest",
-      "sources": [
-        "about.gitlab.com",
-        "about.gitlab.com",
-        "about.gitlab.com",
-        "www.cncf.io",
-        "www.cncf.io",
-        "engineering.fb.com"
-      ]
-    },
     {
       "date": "2026-01-18",
       "time": "2026-01-18T06:54:31.536180+00:00",
@@ -946,13 +933,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-17",
+      "time": "2026-03-17T07:47:41.761063+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 132,
-  "last_post_content": "Bridging development and operations delivers value faster. Let's break this down.\n\nTeams using AI for automation are seeing surprising results. Here's the data:\nAI won't replace DevOps engineers, but rather augment their capabilities.\n\nThe data shows that DevOps engineers bring unique skills to the table, including:\n\u2022 Ability to analyze complex systems\n\u2022 Knowledge of software development life cycles\n\u2022 Understanding of organizational needs\n\nThe reality is that while AI can automate repetitive tasks, it lacks the critical thinking and problem-solving skills that DevOps engineers possess.\n\nProduction experience shows that DevOps engineers are essential for implementing AI solutions effectively.\n\nAgree or disagree? Share your perspective in the comments.\n\n#aiops #devops #sre #genai #cloudengineering",
-  "last_post_format": "controversial_takes",
+  "posts_created": 133,
+  "last_post_content": "In 2026, the soft skills that matter more than technical expertise is no longer optional. Here's why: teams often find that soft skills are crucial for success in today's fast-paced work environment. The reality is that technical expertise can be learned, but soft skills are harder to develop.\n\nThe data shows that certain strategies work better than others.\n\u2022 Effective communication\n\u2022 Collaboration and teamwork\n\u2022 Time management and adaptability\n\nCommon mistakes to avoid include neglecting to develop emotional intelligence and failing to prioritize continuous learning. Experience reveals that these mistakes can hinder career growth and advancement.\n\nResources for getting started include online courses and workshops that focus on soft skill development. Production experience shows that investing time in these resources can lead to significant improvements in just a few months.\n\nThe timeline expectations for developing soft skills vary, but evidence suggests that consistent practice and dedication can lead to noticeable results within six months to a year.\n\nWhat career advice would you add? Share your experience below.\n\n#devops #infrastructure #automation #aiops #scalability",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-16T13:03:02.614376+00:00"
+  "last_post_timestamp": "2026-03-17T07:47:41.762002+00:00"
 }
