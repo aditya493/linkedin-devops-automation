@@ -1,7 +1,7 @@
 {
-  "total_posts": 160,
+  "total_posts": 161,
   "posts_today": 1,
-  "last_post_date": "2026-03-17",
+  "last_post_date": "2026-03-18",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 79,
     "lessons_learned": 6,
     "technical_deep_dives": 6,
-    "industry_predictions": 14,
+    "industry_predictions": 15,
     "career_advice": 17,
     "controversial_takes": 8,
     "ai_and_automation": 5
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 61,
+    "growth_plan": 62,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-18",
-      "time": "2026-01-18T06:54:31.536180+00:00",
-      "format": "digest",
-      "sources": [
-        "www.docker.com",
-        "blog.rapid7.com",
-        "unit42.paloaltonetworks.com",
-        "blog.checkpoint.com",
-        "blog.cloudflare.com",
-        "www.docker.com"
-      ]
-    },
     {
       "date": "2026-01-19",
       "time": "2026-01-19T04:37:42.437033+00:00",
@@ -941,13 +928,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-18",
+      "time": "2026-03-18T04:52:08.616140+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 133,
-  "last_post_content": "In 2026, the soft skills that matter more than technical expertise is no longer optional. Here's why: teams often find that soft skills are crucial for success in today's fast-paced work environment. The reality is that technical expertise can be learned, but soft skills are harder to develop.\n\nThe data shows that certain strategies work better than others.\n\u2022 Effective communication\n\u2022 Collaboration and teamwork\n\u2022 Time management and adaptability\n\nCommon mistakes to avoid include neglecting to develop emotional intelligence and failing to prioritize continuous learning. Experience reveals that these mistakes can hinder career growth and advancement.\n\nResources for getting started include online courses and workshops that focus on soft skill development. Production experience shows that investing time in these resources can lead to significant improvements in just a few months.\n\nThe timeline expectations for developing soft skills vary, but evidence suggests that consistent practice and dedication can lead to noticeable results within six months to a year.\n\nWhat career advice would you add? Share your experience below.\n\n#devops #infrastructure #automation #aiops #scalability",
-  "last_post_format": "career_advice",
+  "posts_created": 134,
+  "last_post_content": "Many engineers remain skeptical about how genai is revolutionizing infrastructure automation in 2026. The data tells a different story: genai is transforming the industry at an unprecedented pace. The reality is that automation is no longer a choice, but a necessity for companies to stay competitive.\n\nThe data shows that genai will bring about significant changes, including:\n\u2022 Increased efficiency in infrastructure management\n\u2022 Enhanced accuracy in predictive maintenance\n\u2022 Improved scalability in cloud infrastructure\n\nProduction experience shows that these changes are already underway, with many companies adopting genai solutions to streamline their operations. Teams often find that genai-powered automation enables them to focus on higher-value tasks, driving innovation and growth.\n\nThe timeline for these changes is already in motion, with significant advancements expected within the next 6-12 months. Evidence suggests that professionals who adapt to these changes will be well-positioned for success, while those who do not may be left behind.\n\nThe reality is that professionals must be prepared to upskill and reskill to remain relevant in this new landscape. Experience reveals that companies that invest in employee training and development are more likely to reap the benefits of genai-powered automation.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#sre #artificialintelligence #platformengineering #mlops #llmops",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-17T07:47:41.762002+00:00"
+  "last_post_timestamp": "2026-03-18T04:52:08.617078+00:00"
 }
