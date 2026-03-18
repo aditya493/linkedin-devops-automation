@@ -1,6 +1,6 @@
 {
-  "total_posts": 161,
-  "posts_today": 1,
+  "total_posts": 162,
+  "posts_today": 2,
   "last_post_date": "2026-03-18",
   "formats_used": {
     "case_study": 10,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 6,
     "industry_predictions": 15,
-    "career_advice": 17,
+    "career_advice": 18,
     "controversial_takes": 8,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 62,
+    "growth_plan": 63,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-19",
-      "time": "2026-01-19T04:37:42.437033+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-19",
       "time": "2026-01-19T11:43:59.746280+00:00",
@@ -936,13 +923,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-18",
+      "time": "2026-03-18T13:03:16.953352+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 134,
-  "last_post_content": "Many engineers remain skeptical about how genai is revolutionizing infrastructure automation in 2026. The data tells a different story: genai is transforming the industry at an unprecedented pace. The reality is that automation is no longer a choice, but a necessity for companies to stay competitive.\n\nThe data shows that genai will bring about significant changes, including:\n\u2022 Increased efficiency in infrastructure management\n\u2022 Enhanced accuracy in predictive maintenance\n\u2022 Improved scalability in cloud infrastructure\n\nProduction experience shows that these changes are already underway, with many companies adopting genai solutions to streamline their operations. Teams often find that genai-powered automation enables them to focus on higher-value tasks, driving innovation and growth.\n\nThe timeline for these changes is already in motion, with significant advancements expected within the next 6-12 months. Evidence suggests that professionals who adapt to these changes will be well-positioned for success, while those who do not may be left behind.\n\nThe reality is that professionals must be prepared to upskill and reskill to remain relevant in this new landscape. Experience reveals that companies that invest in employee training and development are more likely to reap the benefits of genai-powered automation.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#sre #artificialintelligence #platformengineering #mlops #llmops",
-  "last_post_format": "industry_predictions",
+  "posts_created": 135,
+  "last_post_content": "In 2026, why every developer should learn operations is no longer optional. Here's why: teams often find that understanding operations is crucial for career growth and success. The reality is that developers who learn operations are more versatile and valuable to organizations.\n\nExperience reveals that several strategies can help developers learn operations, including:\n\u2022 Focusing on cloud computing and infrastructure\n\u2022 Learning about continuous integration and delivery\n\u2022 Understanding monitoring and logging tools\n\nThe data shows that common mistakes to avoid include neglecting security and compliance, ignoring scalability and performance, and not testing thoroughly. Production experience shows that these mistakes can be costly and time-consuming to fix.\n\nResources for getting started include online courses, tutorials, and blogs that focus on DevOps and operations. Timeline expectations vary, but developers can start seeing benefits within a few months of dedicated learning.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#infrastructureascode #devops #automation #sre #infrastructure",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-18T04:52:08.617078+00:00"
+  "last_post_timestamp": "2026-03-18T13:03:16.954350+00:00"
 }
