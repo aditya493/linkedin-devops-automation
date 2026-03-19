@@ -1,6 +1,6 @@
 {
-  "total_posts": 163,
-  "posts_today": 1,
+  "total_posts": 164,
+  "posts_today": 2,
   "last_post_date": "2026-03-19",
   "formats_used": {
     "case_study": 10,
@@ -9,7 +9,7 @@
     "digest": 79,
     "lessons_learned": 6,
     "technical_deep_dives": 6,
-    "industry_predictions": 16,
+    "industry_predictions": 17,
     "career_advice": 18,
     "controversial_takes": 8,
     "ai_and_automation": 5
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 64,
+    "growth_plan": 65,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-20",
-      "time": "2026-01-20T04:34:47.927982+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.cncf.io"
-      ]
-    },
     {
       "date": "2026-01-21",
       "time": "2026-01-21T08:28:23.810702+00:00",
@@ -926,13 +913,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-19",
+      "time": "2026-03-19T12:57:57.514020+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 136,
-  "last_post_content": "Many engineers remain skeptical about aiops in 2026: from hype to production reality. The data tells a different story:\n\nThe reality is that AIOps is becoming a crucial component of modern IT operations. Teams often find that AIOps helps reduce downtime and increase efficiency.\n\nThe data shows that the following predictions will come to fruition:\n\u2022 AIOps will be widely adopted in large enterprises\n\u2022 Machine learning will play a key role in anomaly detection\n\u2022 Automation will become a standard feature of AIOps platforms\n\nProduction experience shows that these changes will happen within the next 6-12 months. Evidence suggests that professionals should start preparing now to stay ahead of the curve.\n\nMissing any major trends? What would you add to this list?\n\n#artificialintelligence #genai #devops #artificialintelligence #llmops",
+  "posts_created": 137,
+  "last_post_content": "Companies failing at why internal developer platforms will define 2026 share this common pattern:\nThe reality is that these companies often overlook the benefits of streamlined development processes and automated workflows.\n\nThe data shows that internal developer platforms will bring significant changes in the following areas:\n\u2022 Increased adoption of automated testing and deployment\n\u2022 Improved collaboration between development and operations teams\n\u2022 Enhanced security and compliance features\n\nProduction experience shows that these changes will start to take effect within the next 6-12 months, as teams begin to realize the benefits of internal developer platforms.\n\nThe evidence suggests that professionals should start preparing now by developing skills in areas like automation, cloud computing, and cybersecurity.\n\nWhat predictions do you have for DevOps in 2026? Share your thoughts below!\n\n#sre #infrastructure #infrastructureascode #devops #gitops",
   "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-19T07:41:32.825458+00:00"
+  "last_post_timestamp": "2026-03-19T12:57:57.514977+00:00"
 }
