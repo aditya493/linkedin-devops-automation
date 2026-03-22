@@ -1,7 +1,7 @@
 {
-  "total_posts": 164,
-  "posts_today": 2,
-  "last_post_date": "2026-03-19",
+  "total_posts": 165,
+  "posts_today": 1,
+  "last_post_date": "2026-03-22",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 6,
     "industry_predictions": 17,
-    "career_advice": 18,
+    "career_advice": 19,
     "controversial_takes": 8,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 65,
+    "growth_plan": 66,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-21",
-      "time": "2026-01-21T08:28:23.810702+00:00",
-      "format": "digest",
-      "sources": [
-        "microservices.io",
-        "www.infoq.com",
-        "www.infoq.com",
-        "blog.cloudflare.com",
-        "blog.checkpoint.com",
-        "blog.qualys.com"
-      ]
-    },
     {
       "date": "2026-01-21",
       "time": "2026-01-21T09:49:22.224363+00:00",
@@ -921,13 +908,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-22",
+      "time": "2026-03-22T11:50:33.400792+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 137,
-  "last_post_content": "Companies failing at why internal developer platforms will define 2026 share this common pattern:\nThe reality is that these companies often overlook the benefits of streamlined development processes and automated workflows.\n\nThe data shows that internal developer platforms will bring significant changes in the following areas:\n\u2022 Increased adoption of automated testing and deployment\n\u2022 Improved collaboration between development and operations teams\n\u2022 Enhanced security and compliance features\n\nProduction experience shows that these changes will start to take effect within the next 6-12 months, as teams begin to realize the benefits of internal developer platforms.\n\nThe evidence suggests that professionals should start preparing now by developing skills in areas like automation, cloud computing, and cybersecurity.\n\nWhat predictions do you have for DevOps in 2026? Share your thoughts below!\n\n#sre #infrastructure #infrastructureascode #devops #gitops",
-  "last_post_format": "industry_predictions",
+  "posts_created": 138,
+  "last_post_content": "DevOps culture transformation shows what works. Pay attention to this.\n\nThe hidden cost of how to transition from traditional IT to DevOps in 2026 that teams often miss:\nTeams often find that transitioning to DevOps requires significant changes in culture, process, and technology. The data shows that successful transitions involve careful planning and execution.\n\nProduction experience shows that several strategies can facilitate a smooth transition, including:\n\u2022 Adopting agile methodologies\n\u2022 Implementing continuous integration and delivery\n\u2022 Fostering collaboration between development and operations teams\n\nThe reality is that common mistakes can hinder the transition process, such as inadequate training and insufficient automation. Evidence suggests that addressing these mistakes is crucial for success.\n\nResources for getting started include online courses, industry conferences, and consulting with experienced DevOps professionals. Timeline expectations vary, but teams can expect to see significant improvements within 6-12 months.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#cloudengineering #infrastructure #scalability #serverless #devops",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-19T12:57:57.514977+00:00"
+  "last_post_timestamp": "2026-03-22T11:50:33.401715+00:00"
 }
