@@ -1,7 +1,7 @@
 {
-  "total_posts": 165,
+  "total_posts": 166,
   "posts_today": 1,
-  "last_post_date": "2026-03-22",
+  "last_post_date": "2026-03-23",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 6,
     "technical_deep_dives": 6,
     "industry_predictions": 17,
-    "career_advice": 19,
+    "career_advice": 20,
     "controversial_takes": 8,
     "ai_and_automation": 5
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 66,
+    "growth_plan": 67,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-21",
-      "time": "2026-01-21T09:49:22.224363+00:00",
-      "format": "digest",
-      "sources": [
-        "about.gitlab.com",
-        "www.cncf.io",
-        "www.cncf.io",
-        "www.paloaltonetworks.com",
-        "www.mend.io",
-        "blogs.microsoft.com"
-      ]
-    },
     {
       "date": "2026-01-21",
       "time": "2026-01-21T11:47:02.958655+00:00",
@@ -916,13 +903,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-23",
+      "time": "2026-03-23T05:00:44.758292+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 138,
-  "last_post_content": "DevOps culture transformation shows what works. Pay attention to this.\n\nThe hidden cost of how to transition from traditional IT to DevOps in 2026 that teams often miss:\nTeams often find that transitioning to DevOps requires significant changes in culture, process, and technology. The data shows that successful transitions involve careful planning and execution.\n\nProduction experience shows that several strategies can facilitate a smooth transition, including:\n\u2022 Adopting agile methodologies\n\u2022 Implementing continuous integration and delivery\n\u2022 Fostering collaboration between development and operations teams\n\nThe reality is that common mistakes can hinder the transition process, such as inadequate training and insufficient automation. Evidence suggests that addressing these mistakes is crucial for success.\n\nResources for getting started include online courses, industry conferences, and consulting with experienced DevOps professionals. Timeline expectations vary, but teams can expect to see significant improvements within 6-12 months.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#cloudengineering #infrastructure #scalability #serverless #devops",
+  "posts_created": 139,
+  "last_post_content": "Bridging development and operations delivers value faster. Here's the signal.\n\nMany engineers remain skeptical about essential ai/ml skills for devops engineers in 2026. The data tells a different story: teams that adopt AI/ML skills see significant improvements in efficiency and productivity. This shift is critical for engineers looking to stay ahead.\n\nThe reality is that DevOps engineers need to develop skills in AI/ML to remain competitive. Production experience shows that AI/ML skills are essential for automating processes and improving system reliability. Teams often find that AI/ML skills enhance their ability to analyze complex data.\n\nEssential AI/ML skills for DevOps engineers include:\n\u2022 Machine learning algorithms\n\u2022 Natural language processing\n\u2022 Deep learning\n\nThe data shows that common mistakes to avoid include lack of planning and insufficient training data. Evidence suggests that teams should prioritize building a strong foundation in AI/ML fundamentals.\n\nTeams can get started with online courses and tutorials that provide hands-on experience with AI/ML tools. Timeline expectations vary, but most teams see significant improvements within 6-12 months.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#artificialintelligence #genai #mlops #devops #llmops",
   "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-22T11:50:33.401715+00:00"
+  "last_post_timestamp": "2026-03-23T05:00:44.759239+00:00"
 }
