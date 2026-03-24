@@ -1,7 +1,7 @@
 {
-  "total_posts": 166,
+  "total_posts": 167,
   "posts_today": 1,
-  "last_post_date": "2026-03-23",
+  "last_post_date": "2026-03-24",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 17,
     "career_advice": 20,
     "controversial_takes": 8,
-    "ai_and_automation": 5
+    "ai_and_automation": 6
   },
   "sources_used": {
     "www.infoq.com": 118,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 67,
+    "growth_plan": 68,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-21",
-      "time": "2026-01-21T11:47:02.958655+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "www.cncf.io",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-22",
       "time": "2026-01-22T04:36:33.809504+00:00",
@@ -911,13 +898,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-24",
+      "time": "2026-03-24T07:48:31.019801+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 139,
-  "last_post_content": "Bridging development and operations delivers value faster. Here's the signal.\n\nMany engineers remain skeptical about essential ai/ml skills for devops engineers in 2026. The data tells a different story: teams that adopt AI/ML skills see significant improvements in efficiency and productivity. This shift is critical for engineers looking to stay ahead.\n\nThe reality is that DevOps engineers need to develop skills in AI/ML to remain competitive. Production experience shows that AI/ML skills are essential for automating processes and improving system reliability. Teams often find that AI/ML skills enhance their ability to analyze complex data.\n\nEssential AI/ML skills for DevOps engineers include:\n\u2022 Machine learning algorithms\n\u2022 Natural language processing\n\u2022 Deep learning\n\nThe data shows that common mistakes to avoid include lack of planning and insufficient training data. Evidence suggests that teams should prioritize building a strong foundation in AI/ML fundamentals.\n\nTeams can get started with online courses and tutorials that provide hands-on experience with AI/ML tools. Timeline expectations vary, but most teams see significant improvements within 6-12 months.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#artificialintelligence #genai #mlops #devops #llmops",
-  "last_post_format": "career_advice",
+  "posts_created": 140,
+  "last_post_content": "DevOps culture transformation shows what works. Worth understanding.\n\nEveryone's talking about how teams are using github copilot in devops workflows, but few share real results. Here's what the data shows: teams often find that automating repetitive coding tasks is key to streamlining DevOps workflows. The AI/automation problem being addressed is reducing manual effort and increasing productivity.\n\nThe data shows that teams evaluate various tools and technologies, including GitHub Copilot, to determine the best fit for their workflows. Experience reveals that a thoughtful implementation approach is crucial to success. Tools and technologies are carefully selected based on specific needs and requirements.\n\nImplementation approach involves several steps, including:\n\u2022 Assessing current workflows and identifying areas for automation\n\u2022 Selecting and integrating tools like GitHub Copilot\n\u2022 Monitoring and evaluating results\n\nThe reality is that what works for one team may not work for another. Production experience shows that careful planning and ongoing evaluation are essential to determining what works and what doesn't. Evidence suggests that teams that invest time and effort into implementing AI tools like GitHub Copilot can achieve significant ROI and productivity gains.\n\nThe data shows that teams can achieve significant productivity gains and cost savings by implementing AI tools like GitHub Copilot. ROI and productivity metrics are carefully tracked and analyzed to determine the effectiveness of these tools. Future plans and recommendations often involve continued investment in AI and automation.\n\nWhat's the biggest challenge you've faced adopting AI tools?\n\n#devops #aiops #cloudengineering #llmops #artificialintelligence",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-23T05:00:44.759239+00:00"
+  "last_post_timestamp": "2026-03-24T07:48:31.020758+00:00"
 }
