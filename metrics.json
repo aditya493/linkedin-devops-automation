@@ -1,13 +1,13 @@
 {
-  "total_posts": 167,
+  "total_posts": 168,
   "posts_today": 1,
-  "last_post_date": "2026-03-24",
+  "last_post_date": "2026-03-25",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 79,
-    "lessons_learned": 6,
+    "lessons_learned": 7,
     "technical_deep_dives": 6,
     "industry_predictions": 17,
     "career_advice": 20,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 68,
+    "growth_plan": 69,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,17 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-22",
-      "time": "2026-01-22T04:36:33.809504+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.rapid7.com",
-        "blog.checkpoint.com",
-        "blog.newrelic.com",
-        "blog.newrelic.com"
-      ]
-    },
     {
       "date": "2026-01-22",
       "time": "2026-01-22T09:14:10.431855+00:00",
@@ -906,13 +895,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-25",
+      "time": "2026-03-25T07:48:32.199781+00:00",
+      "format": "lessons_learned",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 140,
-  "last_post_content": "DevOps culture transformation shows what works. Worth understanding.\n\nEveryone's talking about how teams are using github copilot in devops workflows, but few share real results. Here's what the data shows: teams often find that automating repetitive coding tasks is key to streamlining DevOps workflows. The AI/automation problem being addressed is reducing manual effort and increasing productivity.\n\nThe data shows that teams evaluate various tools and technologies, including GitHub Copilot, to determine the best fit for their workflows. Experience reveals that a thoughtful implementation approach is crucial to success. Tools and technologies are carefully selected based on specific needs and requirements.\n\nImplementation approach involves several steps, including:\n\u2022 Assessing current workflows and identifying areas for automation\n\u2022 Selecting and integrating tools like GitHub Copilot\n\u2022 Monitoring and evaluating results\n\nThe reality is that what works for one team may not work for another. Production experience shows that careful planning and ongoing evaluation are essential to determining what works and what doesn't. Evidence suggests that teams that invest time and effort into implementing AI tools like GitHub Copilot can achieve significant ROI and productivity gains.\n\nThe data shows that teams can achieve significant productivity gains and cost savings by implementing AI tools like GitHub Copilot. ROI and productivity metrics are carefully tracked and analyzed to determine the effectiveness of these tools. Future plans and recommendations often involve continued investment in AI and automation.\n\nWhat's the biggest challenge you've faced adopting AI tools?\n\n#devops #aiops #cloudengineering #llmops #artificialintelligence",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 141,
+  "last_post_content": "DevOps culture transformation shows what works. This matters.\n\nHot take: 5 common mistakes that make engineers better at devops is more important than most people realize.\n\nTeams often find that mistakes in DevOps can be costly, leading to delays and decreased productivity. The immediate impact of these mistakes can be significant, resulting in lost time and resources.\n\nThe reality is that most mistakes in DevOps stem from a lack of understanding or poor implementation.\n\u2022 Insufficient testing\n\u2022 Inadequate monitoring\n\u2022 Poor communication\n\u2022 Inconsistent deployment\n\u2022 Lack of automation\n\nEvidence suggests that addressing these mistakes can lead to significant improvements in DevOps efficiency. The implementation of automated testing and monitoring can greatly reduce errors and downtime.\n\nProduction experience shows that learning from mistakes is crucial to improving DevOps practices. The data shows that teams that learn from their mistakes are more likely to succeed in the long run.\n\nWhat lessons have you learned from production incidents? Let's learn together.\n\n#microservices #llmops #scalability #cloudengineering #sre",
+  "last_post_format": "lessons_learned",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-24T07:48:31.020758+00:00"
+  "last_post_timestamp": "2026-03-25T07:48:32.200667+00:00"
 }
