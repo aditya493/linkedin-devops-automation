@@ -1,7 +1,7 @@
 {
-  "total_posts": 168,
+  "total_posts": 169,
   "posts_today": 1,
-  "last_post_date": "2026-03-25",
+  "last_post_date": "2026-03-26",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 79,
     "lessons_learned": 7,
     "technical_deep_dives": 6,
-    "industry_predictions": 17,
+    "industry_predictions": 18,
     "career_advice": 20,
     "controversial_takes": 8,
     "ai_and_automation": 6
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 69,
+    "growth_plan": 70,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,17 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-22",
-      "time": "2026-01-22T09:14:10.431855+00:00",
-      "format": "digest",
-      "sources": [
-        "www.cncf.io",
-        "kubernetes.io",
-        "kubernetes.io",
-        "kubernetes.io"
-      ]
-    },
     {
       "date": "2026-01-22",
       "time": "2026-01-22T11:45:51.781261+00:00",
@@ -903,13 +892,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-26",
+      "time": "2026-03-26T07:57:37.251479+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 141,
-  "last_post_content": "DevOps culture transformation shows what works. This matters.\n\nHot take: 5 common mistakes that make engineers better at devops is more important than most people realize.\n\nTeams often find that mistakes in DevOps can be costly, leading to delays and decreased productivity. The immediate impact of these mistakes can be significant, resulting in lost time and resources.\n\nThe reality is that most mistakes in DevOps stem from a lack of understanding or poor implementation.\n\u2022 Insufficient testing\n\u2022 Inadequate monitoring\n\u2022 Poor communication\n\u2022 Inconsistent deployment\n\u2022 Lack of automation\n\nEvidence suggests that addressing these mistakes can lead to significant improvements in DevOps efficiency. The implementation of automated testing and monitoring can greatly reduce errors and downtime.\n\nProduction experience shows that learning from mistakes is crucial to improving DevOps practices. The data shows that teams that learn from their mistakes are more likely to succeed in the long run.\n\nWhat lessons have you learned from production incidents? Let's learn together.\n\n#microservices #llmops #scalability #cloudengineering #sre",
-  "last_post_format": "lessons_learned",
+  "posts_created": 142,
+  "last_post_content": "Outages become learning opportunities. Let's break this down.\n\nEveryone's talking about the rise of ai-powered incident response, but few share real results. Here's what the data shows:\n\nThe reality is that AI-powered incident response is transforming the industry. Teams often find that AI-driven tools enhance response times and improve accuracy. Evidence suggests that this technology will become increasingly prevalent.\n\n\u2022 AI will automate routine incident response tasks\n\u2022 AI-driven tools will enhance incident detection capabilities\n\u2022 AI-powered systems will optimize resource allocation\n\nThe data shows that these changes will occur within the next 12-18 months. Production experience shows that teams must adapt quickly to remain competitive. Experience reveals that professionals should develop skills in AI and machine learning to prepare.\n\nMissing any major trends? What would you add to this list?\n\n#idp #mlops #devops #artificialintelligence #aiops",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-25T07:48:32.200667+00:00"
+  "last_post_timestamp": "2026-03-26T07:57:37.252480+00:00"
 }
