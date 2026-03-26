@@ -1,6 +1,6 @@
 {
-  "total_posts": 169,
-  "posts_today": 1,
+  "total_posts": 170,
+  "posts_today": 2,
   "last_post_date": "2026-03-26",
   "formats_used": {
     "case_study": 10,
@@ -10,7 +10,7 @@
     "lessons_learned": 7,
     "technical_deep_dives": 6,
     "industry_predictions": 18,
-    "career_advice": 20,
+    "career_advice": 21,
     "controversial_takes": 8,
     "ai_and_automation": 6
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 70,
+    "growth_plan": 71,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-22",
-      "time": "2026-01-22T11:45:51.781261+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "snyk.io",
-        "martinfowler.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-22",
       "time": "2026-01-22T12:23:49.768213+00:00",
@@ -900,13 +887,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-26",
+      "time": "2026-03-26T13:06:07.556768+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 142,
-  "last_post_content": "Outages become learning opportunities. Let's break this down.\n\nEveryone's talking about the rise of ai-powered incident response, but few share real results. Here's what the data shows:\n\nThe reality is that AI-powered incident response is transforming the industry. Teams often find that AI-driven tools enhance response times and improve accuracy. Evidence suggests that this technology will become increasingly prevalent.\n\n\u2022 AI will automate routine incident response tasks\n\u2022 AI-driven tools will enhance incident detection capabilities\n\u2022 AI-powered systems will optimize resource allocation\n\nThe data shows that these changes will occur within the next 12-18 months. Production experience shows that teams must adapt quickly to remain competitive. Experience reveals that professionals should develop skills in AI and machine learning to prepare.\n\nMissing any major trends? What would you add to this list?\n\n#idp #mlops #devops #artificialintelligence #aiops",
-  "last_post_format": "industry_predictions",
+  "posts_created": 143,
+  "last_post_content": "Everyone talks about the soft skills that matter more than technical expertise, but nobody mentions this:\nTeams often find that effective communication, adaptability, and problem-solving skills are crucial for success in the workplace.\n\nThe data shows that employees with strong soft skills tend to perform better and achieve more in their careers, with key strategies including:\n\u2022 Collaborative teamwork\n\u2022 Active listening\n\u2022 Continuous learning\n\nExperience reveals that common mistakes to avoid include neglecting feedback, failing to prioritize tasks, and lacking self-awareness.\n\nProduction experience shows that getting started with developing soft skills can be as simple as seeking feedback from colleagues and supervisors, and utilizing online resources such as courses and workshops.\n\nThe reality is that developing strong soft skills takes time and practice, with noticeable improvements often emerging within 6-12 months of dedicated effort.\n\nWhat career advice would you add? Share your experience below.\n\n#cloudengineering #scalability #infrastructureascode #infrastructure #devops",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-26T07:57:37.252480+00:00"
+  "last_post_timestamp": "2026-03-26T13:06:07.557721+00:00"
 }
