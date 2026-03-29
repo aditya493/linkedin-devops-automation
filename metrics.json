@@ -1,7 +1,7 @@
 {
-  "total_posts": 170,
-  "posts_today": 2,
-  "last_post_date": "2026-03-26",
+  "total_posts": 171,
+  "posts_today": 1,
+  "last_post_date": "2026-03-29",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 79,
     "lessons_learned": 7,
     "technical_deep_dives": 6,
-    "industry_predictions": 18,
+    "industry_predictions": 19,
     "career_advice": 21,
     "controversial_takes": 8,
     "ai_and_automation": 6
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 71,
+    "growth_plan": 72,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-22",
-      "time": "2026-01-22T12:23:49.768213+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "unit42.paloaltonetworks.com",
-        "blogs.microsoft.com",
-        "blogs.microsoft.com",
-        "www.infoq.com",
-        "www.crowdstrike.com"
-      ]
-    },
     {
       "date": "2026-01-22",
       "time": "2026-01-22T12:49:13.245362+00:00",
@@ -895,13 +882,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-29",
+      "time": "2026-03-29T06:09:32.671329+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 143,
-  "last_post_content": "Everyone talks about the soft skills that matter more than technical expertise, but nobody mentions this:\nTeams often find that effective communication, adaptability, and problem-solving skills are crucial for success in the workplace.\n\nThe data shows that employees with strong soft skills tend to perform better and achieve more in their careers, with key strategies including:\n\u2022 Collaborative teamwork\n\u2022 Active listening\n\u2022 Continuous learning\n\nExperience reveals that common mistakes to avoid include neglecting feedback, failing to prioritize tasks, and lacking self-awareness.\n\nProduction experience shows that getting started with developing soft skills can be as simple as seeking feedback from colleagues and supervisors, and utilizing online resources such as courses and workshops.\n\nThe reality is that developing strong soft skills takes time and practice, with noticeable improvements often emerging within 6-12 months of dedicated effort.\n\nWhat career advice would you add? Share your experience below.\n\n#cloudengineering #scalability #infrastructureascode #infrastructure #devops",
-  "last_post_format": "career_advice",
+  "posts_created": 144,
+  "last_post_content": "Companies failing at the death of traditional IT operations share this common pattern:\nThe reality is that traditional IT operations are no longer effective in today's fast-paced digital landscape.\n\nThe data shows that several key changes are driving this shift, including:\n\u2022 Increased adoption of cloud-native technologies\n\u2022 Rising demand for agile and flexible infrastructure\n\u2022 Growing need for automation and AI-powered tools\n\nProduction experience shows that teams often find it challenging to adapt to these changes, and evidence suggests that those who fail to evolve will be left behind.\n\nThe timeline for these changes is already underway, with significant transformations expected to occur within the next 2-3 years.\n\nTeams should prepare by upskilling and reskilling to stay ahead of the curve, focusing on emerging technologies and innovative practices.\n\nWhat predictions do you have for DevOps in 2026? Share your thoughts below!\n\n#infrastructure #scalability #automation #llmops #genai",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-26T13:06:07.557721+00:00"
+  "last_post_timestamp": "2026-03-29T06:09:32.672293+00:00"
 }
