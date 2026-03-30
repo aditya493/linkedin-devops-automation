@@ -1,7 +1,7 @@
 {
-  "total_posts": 171,
+  "total_posts": 172,
   "posts_today": 1,
-  "last_post_date": "2026-03-29",
+  "last_post_date": "2026-03-30",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 7,
     "technical_deep_dives": 6,
     "industry_predictions": 19,
-    "career_advice": 21,
+    "career_advice": 22,
     "controversial_takes": 8,
     "ai_and_automation": 6
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 72,
+    "growth_plan": 73,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,15 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-22",
-      "time": "2026-01-22T12:49:13.245362+00:00",
-      "format": "digest",
-      "sources": [
-        "unit42.paloaltonetworks.com",
-        "feeds.feedburner.com"
-      ]
-    },
     {
       "date": "2026-01-23",
       "time": "2026-01-23T09:50:32.833008+00:00",
@@ -890,13 +881,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-30",
+      "time": "2026-03-30T13:11:27.729076+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 144,
-  "last_post_content": "Companies failing at the death of traditional IT operations share this common pattern:\nThe reality is that traditional IT operations are no longer effective in today's fast-paced digital landscape.\n\nThe data shows that several key changes are driving this shift, including:\n\u2022 Increased adoption of cloud-native technologies\n\u2022 Rising demand for agile and flexible infrastructure\n\u2022 Growing need for automation and AI-powered tools\n\nProduction experience shows that teams often find it challenging to adapt to these changes, and evidence suggests that those who fail to evolve will be left behind.\n\nThe timeline for these changes is already underway, with significant transformations expected to occur within the next 2-3 years.\n\nTeams should prepare by upskilling and reskilling to stay ahead of the curve, focusing on emerging technologies and innovative practices.\n\nWhat predictions do you have for DevOps in 2026? Share your thoughts below!\n\n#infrastructure #scalability #automation #llmops #genai",
-  "last_post_format": "industry_predictions",
+  "posts_created": 145,
+  "last_post_content": "DevOps practices at scale reveal key patterns. Let's break this down.\n\nMany thought how to transition from traditional it to devops in 2026 was overhyped. The evidence says otherwise. Teams often find that adopting DevOps practices leads to improved collaboration and increased efficiency.\n\nThe data shows that several strategies can facilitate a successful transition, including:\n\u2022 Focusing on automation and continuous integration\n\u2022 Adopting a culture of continuous learning and improvement\n\u2022 Emphasizing collaboration and communication between teams\n\nProduction experience shows that common mistakes to avoid include inadequate training and insufficient investment in tooling and infrastructure.\n\nResources for getting started include online courses, industry conferences, and community forums. The reality is that transitioning to DevOps requires time and effort, with most teams requiring several months to a year to fully adapt.\n\nWhat career advice would you add? Share your experience below.\n\n#automation #devops #infrastructure #scalability #sre",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-29T06:09:32.672293+00:00"
+  "last_post_timestamp": "2026-03-30T13:11:27.729983+00:00"
 }
