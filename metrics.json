@@ -1,7 +1,7 @@
 {
-  "total_posts": 172,
+  "total_posts": 173,
   "posts_today": 1,
-  "last_post_date": "2026-03-30",
+  "last_post_date": "2026-03-31",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 6,
     "industry_predictions": 19,
     "career_advice": 22,
-    "controversial_takes": 8,
+    "controversial_takes": 9,
     "ai_and_automation": 6
   },
   "sources_used": {
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 73,
+    "growth_plan": 74,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,19 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-23",
-      "time": "2026-01-23T09:50:32.833008+00:00",
-      "format": "digest",
-      "sources": [
-        "martinfowler.com",
-        "www.docker.com",
-        "www.infoq.com",
-        "www.cncf.io",
-        "www.docker.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-23",
       "time": "2026-01-23T10:04:03.091842+00:00",
@@ -889,13 +876,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-03-31",
+      "time": "2026-03-31T05:04:51.410179+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 145,
-  "last_post_content": "DevOps practices at scale reveal key patterns. Let's break this down.\n\nMany thought how to transition from traditional it to devops in 2026 was overhyped. The evidence says otherwise. Teams often find that adopting DevOps practices leads to improved collaboration and increased efficiency.\n\nThe data shows that several strategies can facilitate a successful transition, including:\n\u2022 Focusing on automation and continuous integration\n\u2022 Adopting a culture of continuous learning and improvement\n\u2022 Emphasizing collaboration and communication between teams\n\nProduction experience shows that common mistakes to avoid include inadequate training and insufficient investment in tooling and infrastructure.\n\nResources for getting started include online courses, industry conferences, and community forums. The reality is that transitioning to DevOps requires time and effort, with most teams requiring several months to a year to fully adapt.\n\nWhat career advice would you add? Share your experience below.\n\n#automation #devops #infrastructure #scalability #sre",
-  "last_post_format": "career_advice",
+  "posts_created": 146,
+  "last_post_content": "Bridging development and operations delivers value faster. Here's the signal.\n\nThe hidden cost of platform engineering is just devops rebranded - change that teams often miss:\n\nPlatform engineering is not a new concept, but rather a rebranded version of DevOps. Teams often find that the underlying principles and practices remain the same.\n\nThe data shows that platform engineering and DevOps share common goals, including:\n\u2022 Improved collaboration between development and operations teams\n\u2022 Increased automation and efficiency\n\u2022 Enhanced reliability and scalability\n\nThe reality is that some teams may be using the term \"platform engineering\" to describe existing DevOps practices. Production experience shows that this can lead to confusion and unnecessary complexity.\n\nTeams often overlook the fact that platform engineering and DevOps require similar skill sets and mindsets. Evidence suggests that successful implementation of either approach depends on a deep understanding of software development, operations, and collaboration.\n\nExperience reveals that some organizations have successfully implemented DevOps practices without needing to adopt the term \"platform engineering\". The key to success lies in the effective application of principles, not the label used.\n\nAgree or disagree? Share your perspective in the comments.\n\n#scalability #devops #sre #automation #llmops",
+  "last_post_format": "controversial_takes",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-03-30T13:11:27.729983+00:00"
+  "last_post_timestamp": "2026-03-31T05:04:51.411097+00:00"
 }
