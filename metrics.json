@@ -1,7 +1,7 @@
 {
-  "total_posts": 174,
+  "total_posts": 175,
   "posts_today": 1,
-  "last_post_date": "2026-04-02",
+  "last_post_date": "2026-04-03",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 6,
     "industry_predictions": 20,
     "career_advice": 22,
-    "controversial_takes": 9,
+    "controversial_takes": 10,
     "ai_and_automation": 6
   },
   "sources_used": {
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 75,
+    "growth_plan": 76,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-23",
-      "time": "2026-01-23T10:15:51.997098+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.newrelic.com"
-      ]
-    },
     {
       "date": "2026-01-23",
       "time": "2026-01-23T10:27:24.144985+00:00",
@@ -879,13 +871,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-04-03",
+      "time": "2026-04-03T05:02:46.400381+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 147,
-  "last_post_content": "After analyzing 5 years of DevOps data, here's the truth about the death of traditional IT operations:\n\nThe data shows that traditional IT operations are becoming obsolete, replaced by more agile and automated approaches. Teams often find that manual processes are no longer viable in today's fast-paced digital landscape.\n\n\u2022 Automation will replace manual testing\n\u2022 Artificial intelligence will optimize resource allocation\n\u2022 Cloud-native applications will dominate the market\n\nProduction experience shows that these changes are already underway, with many organizations adopting DevOps practices to stay competitive. The reality is that traditional IT operations will be phased out within the next 2-3 years.\n\nTo prepare, professionals should focus on developing skills in automation, AI, and cloud computing. Evidence suggests that those who adapt quickly will thrive in this new landscape.\n\nWhat predictions do you have for DevOps in 2026? Share your thoughts below!\n\n#techin2026 #cloudengineering #scalability #automation #sre",
-  "last_post_format": "industry_predictions",
+  "posts_created": 148,
+  "last_post_content": "Unpopular opinion: why agile methodologies break in operations matters more than most realize.\n\nAgile methodologies are not a one-size-fits-all solution. Teams often find that these approaches, designed for development, falter when applied to operations.\n\nThe data shows that agile breaks in operations for several reasons:\n\u2022 Inadequate planning for operational complexity\n\u2022 Insufficient resources allocated to support agile workflows\n\u2022 Lack of clear communication channels between development and operations teams\n\nThe reality is that critics argue agile can be adapted to fit any environment with sufficient flexibility and creativity.\n\nProduction experience shows that even with careful planning, agile methodologies can still struggle to meet the unique demands of operations, leading to decreased efficiency and increased costs.\n\nAgree or disagree? Share your perspective in the comments.\n\n#gitops #devops #infrastructure #platformengineering #cloudengineering",
+  "last_post_format": "controversial_takes",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-04-02T04:59:16.414086+00:00"
+  "last_post_timestamp": "2026-04-03T05:02:46.401304+00:00"
 }
