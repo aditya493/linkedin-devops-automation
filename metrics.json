@@ -1,6 +1,6 @@
 {
-  "total_posts": 175,
-  "posts_today": 1,
+  "total_posts": 176,
+  "posts_today": 2,
   "last_post_date": "2026-04-03",
   "formats_used": {
     "case_study": 10,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 6,
     "industry_predictions": 20,
     "career_advice": 22,
-    "controversial_takes": 10,
+    "controversial_takes": 11,
     "ai_and_automation": 6
   },
   "sources_used": {
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 76,
+    "growth_plan": 77,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-23",
-      "time": "2026-01-23T10:27:24.144985+00:00",
-      "format": "digest",
-      "sources": [
-        "www.cncf.io"
-      ]
-    },
     {
       "date": "2026-01-23",
       "time": "2026-01-23T10:49:02.835622+00:00",
@@ -879,13 +871,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-04-03",
+      "time": "2026-04-03T12:57:35.974273+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 148,
-  "last_post_content": "Unpopular opinion: why agile methodologies break in operations matters more than most realize.\n\nAgile methodologies are not a one-size-fits-all solution. Teams often find that these approaches, designed for development, falter when applied to operations.\n\nThe data shows that agile breaks in operations for several reasons:\n\u2022 Inadequate planning for operational complexity\n\u2022 Insufficient resources allocated to support agile workflows\n\u2022 Lack of clear communication channels between development and operations teams\n\nThe reality is that critics argue agile can be adapted to fit any environment with sufficient flexibility and creativity.\n\nProduction experience shows that even with careful planning, agile methodologies can still struggle to meet the unique demands of operations, leading to decreased efficiency and increased costs.\n\nAgree or disagree? Share your perspective in the comments.\n\n#gitops #devops #infrastructure #platformengineering #cloudengineering",
+  "posts_created": 149,
+  "last_post_content": "Teams using AI for infrastructure as code is failing most teams are seeing surprising results. Here's the data:\n\nINFRASTRUCTURE AS CODE IS FAILING MOST TEAMS, despite its promise of increased efficiency and reduced errors.\nThe reality is that this approach often falls short due to various limitations.\n\nThe data shows that there are several reasons for this failure, including:\n\u2022 Lack of standardization in infrastructure configurations\n\u2022 Insufficient testing and validation of code\n\u2022 Inadequate collaboration between development and operations teams\n\nExperience reveals that some argue Infrastructure as Code is still a relatively new field and teams just need more time to adapt.\n\nProduction experience shows that teams often find that Infrastructure as Code can lead to increased complexity and decreased visibility into system changes. The data supports this, highlighting the need for a more nuanced approach to infrastructure management.\n\nChallenge this thinking - what's missing here?\n\n#mlops #platformengineering #aiops #cloudengineering #devops",
   "last_post_format": "controversial_takes",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-04-03T05:02:46.401304+00:00"
+  "last_post_timestamp": "2026-04-03T12:57:35.975189+00:00"
 }
