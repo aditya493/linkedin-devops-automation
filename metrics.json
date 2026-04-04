@@ -1,6 +1,6 @@
 {
-  "total_posts": 177,
-  "posts_today": 1,
+  "total_posts": 178,
+  "posts_today": 2,
   "last_post_date": "2026-04-04",
   "formats_used": {
     "case_study": 10,
@@ -9,7 +9,7 @@
     "digest": 79,
     "lessons_learned": 7,
     "technical_deep_dives": 6,
-    "industry_predictions": 20,
+    "industry_predictions": 21,
     "career_advice": 23,
     "controversial_takes": 11,
     "ai_and_automation": 6
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 78,
+    "growth_plan": 79,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-23",
-      "time": "2026-01-23T11:04:00.173633+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-23",
       "time": "2026-01-23T11:46:19.842702+00:00",
@@ -877,13 +869,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-04-04",
+      "time": "2026-04-04T11:53:36.733403+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 150,
-  "last_post_content": "DevOps practices at scale reveal key patterns. Here's the signal.\n\nUnpopular opinion: building influence as a DevOps engineer matters more than most realize.\n\nThe reality is, having influence can significantly impact career growth and project success. Teams often find that influential DevOps engineers can drive cultural change and improve collaboration between development and operations teams.\n\n\u2022 Establish a strong technical foundation\n\u2022 Develop excellent communication skills\n\u2022 Build relationships with stakeholders\n\nThe data shows that common mistakes to avoid include focusing solely on technical skills and neglecting the importance of soft skills. Evidence suggests that influential DevOps engineers balance technical expertise with strong communication and collaboration skills.\n\nProduction experience shows that getting started with building influence takes time and dedication. The timeline for seeing results can vary, but with consistent effort, teams can start to see improvements in a few months. Resources for getting started include industry blogs, podcasts, and conferences.\n\nWhat's the best career advice you've received in tech?\n\n#scalability #sre #cloudengineering #genai #infrastructure",
-  "last_post_format": "career_advice",
+  "posts_created": 151,
+  "last_post_content": "Container orchestration strategies worth understanding. Here's the signal.\n\nMany thought kubernetes vs. the next generation of orchestration was overhyped. The evidence says otherwise.\n\nThe data shows that several key trends will shape the future of container orchestration, including:\n\n\u2022 Increased adoption of serverless architectures\n\u2022 Greater emphasis on security and compliance\n\u2022 More focus on multi-cloud and hybrid deployments\n\nProduction experience shows that teams often find these trends intersecting in complex ways, driving the need for more sophisticated orchestration tools.\n\nThe reality is that these changes will happen sooner rather than later, with major shifts expected within the next 6-12 months.\n\nTeams should prepare by upskilling and exploring new technologies to stay ahead of the curve.\n\nMissing any major trends? What would you add to this list?\n\n#sre #containers #genai #serverless #docker",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-04-04T05:52:38.729924+00:00"
+  "last_post_timestamp": "2026-04-04T11:53:36.734314+00:00"
 }
