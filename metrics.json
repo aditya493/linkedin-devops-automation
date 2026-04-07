@@ -1,6 +1,6 @@
 {
-  "total_posts": 181,
-  "posts_today": 1,
+  "total_posts": 182,
+  "posts_today": 2,
   "last_post_date": "2026-04-07",
   "formats_used": {
     "case_study": 10,
@@ -12,7 +12,7 @@
     "industry_predictions": 21,
     "career_advice": 23,
     "controversial_takes": 11,
-    "ai_and_automation": 7
+    "ai_and_automation": 8
   },
   "sources_used": {
     "www.infoq.com": 118,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 82,
+    "growth_plan": 83,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,18 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-24",
-      "time": "2026-01-24T13:15:23.268035+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-25",
       "time": "2026-01-25T06:57:27.418527+00:00",
@@ -874,13 +862,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-04-07",
+      "time": "2026-04-07T13:13:53.042252+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 154,
-  "last_post_content": "DevOps practices at scale reveal key patterns. Let's break this down.\n\nTeams using AI for how teams are using GitHub Copilot in DevOps workflows are seeing surprising results. Here's the data: The AI/automation problem being addressed is streamlining code development and review. Experience reveals that automating repetitive tasks can significantly improve productivity.\n\nThe data shows that teams often evaluate various tools and technologies, including GitHub Copilot, to enhance their DevOps workflows. Evidence suggests that GitHub Copilot stands out for its ability to assist with code completion and suggestions.\n\nImplementation approach involves:\n\u2022 Integrating GitHub Copilot into existing workflows\n\u2022 Training teams to effectively utilize the tool\n\u2022 Monitoring and adjusting the implementation as needed\n\nWhat worked is the seamless integration of GitHub Copilot with existing workflows, while what didn't is the initial learning curve for some team members. Production experience shows that ROI and productivity metrics can be significantly improved with the right implementation.\n\nThe reality is that GitHub Copilot can bring substantial benefits to DevOps workflows, and future plans often involve expanding its use to other areas of development. Recommendations include starting with small-scale implementation and gradually scaling up.\n\nHow is your team using AI in DevOps workflows? Share your experience!\n\n#cloudengineering #developerexperience #gitops #llmops #sre",
+  "posts_created": 155,
+  "last_post_content": "Everyone's talking about building self-healing infrastructure with ai, but few share real results. Here's what the data shows: teams often struggle to implement effective AI-powered automation, resulting in reduced efficiency and increased downtime. The AI/automation problem being addressed is the lack of real-time monitoring and proactive issue resolution.\n\nThe data shows that various tools and technologies can be evaluated to build self-healing infrastructure, including machine learning algorithms and predictive analytics. Experience reveals that selecting the right tools is crucial to the success of the project. Teams often find that a combination of open-source and commercial solutions works best.\n\nImplementation approach involves several steps, including:\n\u2022 Assessing current infrastructure and identifying areas for improvement\n\u2022 Developing a customized AI strategy\n\u2022 Deploying and testing AI-powered automation tools\n\nProduction experience shows that what works is a phased implementation approach, allowing for continuous monitoring and evaluation. What doesn't work is a one-size-fits-all solution, as each organization's needs are unique. The reality is that building self-healing infrastructure with AI requires careful planning and execution.\n\nThe data shows significant ROI and productivity metrics, including reduced downtime and increased efficiency. Evidence suggests that organizations that invest in AI-powered automation see a substantial return on investment. The reality is that building self-healing infrastructure with AI is a sound business decision.\n\nFuture plans involve continued investment in AI research and development, with a focus on improving automation and reducing costs. Recommendations include starting small, with a pilot project, and scaling up as needed.\n\nWhat's the biggest challenge you've faced adopting AI tools?\n\n#llmops #cloudengineering #microservices #genai #artificialintelligence",
   "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-04-07T08:06:14.930801+00:00"
+  "last_post_timestamp": "2026-04-07T13:13:53.043172+00:00"
 }
