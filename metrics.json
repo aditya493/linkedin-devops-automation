@@ -1,7 +1,7 @@
 {
-  "total_posts": 182,
-  "posts_today": 2,
-  "last_post_date": "2026-04-07",
+  "total_posts": 183,
+  "posts_today": 1,
+  "last_post_date": "2026-04-08",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 7,
     "technical_deep_dives": 8,
     "industry_predictions": 21,
-    "career_advice": 23,
+    "career_advice": 24,
     "controversial_takes": 11,
     "ai_and_automation": 8
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 16,
-    "growth_plan": 83,
+    "growth_plan": 84,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
     "about.gitlab.com": 18,
@@ -54,14 +54,6 @@
   },
   "errors": [],
   "daily_history": [
-    {
-      "date": "2026-01-25",
-      "time": "2026-01-25T06:57:27.418527+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-26",
       "time": "2026-01-26T04:43:34.509336+00:00",
@@ -870,13 +862,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-04-08",
+      "time": "2026-04-08T05:06:29.049130+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 155,
-  "last_post_content": "Everyone's talking about building self-healing infrastructure with ai, but few share real results. Here's what the data shows: teams often struggle to implement effective AI-powered automation, resulting in reduced efficiency and increased downtime. The AI/automation problem being addressed is the lack of real-time monitoring and proactive issue resolution.\n\nThe data shows that various tools and technologies can be evaluated to build self-healing infrastructure, including machine learning algorithms and predictive analytics. Experience reveals that selecting the right tools is crucial to the success of the project. Teams often find that a combination of open-source and commercial solutions works best.\n\nImplementation approach involves several steps, including:\n\u2022 Assessing current infrastructure and identifying areas for improvement\n\u2022 Developing a customized AI strategy\n\u2022 Deploying and testing AI-powered automation tools\n\nProduction experience shows that what works is a phased implementation approach, allowing for continuous monitoring and evaluation. What doesn't work is a one-size-fits-all solution, as each organization's needs are unique. The reality is that building self-healing infrastructure with AI requires careful planning and execution.\n\nThe data shows significant ROI and productivity metrics, including reduced downtime and increased efficiency. Evidence suggests that organizations that invest in AI-powered automation see a substantial return on investment. The reality is that building self-healing infrastructure with AI is a sound business decision.\n\nFuture plans involve continued investment in AI research and development, with a focus on improving automation and reducing costs. Recommendations include starting small, with a pilot project, and scaling up as needed.\n\nWhat's the biggest challenge you've faced adopting AI tools?\n\n#llmops #cloudengineering #microservices #genai #artificialintelligence",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 156,
+  "last_post_content": "DevOps culture transformation shows what works. Pay attention to this.\n\nUnpopular opinion: building influence as a devops engineer matters more than most realize.\n\nTeams often find that having a strong voice in the development and operations process is crucial for success. The reality is that DevOps engineers with influence can drive meaningful change and improve overall efficiency.\n\n\u2022 Establish a strong understanding of the development and operations pipeline\n\u2022 Develop a data-driven approach to decision making\n\u2022 Build relationships with key stakeholders across teams\n\nCommon mistakes to avoid include trying to exert influence without first building trust and credibility. Evidence suggests that taking the time to understand the needs and concerns of team members is essential.\n\nThe data shows that getting started with building influence takes time and effort, but the payoff can be significant. Production experience shows that even small gains in influence can lead to major improvements in efficiency and productivity.\n\nTimeline expectations vary, but most teams find that building influence is an ongoing process that requires consistent effort over several months.\n\nWhat career advice would you add? Share your experience below.\n\n#finops #sre #devops #cloudengineering #infrastructure",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-04-07T13:13:53.043172+00:00"
+  "last_post_timestamp": "2026-04-08T05:06:29.050020+00:00"
 }
