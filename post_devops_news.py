@@ -2026,162 +2026,173 @@ FORMAT_CTAS = {
 CONTEXT_INSIGHTS = {
     "kubernetes": {
         "insights": [
-            "Start with resource limits and requests - they're your safety net",
-            "RBAC isn't optional - design permissions early and defensively",
-            "Monitor cluster state drift - declarative doesn't mean maintenance-free",
-            "Network policies before production - assume breach mentality",
-            "Pod security standards are table stakes now"
+            "Start with resource limits and requests - they're your safety net (and sanity saver)",
+            "RBAC isn't optional - design permissions early unless you enjoy surprise admin access",
+            "Monitor cluster state drift - declarative doesn't mean 'set and forget'",
+            "Network policies before production - assume breach mentality saves careers",
+            "Pod security standards are table stakes now (your auditors will ask)",
+            "Your K8s logs at 3 AM will thank you for planning error handling early"
         ],
         "ctas": [
-            "How are you handling cluster security at scale?",
-            "What's your biggest K8s operational challenge?",
-            "Which networking model works best in your environment?",
-            "How do you manage multi-tenancy safely?",
-            "What monitoring gaps have bitten you?"
+            "What's your biggest K8s gotcha that nobody tells you about?",
+            "How are you handling cluster security without losing your mind?",
+            "Which networking model works best in your environment? (and what did it cost you?)",
+            "Tell me your worst 'I didn't set resource limits' story 👇",
+            "What monitoring gaps have bitten you in K8s?"
         ]
     },
     "security": {
         "insights": [
-            "Shift-left security means making security decisions automatic",
-            "Identity is the new perimeter - zero trust from day one",
-            "Compliance auditing should be continuous, not annual",
-            "Threat modeling beats penetration testing every time",
-            "Security tooling integration matters more than individual tools"
+            "Shift-left security = catching bugs before they become breach headlines",
+            "Identity is the new perimeter - zero trust lets you sleep better",
+            "Compliance auditing should be continuous (not 'oh crap, auditors are coming')",
+            "Threat modeling beats penetration testing when you actually use the insights",
+            "Security tooling integration matters more than having shiny individual tools",
+            "Every secret rotation you automate is a 3 AM incident you prevented"
         ],
         "ctas": [
-            "How do you balance security with development velocity?",
-            "What security automation has saved you the most time?",
-            "Where does your security boundary really exist?",
-            "Which compliance requirements drive your architecture?",
-            "How do you handle secrets at scale?"
+            "How do you balance security velocity without becoming the 'no' department?",
+            "What security automation saved you the most time (and headaches)?",
+            "Where does your actual security boundary exist (vs. where you think it is)?",
+            "Drop your worst secret management war story below 👇",
+            "What compliance requirement actually made your system better?"
         ]
     },
     "observability": {
         "insights": [
-            "Metrics without context are just numbers - add business meaning",
-            "Distributed tracing reveals what metrics can't show you",
-            "Alert on symptoms, not causes - let humans do root cause analysis",
-            "Cardinality explosion will kill your monitoring budget",
-            "SLOs drive better architecture than uptime percentages"
+            "Metrics without context are just noise - add the 'why' and watch engineers actually care",
+            "Distributed tracing reveals mysteries that dashboard dashboards hide",
+            "Alert on symptoms, not causes - let humans do the interesting detective work",
+            "Cardinality explosion is like a cost leak you can't see until it's too late",
+            "SLOs drive better decisions than 'we had 99.9% uptime' (which nobody understands)",
+            "Your future self debugging at 2 AM depends on observability decisions you make today"
         ],
         "ctas": [
-            "What observability blind spots have surprised you?",
-            "How do you prevent alert fatigue in your team?",
-            "Which metrics actually correlate with user experience?",
-            "What's your strategy for handling high-cardinality data?",
-            "How do you make observability data actionable?"
+            "What observability blind spot surprised you the most?",
+            "How do you prevent alert fatigue without going deaf to real problems?",
+            "Which metrics actually correlate with your user experience?",
+            "What's your strategy for high-cardinality data (before it bankrupts you)?",
+            "Share the observability insight that changed how you debug 👇"
         ]
     },
     "incident": {
         "insights": [
-            "Incident response is about coordination, not just technical fixes",
-            "Blameless culture requires deliberate practice and reinforcement",
-            "Runbooks should be executable, not just documentation",
-            "Communication during incidents needs automation and structure",
-            "Post-incident reviews drive more reliability than monitoring"
+            "Incident response is about coordination - technical fixes are just the easy part",
+            "Blameless culture requires practice and systems thinking, not just good intentions",
+            "Runbooks should be executable code, not PDFs gathering dust",
+            "Communication during incidents needs automation - copy-paste kills fast response",
+            "Post-incident reviews drive reliability more than any monitoring tool",
+            "The incident that teaches you the most is usually the one you underestimated"
         ],
         "ctas": [
-            "What incident taught you the most about your system?",
-            "How do you prevent coordination failures during outages?",
-            "What runbook automation has saved you the most time?",
-            "How do you balance speed vs thorough incident response?",
-            "What patterns do you see in recurring incidents?"
+            "What incident taught you the most about your actual vs. perceived system?",
+            "How do you prevent coordination failures when everything's on fire?",
+            "Tell us your best (or worst) incident war story 👇",
+            "What runbook automation actually saved your incident response time?",
+            "What patterns keep repeating in your incidents (and why)?"
         ]
     },
     "cloud": {
         "insights": [
-            "Cloud costs optimize themselves when architecture drives decisions",
-            "Multi-cloud means multi-complexity - go deep before going wide",
-            "Infrastructure as code is about repeatability, not just automation",
-            "Cloud-native patterns work best when you embrace failure",
-            "Managed services reduce toil but increase vendor coupling"
+            "Cloud costs optimize themselves when you make architecture decisions count",
+            "Multi-cloud means multi-complexity - go deep before going wide (trust us)",
+            "Infrastructure as code is about repeatability when disaster strikes at 2 AM",
+            "Cloud-native patterns work when you actually embrace failure as a feature",
+            "Managed services reduce toil but ask yourself: do I own my destiny here?",
+            "Your cloud bill tells a story - make sure it's one you meant to write"
         ],
         "ctas": [
-            "Which cloud services create the most operational overhead?",
-            "How do you handle cross-region complexity?",
-            "What cloud costs caught you off guard?",
-            "How do you balance managed services vs control?",
-            "What multi-cloud challenges have you solved?"
+            "Which cloud service surprised you with operational overhead?",
+            "How do you actually handle cross-region complexity without losing your mind?",
+            "What cloud bill spike made you rethink your architecture?",
+            "Share your best cost optimization win (or most expensive lesson) 👇",
+            "What multi-cloud trade-off did you have to make?"
         ]
     },
     "cicd": {
         "insights": [
-            "Pipeline as code prevents configuration drift and bus factor issues",
-            "Deployment frequency correlates with stability when done right",
-            "Feature flags decouple deployment risk from feature risk",
-            "Progressive delivery beats blue-green for complex systems",
-            "CI/CD observability matters as much as application observability"
+            "Pipeline as code prevents drift and the 'nobody knows why this works' syndrome",
+            "Deployment frequency correlates with stability when done with intention",
+            "Feature flags decouple deployment risk from feature risk - game changer",
+            "Progressive delivery is how you ship without sweating bullets",
+            "CI/CD observability matters as much as application observability (yes, really)",
+            "Fast feedback loops change how engineers think about their code"
         ],
         "ctas": [
-            "What CI/CD bottleneck slows your team down most?",
-            "How do you handle deployment rollbacks at scale?",
-            "Which testing strategy gives you the most confidence?",
-            "How do you balance deployment speed with safety?",
-            "What pipeline failures taught you the most?"
+            "What CI/CD bottleneck frustrates your team the most?",
+            "How do you handle deployment rollbacks without panic?",
+            "Which testing strategy actually builds your confidence (not just coverage)?",
+            "Tell us about the deployment strategy that changed your velocity 👇",
+            "What pipeline failure taught you something unexpected?"
         ]
     },
     "architecture": {
         "insights": [
-            "Distributed systems fail in ways you haven't thought of yet",
-            "Conway's Law shapes your architecture more than you realize",
-            "Microservices solve organizational problems, not just technical ones",
-            "Event-driven architectures require different mental models",
-            "System boundaries need continuous reevaluation as teams grow"
+            "Distributed systems fail in ways your spreadsheet didn't predict",
+            "Conway's Law shapes your architecture more than any design doc ever will",
+            "Microservices solve organizational problems wrapped in technical clothing",
+            "Event-driven architectures require rewiring how you think about systems",
+            "System boundaries need continuous reevaluation as your team grows and changes",
+            "The best architecture is the one your team understands and maintains"
         ],
         "ctas": [
-            "What architectural decision would you reverse with hindsight?",
-            "How do you handle distributed system complexity?",
-            "Which architectural patterns work best for your team size?",
-            "How do you balance consistency with availability?",
-            "What system boundaries have caused the most friction?"
+            "What architectural decision would you reverse with 20/20 hindsight?",
+            "How do you manage distributed system complexity at scale?",
+            "Which architectural pattern actually worked for your team size (and constraints)?",
+            "Share the architectural 'aha moment' that changed your approach 👇",
+            "What system boundary caused the most unexpected friction?"
         ]
     },
     "reliability": {
         "insights": [
-            "SRE is about building systems that can handle expected failures",
-            "Error budgets create business alignment on reliability trade-offs",
-            "Chaos engineering reveals assumptions, not just failures",
-            "Reliability work needs to be visible to be valued",
-            "Operational load needs to be measured and managed like technical debt"
+            "SRE is about building systems that handle expected failures gracefully",
+            "Error budgets create alignment when you actually explain them to product",
+            "Chaos engineering reveals assumptions faster than crossing your fingers",
+            "Reliability work needs visibility or nobody values it (including your CFO)",
+            "Operational load compounds - measure and manage it like technical debt",
+            "The incident you prevent saves more than the one you respond to well"
         ],
         "ctas": [
-            "How do you quantify and communicate reliability improvements?",
-            "What reliability practices scale best as teams grow?",
-            "How do you balance new features with reliability work?",
-            "Which reliability metrics matter most to your business?",
-            "What reliability investment gave you the biggest payoff?"
+            "How do you communicate reliability improvements so the business actually cares?",
+            "What reliability practice scaled best as your team grew?",
+            "Tell us about the reliability investment that paid dividends 👇",
+            "How do you balance features and reliability without getting stuck?",
+            "Which reliability metric actually drives your business decisions?"
         ]
     },
     "platform": {
         "insights": [
-            "Platform teams succeed by treating developers as customers",
-            "Self-service capabilities reduce both toil and tickets",
-            "Platform abstraction should hide complexity, not functionality",
-            "Developer experience metrics guide platform evolution",
-            "Platform governance needs automation, not just policies"
+            "Platform teams succeed by treating developers as actual customers with preferences",
+            "Self-service capabilities reduce toil and eliminate the 'waiting on platform' complaint",
+            "Platform abstractions should hide complexity while exposing capability",
+            "Developer experience metrics guide better decisions than assumptions do",
+            "Platform governance needs automation - policies alone just create friction",
+            "The best platforms get adopted because they're obviously better, not mandatory"
         ],
         "ctas": [
-            "How do you measure platform team effectiveness?",
-            "What platform capabilities drive the most developer adoption?",
-            "How do you balance standardization with team autonomy?",
-            "Which platform abstractions have worked best for you?",
-            "How do you handle platform evolution without breaking changes?"
+            "How do you measure whether your platform is actually solving problems?",
+            "What platform capability drove the most developer adoption at your org?",
+            "Tell us how you balanced standardization with team autonomy 👇",
+            "Which platform abstraction worked better than you expected?",
+            "How do you evolve a platform without breaking teams relying on it?"
         ]
     },
     "default": {
         "insights": [
-            "Production systems teach you things documentation never will",
-            "Operational simplicity beats architectural elegance every time",
-            "Automate the boring stuff so humans can focus on the interesting problems",
-            "System evolution requires continuous learning and adaptation",
-            "The best architectures optimize for change, not just current requirements"
+            "Production systems teach you lessons no documentation could prepare you for",
+            "Operational simplicity beats architectural elegance when the system is down",
+            "Automate the boring stuff - that's where your humans shine instead",
+            "System evolution is continuous learning - stagnation is the real risk",
+            "The best architectures optimize for your team's ability to change it",
+            "Your system's assumptions will be proven wrong by reality - plan for it"
         ],
         "ctas": [
-            "What production experience changed how you design systems?",
-            "How do you balance technical debt with new feature development?",
-            "Which operational practices have scaled best for your team?",
-            "What would you do differently if you started over today?",
-            "How do you keep learning while managing operational load?"
+            "What production experience fundamentally changed how you design systems?",
+            "How do you balance technical debt with feature velocity (realistically)?",
+            "Which operational practice actually made a difference at your scale?",
+            "What would you do differently if you started your system over today?",
+            "Share the operational insight that stuck with you 👇",
+            "How do you keep learning while drowning in operational load?"
         ]
     }
 }
@@ -2189,7 +2200,7 @@ CONTEXT_INSIGHTS = {
 def get_context_aware_insights(title: str, summary: str) -> tuple:
     """Get context-aware insights and CTA based on article content."""
     content = f"{title} {summary}".lower()
-    
+
     # Define keyword mapping to contexts
     context_keywords = {
         "kubernetes": ["kubernetes", "k8s", "cluster", "pods", "helm", "kubectl", "container orchestration"],
@@ -2202,39 +2213,78 @@ def get_context_aware_insights(title: str, summary: str) -> tuple:
         "reliability": ["sre", "reliability", "availability", "redundancy", "failover", "disaster recovery", "chaos engineering"],
         "platform": ["platform", "internal tools", "developer experience", "self-service", "infrastructure", "backstage"]
     }
-    
+
     # Find best matching context
     best_context = "default"
     max_matches = 0
-    
+
     for context, keywords in context_keywords.items():
         matches = sum(1 for keyword in keywords if keyword in content)
         if matches > max_matches:
             max_matches = matches
             best_context = context
-    
+
     insights_data = CONTEXT_INSIGHTS[best_context]
     selected_insights = random.sample(insights_data["insights"], min(3, len(insights_data["insights"])))
     selected_cta = random.choice(insights_data["ctas"])
-    
+
     return selected_insights, selected_cta
 
+
+def enhance_for_engagement(title: str, summary: str, context: str = None) -> dict:
+    """Enhance content for maximum engagement with personality and humor."""
+    content = f"{title} {summary}".lower()
+
+    # Detect pain points that resonate
+    pain_indicators = {
+        "3am": "😴 3 AM debugger energy",
+        "outage": "🚨 Wake everyone up energy",
+        "fix": "🔧 Getting stuff unstuck",
+        "new": "🆕 What's coming down the pipeline",
+        "performance": "⚡ Making things faster",
+        "cost": "💰 Not burning money unnecessarily",
+        "security": "🔐 Sleep easier energy",
+    }
+
+    engagement_angle = ""
+    for keyword, angle in pain_indicators.items():
+        if keyword in content:
+            engagement_angle = angle
+            break
+
+    # Add context-appropriate hooks
+    hook_variants = {
+        "kubernetes": "Container orchestration insights",
+        "security": "Security > convenience (always)",
+        "incident": "From incidents we survived",
+        "performance": "Speed matters more than you think",
+        "cost": "Your CFO will thank you",
+    }
+
+    return {
+        "engagement_angle": engagement_angle or "From the trenches",
+        "personality_boost": "✨ " if random.random() > 0.7 else "",
+        "should_ask_question": random.random() > 0.4,  # Higher engagement with questions
+    }
+
 QUICK_TIPS = [
-    "Always version your infrastructure. Terraform state + git = time machine for your cloud.",
-    "Set up alerts on error budget burn rate, not just SLO breaches. Catch problems before they become incidents.",
-    "Use feature flags for deployments. Decouple deploy from release. Sleep better.",
-    "Automate your runbooks. If you're copy-pasting commands during an incident, you're doing it wrong.",
-    "Shift security left: run SAST in CI, not just before prod. Find vulns when they're cheap to fix.",
-    "Implement progressive rollouts. 1% → 10% → 50% → 100%. Your users will thank you.",
-    "Always have a rollback plan. If you can't roll back in under 5 minutes, you're not ready to deploy.",
-    "Use structured logging from day one. Your future self debugging at 3am will be grateful.",
-    "Chaos engineering isn't optional at scale. Break things on purpose before they break you.",
-    "Document your on-call handoffs. Context switching is the silent killer of incident response.",
-    "Treat secrets like radioactive material: rotate often, audit always, never commit to git.",
-    "Container image scanning in CI is table stakes. SBOM generation is the next level.",
-    "Golden signals: latency, traffic, errors, saturation. Start there, expand later.",
-    "Blameless postmortems aren't optional. If people hide mistakes, you can't learn from them.",
-    "GitOps isn't just for Kubernetes. Apply the pattern everywhere: git as source of truth.",
+    "Version your infrastructure like your code - Terraform state + git = backup plan for when things inevitably break.",
+    "Set up error budget burn rate alerts - catch problems before they become 3 AM war rooms.",
+    "Feature flags + canary deployments = deploying without sweating bullets. Your on-call team will thank you.",
+    "Automate your runbooks or you'll be copy-pasting during incidents (bad idea).",
+    "Shift security left: run SAST in CI while fixes are still cheap, not when they're already in prod.",
+    "Progressive rollouts (1% → 10% → 50% → 100%) = catching disasters before they're disasters.",
+    "If you can't rollback in under 5 minutes, you're not ready to deploy. Know this before 2 AM.",
+    "Structured logging from day one - your future self debugging at 3am will genuinely thank you.",
+    "Chaos engineering: break things on purpose so production doesn't surprise you with new failure modes.",
+    "Document your on-call handoffs or watch context switching destroy incident response time.",
+    "Treat secrets like nuclear material: rotate obsessively, audit everything, never (never) commit to git.",
+    "Container scanning + SBOM generation in CI = knowing what's actually in your images (spoiler: probably stuff you didn't expect).",
+    "Golden signals (latency, traffic, errors, saturation) beat random metrics every time - start here, expand later.",
+    "Blameless postmortems are mandatory. If people hide mistakes, you lose the chance to prevent the next one.",
+    "GitOps works everywhere - make git your source of truth and watch drift detection become your friend.",
+    "Test your incident playbooks regularly or find out they don't work when you actually need them.",
+    "If you're not measuring operational load, you're flying blind. Toil = technical debt you're not tracking.",
 ]
 
 LESSONS_TEMPLATES = [
@@ -2254,32 +2304,46 @@ def is_valid_feed_url(url: str) -> bool:
 EXTRA_NEWS_SOURCES = [u.strip() for u in os.environ.get("EXTRA_NEWS_SOURCES", "").split(",") if u.strip()]
 
 HOOKS = [
-    "🚀 Signals that move the reliability needle.",
-    "🛠️ What high-perf teams are watching this week.",
-    "🔥 Cut noise, keep signal: your DevOps digest.",
-    "💡 The reliability reads that matter.",
-    "⚙️ Infrastructure signals you can't ignore.",
-    "🎯 What's moving production systems forward.",
-    "🌊 This week's current in platform engineering.",
-    "📡 Industry developments worth tracking.",
-    "⚡ Latest insights from the DevOps frontier.",
+    "🚀 DevOps signal that actually moves the needle (not just noise).",
+    "🛠️ What high-performing teams are watching right now.",
+    "🔥 Cut the noise, keep the signal: your weekly DevOps digest.",
+    "💡 Reliability lessons that stick with you (not just theory).",
+    "⚙️ Infrastructure insights you can't ignore without consequences.",
+    "🎯 What's actually moving production systems forward.",
+    "🌊 This week's current in platform engineering (hot takes included).",
+    "📡 Industry developments worth tracking before they affect you.",
+    "⚡ Latest from the DevOps frontier (straight from the people living it).",
+    "🧠 Patterns high-reliability teams swear by.",
+    "📊 What the data is telling us about DevOps in 2024.",
+    "🔮 The trend that's about to hit everyone's roadmap.",
+    "🎓 Hard-won lessons from production incidents.",
 ]
 
 CTAS = [
     "What would you prioritize first?",
-    "Would you ship this to prod today?",
-    "Where does this break in your stack?",
-    "What did we miss that you’re tracking?",
-    "Which one made you rethink your approach?",
-    "How would you apply this in your team?",
-    "What's your hot take on #1?",
-    "Drop your experience with this in comments.",
+    "Would you ship this to prod today (honestly)?",
+    "Where does this break in your current stack?",
+    "What are you tracking that we missed?",
+    "Which insight made you rethink your approach?",
+    "How would you apply this in your reality?",
+    "What’s your hot take? Drop it below 👇",
+    "Share your war story or win in the comments.",
+    "Tell me I’m wrong about this in the comments.",
+    "How’s your team handling this exact problem?",
+    "What did this remind you of from your recent incidents?",
+    "Which of these actually worked for you?",
+    "React with the emoji that matches your experience 👇",
+    "Have you solved this differently? Share how!",
 ]
 
 WHY_LINES = [
-    "Faster feedback, calmer incidents, happier on-call.",
-    "Better observability, fewer surprises in prod.",
-    "Ship often, recover quickly, learn continuously.",
+    "Faster feedback loops = calmer incidents and on-call that actually sleeps.",
+    "Better observability = fewer 'how did this happen?' moments at 2 AM.",
+    "Ship often, recover quickly, learn continuously - the ops version of momentum.",
+    "Understanding your system beats guessing when production is on fire.",
+    "Catching problems early saves more than fixing them fast.",
+    "Automation is how you sleep through the night.",
+    "Documentation saves the next person (usually you) hours of debugging.",
 ]
 
 HASHTAGS = [
@@ -3074,25 +3138,57 @@ def ai_generate_value_line(title: str, snippet: str) -> str:
     title_clean = re.sub(r"\s+", " ", (title or "").strip())
     snippet_clean = re.sub(r"\s+", " ", (snippet or "").strip())
 
-    # Heuristic fallback (fast, free, always available) - MORE SPECIFIC
+    # Heuristic fallback (fast, free, always available) - MORE ENGAGING
     def fallback() -> str:
         t = (title_clean + " " + snippet_clean).lower()
         if any(k in t for k in ("incident", "outage", "mttr", "pager", "on-call")):
-            return "Reduces incident response time and helps teams learn from failures faster."
+            return random.choice([
+                "Faster incident response = calmer on-call = actually sleeping",
+                "Learn from failures before they repeat (saves your sanity)",
+                "MTTR matters - shorter is the difference between hero and disaster",
+            ])
         if any(k in t for k in ("kubernetes", "k8s", "cluster", "container", "helm", "gitops")):
-            return "Production-tested patterns for running containers at scale with fewer headaches."
+            return random.choice([
+                "Run containers at scale without waking up at 3 AM",
+                "Production-tested patterns that actually work in the real world",
+                "Container orchestration that lets you sleep through the night",
+            ])
         if any(k in t for k in ("cicd", "pipeline", "deployment", "release", "github actions")):
-            return "Ship faster with confidence - automated testing and deployment done right."
+            return random.choice([
+                "Ship fast AND safely - the dream everyone should have",
+                "Deploy with confidence instead of fingers crossed",
+                "Automated deployment removes the ritual of nervous deployment prayer",
+            ])
         if any(k in t for k in ("observability", "monitoring", "tracing", "metrics", "logs", "grafana", "prometheus")):
-            return "See what's actually happening in production before your users complain."
+            return random.choice([
+                "Know what's happening in prod BEFORE your users call",
+                "See the invisible - debug what's actually happening in production",
+                "Dashboards that tell stories instead of just showing numbers",
+            ])
         if any(k in t for k in ("aws", "gcp", "azure", "cloud", "serverless", "lambda")):
-            return "Cloud strategies that balance performance, reliability, and cost."
+            return random.choice([
+                "Cloud strategies that don't destroy your budget",
+                "Multi-cloud without the multi-complexity (mostly)",
+                "Serverless is about thinking different, not less",
+            ])
         if any(k in t for k in ("security", "vulnerability", "cve", "sast", "dast", "devsecops")):
-            return "Catch security issues early - before they become expensive incidents."
+            return random.choice([
+                "Find bugs when they're cheap to fix, not when they're expensive disasters",
+                "Sleep better knowing security is baked in, not bolted on",
+                "Catch the vulnerabilities before someone else does",
+            ])
         if any(k in t for k in ("terraform", "iac", "infrastructure", "pulumi", "ansible")):
-            return "Reproducible infrastructure that doesn't break at 3 AM."
+            return random.choice([
+                "Infrastructure you can version, review, and rollback with confidence",
+                "Reproducible infrastructure that doesn't break mysteriously",
+                "Git becomes your infrastructure time machine",
+            ])
         if any(k in t for k in ("ai", "ml", "llm", "gpt", "copilot", "automation")):
-            return "AI-powered workflows that actually save engineering time."
+            return random.choice([
+                "Automation that actually saves time instead of creating toil",
+                "AI assistance that handles the repetitive stuff",
+                "Let humans focus on problems that matter",
+            ])
         if any(k in t for k in ("docker", "dockerfile", "image", "registry")):
             return "Container best practices from teams running millions of containers daily."
         if any(k in t for k in ("api", "microservice", "service mesh", "istio", "envoy")):
@@ -3774,24 +3870,30 @@ def build_news_flash_post(items) -> str:
     
     global _USED_INTRO_LINES, _USED_SUBHEADER_LINES, _USED_FOOTER_QUESTIONS
     news_headers = [
-        "🚨 Breaking: Major update in DevOps.",
-        "📰 News Flash: What just happened.",
-        "⚡ Urgent: Industry development to watch.",
-        "📢 Hot off the press: Key event.",
-        "🔔 Alert: Significant change in the field."
+        "🚨 Breaking: Major shift in DevOps (affects your roadmap).",
+        "📰 News Flash: This will change how teams work.",
+        "⚡ Urgent: Industry development that matters.",
+        "📢 Hot off the press: Everyone’s talking about this.",
+        "🔔 Alert: This changes the game in our field.",
+        "🎯 Plot twist: Here’s what just shifted.",
+        "⚙️ System update: This affects how you build."
     ]
     persona_lines = [
-        "Industry leaders respond to breaking news.",
-        "Strategic thinkers analyze the impact.",
-        "Platform architects highlight urgent developments.",
-        "DevOps experts react to the latest news.",
-        "Cloud pioneers assess the implications."
+        "Smart people are already rethinking their approach.",
+        "High-performing teams are watching this closely.",
+        "The teams shipping fast care about this.",
+        "If you’re optimizing for reliability, this matters.",
+        "Platform architects are running the numbers.",
+        "The people managing at scale are paying attention."
     ]
     footer_questions = [
-        "How does this news affect your roadmap?",
-        "What’s your take on this development?",
-        "How would your team respond?",
-        "What’s the next move for practitioners?"
+        "How does this affect YOUR roadmap?",
+        "Does your team need to react to this?",
+        "What would you change based on this?",
+        "How are you already handling this?",
+        "Did this shift your thinking on anything?",
+        "Which team just got an advantage from this?",
+        "Will this force your hand on anything?"
     ]
     intro_header = random.choice([h for h in news_headers if h not in _USED_INTRO_LINES] or news_headers)
     _USED_INTRO_LINES.append(intro_header)
