@@ -1,12 +1,12 @@
 {
-  "total_posts": 183,
-  "posts_today": 0,
-  "last_post_date": "2026-06-04",
+  "total_posts": 184,
+  "posts_today": 1,
+  "last_post_date": "2026-06-05",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 79,
+    "digest": 80,
     "lessons_learned": 7,
     "technical_deep_dives": 8,
     "industry_predictions": 21,
@@ -26,13 +26,13 @@
     "blog.checkpoint.com": 21,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 13,
-    "www.cncf.io": 32,
+    "aws.amazon.com": 14,
+    "www.cncf.io": 36,
     "blog.rapid7.com": 15,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
-    "www.hashicorp.com": 16,
+    "www.hashicorp.com": 17,
     "growth_plan": 84,
     "snyk.io": 7,
     "netflixtechblog.medium.com": 4,
@@ -305,18 +305,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-26",
-      "time": "2026-01-26T04:43:34.509336+00:00",
-      "format": "digest",
-      "sources": [
-        "blogs.microsoft.com",
-        "unit42.paloaltonetworks.com",
-        "feeds.feedburner.com",
-        "feeds.feedburner.com",
-        "feeds.feedburner.com"
-      ]
-    },
     {
       "date": "2026-01-26",
       "time": "2026-01-26T11:44:11.693733+00:00",
@@ -1121,13 +1109,28 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-06-05",
+      "time": "2026-06-05T07:03:21.305401+00:00",
+      "format": "digest",
+      "sources": [
+        "www.cncf.io",
+        "www.hashicorp.com",
+        "www.cncf.io",
+        "www.cncf.io",
+        "aws.amazon.com",
+        "www.cncf.io"
+      ]
     }
   ],
-  "posts_created": 156,
-  "last_post_content": "DevOps culture transformation shows what works. Pay attention to this.\n\nUnpopular opinion: building influence as a devops engineer matters more than most realize.\n\nTeams often find that having a strong voice in the development and operations process is crucial for success. The reality is that DevOps engineers with influence can drive meaningful change and improve overall efficiency.\n\n\u2022 Establish a strong understanding of the development and operations pipeline\n\u2022 Develop a data-driven approach to decision making\n\u2022 Build relationships with key stakeholders across teams\n\nCommon mistakes to avoid include trying to exert influence without first building trust and credibility. Evidence suggests that taking the time to understand the needs and concerns of team members is essential.\n\nThe data shows that getting started with building influence takes time and effort, but the payoff can be significant. Production experience shows that even small gains in influence can lead to major improvements in efficiency and productivity.\n\nTimeline expectations vary, but most teams find that building influence is an ongoing process that requires consistent effort over several months.\n\nWhat career advice would you add? Share your experience below.\n\n#finops #sre #devops #cloudengineering #infrastructure",
-  "last_post_format": "career_advice",
+  "posts_created": 157,
+  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nSRE leaders share reliability wins and lessons.\n\n\ud83d\udccc LEADERSHIP LESSONS:\n\n1\ufe0f\u20e3 CLOUD NATIVE IS NOW AI-NATIVE: ENGINEERING PRODUCTION-READY AI\n\nAt KubeCon + CloudNativeCon Europe in Amsterdam from March 23-26, CNCF brought together a roundtable with experts in the cloud native ecosystem, including Ellis Tarn of AWS,...\n\n\ud83d\udca1 KEY INSIGHT: Cloud strategies that don't destroy your budget\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/06/02/cloud-native-is-now-ai-native-engineering-production-ready-ai/\n\n2\ufe0f\u20e3 HCP TERRAFORM ADDS PROJECT-LEVEL RUN TASKS\n\nHCP Terraform now supports project-level run tasks, enabling organizations to apply security, compliance, and operational guardrails consistently across groups of workspaces...\n\n\ud83d\udca1 KEY INSIGHT: Catch the vulnerabilities before someone else does\n\ud83d\udd17 Read more: https://www.hashicorp.com/blog/hcp-terraform-adds-project-level-run-tasks\n\n3\ufe0f\u20e3 DYNAMIC CONFIGURATION FOR CLOUD NATIVE SWIFT SERVICES\n\nModern Swift services increasingly run alongside the same cloud native infrastructure stacks that power much of today\u2019s Kubernetes ecosystem \u2014 including ConfigMaps,...\n\n\ud83d\udca1 KEY INSIGHT: Run containers at scale without waking up at 3 AM\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/06/01/dynamic-configuration-for-cloud-native-swift-services/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "aws.amazon.com",
+    "www.hashicorp.com",
+    "www.cncf.io"
   ],
-  "last_post_timestamp": "2026-04-08T05:06:29.050020+00:00"
+  "last_post_timestamp": "2026-06-05T07:03:21.306551+00:00"
 }

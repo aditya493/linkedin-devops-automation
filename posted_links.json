@@ -29,6 +29,7 @@
     "https://aws.amazon.com/blogs/devops/from-ai-agent-prototype-to-product-lessons-from-building-aws-devops-agent/",
     "https://aws.amazon.com/blogs/mt/cross-region-aws-privatelink-monitoring-with-amazon-cloudwatch-network-synthetic-monitor/",
     "https://aws.amazon.com/blogs/mt/deploying-custom-terraform-to-lza-managed-accounts-with-aft/",
+    "https://aws.amazon.com/blogs/mt/from-monolith-to-multi-account-pinterests-aws-organization-transformation-journey/",
     "https://aws.amazon.com/blogs/mt/innovation-sandbox-on-aws-with-real-time-analytics-dashboard/",
     "https://aws.amazon.com/blogs/mt/investigating-service-issues-with-amazon-cloudwatch-application-signals-custom-metrics/",
     "https://aws.amazon.com/blogs/mt/optimize-cost-and-automate-security-remediation-with-ams-trusted-remediator/",
@@ -181,6 +182,10 @@
     "https://www.cncf.io/blog/2026/02/04/cncf-celebrates-successful-mentees-from-lfx-mentorship-2025-term-3/",
     "https://www.cncf.io/blog/2026/02/04/conversing-with-large-language-models-using-dapr/",
     "https://www.cncf.io/blog/2026/02/05/dragonfly-v2-4-0-is-released/",
+    "https://www.cncf.io/blog/2026/06/01/dynamic-configuration-for-cloud-native-swift-services/",
+    "https://www.cncf.io/blog/2026/06/02/cloud-native-is-now-ai-native-engineering-production-ready-ai/",
+    "https://www.cncf.io/blog/2026/06/03/inspektor-gadget-results-from-the-first-security-audit/",
+    "https://www.cncf.io/blog/2026/06/04/identity-and-access-management-whitepaper/",
     "https://www.crowdstrike.com/en-us/blog/ai-tool-poisoning/",
     "https://www.crowdstrike.com/en-us/blog/architecture-of-agentic-defense-inside-the-falcon-platform/",
     "https://www.crowdstrike.com/en-us/blog/built-for-scale-powered-by-ai-innovation-driving-falcon-exposure-management/",
@@ -220,6 +225,7 @@
     "https://www.docker.com/blog/security-is-a-developer-experience-problem-rooted-in-our-foundations/",
     "https://www.docker.com/blog/the-3cs-a-framework-for-ai-agent-security/",
     "https://www.hashicorp.com/blog/5-lessons-from-banking-finance-why-we-need-zero-trust-secrets-management",
+    "https://www.hashicorp.com/blog/hcp-terraform-adds-project-level-run-tasks",
     "https://www.hashicorp.com/blog/hcp-vault-performance-replication-at-global-scale-better-than-diy",
     "https://www.hashicorp.com/blog/how-airfrance-klm-built-secure-automation-platform-global-scale-terraform-vault-ansible",
     "https://www.hashicorp.com/blog/how-geico-lowered-its-300m-cloud-spend-and-decoupled-security-from-the-network",
@@ -392,25 +398,15 @@
   ],
   "meta": {
     "topic_hashes": {
-      "7c86f96cb12e": "2026-04-02T04:59:16.412343+00:00",
-      "a40e8e5ef910": "2026-03-26T13:06:07.555917+00:00",
-      "6c949046e065": "2026-03-30T13:11:27.728164+00:00",
-      "7d548b9c2358": "2026-04-07T08:06:14.928928+00:00",
-      "6a553a4f96f9": "2026-03-25T07:48:32.198774+00:00",
-      "cc40c78dc743": "2026-03-26T07:57:37.250520+00:00",
-      "821bd6994fa5": "2026-03-31T05:04:51.409235+00:00",
-      "c254c3c4a9a4": "2026-04-03T05:02:46.399501+00:00",
-      "df29f5268451": "2026-04-03T12:57:35.973342+00:00",
-      "adfed293214e": "2026-04-08T05:06:29.048180+00:00",
-      "f0c151ffd556": "2026-04-04T11:53:36.732452+00:00",
-      "2f69a8f20018": "2026-04-05T06:13:57.008678+00:00",
-      "b3f48c3b4f5f": "2026-04-05T11:56:47.522053+00:00",
-      "fec444d66488": "2026-04-07T13:13:53.041330+00:00"
+      "b172c3e1fa47": "2026-06-05T07:03:21.304208+00:00",
+      "413128849d6f": "2026-06-05T07:03:21.304257+00:00",
+      "8dbd9c9a740e": "2026-06-05T07:03:21.304278+00:00",
+      "421ad9c70211": "2026-06-05T07:03:21.304297+00:00",
+      "87d2469009ba": "2026-06-05T07:03:21.304321+00:00",
+      "c3e9fc84d589": "2026-06-05T07:03:21.304336+00:00"
     },
-    "last_post_id": "urn:li:share:7447510154192904192",
-    "last_posted_at_utc": "2026-04-08T05:06:29.048222+00:00",
-    "last_format": "career_advice",
-    "last_error_at_utc": "2026-06-04T10:32:46.306485+00:00",
-    "last_error_msg": "No post_id returned"
+    "last_post_id": "urn:li:share:7468558060861669377",
+    "last_posted_at_utc": "2026-06-05T07:03:21.304344+00:00",
+    "last_format": "digest"
   }
 }
