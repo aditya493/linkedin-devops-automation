@@ -5654,7 +5654,6 @@ def build_digest_post(items):
         available_section_headers = section_headers.copy()
     section_header = random.choice(available_section_headers)
     build_digest_post._used_section_headers.append(section_header)
-    cta = random.choice(ctas)
     hashtags = random.choice(hashtags_list)
     footer_question = random.choice([q for q in footer_questions if q not in _USED_FOOTER_QUESTIONS] or footer_questions)
     _USED_FOOTER_QUESTIONS.append(footer_question)
@@ -5840,7 +5839,7 @@ def main():
                 logger.warning("Using fallback digest format")
             except Exception as e2:
                 logger.error(f"Fallback post generation also failed: {e2}")
-                notify(f"LinkedIn bot FAILED: Post generation error - {e}", is_error=True)
+                notify(f"LinkedIn bot FAILED: Post generation error - {e2}", is_error=True)
                 return
     
     logger.info(f"\n📝 Generated post ({len(post_text)} chars):")
