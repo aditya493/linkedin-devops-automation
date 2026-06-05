@@ -1,12 +1,12 @@
 {
-  "total_posts": 184,
-  "posts_today": 1,
+  "total_posts": 185,
+  "posts_today": 2,
   "last_post_date": "2026-06-05",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 80,
+    "digest": 81,
     "lessons_learned": 7,
     "technical_deep_dives": 8,
     "industry_predictions": 21,
@@ -21,7 +21,7 @@
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
     "blog.newrelic.com": 9,
-    "engineering.fb.com": 6,
+    "engineering.fb.com": 7,
     "blog.google": 5,
     "blog.checkpoint.com": 21,
     "www.crowdstrike.com": 20,
@@ -34,18 +34,18 @@
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 17,
     "growth_plan": 84,
-    "snyk.io": 7,
-    "netflixtechblog.medium.com": 4,
+    "snyk.io": 8,
+    "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 18,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 4,
     "www.sonarsource.com": 3,
     "blog.gitguardian.com": 6,
-    "engineering.atspotify.com": 2,
+    "engineering.atspotify.com": 3,
     "microservices.io": 3,
     "blogs.microsoft.com": 11,
-    "www.paloaltonetworks.com": 2,
+    "www.paloaltonetworks.com": 4,
     "github.blog": 2,
     "googleprojectzero.blogspot.com": 2,
     "blog.cloudflare.com": 3,
@@ -305,14 +305,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-26",
-      "time": "2026-01-26T11:44:11.693733+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.rapid7.com"
-      ]
-    },
     {
       "date": "2026-01-27",
       "time": "2026-01-27T04:35:36.596599+00:00",
@@ -1122,15 +1114,30 @@
         "aws.amazon.com",
         "www.cncf.io"
       ]
+    },
+    {
+      "date": "2026-06-05",
+      "time": "2026-06-05T14:40:53.683650+00:00",
+      "format": "digest",
+      "sources": [
+        "engineering.atspotify.com",
+        "netflixtechblog.medium.com",
+        "www.paloaltonetworks.com",
+        "engineering.fb.com",
+        "www.paloaltonetworks.com",
+        "snyk.io"
+      ]
     }
   ],
-  "posts_created": 157,
-  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nSRE leaders share reliability wins and lessons.\n\n\ud83d\udccc LEADERSHIP LESSONS:\n\n1\ufe0f\u20e3 CLOUD NATIVE IS NOW AI-NATIVE: ENGINEERING PRODUCTION-READY AI\n\nAt KubeCon + CloudNativeCon Europe in Amsterdam from March 23-26, CNCF brought together a roundtable with experts in the cloud native ecosystem, including Ellis Tarn of AWS,...\n\n\ud83d\udca1 KEY INSIGHT: Cloud strategies that don't destroy your budget\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/06/02/cloud-native-is-now-ai-native-engineering-production-ready-ai/\n\n2\ufe0f\u20e3 HCP TERRAFORM ADDS PROJECT-LEVEL RUN TASKS\n\nHCP Terraform now supports project-level run tasks, enabling organizations to apply security, compliance, and operational guardrails consistently across groups of workspaces...\n\n\ud83d\udca1 KEY INSIGHT: Catch the vulnerabilities before someone else does\n\ud83d\udd17 Read more: https://www.hashicorp.com/blog/hcp-terraform-adds-project-level-run-tasks\n\n3\ufe0f\u20e3 DYNAMIC CONFIGURATION FOR CLOUD NATIVE SWIFT SERVICES\n\nModern Swift services increasingly run alongside the same cloud native infrastructure stacks that power much of today\u2019s Kubernetes ecosystem \u2014 including ConfigMaps,...\n\n\ud83d\udca1 KEY INSIGHT: Run containers at scale without waking up at 3 AM\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/06/01/dynamic-configuration-for-cloud-native-swift-services/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
+  "posts_created": 158,
+  "last_post_content": "\ud83d\ude80 Signals shaping modern engineering.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc SECURITY SIGNALS:\n\n1\ufe0f\u20e3 CODING IS NO LONGER THE CONSTRAINT: SCALING DEVELOPER EXPERIENCE TO TEAMS AND AGENTS AT SPOTIFY\n\nAt Code with Claude, Spotify\u2019s chief architect shared how we make both teams and AI agents more effective. The post Coding Is No Longer the Constraint: Scaling Developer...\n\n\ud83d\udca1 KEY INSIGHT: AI assistance that handles the repetitive stuff\n\ud83d\udd17 Read more: https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint/\n\n2\ufe0f\u20e3 DYNAMIC REPARTITIONING FOR TIME SERIES WORKLOADS\n\nBy Rajiv Shringi , Kaidan Fullerton , Oleksii Tkachuk and Kartik Sathyanarayanan Introduction Netflix\u2019s TimeSeries Abstraction is a scalable system for ingesting and querying...\n\n\ud83d\udca1 KEY INSIGHT: Let humans focus on problems that matter\n\ud83d\udd17 Read more: https://netflixtechblog.com/dynamically-splitting-wide-partitions-in-cassandra-for-time-series-workloads-0eded064f456?source=rss-c3aeaf49d8a4------2\n\n3\ufe0f\u20e3 SECURING THE AI ECOSYSTEM FROM DATA TO RUNTIME\n\nAI security requires unified visibility across AI assets, data, identities, and runtime activity to help teams find shadow AI and prioritize risk across runtime, too.\n\n\ud83d\udca1 KEY INSIGHT: Catch the vulnerabilities before someone else does\n\ud83d\udd17 Read more: https://www.paloaltonetworks.com/blog/cloud-security/secure-ai-ecosystem-data-to-runtime/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "aws.amazon.com",
-    "www.hashicorp.com",
-    "www.cncf.io"
+    "engineering.fb.com",
+    "www.paloaltonetworks.com",
+    "engineering.atspotify.com",
+    "netflixtechblog.medium.com",
+    "snyk.io"
   ],
-  "last_post_timestamp": "2026-06-05T07:03:21.306551+00:00"
+  "last_post_timestamp": "2026-06-05T14:40:53.684788+00:00"
 }
