@@ -1,6 +1,6 @@
 {
-  "total_posts": 186,
-  "posts_today": 1,
+  "total_posts": 187,
+  "posts_today": 2,
   "last_post_date": "2026-06-06",
   "formats_used": {
     "case_study": 10,
@@ -12,7 +12,7 @@
     "industry_predictions": 21,
     "career_advice": 24,
     "controversial_takes": 11,
-    "ai_and_automation": 8
+    "ai_and_automation": 9
   },
   "sources_used": {
     "www.infoq.com": 118,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 17,
-    "growth_plan": 84,
+    "growth_plan": 85,
     "snyk.io": 8,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 18,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-27",
-      "time": "2026-01-27T11:48:23.267530+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-01-28",
       "time": "2026-01-28T04:34:12.680780+00:00",
@@ -1129,13 +1116,21 @@
         "grafana.com",
         "grafana.com"
       ]
+    },
+    {
+      "date": "2026-06-06",
+      "time": "2026-06-06T12:52:45.312697+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 159,
-  "last_post_content": "\ud83c\udf10 What matters for builders and operators.\nTop teams separate signal from noise in modern infrastructure. Insights below.\n\n\ud83d\udccc ESSENTIAL READS:\n\n1\ufe0f\u20e3 CUSTOMIZE PRECONFIGURED VIEWS FOR AWS, AZURE, AND GOOGLE CLOUD WITH CLOUD PROVIDER OBSERVABILITY IN GRAFANA\u2026\n\nPart of what makes Cloud Provider Observability in Grafana Cloud really useful is that it gives you prebuilt dashboards and drill-downs for AWS, Azure, and Google Cloud.\n\n\ud83d\udca1 KEY INSIGHT: See the invisible - debug what's actually happening in production\n\ud83d\udd17 Read more: https://grafana.com/blog/customize-preconfigured-views-for-aws-azure-and-google-cloud-with-cloud-provider-observability-in-grafana-cloud/\n\n2\ufe0f\u20e3 INTRODUCING PYROSCOPE 2.0: FASTER, MORE COST-EFFECTIVE CONTINUOUS PROFILING AT SCALE\n\nContinuous profiling is becoming a standard part of the observability stack, and for good reason. It's the only signal that tells you why your code is slow or expensive, not...\n\n\ud83d\udca1 KEY INSIGHT: Dashboards that tell stories instead of just showing numbers\n\ud83d\udd17 Read more: https://grafana.com/blog/pyroscope-2-0-release/\n\n3\ufe0f\u20e3 GET OBSERVABILITY IN THE TERMINAL, FOR YOU AND YOUR AGENTS, WITH THE GCX CLI TOOL\n\nThe way you write code is changing, which means the way you observe your systems and respond to issues needs to change, too. Engineers today spend much of their day working via...\n\n\ud83d\udca1 KEY INSIGHT: See the invisible - debug what's actually happening in production\n\ud83d\udd17 Read more: https://grafana.com/blog/get-observability-in-the-terminal-for-you-and-your-agents-with-the-gcx-cli-tool/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
-  "last_post_format": "digest",
+  "posts_created": 160,
+  "last_post_content": "The ROI from ai-assisted capacity planning: a game changer for operations is surprising industry leaders. Here's why: teams often find that manual capacity planning is time-consuming and prone to errors. The reality is that these inefficiencies can be costly.\n\nProduction experience shows that AI-assisted capacity planning can address these challenges by automating forecasting and resource allocation. Tools and technologies such as machine learning algorithms and predictive analytics are being evaluated for their potential to improve capacity planning. Evidence suggests that these technologies can help teams make more informed decisions.\n\nThe implementation approach typically involves:\n\u2022 Assessing current capacity planning processes\n\u2022 Identifying areas for improvement\n\u2022 Deploying AI-assisted capacity planning tools\n\u2022 Monitoring and evaluating results\n\nThe data shows that AI-assisted capacity planning can lead to significant ROI and productivity gains. Experience reveals that teams can reduce errors by up to 30% and improve resource utilization by up to 25%. What worked well was the ability to automate routine tasks and free up staff to focus on higher-value activities.\n\nFuture plans involve expanding the use of AI-assisted capacity planning to other areas of operations. The reality is that AI adoption can be complex, but the benefits can be substantial.\n\nHow is your team using AI in DevOps workflows? Share your experience!\n\n#aiops #mlops #idp #cloudengineering #llmops",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
-    "grafana.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-06-06T07:42:35.378734+00:00"
+  "last_post_timestamp": "2026-06-06T12:52:45.313794+00:00"
 }
