@@ -1,12 +1,12 @@
 {
-  "total_posts": 185,
-  "posts_today": 2,
-  "last_post_date": "2026-06-05",
+  "total_posts": 186,
+  "posts_today": 1,
+  "last_post_date": "2026-06-06",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 81,
+    "digest": 82,
     "lessons_learned": 7,
     "technical_deep_dives": 8,
     "industry_predictions": 21,
@@ -50,7 +50,8 @@
     "googleprojectzero.blogspot.com": 2,
     "blog.cloudflare.com": 3,
     "dropbox.tech": 1,
-    "blog.uptimerobot.com": 1
+    "blog.uptimerobot.com": 1,
+    "grafana.com": 6
   },
   "errors": [
     {
@@ -305,18 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-27",
-      "time": "2026-01-27T04:35:36.596599+00:00",
-      "format": "digest",
-      "sources": [
-        "www.docker.com",
-        "www.docker.com",
-        "www.docker.com",
-        "www.cncf.io",
-        "krebsonsecurity.com"
-      ]
-    },
     {
       "date": "2026-01-27",
       "time": "2026-01-27T11:48:23.267530+00:00",
@@ -1127,17 +1116,26 @@
         "www.paloaltonetworks.com",
         "snyk.io"
       ]
+    },
+    {
+      "date": "2026-06-06",
+      "time": "2026-06-06T07:42:35.377583+00:00",
+      "format": "digest",
+      "sources": [
+        "grafana.com",
+        "grafana.com",
+        "grafana.com",
+        "grafana.com",
+        "grafana.com",
+        "grafana.com"
+      ]
     }
   ],
-  "posts_created": 158,
-  "last_post_content": "\ud83d\ude80 Signals shaping modern engineering.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc SECURITY SIGNALS:\n\n1\ufe0f\u20e3 CODING IS NO LONGER THE CONSTRAINT: SCALING DEVELOPER EXPERIENCE TO TEAMS AND AGENTS AT SPOTIFY\n\nAt Code with Claude, Spotify\u2019s chief architect shared how we make both teams and AI agents more effective. The post Coding Is No Longer the Constraint: Scaling Developer...\n\n\ud83d\udca1 KEY INSIGHT: AI assistance that handles the repetitive stuff\n\ud83d\udd17 Read more: https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint/\n\n2\ufe0f\u20e3 DYNAMIC REPARTITIONING FOR TIME SERIES WORKLOADS\n\nBy Rajiv Shringi , Kaidan Fullerton , Oleksii Tkachuk and Kartik Sathyanarayanan Introduction Netflix\u2019s TimeSeries Abstraction is a scalable system for ingesting and querying...\n\n\ud83d\udca1 KEY INSIGHT: Let humans focus on problems that matter\n\ud83d\udd17 Read more: https://netflixtechblog.com/dynamically-splitting-wide-partitions-in-cassandra-for-time-series-workloads-0eded064f456?source=rss-c3aeaf49d8a4------2\n\n3\ufe0f\u20e3 SECURING THE AI ECOSYSTEM FROM DATA TO RUNTIME\n\nAI security requires unified visibility across AI assets, data, identities, and runtime activity to help teams find shadow AI and prioritize risk across runtime, too.\n\n\ud83d\udca1 KEY INSIGHT: Catch the vulnerabilities before someone else does\n\ud83d\udd17 Read more: https://www.paloaltonetworks.com/blog/cloud-security/secure-ai-ecosystem-data-to-runtime/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
+  "posts_created": 159,
+  "last_post_content": "\ud83c\udf10 What matters for builders and operators.\nTop teams separate signal from noise in modern infrastructure. Insights below.\n\n\ud83d\udccc ESSENTIAL READS:\n\n1\ufe0f\u20e3 CUSTOMIZE PRECONFIGURED VIEWS FOR AWS, AZURE, AND GOOGLE CLOUD WITH CLOUD PROVIDER OBSERVABILITY IN GRAFANA\u2026\n\nPart of what makes Cloud Provider Observability in Grafana Cloud really useful is that it gives you prebuilt dashboards and drill-downs for AWS, Azure, and Google Cloud.\n\n\ud83d\udca1 KEY INSIGHT: See the invisible - debug what's actually happening in production\n\ud83d\udd17 Read more: https://grafana.com/blog/customize-preconfigured-views-for-aws-azure-and-google-cloud-with-cloud-provider-observability-in-grafana-cloud/\n\n2\ufe0f\u20e3 INTRODUCING PYROSCOPE 2.0: FASTER, MORE COST-EFFECTIVE CONTINUOUS PROFILING AT SCALE\n\nContinuous profiling is becoming a standard part of the observability stack, and for good reason. It's the only signal that tells you why your code is slow or expensive, not...\n\n\ud83d\udca1 KEY INSIGHT: Dashboards that tell stories instead of just showing numbers\n\ud83d\udd17 Read more: https://grafana.com/blog/pyroscope-2-0-release/\n\n3\ufe0f\u20e3 GET OBSERVABILITY IN THE TERMINAL, FOR YOU AND YOUR AGENTS, WITH THE GCX CLI TOOL\n\nThe way you write code is changing, which means the way you observe your systems and respond to issues needs to change, too. Engineers today spend much of their day working via...\n\n\ud83d\udca1 KEY INSIGHT: See the invisible - debug what's actually happening in production\n\ud83d\udd17 Read more: https://grafana.com/blog/get-observability-in-the-terminal-for-you-and-your-agents-with-the-gcx-cli-tool/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "engineering.fb.com",
-    "www.paloaltonetworks.com",
-    "engineering.atspotify.com",
-    "netflixtechblog.medium.com",
-    "snyk.io"
+    "grafana.com"
   ],
-  "last_post_timestamp": "2026-06-05T14:40:53.684788+00:00"
+  "last_post_timestamp": "2026-06-06T07:42:35.378734+00:00"
 }
