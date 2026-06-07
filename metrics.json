@@ -1,12 +1,12 @@
 {
-  "total_posts": 187,
-  "posts_today": 2,
-  "last_post_date": "2026-06-06",
+  "total_posts": 188,
+  "posts_today": 1,
+  "last_post_date": "2026-06-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 82,
+    "digest": 83,
     "lessons_learned": 7,
     "technical_deep_dives": 8,
     "industry_predictions": 21,
@@ -17,7 +17,7 @@
   "sources_used": {
     "www.infoq.com": 118,
     "kubernetes.io": 23,
-    "www.docker.com": 18,
+    "www.docker.com": 21,
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
     "blog.newrelic.com": 9,
@@ -26,15 +26,15 @@
     "blog.checkpoint.com": 21,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 14,
-    "www.cncf.io": 36,
+    "aws.amazon.com": 15,
+    "www.cncf.io": 37,
     "blog.rapid7.com": 15,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 17,
     "growth_plan": 85,
-    "snyk.io": 8,
+    "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 18,
     "martinfowler.com": 7,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-28",
-      "time": "2026-01-28T04:34:12.680780+00:00",
-      "format": "digest",
-      "sources": [
-        "kubernetes.io",
-        "kubernetes.io",
-        "netflixtechblog.medium.com",
-        "engineering.fb.com",
-        "www.hashicorp.com",
-        "blog.gitguardian.com"
-      ]
-    },
     {
       "date": "2026-01-28",
       "time": "2026-01-28T11:47:38.791353+00:00",
@@ -1124,13 +1111,29 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-06-07",
+      "time": "2026-06-07T07:15:03.638374+00:00",
+      "format": "digest",
+      "sources": [
+        "www.docker.com",
+        "www.docker.com",
+        "www.docker.com",
+        "aws.amazon.com",
+        "snyk.io",
+        "www.cncf.io"
+      ]
     }
   ],
-  "posts_created": 160,
-  "last_post_content": "The ROI from ai-assisted capacity planning: a game changer for operations is surprising industry leaders. Here's why: teams often find that manual capacity planning is time-consuming and prone to errors. The reality is that these inefficiencies can be costly.\n\nProduction experience shows that AI-assisted capacity planning can address these challenges by automating forecasting and resource allocation. Tools and technologies such as machine learning algorithms and predictive analytics are being evaluated for their potential to improve capacity planning. Evidence suggests that these technologies can help teams make more informed decisions.\n\nThe implementation approach typically involves:\n\u2022 Assessing current capacity planning processes\n\u2022 Identifying areas for improvement\n\u2022 Deploying AI-assisted capacity planning tools\n\u2022 Monitoring and evaluating results\n\nThe data shows that AI-assisted capacity planning can lead to significant ROI and productivity gains. Experience reveals that teams can reduce errors by up to 30% and improve resource utilization by up to 25%. What worked well was the ability to automate routine tasks and free up staff to focus on higher-value activities.\n\nFuture plans involve expanding the use of AI-assisted capacity planning to other areas of operations. The reality is that AI adoption can be complex, but the benefits can be substantial.\n\nHow is your team using AI in DevOps workflows? Share your experience!\n\n#aiops #mlops #idp #cloudengineering #llmops",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 161,
+  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nIndustry leaders optimize tech stacks and debunk myths in the DevOps trenches. Here\u2019s what matters.\n\n\ud83d\udccc INDUSTRY PULSE:\n\n1\ufe0f\u20e3 WHAT IS AI GOVERNANCE? FRAMEWORKS, PRINCIPLES, AND BEST PRACTICES\n\nAI agents are moving fast. According to our State of Agentic AI report, 60% of organizations already have AI agents in production, yet 40% cite security and compliance as the...\n\n\ud83d\udca1 KEY INSIGHT: Find bugs when they're cheap to fix, not when they're expensive disasters\n\ud83d\udd17 Read more: https://www.docker.com/blog/what-is-ai-governance/\n\n2\ufe0f\u20e3 HARDENED IMAGES EXPLAINED: FEWER CVES, SMALLER ATTACK SURFACE\n\nWhen security teams scan their container environments for the first time, they often discover hundreds of known vulnerabilities, and almost none of them trace back to...\n\n\ud83d\udca1 KEY INSIGHT: Production-tested patterns that actually work in the real world\n\ud83d\udd17 Read more: https://www.docker.com/blog/what-are-hardened-images/\n\n3\ufe0f\u20e3 WHAT IS SOFTWARE SUPPLY CHAIN SECURITY?\n\nSoftware supply chain attacks have accelerated faster than most security teams anticipated. Sonatype's 2026 State of the Software Supply Chain report identified more than...\n\n\ud83d\udca1 KEY INSIGHT: Sleep better knowing security is baked in, not bolted on\n\ud83d\udd17 Read more: https://www.docker.com/blog/what-is-software-supply-chain-security/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "www.cncf.io",
+    "snyk.io",
+    "www.docker.com",
+    "aws.amazon.com"
   ],
-  "last_post_timestamp": "2026-06-06T12:52:45.313794+00:00"
+  "last_post_timestamp": "2026-06-07T07:15:03.639473+00:00"
 }

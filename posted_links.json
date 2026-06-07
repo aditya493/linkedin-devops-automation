@@ -26,6 +26,7 @@
     "https://aws.amazon.com/blogs/devops/aws-transform-custom-ai-driven-java-modernization-to-reduce-tech-debt/",
     "https://aws.amazon.com/blogs/devops/best-practices-for-deploying-aws-devops-agent-in-production/",
     "https://aws.amazon.com/blogs/devops/building-a-scalable-code-modernization-solution-with-aws-transform-custom/",
+    "https://aws.amazon.com/blogs/devops/debug-deployment-failures-faster-with-the-deployments-tab-in-aws-elastic-beanstalk/",
     "https://aws.amazon.com/blogs/devops/from-ai-agent-prototype-to-product-lessons-from-building-aws-devops-agent/",
     "https://aws.amazon.com/blogs/mt/cross-region-aws-privatelink-monitoring-with-amazon-cloudwatch-network-synthetic-monitor/",
     "https://aws.amazon.com/blogs/mt/deploying-custom-terraform-to-lza-managed-accounts-with-aft/",
@@ -152,6 +153,7 @@
     "https://snyk.io/blog/shai-hulud-post-mortem/",
     "https://snyk.io/blog/snyk-augment-code-partnership/",
     "https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/",
+    "https://snyk.io/blog/type-level-security/",
     "https://unit42.paloaltonetworks.com/cta-9th-anniversary/",
     "https://unit42.paloaltonetworks.com/cybersecurity-is-for-everyone/",
     "https://unit42.paloaltonetworks.com/dos-attacks-and-azure-private-endpoint/",
@@ -196,6 +198,7 @@
     "https://www.cncf.io/blog/2026/06/02/cloud-native-is-now-ai-native-engineering-production-ready-ai/",
     "https://www.cncf.io/blog/2026/06/03/inspektor-gadget-results-from-the-first-security-audit/",
     "https://www.cncf.io/blog/2026/06/04/identity-and-access-management-whitepaper/",
+    "https://www.cncf.io/blog/2026/06/04/securing-ci-cd-for-an-open-source-project-controlling-who-runs-what/",
     "https://www.crowdstrike.com/en-us/blog/ai-tool-poisoning/",
     "https://www.crowdstrike.com/en-us/blog/architecture-of-agentic-defense-inside-the-falcon-platform/",
     "https://www.crowdstrike.com/en-us/blog/built-for-scale-powered-by-ai-innovation-driving-falcon-exposure-management/",
@@ -234,6 +237,9 @@
     "https://www.docker.com/blog/safer-docker-hub-pulls-via-a-sonatype-protected-proxy/",
     "https://www.docker.com/blog/security-is-a-developer-experience-problem-rooted-in-our-foundations/",
     "https://www.docker.com/blog/the-3cs-a-framework-for-ai-agent-security/",
+    "https://www.docker.com/blog/what-are-hardened-images/",
+    "https://www.docker.com/blog/what-is-ai-governance/",
+    "https://www.docker.com/blog/what-is-software-supply-chain-security/",
     "https://www.hashicorp.com/blog/5-lessons-from-banking-finance-why-we-need-zero-trust-secrets-management",
     "https://www.hashicorp.com/blog/hcp-terraform-adds-project-level-run-tasks",
     "https://www.hashicorp.com/blog/hcp-vault-performance-replication-at-global-scale-better-than-diy",
@@ -428,10 +434,16 @@
       "d8bda4b21be7": "2026-06-06T07:42:35.376408+00:00",
       "6b908992906b": "2026-06-06T07:42:35.376434+00:00",
       "42ee63861f82": "2026-06-06T07:42:35.376489+00:00",
-      "dac0d23ab42b": "2026-06-06T12:52:45.311620+00:00"
+      "dac0d23ab42b": "2026-06-06T12:52:45.311620+00:00",
+      "43c2ade285d8": "2026-06-07T07:15:03.637193+00:00",
+      "de881fb56432": "2026-06-07T07:15:03.637254+00:00",
+      "b26d757c0ebd": "2026-06-07T07:15:03.637295+00:00",
+      "d814e157d022": "2026-06-07T07:15:03.637330+00:00",
+      "98dfc9c2a600": "2026-06-07T07:15:03.637359+00:00",
+      "5c5340eea8f3": "2026-06-07T07:15:03.637389+00:00"
     },
-    "last_post_id": "urn:li:share:7469008379332640768",
-    "last_posted_at_utc": "2026-06-06T12:52:45.311664+00:00",
-    "last_format": "ai_and_automation"
+    "last_post_id": "urn:li:share:7469285783422545920",
+    "last_posted_at_utc": "2026-06-07T07:15:03.637406+00:00",
+    "last_format": "digest"
   }
 }
