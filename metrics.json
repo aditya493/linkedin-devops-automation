@@ -1,12 +1,12 @@
 {
-  "total_posts": 188,
+  "total_posts": 189,
   "posts_today": 1,
-  "last_post_date": "2026-06-07",
+  "last_post_date": "2026-06-09",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 83,
+    "digest": 84,
     "lessons_learned": 7,
     "technical_deep_dives": 8,
     "industry_predictions": 21,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 17,
-    "growth_plan": 85,
+    "growth_plan": 86,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 18,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-28",
-      "time": "2026-01-28T11:47:38.791353+00:00",
-      "format": "digest",
-      "sources": [
-        "aws.amazon.com",
-        "blog.rapid7.com",
-        "azure.microsoft.com",
-        "blog.checkpoint.com",
-        "blog.cloudflare.com",
-        "blog.newrelic.com"
-      ]
-    },
     {
       "date": "2026-01-29",
       "time": "2026-01-29T04:54:34.110701+00:00",
@@ -1124,16 +1111,21 @@
         "snyk.io",
         "www.cncf.io"
       ]
+    },
+    {
+      "date": "2026-06-09",
+      "time": "2026-06-09T06:58:03.943424+00:00",
+      "format": "digest",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 161,
-  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nIndustry leaders optimize tech stacks and debunk myths in the DevOps trenches. Here\u2019s what matters.\n\n\ud83d\udccc INDUSTRY PULSE:\n\n1\ufe0f\u20e3 WHAT IS AI GOVERNANCE? FRAMEWORKS, PRINCIPLES, AND BEST PRACTICES\n\nAI agents are moving fast. According to our State of Agentic AI report, 60% of organizations already have AI agents in production, yet 40% cite security and compliance as the...\n\n\ud83d\udca1 KEY INSIGHT: Find bugs when they're cheap to fix, not when they're expensive disasters\n\ud83d\udd17 Read more: https://www.docker.com/blog/what-is-ai-governance/\n\n2\ufe0f\u20e3 HARDENED IMAGES EXPLAINED: FEWER CVES, SMALLER ATTACK SURFACE\n\nWhen security teams scan their container environments for the first time, they often discover hundreds of known vulnerabilities, and almost none of them trace back to...\n\n\ud83d\udca1 KEY INSIGHT: Production-tested patterns that actually work in the real world\n\ud83d\udd17 Read more: https://www.docker.com/blog/what-are-hardened-images/\n\n3\ufe0f\u20e3 WHAT IS SOFTWARE SUPPLY CHAIN SECURITY?\n\nSoftware supply chain attacks have accelerated faster than most security teams anticipated. Sonatype's 2026 State of the Software Supply Chain report identified more than...\n\n\ud83d\udca1 KEY INSIGHT: Sleep better knowing security is baked in, not bolted on\n\ud83d\udd17 Read more: https://www.docker.com/blog/what-is-software-supply-chain-security/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
+  "posts_created": 162,
+  "last_post_content": "\ud83d\udd12 Security, scale, and innovation: the highlights.\nAutomation architects drive efficiency and scale across industries.\n\n\ud83d\udccc PLATFORM WINS:\n\n1\ufe0f\u20e3 AI-ASSISTED CAPACITY PLANNING: A GAME CHANGER FOR OPERATIONS\n\nEveryone's talking about ai-assisted capacity planning: a game changer for operations, but few share real results. Here's what the data shows:\n\n\ud83d\udca1 KEY INSIGHT: Let humans focus on problems that matter\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "www.cncf.io",
-    "snyk.io",
-    "www.docker.com",
-    "aws.amazon.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-06-07T07:15:03.639473+00:00"
+  "last_post_timestamp": "2026-06-09T06:58:03.944547+00:00"
 }
