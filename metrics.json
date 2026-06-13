@@ -1,7 +1,7 @@
 {
-  "total_posts": 190,
+  "total_posts": 191,
   "posts_today": 1,
-  "last_post_date": "2026-06-11",
+  "last_post_date": "2026-06-13",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 84,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
-    "industry_predictions": 21,
+    "industry_predictions": 22,
     "career_advice": 24,
     "controversial_takes": 11,
     "ai_and_automation": 9
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 17,
-    "growth_plan": 87,
+    "growth_plan": 88,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 18,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-29",
-      "time": "2026-01-29T11:55:24.940819+00:00",
-      "format": "digest",
-      "sources": [
-        "aws.amazon.com",
-        "aws.amazon.com",
-        "aws.amazon.com",
-        "www.cncf.io",
-        "www.infoq.com",
-        "about.gitlab.com"
-      ]
-    },
     {
       "date": "2026-01-30",
       "time": "2026-01-30T04:57:03.035159+00:00",
@@ -1114,13 +1101,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-06-13",
+      "time": "2026-06-13T07:06:42.332192+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 163,
-  "last_post_content": "Multi-cloud strategies and vendor moves show trends. Here's the signal.\n\nThe hidden cost of the journey from datacenter to multi-cloud that teams often miss:\n\nTeams often find that migrating from datacenter to multi-cloud is a complex process, requiring significant planning and resources. The reality is that this journey involves more than just lifting and shifting applications to the cloud. Technical constraints and requirements must be carefully considered.\n\nTechnical constraints and requirements include:\n\u2022 Scalability and flexibility\n\u2022 Security and compliance\n\u2022 Data management and integration\n\nThe solution architecture typically involves a combination of public and private cloud services, with a focus on creating a seamless and secure user experience. Evidence suggests that a well-designed architecture is critical to success.\n\nImplementation challenges and solutions are numerous, with production experience showing that careful planning and testing are essential. The data shows that a phased approach can help mitigate risks and ensure a smooth transition.\n\nPerformance metrics and results are key to measuring the success of the migration, with teams often tracking metrics such as uptime, latency, and user satisfaction. Experience reveals that ongoing monitoring and optimization are critical to achieving desired outcomes.\n\nLessons learned and future improvements include the importance of continuous learning and adaptation, as well as the need for ongoing investment in skills and technology. The reality is that the journey to multi-cloud is ongoing, with new challenges and opportunities emerging constantly.\n\nQuestions about the implementation? Drop them in the comments!\n\n#azure #devops #aws #cloudengineering #multicloud",
-  "last_post_format": "technical_deep_dives",
+  "posts_created": 164,
+  "last_post_content": "Many thought the future of serverless in enterprise environments was overhyped. The evidence says otherwise.\n\nThe data shows that serverless technology is here to stay, with several key predictions emerging for its future in enterprise environments. Teams often find that serverless architectures offer greater scalability and cost savings.\n\n\u2022 Serverless will become the default choice for new applications\n\u2022 Legacy applications will be refactored to take advantage of serverless benefits\n\u2022 Security and monitoring will be major focuses for serverless deployments\n\nExperience reveals that these changes will begin to take hold within the next 12-18 months. Production experience shows that early adopters are already seeing significant benefits from serverless technology.\n\nThe reality is that professionals need to start preparing now to take advantage of these trends. Teams should begin exploring serverless options and developing strategies for implementation.\n\nMissing any major trends? What would you add to this list?\n\n#platformengineering #sre #cloudengineering #infrastructureascode #devops",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-06-11T08:13:33.862310+00:00"
+  "last_post_timestamp": "2026-06-13T07:06:42.333463+00:00"
 }
