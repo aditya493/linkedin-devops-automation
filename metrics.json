@@ -1,7 +1,7 @@
 {
-  "total_posts": 191,
+  "total_posts": 192,
   "posts_today": 1,
-  "last_post_date": "2026-06-13",
+  "last_post_date": "2026-06-15",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 22,
     "career_advice": 24,
     "controversial_takes": 11,
-    "ai_and_automation": 9
+    "ai_and_automation": 10
   },
   "sources_used": {
     "www.infoq.com": 118,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 17,
-    "growth_plan": 88,
+    "growth_plan": 89,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 18,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-30",
-      "time": "2026-01-30T04:57:03.035159+00:00",
-      "format": "digest",
-      "sources": [
-        "www.cncf.io",
-        "www.cncf.io",
-        "github.blog",
-        "snyk.io",
-        "dropbox.tech",
-        "blog.gitguardian.com"
-      ]
-    },
     {
       "date": "2026-01-30",
       "time": "2026-01-30T11:51:23.337008+00:00",
@@ -1109,13 +1096,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-06-15",
+      "time": "2026-06-15T09:33:19.749088+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 164,
-  "last_post_content": "Many thought the future of serverless in enterprise environments was overhyped. The evidence says otherwise.\n\nThe data shows that serverless technology is here to stay, with several key predictions emerging for its future in enterprise environments. Teams often find that serverless architectures offer greater scalability and cost savings.\n\n\u2022 Serverless will become the default choice for new applications\n\u2022 Legacy applications will be refactored to take advantage of serverless benefits\n\u2022 Security and monitoring will be major focuses for serverless deployments\n\nExperience reveals that these changes will begin to take hold within the next 12-18 months. Production experience shows that early adopters are already seeing significant benefits from serverless technology.\n\nThe reality is that professionals need to start preparing now to take advantage of these trends. Teams should begin exploring serverless options and developing strategies for implementation.\n\nMissing any major trends? What would you add to this list?\n\n#platformengineering #sre #cloudengineering #infrastructureascode #devops",
-  "last_post_format": "industry_predictions",
+  "posts_created": 165,
+  "last_post_content": "Is ai-powered code reviews: 6 months of real-world data overhyped or underrated? Production data reveals the truth:\n\nThe AI/automation problem being addressed is the need for efficient and accurate code reviews, which teams often find time-consuming and prone to human error.\n\nTools and technologies evaluated include machine learning algorithms and natural language processing to identify bugs and suggest improvements.\n\nImplementation approach step-by-step involves integrating AI-powered tools into existing workflows, training models on historical data, and monitoring performance metrics.\n\nWhat worked vs what didn't includes successful identification of critical bugs and areas for improvement, while challenges arose from initial model training and data quality issues.\n\nROI and productivity metrics show significant reductions in code review time and increases in overall team productivity.\n\nFuture plans and recommendations involve continued model refinement and expansion to other areas of the development process.\n\nThe reality is that AI adoption can be complex, and evidence suggests that careful planning and execution are key to success.\n\n\u2022 Machine learning algorithms\n\u2022 Natural language processing\n\u2022 Model training on historical data\n\nThe data shows that teams can achieve significant benefits from AI-powered code reviews, and experience reveals that careful implementation is crucial.\n\nWhat's the biggest challenge you've faced adopting AI tools?\n\n#serverless #genai #llmops #devops #artificialintelligence",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-06-13T07:06:42.333463+00:00"
+  "last_post_timestamp": "2026-06-15T09:33:19.750314+00:00"
 }
