@@ -1,12 +1,12 @@
 {
-  "total_posts": 192,
+  "total_posts": 193,
   "posts_today": 1,
-  "last_post_date": "2026-06-15",
+  "last_post_date": "2026-06-17",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 84,
+    "digest": 85,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 22,
@@ -17,7 +17,7 @@
   "sources_used": {
     "www.infoq.com": 118,
     "kubernetes.io": 23,
-    "www.docker.com": 21,
+    "www.docker.com": 22,
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
     "blog.newrelic.com": 9,
@@ -28,7 +28,7 @@
     "blog.qualys.com": 4,
     "aws.amazon.com": 15,
     "www.cncf.io": 37,
-    "blog.rapid7.com": 15,
+    "blog.rapid7.com": 17,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
@@ -51,7 +51,7 @@
     "blog.cloudflare.com": 3,
     "dropbox.tech": 1,
     "blog.uptimerobot.com": 1,
-    "grafana.com": 6
+    "grafana.com": 9
   },
   "errors": [
     {
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-30",
-      "time": "2026-01-30T11:51:23.337008+00:00",
-      "format": "digest",
-      "sources": [
-        "www.hashicorp.com"
-      ]
-    },
     {
       "date": "2026-01-31",
       "time": "2026-01-31T07:05:51.874286+00:00",
@@ -1104,13 +1096,28 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-06-17",
+      "time": "2026-06-17T08:36:53.838705+00:00",
+      "format": "digest",
+      "sources": [
+        "www.docker.com",
+        "grafana.com",
+        "blog.rapid7.com",
+        "grafana.com",
+        "blog.rapid7.com",
+        "grafana.com"
+      ]
     }
   ],
-  "posts_created": 165,
-  "last_post_content": "Is ai-powered code reviews: 6 months of real-world data overhyped or underrated? Production data reveals the truth:\n\nThe AI/automation problem being addressed is the need for efficient and accurate code reviews, which teams often find time-consuming and prone to human error.\n\nTools and technologies evaluated include machine learning algorithms and natural language processing to identify bugs and suggest improvements.\n\nImplementation approach step-by-step involves integrating AI-powered tools into existing workflows, training models on historical data, and monitoring performance metrics.\n\nWhat worked vs what didn't includes successful identification of critical bugs and areas for improvement, while challenges arose from initial model training and data quality issues.\n\nROI and productivity metrics show significant reductions in code review time and increases in overall team productivity.\n\nFuture plans and recommendations involve continued model refinement and expansion to other areas of the development process.\n\nThe reality is that AI adoption can be complex, and evidence suggests that careful planning and execution are key to success.\n\n\u2022 Machine learning algorithms\n\u2022 Natural language processing\n\u2022 Model training on historical data\n\nThe data shows that teams can achieve significant benefits from AI-powered code reviews, and experience reveals that careful implementation is crucial.\n\nWhat's the biggest challenge you've faced adopting AI tools?\n\n#serverless #genai #llmops #devops #artificialintelligence",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 166,
+  "last_post_content": "\ud83e\udde0 Leadership lessons from the field.\nPlatform architects surface actionable insights for resilient systems.\n\n\ud83d\udccc PLATFORM WINS:\n\n1\ufe0f\u20e3 DOCKER JOINS THE ATHENA COALITION: A CROSS-INDUSTRY COLLABORATION FOR SUPPLY CHAIN SECURITY\n\nThe obvious takeaway from 2026's biggest incidents is that attackers are increasingly using AI to move fast. Docker's CISO, Mark Lechner, wrote about this shift and what every...\n\n\ud83d\udca1 KEY INSIGHT: Learn from failures before they repeat (saves your sanity)\n\ud83d\udd17 Read more: https://www.docker.com/blog/docker-joins-the-athena-coalition-a-cross-industry-collaboration-for-supply-chain-security/\n\n2\ufe0f\u20e3 TROUBLESHOOT PERFORMANCE ISSUES FASTER WITH THE NEW GRAFANA ASSISTANT INTEGRATION FOR DATABASE OBSERVABILITY\n\nSo your database is slow. Now what? Grafana Cloud Database Observability already gives you visibility into your SQL queries with RED metrics, individual execution samples, wait...\n\n\ud83d\udca1 KEY INSIGHT: See the invisible - debug what's actually happening in production\n\ud83d\udd17 Read more: https://grafana.com/blog/troubleshoot-performance-issues-faster-with-the-new-grafana-assistant-integration-for-database-observability/\n\n3\ufe0f\u20e3 DOES YOUR SECURITY PROGRAMME ALIGN WITH NIS2 REQUIREMENTS?\n\nIf your organization operates in the EU, or works with organizations that do, NIS2 is no longer something on the horizon. It is here and it applies to a far wider range of...\n\n\ud83d\udca1 KEY INSIGHT: Sleep better knowing security is baked in, not bolted on\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/so-aligning-security-programmes-with-nis2-requirements\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "www.docker.com",
+    "grafana.com",
+    "blog.rapid7.com"
   ],
-  "last_post_timestamp": "2026-06-15T09:33:19.750314+00:00"
+  "last_post_timestamp": "2026-06-17T08:36:53.839849+00:00"
 }

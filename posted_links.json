@@ -89,12 +89,15 @@
     "https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/",
     "https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/",
     "https://github.blog/engineering/infrastructure/when-protections-outlive-their-purpose-a-lesson-on-managing-defense-systems-at-scale/",
+    "https://grafana.com/blog/ai-observability-for-agents-in-grafana-cloud/",
     "https://grafana.com/blog/customize-preconfigured-views-for-aws-azure-and-google-cloud-with-cloud-provider-observability-in-grafana-cloud/",
     "https://grafana.com/blog/eliminate-noisy-log-lines-with-adaptive-logs-drop-rules/",
     "https://grafana.com/blog/get-observability-in-the-terminal-for-you-and-your-agents-with-the-gcx-cli-tool/",
     "https://grafana.com/blog/how-grafana-assistant-learns-your-infrastructure-before-you-even-ask/",
     "https://grafana.com/blog/introducing-secrets-management-for-grafana-cloud-k6/",
+    "https://grafana.com/blog/o11y-bench-open-benchmark-for-observability-agents/",
     "https://grafana.com/blog/pyroscope-2-0-release/",
+    "https://grafana.com/blog/troubleshoot-performance-issues-faster-with-the-new-grafana-assistant-integration-for-database-observability/",
     "https://krebsonsecurity.com/2025/12/dismantling-defenses-trump-2-0-cyber-year-in-review/",
     "https://krebsonsecurity.com/2025/12/happy-16th-birthday-krebsonsecurity-com/",
     "https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/",
@@ -225,6 +228,7 @@
     "https://www.docker.com/blog/clawdbot-docker-model-runner-private-personal-ai/",
     "https://www.docker.com/blog/deterministic-ai-testing-with-session-recording-in-cagent/",
     "https://www.docker.com/blog/docker-hardened-images-security-independently-validated-by-srlabs/",
+    "https://www.docker.com/blog/docker-joins-the-athena-coalition-a-cross-industry-collaboration-for-supply-chain-security/",
     "https://www.docker.com/blog/docker-sandboxes-run-claude-code-and-other-coding-agents-unsupervised-but-safely/",
     "https://www.docker.com/blog/fips-dependencies-and-prebuilt-binaries/",
     "https://www.docker.com/blog/from-the-captains-chair-igor-aleksandrov/",
@@ -398,6 +402,8 @@
     "https://www.rapid7.com/blog/post/pt-metasploit-2025-annual-wrap-up",
     "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-01-16-2025",
     "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-01-23-2026",
+    "https://www.rapid7.com/blog/post/so-aligning-security-programmes-with-nis2-requirements",
+    "https://www.rapid7.com/blog/post/so-nis2-compliance-turn-readiness-into-resilience",
     "https://www.rapid7.com/blog/post/tr-beyond-devices-exploring-new-security-risks-interconnected-iot-ces-2026",
     "https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit",
     "https://www.rapid7.com/blog/post/tr-chrysalis-notepad-supply-chain-risk-next-steps",
@@ -443,10 +449,16 @@
       "5c5340eea8f3": "2026-06-07T07:15:03.637389+00:00",
       "4b502999741e": "2026-06-11T08:13:33.859991+00:00",
       "d6debeae4607": "2026-06-13T07:06:42.331214+00:00",
-      "1ec8d27664ec": "2026-06-15T09:33:19.748088+00:00"
+      "1ec8d27664ec": "2026-06-15T09:33:19.748088+00:00",
+      "043fa8a9fe28": "2026-06-17T08:36:53.837436+00:00",
+      "fa39ce8a09ef": "2026-06-17T08:36:53.837499+00:00",
+      "a69f14faae14": "2026-06-17T08:36:53.837531+00:00",
+      "996b8255c29f": "2026-06-17T08:36:53.837558+00:00",
+      "6e4763b95150": "2026-06-17T08:36:53.837591+00:00",
+      "5fe9ec946e36": "2026-06-17T08:36:53.837621+00:00"
     },
-    "last_post_id": "urn:li:share:7472219681618198528",
-    "last_posted_at_utc": "2026-06-15T09:33:19.748146+00:00",
-    "last_format": "ai_and_automation"
+    "last_post_id": "urn:li:share:7472930254882299904",
+    "last_posted_at_utc": "2026-06-17T08:36:53.837637+00:00",
+    "last_format": "digest"
   }
 }
