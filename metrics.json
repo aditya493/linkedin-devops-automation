@@ -1,7 +1,7 @@
 {
-  "total_posts": 193,
+  "total_posts": 194,
   "posts_today": 1,
-  "last_post_date": "2026-06-17",
+  "last_post_date": "2026-06-19",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 85,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
-    "industry_predictions": 22,
+    "industry_predictions": 23,
     "career_advice": 24,
     "controversial_takes": 11,
     "ai_and_automation": 10
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 17,
-    "growth_plan": 89,
+    "growth_plan": 90,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 18,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-01-31",
-      "time": "2026-01-31T07:05:51.874286+00:00",
-      "format": "digest",
-      "sources": [
-        "kubernetes.io",
-        "aws.amazon.com",
-        "kubernetes.io",
-        "blogs.microsoft.com",
-        "googleprojectzero.blogspot.com",
-        "www.docker.com"
-      ]
-    },
     {
       "date": "2026-02-01",
       "time": "2026-02-01T07:14:37.993413+00:00",
@@ -1109,15 +1096,21 @@
         "blog.rapid7.com",
         "grafana.com"
       ]
+    },
+    {
+      "date": "2026-06-19",
+      "time": "2026-06-19T08:41:00.003393+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 166,
-  "last_post_content": "\ud83e\udde0 Leadership lessons from the field.\nPlatform architects surface actionable insights for resilient systems.\n\n\ud83d\udccc PLATFORM WINS:\n\n1\ufe0f\u20e3 DOCKER JOINS THE ATHENA COALITION: A CROSS-INDUSTRY COLLABORATION FOR SUPPLY CHAIN SECURITY\n\nThe obvious takeaway from 2026's biggest incidents is that attackers are increasingly using AI to move fast. Docker's CISO, Mark Lechner, wrote about this shift and what every...\n\n\ud83d\udca1 KEY INSIGHT: Learn from failures before they repeat (saves your sanity)\n\ud83d\udd17 Read more: https://www.docker.com/blog/docker-joins-the-athena-coalition-a-cross-industry-collaboration-for-supply-chain-security/\n\n2\ufe0f\u20e3 TROUBLESHOOT PERFORMANCE ISSUES FASTER WITH THE NEW GRAFANA ASSISTANT INTEGRATION FOR DATABASE OBSERVABILITY\n\nSo your database is slow. Now what? Grafana Cloud Database Observability already gives you visibility into your SQL queries with RED metrics, individual execution samples, wait...\n\n\ud83d\udca1 KEY INSIGHT: See the invisible - debug what's actually happening in production\n\ud83d\udd17 Read more: https://grafana.com/blog/troubleshoot-performance-issues-faster-with-the-new-grafana-assistant-integration-for-database-observability/\n\n3\ufe0f\u20e3 DOES YOUR SECURITY PROGRAMME ALIGN WITH NIS2 REQUIREMENTS?\n\nIf your organization operates in the EU, or works with organizations that do, NIS2 is no longer something on the horizon. It is here and it applies to a far wider range of...\n\n\ud83d\udca1 KEY INSIGHT: Sleep better knowing security is baked in, not bolted on\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/so-aligning-security-programmes-with-nis2-requirements\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
-  "last_post_format": "digest",
+  "posts_created": 167,
+  "last_post_content": "Many thought the evolution of sre: beyond google's model was overhyped. The evidence says otherwise. Teams often find that adopting SRE principles leads to improved system reliability and efficiency.\n\nThe data shows that several key trends will shape the future of SRE, including:\n\u2022 Increased adoption of artificial intelligence and machine learning\n\u2022 Greater emphasis on security and compliance\n\u2022 More focus on cultural and organizational aspects of SRE\n\nProduction experience shows that these trends are already having an impact, with many organizations reporting significant benefits from their SRE initiatives. The reality is that these changes will continue to unfold over the next 2-5 years.\n\nThe evidence suggests that professionals should prepare by developing skills in areas such as AI, security, and DevOps. Experience reveals that organizations that invest in these areas will be well-positioned for success.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#cloudengineering #infrastructureascode #sre #infrastructure #devops",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
-    "www.docker.com",
-    "grafana.com",
-    "blog.rapid7.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-06-17T08:36:53.839849+00:00"
+  "last_post_timestamp": "2026-06-19T08:41:00.004567+00:00"
 }
