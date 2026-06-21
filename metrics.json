@@ -1,12 +1,12 @@
 {
-  "total_posts": 194,
+  "total_posts": 195,
   "posts_today": 1,
-  "last_post_date": "2026-06-19",
+  "last_post_date": "2026-06-21",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 85,
+    "digest": 86,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 23,
@@ -26,7 +26,7 @@
     "blog.checkpoint.com": 21,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 15,
+    "aws.amazon.com": 19,
     "www.cncf.io": 37,
     "blog.rapid7.com": 17,
     "feeds.feedburner.com": 8,
@@ -44,14 +44,14 @@
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 3,
     "microservices.io": 3,
-    "blogs.microsoft.com": 11,
+    "blogs.microsoft.com": 12,
     "www.paloaltonetworks.com": 4,
     "github.blog": 2,
     "googleprojectzero.blogspot.com": 2,
     "blog.cloudflare.com": 3,
     "dropbox.tech": 1,
     "blog.uptimerobot.com": 1,
-    "grafana.com": 9
+    "grafana.com": 10
   },
   "errors": [
     {
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-01",
-      "time": "2026-02-01T07:14:37.993413+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com",
-        "microservices.io",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-02-02",
       "time": "2026-02-02T05:15:49.198622+00:00",
@@ -1104,13 +1091,28 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-06-21",
+      "time": "2026-06-21T08:09:29.461890+00:00",
+      "format": "digest",
+      "sources": [
+        "aws.amazon.com",
+        "aws.amazon.com",
+        "aws.amazon.com",
+        "aws.amazon.com",
+        "blogs.microsoft.com",
+        "grafana.com"
+      ]
     }
   ],
-  "posts_created": 167,
-  "last_post_content": "Many thought the evolution of sre: beyond google's model was overhyped. The evidence says otherwise. Teams often find that adopting SRE principles leads to improved system reliability and efficiency.\n\nThe data shows that several key trends will shape the future of SRE, including:\n\u2022 Increased adoption of artificial intelligence and machine learning\n\u2022 Greater emphasis on security and compliance\n\u2022 More focus on cultural and organizational aspects of SRE\n\nProduction experience shows that these trends are already having an impact, with many organizations reporting significant benefits from their SRE initiatives. The reality is that these changes will continue to unfold over the next 2-5 years.\n\nThe evidence suggests that professionals should prepare by developing skills in areas such as AI, security, and DevOps. Experience reveals that organizations that invest in these areas will be well-positioned for success.\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#cloudengineering #infrastructureascode #sre #infrastructure #devops",
-  "last_post_format": "industry_predictions",
+  "posts_created": 168,
+  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nSecurity champions share what shapes the future of operations.\n\n\ud83d\udccc AUTOMATION STRATEGIES:\n\n1\ufe0f\u20e3 ACCELERATE INCIDENT RESOLUTION WITH PAGERDUTY AND AWS DEVOPS AGENT\n\nWhen something breaks in production, you find out fast. Understanding why it broke, before the damage spreads, is the hard part.\n\n\ud83d\udca1 KEY INSIGHT: Reduced mean time to recovery directly improves system reliability and organizational confidence\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/devops/accelerate-incident-resolution-with-pagerduty-and-aws-devops-agent/\n\n2\ufe0f\u20e3 FEATURE FLAG ORCHESTRATION WITH AWS DEVOPS AGENT AND LAUNCHDARKLY\n\nIntroduction Organizations that use feature flags alongside incident response tooling often connect the two manually. When an outage occurs, engineers must identify which flags...\n\n\ud83d\udca1 KEY INSIGHT: MTTR is a leading indicator of operational maturity \u2014 improvements compound over time\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/devops/feature-flag-orchestration-with-aws-devops-agent-and-launchdarkly/\n\n3\ufe0f\u20e3 SUPERCHARGE YOUR CLOUD OPERATIONS WITH THE KIRO POWER FOR AWS DEVOPS AGENT\n\nWhen an alarm fires at 2 AM, the first thing most engineers do is grep logs, check recent deployments, and trace code paths. However, the context they need \u2014 metrics, traces,...\n\n\ud83d\udca1 KEY INSIGHT: Automated deployment pipelines enable both speed and reliability without requiring a trade-off between them\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/devops/supercharge-your-cloud-operations-with-the-kiro-power-for-aws-devops-agent/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "aws.amazon.com",
+    "grafana.com",
+    "blogs.microsoft.com"
   ],
-  "last_post_timestamp": "2026-06-19T08:41:00.004567+00:00"
+  "last_post_timestamp": "2026-06-21T08:09:29.463035+00:00"
 }
