@@ -1,12 +1,12 @@
 {
-  "total_posts": 195,
+  "total_posts": 196,
   "posts_today": 1,
-  "last_post_date": "2026-06-21",
+  "last_post_date": "2026-06-23",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 86,
+    "digest": 87,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 23,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 17,
-    "growth_plan": 90,
+    "growth_plan": 91,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 18,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-02",
-      "time": "2026-02-02T05:15:49.198622+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.newrelic.com",
-        "blog.newrelic.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-02-02",
       "time": "2026-02-02T11:58:35.745006+00:00",
@@ -1104,15 +1091,21 @@
         "blogs.microsoft.com",
         "grafana.com"
       ]
+    },
+    {
+      "date": "2026-06-23",
+      "time": "2026-06-23T06:59:39.651331+00:00",
+      "format": "digest",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 168,
-  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nSecurity champions share what shapes the future of operations.\n\n\ud83d\udccc AUTOMATION STRATEGIES:\n\n1\ufe0f\u20e3 ACCELERATE INCIDENT RESOLUTION WITH PAGERDUTY AND AWS DEVOPS AGENT\n\nWhen something breaks in production, you find out fast. Understanding why it broke, before the damage spreads, is the hard part.\n\n\ud83d\udca1 KEY INSIGHT: Reduced mean time to recovery directly improves system reliability and organizational confidence\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/devops/accelerate-incident-resolution-with-pagerduty-and-aws-devops-agent/\n\n2\ufe0f\u20e3 FEATURE FLAG ORCHESTRATION WITH AWS DEVOPS AGENT AND LAUNCHDARKLY\n\nIntroduction Organizations that use feature flags alongside incident response tooling often connect the two manually. When an outage occurs, engineers must identify which flags...\n\n\ud83d\udca1 KEY INSIGHT: MTTR is a leading indicator of operational maturity \u2014 improvements compound over time\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/devops/feature-flag-orchestration-with-aws-devops-agent-and-launchdarkly/\n\n3\ufe0f\u20e3 SUPERCHARGE YOUR CLOUD OPERATIONS WITH THE KIRO POWER FOR AWS DEVOPS AGENT\n\nWhen an alarm fires at 2 AM, the first thing most engineers do is grep logs, check recent deployments, and trace code paths. However, the context they need \u2014 metrics, traces,...\n\n\ud83d\udca1 KEY INSIGHT: Automated deployment pipelines enable both speed and reliability without requiring a trade-off between them\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/devops/supercharge-your-cloud-operations-with-the-kiro-power-for-aws-devops-agent/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
+  "posts_created": 169,
+  "last_post_content": "\ud83d\udee1\ufe0f Security, compliance, and trust: the essentials.\nPlatform architects surface actionable insights for resilient systems.\n\n\ud83d\udccc LEADERSHIP LESSONS:\n\n1\ufe0f\u20e3 BUILDING INFLUENCE AS A DEVOPS ENGINEER\n\nAfter analyzing 5 years of DevOps data, here's the truth about building influence as a devops engineer:\n\n\ud83d\udca1 KEY INSIGHT: Real-world insights backed by data from production environments.\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "aws.amazon.com",
-    "grafana.com",
-    "blogs.microsoft.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-06-21T08:09:29.463035+00:00"
+  "last_post_timestamp": "2026-06-23T06:59:39.652414+00:00"
 }
