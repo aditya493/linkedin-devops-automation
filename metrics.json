@@ -1,12 +1,12 @@
 {
-  "total_posts": 196,
+  "total_posts": 197,
   "posts_today": 1,
-  "last_post_date": "2026-06-23",
+  "last_post_date": "2026-06-25",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 87,
+    "digest": 88,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 23,
@@ -23,12 +23,12 @@
     "blog.newrelic.com": 9,
     "engineering.fb.com": 7,
     "blog.google": 5,
-    "blog.checkpoint.com": 21,
+    "blog.checkpoint.com": 22,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 19,
-    "www.cncf.io": 37,
-    "blog.rapid7.com": 17,
+    "www.cncf.io": 38,
+    "blog.rapid7.com": 18,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
@@ -39,12 +39,12 @@
     "about.gitlab.com": 18,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
-    "azure.microsoft.com": 4,
+    "azure.microsoft.com": 5,
     "www.sonarsource.com": 3,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 3,
     "microservices.io": 3,
-    "blogs.microsoft.com": 12,
+    "blogs.microsoft.com": 14,
     "www.paloaltonetworks.com": 4,
     "github.blog": 2,
     "googleprojectzero.blogspot.com": 2,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-02",
-      "time": "2026-02-02T11:58:35.745006+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "netflixtechblog.medium.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com"
-      ]
-    },
     {
       "date": "2026-02-03",
       "time": "2026-02-03T05:04:12.985658+00:00",
@@ -1099,13 +1086,30 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-06-25",
+      "time": "2026-06-25T06:56:26.493402+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.rapid7.com",
+        "blogs.microsoft.com",
+        "blog.checkpoint.com",
+        "azure.microsoft.com",
+        "www.cncf.io",
+        "blogs.microsoft.com"
+      ]
     }
   ],
-  "posts_created": 169,
-  "last_post_content": "\ud83d\udee1\ufe0f Security, compliance, and trust: the essentials.\nPlatform architects surface actionable insights for resilient systems.\n\n\ud83d\udccc LEADERSHIP LESSONS:\n\n1\ufe0f\u20e3 BUILDING INFLUENCE AS A DEVOPS ENGINEER\n\nAfter analyzing 5 years of DevOps data, here's the truth about building influence as a devops engineer:\n\n\ud83d\udca1 KEY INSIGHT: Real-world insights backed by data from production environments.\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
+  "posts_created": 170,
+  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nStrategic thinkers track what moves the reliability needle. Here\u2019s the latest.\n\n\ud83d\udccc STRATEGIC HIGHLIGHTS:\n\n1\ufe0f\u20e3 WHY SIEM IS MOVING TOWARD UNIFIED SECURITY OPERATIONS: RAPID7 NAMED A MAJOR PLAYER IN IDC MARKETSCAPE\n\n...\nRapid7 has been named a Major Player in the IDC MarketScape: Worldwide SIEM 2026 Vendor Assessment (#US54126826, June 2026). This is the first IDC SIEM MarketScape to bring the enterprise and SMB markets into a single evaluation, and we believe it arrives at a time when the way teams buy and run a SOC is changing quickly. Security teams are no longer evaluating detection and response in isolat\n\n\ud83d\udca1 KEY INSIGHT: Automated vulnerability scanning in CI/CD reduces the window of exposure for known vulnerabilities\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/dr-siem-moving-toward-unified-security-operations-rapid7-named-idc-marketscape-major-player\n\n2\ufe0f\u20e3 CNAPP EVOLUTION: HOW MICROSOFT ALIGNS WITH LEADING CLOUD RISK MANAGEMENT PLATFORMS\n\nLearn how CNAPP platforms are helping organizations prioritize exploitable risks, reduce exposure, and operationalize security across the application lifecycle.\n\n\ud83d\udca1 KEY INSIGHT: Cloud-native design patterns require genuine architectural commitment to deliver their expected benefits\n\ud83d\udd17 Read more: https://www.microsoft.com/en-us/security/blog/2026/06/24/cnapp-evolution-how-microsoft-aligns-with-leading-cloud-risk-management-platforms/\n\n3\ufe0f\u20e3 SECURING AI AGENT BEHAVIOR WITH AMAZON BEDROCK AGENTCORE AND CHECK POINT AI SECURITY\n\n...\nAI agents are rapidly becoming a new operational layer inside the enterprise. Unlike traditional chatbots, modern agents do not simply generate responses. They retrieve information, invoke tools, access enterprise systems, make decisions, and take actions on behalf of users. As organizations move from experimentation to production deployments, they are increasingly looking for ways to connect\n\n\ud83d\udca1 KEY INSIGHT: Continuous delivery practices reduce batch size and lower the risk of each individual deployment\n\ud83d\udd17 Read more: https://blog.checkpoint.com/ai-security/securing-ai-agent-behavior-with-amazon-bedrock-agentcore-and-checkpoint-ai-security/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "www.cncf.io",
+    "blogs.microsoft.com",
+    "blog.rapid7.com",
+    "blog.checkpoint.com",
+    "azure.microsoft.com"
   ],
-  "last_post_timestamp": "2026-06-23T06:59:39.652414+00:00"
+  "last_post_timestamp": "2026-06-25T06:56:26.494521+00:00"
 }
