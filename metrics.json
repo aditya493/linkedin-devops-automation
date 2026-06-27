@@ -1,12 +1,12 @@
 {
-  "total_posts": 197,
+  "total_posts": 198,
   "posts_today": 1,
-  "last_post_date": "2026-06-25",
+  "last_post_date": "2026-06-27",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 88,
+    "digest": 89,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 23,
@@ -16,18 +16,18 @@
   },
   "sources_used": {
     "www.infoq.com": 118,
-    "kubernetes.io": 23,
+    "kubernetes.io": 26,
     "www.docker.com": 22,
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
     "blog.newrelic.com": 9,
-    "engineering.fb.com": 7,
+    "engineering.fb.com": 8,
     "blog.google": 5,
     "blog.checkpoint.com": 22,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 19,
-    "www.cncf.io": 38,
+    "www.cncf.io": 39,
     "blog.rapid7.com": 18,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -36,7 +36,7 @@
     "growth_plan": 91,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
-    "about.gitlab.com": 18,
+    "about.gitlab.com": 19,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 5,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-03",
-      "time": "2026-02-03T05:04:12.985658+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.rapid7.com",
-        "blogs.microsoft.com",
-        "www.cncf.io",
-        "about.gitlab.com",
-        "www.hashicorp.com",
-        "blogs.microsoft.com"
-      ]
-    },
     {
       "date": "2026-02-03",
       "time": "2026-02-03T11:58:07.356551+00:00",
@@ -1099,17 +1086,29 @@
         "www.cncf.io",
         "blogs.microsoft.com"
       ]
+    },
+    {
+      "date": "2026-06-27",
+      "time": "2026-06-27T06:38:03.506035+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "kubernetes.io",
+        "kubernetes.io",
+        "engineering.fb.com",
+        "www.cncf.io",
+        "kubernetes.io"
+      ]
     }
   ],
-  "posts_created": 170,
-  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nStrategic thinkers track what moves the reliability needle. Here\u2019s the latest.\n\n\ud83d\udccc STRATEGIC HIGHLIGHTS:\n\n1\ufe0f\u20e3 WHY SIEM IS MOVING TOWARD UNIFIED SECURITY OPERATIONS: RAPID7 NAMED A MAJOR PLAYER IN IDC MARKETSCAPE\n\n...\nRapid7 has been named a Major Player in the IDC MarketScape: Worldwide SIEM 2026 Vendor Assessment (#US54126826, June 2026). This is the first IDC SIEM MarketScape to bring the enterprise and SMB markets into a single evaluation, and we believe it arrives at a time when the way teams buy and run a SOC is changing quickly. Security teams are no longer evaluating detection and response in isolat\n\n\ud83d\udca1 KEY INSIGHT: Automated vulnerability scanning in CI/CD reduces the window of exposure for known vulnerabilities\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/dr-siem-moving-toward-unified-security-operations-rapid7-named-idc-marketscape-major-player\n\n2\ufe0f\u20e3 CNAPP EVOLUTION: HOW MICROSOFT ALIGNS WITH LEADING CLOUD RISK MANAGEMENT PLATFORMS\n\nLearn how CNAPP platforms are helping organizations prioritize exploitable risks, reduce exposure, and operationalize security across the application lifecycle.\n\n\ud83d\udca1 KEY INSIGHT: Cloud-native design patterns require genuine architectural commitment to deliver their expected benefits\n\ud83d\udd17 Read more: https://www.microsoft.com/en-us/security/blog/2026/06/24/cnapp-evolution-how-microsoft-aligns-with-leading-cloud-risk-management-platforms/\n\n3\ufe0f\u20e3 SECURING AI AGENT BEHAVIOR WITH AMAZON BEDROCK AGENTCORE AND CHECK POINT AI SECURITY\n\n...\nAI agents are rapidly becoming a new operational layer inside the enterprise. Unlike traditional chatbots, modern agents do not simply generate responses. They retrieve information, invoke tools, access enterprise systems, make decisions, and take actions on behalf of users. As organizations move from experimentation to production deployments, they are increasingly looking for ways to connect\n\n\ud83d\udca1 KEY INSIGHT: Continuous delivery practices reduce batch size and lower the risk of each individual deployment\n\ud83d\udd17 Read more: https://blog.checkpoint.com/ai-security/securing-ai-agent-behavior-with-amazon-bedrock-agentcore-and-checkpoint-ai-security/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
+  "posts_created": 171,
+  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nObservability advocates surface what teams measure and why.\n\n\ud83d\udccc THIS WEEK'S STANDOUTS:\n\n1\ufe0f\u20e3 GOOGLE ANTIGRAVITY AGENTS GET FULL CONTEXT WITH GITLAB ORBIT\n\nDevelopers working in Google Antigravity can now install our lifecycle context graph, GitLab Orbit , directly from the Antigravity MCP Store and give their agents structured...\n\n\ud83d\udca1 KEY INSIGHT: Practical insights for engineers building production systems.\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-orbit-and-google-antigravity/\n\n2\ufe0f\u20e3 INSPECT VOLCANO WORKLOADS FASTER WITH HEADLAMP\n\nVolcano is a cloud native batch scheduler for Kubernetes, built for high-performance computing, AI/ML, and other batch workloads. Headlamp is an extensible Kubernetes web UI.\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://kubernetes.io/blog/2026/06/25/visual-context-volcano-headlamp-plugin/\n\n3\ufe0f\u20e3 SEE YOUR SERVERLESS: INTRODUCING THE HEADLAMP PLUGIN FOR KNATIVE\n\nHeadlamp is an open-source, extensible Kubernetes SIG UI project designed to let you explore, manage, and debug cluster resources.\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://kubernetes.io/blog/2026/06/25/headlamp-knative-plugin/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 How is your organization responding to these signals?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "www.cncf.io",
-    "blogs.microsoft.com",
-    "blog.rapid7.com",
-    "blog.checkpoint.com",
-    "azure.microsoft.com"
+    "about.gitlab.com",
+    "kubernetes.io",
+    "engineering.fb.com",
+    "www.cncf.io"
   ],
-  "last_post_timestamp": "2026-06-25T06:56:26.494521+00:00"
+  "last_post_timestamp": "2026-06-27T06:38:03.507148+00:00"
 }

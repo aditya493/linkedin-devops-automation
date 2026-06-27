@@ -13,6 +13,7 @@
     "https://about.gitlab.com/blog/gitlab-bug-bounty-program-policy-updates/",
     "https://about.gitlab.com/blog/gitlab-duo-agent-platform-complete-getting-started-guide/",
     "https://about.gitlab.com/blog/gitlab-duo-agent-platform-is-generally-available/",
+    "https://about.gitlab.com/blog/gitlab-orbit-and-google-antigravity/",
     "https://about.gitlab.com/blog/how-to-set-up-gitlab-saml-sso-with-google-workspace/",
     "https://about.gitlab.com/blog/introduction-to-gitlab-duo-agent-platform/",
     "https://about.gitlab.com/blog/monitor-manage-automate-ai-workflows/",
@@ -93,6 +94,7 @@
     "https://engineering.fb.com/2026/01/27/security/rust-at-scale-security-whatsapp/",
     "https://engineering.fb.com/2026/02/04/security/cross-device-passkey-authentication-for-xr-devices-meta-quest/",
     "https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/",
+    "https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study/",
     "https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/",
     "https://github.blog/engineering/infrastructure/when-protections-outlive-their-purpose-a-lesson-on-managing-defense-systems-at-scale/",
     "https://grafana.com/blog/ai-observability-for-agents-in-grafana-cloud/",
@@ -132,6 +134,9 @@
     "https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/",
     "https://kubernetes.io/blog/2026/01/30/new-cgroup-v1-to-v2-cpu-conversion-formula/",
     "https://kubernetes.io/blog/2026/02/03/introducing-node-readiness-controller/",
+    "https://kubernetes.io/blog/2026/06/25/headlamp-cluster-api-plugin/",
+    "https://kubernetes.io/blog/2026/06/25/headlamp-knative-plugin/",
+    "https://kubernetes.io/blog/2026/06/25/visual-context-volcano-headlamp-plugin/",
     "https://martinfowler.com/articles/2025-music.html",
     "https://martinfowler.com/articles/convo-what-how.html",
     "https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html",
@@ -210,6 +215,7 @@
     "https://www.cncf.io/blog/2026/06/04/identity-and-access-management-whitepaper/",
     "https://www.cncf.io/blog/2026/06/04/securing-ci-cd-for-an-open-source-project-controlling-who-runs-what/",
     "https://www.cncf.io/blog/2026/06/22/telemetry-that-matters-designing-sustainable-high-impact-observability-pipelines/",
+    "https://www.cncf.io/blog/2026/06/25/building-a-cluster-aware-ai-agent-with-kubernetes-argo-cd-and-gitops/",
     "https://www.crowdstrike.com/en-us/blog/ai-tool-poisoning/",
     "https://www.crowdstrike.com/en-us/blog/architecture-of-agentic-defense-inside-the-falcon-platform/",
     "https://www.crowdstrike.com/en-us/blog/built-for-scale-powered-by-ai-innovation-driving-falcon-exposure-management/",
@@ -434,7 +440,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "4b502999741e": "2026-06-11T08:13:33.859991+00:00",
       "d6debeae4607": "2026-06-13T07:06:42.331214+00:00",
       "1ec8d27664ec": "2026-06-15T09:33:19.748088+00:00",
       "043fa8a9fe28": "2026-06-17T08:36:53.837436+00:00",
@@ -456,10 +461,16 @@
       "404da1b1d0e1": "2026-06-25T06:56:26.492200+00:00",
       "f780d1c37a1d": "2026-06-25T06:56:26.492233+00:00",
       "6823380404e3": "2026-06-25T06:56:26.492266+00:00",
-      "ad5ada1fc37a": "2026-06-25T06:56:26.492297+00:00"
+      "ad5ada1fc37a": "2026-06-25T06:56:26.492297+00:00",
+      "e2a376960caf": "2026-06-27T06:38:03.504835+00:00",
+      "512fac195627": "2026-06-27T06:38:03.504895+00:00",
+      "7d764878a4f7": "2026-06-27T06:38:03.504934+00:00",
+      "e170aa455f13": "2026-06-27T06:38:03.504966+00:00",
+      "635ac361dd95": "2026-06-27T06:38:03.504996+00:00",
+      "b9f167e08f86": "2026-06-27T06:38:03.505022+00:00"
     },
-    "last_post_id": "urn:li:share:7475804078564999168",
-    "last_posted_at_utc": "2026-06-25T06:56:26.492314+00:00",
+    "last_post_id": "urn:li:share:7476524228163485696",
+    "last_posted_at_utc": "2026-06-27T06:38:03.505039+00:00",
     "last_format": "digest"
   }
 }
