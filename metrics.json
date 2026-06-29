@@ -1,12 +1,12 @@
 {
-  "total_posts": 198,
+  "total_posts": 199,
   "posts_today": 1,
-  "last_post_date": "2026-06-27",
+  "last_post_date": "2026-06-29",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 89,
+    "digest": 90,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 23,
@@ -17,18 +17,18 @@
   "sources_used": {
     "www.infoq.com": 118,
     "kubernetes.io": 26,
-    "www.docker.com": 22,
+    "www.docker.com": 24,
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
     "blog.newrelic.com": 9,
     "engineering.fb.com": 8,
     "blog.google": 5,
-    "blog.checkpoint.com": 22,
+    "blog.checkpoint.com": 23,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 19,
     "www.cncf.io": 39,
-    "blog.rapid7.com": 18,
+    "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
@@ -39,7 +39,7 @@
     "about.gitlab.com": 19,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
-    "azure.microsoft.com": 5,
+    "azure.microsoft.com": 6,
     "www.sonarsource.com": 3,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 3,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-03",
-      "time": "2026-02-03T11:58:07.356551+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-04",
       "time": "2026-02-04T04:57:04.416971+00:00",
@@ -1099,16 +1091,29 @@
         "www.cncf.io",
         "kubernetes.io"
       ]
+    },
+    {
+      "date": "2026-06-29",
+      "time": "2026-06-29T08:28:44.008801+00:00",
+      "format": "digest",
+      "sources": [
+        "blog.rapid7.com",
+        "blog.checkpoint.com",
+        "azure.microsoft.com",
+        "www.docker.com",
+        "www.docker.com",
+        "blog.rapid7.com"
+      ]
     }
   ],
-  "posts_created": 171,
-  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nObservability advocates surface what teams measure and why.\n\n\ud83d\udccc THIS WEEK'S STANDOUTS:\n\n1\ufe0f\u20e3 GOOGLE ANTIGRAVITY AGENTS GET FULL CONTEXT WITH GITLAB ORBIT\n\nDevelopers working in Google Antigravity can now install our lifecycle context graph, GitLab Orbit , directly from the Antigravity MCP Store and give their agents structured...\n\n\ud83d\udca1 KEY INSIGHT: Practical insights for engineers building production systems.\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-orbit-and-google-antigravity/\n\n2\ufe0f\u20e3 INSPECT VOLCANO WORKLOADS FASTER WITH HEADLAMP\n\nVolcano is a cloud native batch scheduler for Kubernetes, built for high-performance computing, AI/ML, and other batch workloads. Headlamp is an extensible Kubernetes web UI.\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://kubernetes.io/blog/2026/06/25/visual-context-volcano-headlamp-plugin/\n\n3\ufe0f\u20e3 SEE YOUR SERVERLESS: INTRODUCING THE HEADLAMP PLUGIN FOR KNATIVE\n\nHeadlamp is an open-source, extensible Kubernetes SIG UI project designed to let you explore, manage, and debug cluster resources.\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://kubernetes.io/blog/2026/06/25/headlamp-knative-plugin/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 How is your organization responding to these signals?",
+  "posts_created": 172,
+  "last_post_content": "\ud83d\udce1 This week's essential DevOps signals.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc AUTOMATION STRATEGIES:\n\n1\ufe0f\u20e3 EXPERTS ON EXPERTS: WHY AI AND COMPLIANCE ARE FORCING A NEW SECURITY OPERATING MODEL\n\nThis week on Experts on Experts, I sat down with Sabeen Malik , Rapid7\u2019s VP of Global Government Affairs and Public Policy, to discuss a shift security leaders can\u2019t afford to...\n\n\ud83d\udca1 KEY INSIGHT: Integrated security practices deliver more consistent protection than perimeter-only approaches\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/it-experts-video-series-ai-compliance-force-new-security-operating-models\n\n2\ufe0f\u20e3 CLICKFIX: THE ATTACK THAT TURNS USERS INTO THEIR OWN ATTACKERS\n\n...\nClickFix has quickly become one of the most prevalent social engineering techniques on the web. The attack flips a familiar security assumption on its head: instead of slipping a malicious file past endpoint defenses, the attacker convinces the victim to run the payload themselves. No exploit. No malicious attachment. Just a user, a clipboard, and a convincing prompt. To address this growing t\n\n\ud83d\udca1 KEY INSIGHT: Automated vulnerability scanning in CI/CD reduces the window of exposure for known vulnerabilities\n\ud83d\udd17 Read more: https://blog.checkpoint.com/securing-user-and-access/clickfix-the-attack-that-turns-users-into-their-own-attackers/\n\n3\ufe0f\u20e3 THE PERFORMANCE DIVIDEND: OPTIMIZING POSTGRESQL ON AZURE DIRECTLY IN VISUAL STUDIO CODE\n\nPoor database performance is never just a database problem. In enterprise teams, it shows up as missed SLAs, delayed releases, frustrated development teams, and rising...\n\n\ud83d\udca1 KEY INSIGHT: Continuous delivery practices reduce batch size and lower the risk of each individual deployment\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 How is your organization responding to these signals?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "about.gitlab.com",
-    "kubernetes.io",
-    "engineering.fb.com",
-    "www.cncf.io"
+    "azure.microsoft.com",
+    "blog.checkpoint.com",
+    "www.docker.com",
+    "blog.rapid7.com"
   ],
-  "last_post_timestamp": "2026-06-27T06:38:03.507148+00:00"
+  "last_post_timestamp": "2026-06-29T08:28:44.009709+00:00"
 }

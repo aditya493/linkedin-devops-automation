@@ -44,6 +44,7 @@
     "https://azure.microsoft.com/en-us/blog/enhanced-storage-resiliency-with-azure-netapp-files-elastic-zone-redundant-service/",
     "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations/",
     "https://azure.microsoft.com/en-us/blog/microsofts-strategic-ai-datacenter-planning-enables-seamless-large-scale-nvidia-rubin-deployments/",
+    "https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/",
     "https://blog.checkpoint.com/ai-security/securing-ai-agent-behavior-with-amazon-bedrock-agentcore-and-checkpoint-ai-security/",
     "https://blog.checkpoint.com/artificial-intelligence/check-point-secures-ai-factories-with-nvidia/",
     "https://blog.checkpoint.com/company-and-culture/building-cyber-readiness-early-why-youth-education-is-a-security-imperative/",
@@ -64,6 +65,7 @@
     "https://blog.checkpoint.com/research/the-trends-defining-cyber-security-in-2026-cyber-security-report-2026/",
     "https://blog.checkpoint.com/research/voidlink-signals-the-start-of-a-new-era-in-ai-generated-malware/",
     "https://blog.checkpoint.com/research/voidlink-the-cloud-native-malware-framework-weaponizing-linux-infrastructure/",
+    "https://blog.checkpoint.com/securing-user-and-access/clickfix-the-attack-that-turns-users-into-their-own-attackers/",
     "https://blog.checkpoint.com/security/why-exposure-management-is-becoming-a-security-imperative/",
     "https://blog.cloudflare.com/acme-path-vulnerability/",
     "https://blog.cloudflare.com/astro-joins-cloudflare/",
@@ -244,6 +246,8 @@
     "https://www.docker.com/blog/docker-hardened-images-security-independently-validated-by-srlabs/",
     "https://www.docker.com/blog/docker-joins-the-athena-coalition-a-cross-industry-collaboration-for-supply-chain-security/",
     "https://www.docker.com/blog/docker-sandboxes-run-claude-code-and-other-coding-agents-unsupervised-but-safely/",
+    "https://www.docker.com/blog/eu-ai-act-compliance/",
+    "https://www.docker.com/blog/eu-cyber-resilience-act-overview/",
     "https://www.docker.com/blog/fips-dependencies-and-prebuilt-binaries/",
     "https://www.docker.com/blog/from-the-captains-chair-igor-aleksandrov/",
     "https://www.docker.com/blog/making-small-llms-smarter/",
@@ -414,12 +418,14 @@
     "https://www.rapid7.com/blog/post/dr-siem-moving-toward-unified-security-operations-rapid7-named-idc-marketscape-major-player",
     "https://www.rapid7.com/blog/post/em-eol-cisco-kenna-new-measured-path-into-exposure-management",
     "https://www.rapid7.com/blog/post/em-patch-tuesday-january-2026",
+    "https://www.rapid7.com/blog/post/it-experts-video-series-ai-compliance-force-new-security-operating-models",
     "https://www.rapid7.com/blog/post/it-icymi-rapid7-experts-on-experts-season-one-roundup",
     "https://www.rapid7.com/blog/post/it-signals-into-strategy-security-teams-must-prepare-in-2026",
     "https://www.rapid7.com/blog/post/metasploit-wrap-up-12-19-2025",
     "https://www.rapid7.com/blog/post/pt-metasploit-2025-annual-wrap-up",
     "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-01-16-2025",
     "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-01-23-2026",
+    "https://www.rapid7.com/blog/post/pt-weekly-metasploit-update-modules-for-audiobookshelf-litellm-next-js-dalfox-and-more",
     "https://www.rapid7.com/blog/post/so-aligning-security-programmes-with-nis2-requirements",
     "https://www.rapid7.com/blog/post/so-nis2-compliance-turn-readiness-into-resilience",
     "https://www.rapid7.com/blog/post/tr-beyond-devices-exploring-new-security-risks-interconnected-iot-ces-2026",
@@ -440,7 +446,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "d6debeae4607": "2026-06-13T07:06:42.331214+00:00",
       "1ec8d27664ec": "2026-06-15T09:33:19.748088+00:00",
       "043fa8a9fe28": "2026-06-17T08:36:53.837436+00:00",
       "fa39ce8a09ef": "2026-06-17T08:36:53.837499+00:00",
@@ -467,10 +472,16 @@
       "7d764878a4f7": "2026-06-27T06:38:03.504934+00:00",
       "e170aa455f13": "2026-06-27T06:38:03.504966+00:00",
       "635ac361dd95": "2026-06-27T06:38:03.504996+00:00",
-      "b9f167e08f86": "2026-06-27T06:38:03.505022+00:00"
+      "b9f167e08f86": "2026-06-27T06:38:03.505022+00:00",
+      "50280c290931": "2026-06-29T08:28:44.007800+00:00",
+      "f6c27f0a67ec": "2026-06-29T08:28:44.007848+00:00",
+      "a9bbf3131960": "2026-06-29T08:28:44.007874+00:00",
+      "cfe0fe2487d9": "2026-06-29T08:28:44.007897+00:00",
+      "256467daab4f": "2026-06-29T08:28:44.007912+00:00",
+      "c791666194c3": "2026-06-29T08:28:44.007927+00:00"
     },
-    "last_post_id": "urn:li:share:7476524228163485696",
-    "last_posted_at_utc": "2026-06-27T06:38:03.505039+00:00",
+    "last_post_id": "urn:li:share:7477276855939825664",
+    "last_posted_at_utc": "2026-06-29T08:28:44.007936+00:00",
     "last_format": "digest"
   }
 }
