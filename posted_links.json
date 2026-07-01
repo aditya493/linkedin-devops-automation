@@ -100,13 +100,18 @@
     "https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/",
     "https://github.blog/engineering/infrastructure/when-protections-outlive-their-purpose-a-lesson-on-managing-defense-systems-at-scale/",
     "https://grafana.com/blog/ai-observability-for-agents-in-grafana-cloud/",
+    "https://grafana.com/blog/automatically-discover-and-remediate-root-causes-with-grafana-assistant-investigations/",
     "https://grafana.com/blog/customize-preconfigured-views-for-aws-azure-and-google-cloud-with-cloud-provider-observability-in-grafana-cloud/",
     "https://grafana.com/blog/eliminate-noisy-log-lines-with-adaptive-logs-drop-rules/",
+    "https://grafana.com/blog/full-stack-observability-in-grafana-cloud-how-to-investigate-issues-across-services-and-infrastructure/",
     "https://grafana.com/blog/get-observability-in-the-terminal-for-you-and-your-agents-with-the-gcx-cli-tool/",
+    "https://grafana.com/blog/grafanacon-2026-on-demand-sessions-are-now-available/",
     "https://grafana.com/blog/how-grafana-assistant-learns-your-infrastructure-before-you-even-ask/",
+    "https://grafana.com/blog/how-to-generate-real-world-load-tests-using-grafana-cloud-k6-and-production-telemetry/",
     "https://grafana.com/blog/introducing-secrets-management-for-grafana-cloud-k6/",
     "https://grafana.com/blog/k6-2-0-release/",
     "https://grafana.com/blog/o11y-bench-open-benchmark-for-observability-agents/",
+    "https://grafana.com/blog/post-incident-review-for-tanstack-npm-supply-chain-ransom-incident/",
     "https://grafana.com/blog/pyroscope-2-0-release/",
     "https://grafana.com/blog/troubleshoot-performance-issues-faster-with-the-new-grafana-assistant-integration-for-database-observability/",
     "https://krebsonsecurity.com/2025/12/dismantling-defenses-trump-2-0-cyber-year-in-review/",
@@ -263,6 +268,7 @@
     "https://www.docker.com/blog/what-is-ai-governance/",
     "https://www.docker.com/blog/what-is-software-supply-chain-security/",
     "https://www.hashicorp.com/blog/5-lessons-from-banking-finance-why-we-need-zero-trust-secrets-management",
+    "https://www.hashicorp.com/blog/discover-govern-and-scale-azure-infrastructure-in-the-ai-era",
     "https://www.hashicorp.com/blog/hcp-terraform-adds-project-level-run-tasks",
     "https://www.hashicorp.com/blog/hcp-vault-performance-replication-at-global-scale-better-than-diy",
     "https://www.hashicorp.com/blog/how-airfrance-klm-built-secure-automation-platform-global-scale-terraform-vault-ansible",
@@ -446,7 +452,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "1ec8d27664ec": "2026-06-15T09:33:19.748088+00:00",
       "043fa8a9fe28": "2026-06-17T08:36:53.837436+00:00",
       "fa39ce8a09ef": "2026-06-17T08:36:53.837499+00:00",
       "a69f14faae14": "2026-06-17T08:36:53.837531+00:00",
@@ -478,10 +483,16 @@
       "a9bbf3131960": "2026-06-29T08:28:44.007874+00:00",
       "cfe0fe2487d9": "2026-06-29T08:28:44.007897+00:00",
       "256467daab4f": "2026-06-29T08:28:44.007912+00:00",
-      "c791666194c3": "2026-06-29T08:28:44.007927+00:00"
+      "c791666194c3": "2026-06-29T08:28:44.007927+00:00",
+      "54951bf89830": "2026-07-01T07:19:38.031669+00:00",
+      "7926a086ce18": "2026-07-01T07:19:38.031738+00:00",
+      "b7657e7de12f": "2026-07-01T07:19:38.031785+00:00",
+      "ef2023105f05": "2026-07-01T07:19:38.031819+00:00",
+      "1f0e3a3e1a1a": "2026-07-01T07:19:38.031840+00:00",
+      "12b03817ad3f": "2026-07-01T07:19:38.031862+00:00"
     },
-    "last_post_id": "urn:li:share:7477276855939825664",
-    "last_posted_at_utc": "2026-06-29T08:28:44.007936+00:00",
+    "last_post_id": "urn:li:share:7477984241050624000",
+    "last_posted_at_utc": "2026-07-01T07:19:38.031874+00:00",
     "last_format": "digest"
   }
 }
