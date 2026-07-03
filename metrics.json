@@ -1,7 +1,7 @@
 {
-  "total_posts": 200,
+  "total_posts": 201,
   "posts_today": 1,
-  "last_post_date": "2026-07-01",
+  "last_post_date": "2026-07-03",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 23,
-    "career_advice": 24,
+    "career_advice": 25,
     "controversial_takes": 11,
     "ai_and_automation": 10
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 91,
+    "growth_plan": 92,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 19,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-04",
-      "time": "2026-02-04T11:57:27.535472+00:00",
-      "format": "controversial_takes",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-05",
       "time": "2026-02-05T05:07:53.974912+00:00",
@@ -1104,14 +1096,21 @@
         "www.hashicorp.com",
         "grafana.com"
       ]
+    },
+    {
+      "date": "2026-07-03",
+      "time": "2026-07-03T06:41:34.287406+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 173,
-  "last_post_content": "\ud83c\udf10 What matters for builders and operators.\nDevOps experts curate the signals that drive innovation.\n\n\ud83d\udccc CLOUD-NATIVE BREAKTHROUGHS:\n\n1\ufe0f\u20e3 POST-INCIDENT REVIEW FOR TANSTACK NPM SUPPLY CHAIN RANSOM INCIDENT: NO UNAUTHORIZED ACCESS TO CUSTOMER PROD\u2026\n\nOn May 27, we completed our internal investigation of the recent TanStack supply chain ransom incident and confirmed our initial findings: The incident was strictly limited to...\n\n\ud83d\udca1 KEY INSIGHT: Systematic post-incident analysis prevents recurrence and builds institutional knowledge\n\ud83d\udd17 Read more: https://grafana.com/blog/post-incident-review-for-tanstack-npm-supply-chain-ransom-incident/\n\n2\ufe0f\u20e3 FULL-STACK OBSERVABILITY IN GRAFANA CLOUD: HOW TO INVESTIGATE ISSUES ACROSS SERVICES AND INFRASTRUCTURE\n\nMany times, the hardest part of troubleshooting isn\u2019t fixing the actual problem. It\u2019s figuring out where to start. As engineers, it\u2019s easy to lose count of how many times we\u2019ve...\n\n\ud83d\udca1 KEY INSIGHT: Proactive observability enables issue detection before user impact, reducing incident severity\n\ud83d\udd17 Read more: https://grafana.com/blog/full-stack-observability-in-grafana-cloud-how-to-investigate-issues-across-services-and-infrastructure/\n\n3\ufe0f\u20e3 GRAFANACON 2026: ON-DEMAND SESSIONS ARE NOW AVAILABLE\n\nIf you missed GrafanaCON 2026\u2014or want to revisit the sessions that mattered most to your team\u2014every session from Barcelona is now available on demand.\n\n\ud83d\udca1 KEY INSIGHT: Structured observability data enables faster root cause identification during incident response\n\ud83d\udd17 Read more: https://grafana.com/blog/grafanacon-2026-on-demand-sessions-are-now-available/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
-  "last_post_format": "digest",
+  "posts_created": 174,
+  "last_post_content": "Bridging development and operations delivers value faster. This matters.\n\nCompanies failing at how to transition from traditional IT to DevOps in 2026 share this common pattern:\nThe inability to adapt to changing technological landscapes and evolving business needs is a significant obstacle. Teams often find that a traditional IT mindset can hinder the adoption of DevOps practices.\n\nThe data shows that successful transitions to DevOps involve several key strategies, including:\n\u2022 Embracing a culture of continuous improvement and learning\n\u2022 Implementing automated testing and deployment processes\n\u2022 Fostering collaboration between development and operations teams\n\nEvidence suggests that common mistakes to avoid include inadequate training and insufficient investment in necessary tools and infrastructure. Production experience shows that these oversights can lead to decreased efficiency and increased costs.\n\nResources for getting started with a DevOps transition include industry reports, online courses, and professional networking events. The reality is that a well-planned transition can take several months to a year or more to complete.\n\nWhat career advice would you add? Share your experience below.\n\n#scalability #devops #gitops #sre #automation",
+  "last_post_format": "career_advice",
   "last_post_sources": [
-    "www.hashicorp.com",
-    "grafana.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-07-01T07:19:38.033970+00:00"
+  "last_post_timestamp": "2026-07-03T06:41:34.288832+00:00"
 }
