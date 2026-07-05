@@ -41,6 +41,7 @@
     "https://aws.amazon.com/blogs/mt/optimize-cost-and-automate-security-remediation-with-ams-trusted-remediator/",
     "https://aws.amazon.com/blogs/mt/search-and-discover-governance-controls-with-control-catalog-in-aws-control-tower/",
     "https://aws.amazon.com/blogs/mt/simplify-aws-control-tower-governance-with-enhanced-aws-cloudformation-hooks/",
+    "https://aws.amazon.com/blogs/mt/using-amazon-s3-server-access-logs-with-amazon-cloudwatch-logs/",
     "https://azure.microsoft.com/en-us/blog/enhanced-storage-resiliency-with-azure-netapp-files-elastic-zone-redundant-service/",
     "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations/",
     "https://azure.microsoft.com/en-us/blog/microsofts-strategic-ai-datacenter-planning-enables-seamless-large-scale-nvidia-rubin-deployments/",
@@ -376,6 +377,10 @@
     "https://www.infoq.com/news/2026/02/google-grpc-mcp-transport/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/02/linkedin-redesigns-sast-pipeline/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/02/linkedin-service-discovery/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/07/apple-pcc-google-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/07/cloudflare-unified-data-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/07/cycle-eu-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/07/platform-projects-products/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/2025-year-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/ai-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/code-leadership-balance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -394,6 +399,7 @@
     "https://www.infoq.com/presentations/llm-ai-africa/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/one-testing-environment/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/patterns-organizational-change/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/presentations/service-level-prioritized-load-shedding/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/solving-cloud-infrastructure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/swift-apps-services/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/wasm-components-faas/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -452,7 +458,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "17ec623277a4": "2026-06-19T08:41:00.002383+00:00",
       "a2cf2479d1e0": "2026-06-21T08:09:29.460654+00:00",
       "963e83e9231a": "2026-06-21T08:09:29.460704+00:00",
       "5c34bf6e398d": "2026-06-21T08:09:29.460739+00:00",
@@ -484,10 +489,16 @@
       "ef2023105f05": "2026-07-01T07:19:38.031819+00:00",
       "1f0e3a3e1a1a": "2026-07-01T07:19:38.031840+00:00",
       "12b03817ad3f": "2026-07-01T07:19:38.031862+00:00",
-      "6c949046e065": "2026-07-03T06:41:34.286328+00:00"
+      "6c949046e065": "2026-07-03T06:41:34.286328+00:00",
+      "0e34753a0184": "2026-07-05T06:51:42.532669+00:00",
+      "486aee6357be": "2026-07-05T06:51:42.532725+00:00",
+      "ac5b59fa42b1": "2026-07-05T06:51:42.532756+00:00",
+      "12236b6ff1c4": "2026-07-05T06:51:42.532783+00:00",
+      "78ef0b84b9fb": "2026-07-05T06:51:42.532804+00:00",
+      "185dfb485404": "2026-07-05T06:51:42.532831+00:00"
     },
-    "last_post_id": "urn:li:share:7478699439419707392",
-    "last_posted_at_utc": "2026-07-03T06:41:34.286376+00:00",
-    "last_format": "career_advice"
+    "last_post_id": "urn:li:share:7479426767074521088",
+    "last_posted_at_utc": "2026-07-05T06:51:42.532854+00:00",
+    "last_format": "digest"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "total_posts": 201,
+  "total_posts": 202,
   "posts_today": 1,
-  "last_post_date": "2026-07-03",
+  "last_post_date": "2026-07-05",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 91,
+    "digest": 92,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 23,
@@ -15,7 +15,7 @@
     "ai_and_automation": 10
   },
   "sources_used": {
-    "www.infoq.com": 118,
+    "www.infoq.com": 123,
     "kubernetes.io": 26,
     "www.docker.com": 24,
     "krebsonsecurity.com": 6,
@@ -26,7 +26,7 @@
     "blog.checkpoint.com": 23,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 19,
+    "aws.amazon.com": 20,
     "www.cncf.io": 39,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-05",
-      "time": "2026-02-05T05:07:53.974912+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-05",
       "time": "2026-02-05T11:59:07.236008+00:00",
@@ -1104,13 +1096,27 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-07-05",
+      "time": "2026-07-05T06:51:42.534072+00:00",
+      "format": "digest",
+      "sources": [
+        "aws.amazon.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com"
+      ]
     }
   ],
-  "posts_created": 174,
-  "last_post_content": "Bridging development and operations delivers value faster. This matters.\n\nCompanies failing at how to transition from traditional IT to DevOps in 2026 share this common pattern:\nThe inability to adapt to changing technological landscapes and evolving business needs is a significant obstacle. Teams often find that a traditional IT mindset can hinder the adoption of DevOps practices.\n\nThe data shows that successful transitions to DevOps involve several key strategies, including:\n\u2022 Embracing a culture of continuous improvement and learning\n\u2022 Implementing automated testing and deployment processes\n\u2022 Fostering collaboration between development and operations teams\n\nEvidence suggests that common mistakes to avoid include inadequate training and insufficient investment in necessary tools and infrastructure. Production experience shows that these oversights can lead to decreased efficiency and increased costs.\n\nResources for getting started with a DevOps transition include industry reports, online courses, and professional networking events. The reality is that a well-planned transition can take several months to a year or more to complete.\n\nWhat career advice would you add? Share your experience below.\n\n#scalability #devops #gitops #sre #automation",
-  "last_post_format": "career_advice",
+  "posts_created": 175,
+  "last_post_content": "\ud83d\udd0d Key trends in platform reliability.\nAI innovators map the future of intelligent systems.\n\n\ud83d\udccc SIGNAL VS NOISE:\n\n1\ufe0f\u20e3 USING AMAZON S3 SERVER ACCESS LOGS WITH AMAZON CLOUDWATCH LOGS\n\nTL;DR What if you could go from raw Amazon S3 server access logs to a complete security dashboard without building a custom pipeline? The dashboard below is deployed using the...\n\n\ud83d\udca1 KEY INSIGHT: Automated deployment pipelines enable both speed and reliability without requiring a trade-off between them\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/using-amazon-s3-server-access-logs-with-amazon-cloudwatch-logs/\n\n2\ufe0f\u20e3 APPLE EXTENDS PRIVATE CLOUD COMPUTE TO GOOGLE CLOUD FOR THE FIRST TIME\n\nApple chose Google Cloud to run Private Cloud Compute outside its own data centers for the first time, using NVIDIA Blackwell GPUs, Intel TDX, and Google's Titan chip.\n\n\ud83d\udca1 KEY INSIGHT: Serverless computing changes the operational model and requires a corresponding shift in observability approach\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/07/apple-pcc-google-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n3\ufe0f\u20e3 CLOUDFLARE DETAILS UNIFIED DATA PLATFORM WHERE BILLING WORKLOADS ACCOUNT FOR 53% OF QUERIES\n\nCloudflare details Town Lake, an internal unified data platform, and Skipper, an AI analytics agent unifying access to operational, billing, security, and business data.\n\n\ud83d\udca1 KEY INSIGHT: Deliberate cloud architecture decisions prevent cost escalation and operational complexity\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/07/cloudflare-unified-data-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "aws.amazon.com",
+    "www.infoq.com"
   ],
-  "last_post_timestamp": "2026-07-03T06:41:34.288832+00:00"
+  "last_post_timestamp": "2026-07-05T06:51:42.535016+00:00"
 }
