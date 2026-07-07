@@ -1,12 +1,12 @@
 {
-  "total_posts": 202,
+  "total_posts": 203,
   "posts_today": 1,
-  "last_post_date": "2026-07-05",
+  "last_post_date": "2026-07-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 92,
+    "digest": 93,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 23,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 92,
+    "growth_plan": 93,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 19,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-05",
-      "time": "2026-02-05T11:59:07.236008+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-06",
       "time": "2026-02-06T05:03:59.954980+00:00",
@@ -1109,14 +1101,21 @@
         "www.infoq.com",
         "www.infoq.com"
       ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "2026-07-07T06:54:36.961896+00:00",
+      "format": "digest",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 175,
-  "last_post_content": "\ud83d\udd0d Key trends in platform reliability.\nAI innovators map the future of intelligent systems.\n\n\ud83d\udccc SIGNAL VS NOISE:\n\n1\ufe0f\u20e3 USING AMAZON S3 SERVER ACCESS LOGS WITH AMAZON CLOUDWATCH LOGS\n\nTL;DR What if you could go from raw Amazon S3 server access logs to a complete security dashboard without building a custom pipeline? The dashboard below is deployed using the...\n\n\ud83d\udca1 KEY INSIGHT: Automated deployment pipelines enable both speed and reliability without requiring a trade-off between them\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/using-amazon-s3-server-access-logs-with-amazon-cloudwatch-logs/\n\n2\ufe0f\u20e3 APPLE EXTENDS PRIVATE CLOUD COMPUTE TO GOOGLE CLOUD FOR THE FIRST TIME\n\nApple chose Google Cloud to run Private Cloud Compute outside its own data centers for the first time, using NVIDIA Blackwell GPUs, Intel TDX, and Google's Titan chip.\n\n\ud83d\udca1 KEY INSIGHT: Serverless computing changes the operational model and requires a corresponding shift in observability approach\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/07/apple-pcc-google-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n3\ufe0f\u20e3 CLOUDFLARE DETAILS UNIFIED DATA PLATFORM WHERE BILLING WORKLOADS ACCOUNT FOR 53% OF QUERIES\n\nCloudflare details Town Lake, an internal unified data platform, and Skipper, an AI analytics agent unifying access to operational, billing, security, and business data.\n\n\ud83d\udca1 KEY INSIGHT: Deliberate cloud architecture decisions prevent cost escalation and operational complexity\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/07/cloudflare-unified-data-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
+  "posts_created": 176,
+  "last_post_content": "\ud83c\udf10 What matters for builders and operators.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc OBSERVABILITY INSIGHTS:\n\n1\ufe0f\u20e3 AI-ASSISTED CAPACITY PLANNING: A GAME CHANGER FOR OPERATIONS\n\nMany engineers remain skeptical about ai-assisted capacity planning: a game changer for operations. The data tells a different story:\n\n\ud83d\udca1 KEY INSIGHT: Automation investments compound over time, delivering increasing returns as coverage expands\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "aws.amazon.com",
-    "www.infoq.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-07-05T06:51:42.535016+00:00"
+  "last_post_timestamp": "2026-07-07T06:54:36.962767+00:00"
 }
