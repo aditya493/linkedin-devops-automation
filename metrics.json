@@ -1,7 +1,7 @@
 {
-  "total_posts": 203,
+  "total_posts": 204,
   "posts_today": 1,
-  "last_post_date": "2026-07-07",
+  "last_post_date": "2026-07-09",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 23,
     "career_advice": 25,
     "controversial_takes": 11,
-    "ai_and_automation": 10
+    "ai_and_automation": 11
   },
   "sources_used": {
     "www.infoq.com": 123,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 93,
+    "growth_plan": 94,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 19,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-06",
-      "time": "2026-02-06T05:03:59.954980+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-06",
       "time": "2026-02-06T12:52:39.872931+00:00",
@@ -1109,13 +1101,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "2026-07-09T06:53:26.106526+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 176,
-  "last_post_content": "\ud83c\udf10 What matters for builders and operators.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc OBSERVABILITY INSIGHTS:\n\n1\ufe0f\u20e3 AI-ASSISTED CAPACITY PLANNING: A GAME CHANGER FOR OPERATIONS\n\nMany engineers remain skeptical about ai-assisted capacity planning: a game changer for operations. The data tells a different story:\n\n\ud83d\udca1 KEY INSIGHT: Automation investments compound over time, delivering increasing returns as coverage expands\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
-  "last_post_format": "digest",
+  "posts_created": 177,
+  "last_post_content": "Is building self-healing infrastructure with ai overhyped or underrated? Production data reveals the truth:\n\nThe AI/automation problem being addressed is the need for efficient infrastructure management, which teams often find challenging due to increasing complexity. Experience reveals that automation can help reduce downtime and improve overall system reliability.\n\nThe tools and technologies evaluated include machine learning algorithms and automation frameworks, which are used to develop self-healing infrastructure.\n\u2022 Machine learning algorithms\n\u2022 Automation frameworks\n\u2022 Data analytics platforms\n\nImplementation approach step-by-step involves assessing current infrastructure, identifying areas for improvement, and developing customized automation solutions. The reality is that a thorough assessment is crucial for successful implementation.\n\nWhat worked vs what didn't is determined by production experience, which shows that tailored automation solutions can significantly improve infrastructure efficiency. The data shows that well-designed automation can reduce errors and improve response times.\n\nROI and productivity metrics are used to evaluate the effectiveness of self-healing infrastructure, with evidence suggesting that such systems can lead to significant cost savings and productivity gains. Teams often find that these systems can improve overall system reliability and reduce downtime.\n\nFuture plans and recommendations include continued development and refinement of automation technologies, with a focus on improving scalability and adaptability. The reality is that ongoing evaluation and improvement are necessary for optimal results.\n\nAre you skeptical or optimistic about AI in DevOps? Let's discuss!\n\n#mlops #artificialintelligence #sre #devops #developerexperience",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-07-07T06:54:36.962767+00:00"
+  "last_post_timestamp": "2026-07-09T06:53:26.107684+00:00"
 }
