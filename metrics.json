@@ -1,12 +1,12 @@
 {
-  "total_posts": 205,
+  "total_posts": 206,
   "posts_today": 1,
-  "last_post_date": "2026-07-11",
+  "last_post_date": "2026-07-13",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 93,
+    "digest": 94,
     "lessons_learned": 7,
     "technical_deep_dives": 9,
     "industry_predictions": 24,
@@ -39,7 +39,7 @@
     "about.gitlab.com": 19,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
-    "azure.microsoft.com": 6,
+    "azure.microsoft.com": 7,
     "www.sonarsource.com": 3,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 3,
@@ -51,7 +51,7 @@
     "blog.cloudflare.com": 3,
     "dropbox.tech": 1,
     "blog.uptimerobot.com": 1,
-    "grafana.com": 15
+    "grafana.com": 20
   },
   "errors": [
     {
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-07",
-      "time": "2026-02-07T05:39:29.554481+00:00",
-      "format": "digest",
-      "sources": [
-        "netflixtechblog.medium.com",
-        "aws.amazon.com",
-        "aws.amazon.com",
-        "aws.amazon.com",
-        "engineering.fb.com",
-        "snyk.io"
-      ]
-    },
     {
       "date": "2026-02-07",
       "time": "2026-02-07T08:53:36.188135+00:00",
@@ -1109,13 +1096,27 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-07-13",
+      "time": "2026-07-13T06:29:39.357005+00:00",
+      "format": "digest",
+      "sources": [
+        "grafana.com",
+        "grafana.com",
+        "azure.microsoft.com",
+        "grafana.com",
+        "grafana.com",
+        "grafana.com"
+      ]
     }
   ],
-  "posts_created": 178,
-  "last_post_content": "A common mistake that teaches everything about the evolution of SRE: beyond Google's model.\n\nThe data shows that teams often find it challenging to adopt Site Reliability Engineering models that are not tailored to their specific needs.\nExperience reveals that a one-size-fits-all approach to SRE is not effective.\n\n\u2022 The evolution of SRE will involve more emphasis on automation and artificial intelligence\n\u2022 The reality is that teams will need to develop more customized SRE models\n\u2022 Production experience shows that SRE will become more integral to overall business strategy\n\nThe timeline for these changes is expected to unfold over the next 2-5 years.\nTeams should prepare by developing more flexible and adaptable SRE models.\n\nWhat predictions do you have for DevOps in 2026? Share your thoughts below!\n\n#sre #infrastructure #automation #devops #developerexperience",
-  "last_post_format": "industry_predictions",
+  "posts_created": 179,
+  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc PLATFORM WINS:\n\n1\ufe0f\u20e3 HOW TO SCALE ACCESS CONTROL IN GRAFANA CLOUD\n\nOne of the primary reasons organizations adopt Grafana Cloud is to create a single pane of glass across the data they collect from self-hosted systems, cloud providers, and...\n\n\ud83d\udca1 KEY INSIGHT: Structured observability data enables faster root cause identification during incident response\n\ud83d\udd17 Read more: https://grafana.com/blog/how-to-scale-access-control-in-grafana-cloud/\n\n2\ufe0f\u20e3 'GRAFANA'S BIG TENT' PODCAST: ANTHROPIC ON AGENTIC CODING, OBSERVABILITY, AND THE FUTURE OF SOFTWARE ENGINE\u2026\n\nIn this episode of \"Grafana's Big Tent\" podcast, hosts Mat Ryer, Senior Director of AI at Grafana Labs, and Tom Wilkie, CTO at Grafana Labs, sit down with Eric Burns, Field...\n\n\ud83d\udca1 KEY INSIGHT: Proactive observability enables issue detection before user impact, reducing incident severity\n\ud83d\udd17 Read more: https://grafana.com/blog/-grafana-s-big-tent-podcast-anthropic-on-agentic-coding-observability-and-the-future-of-software-engineering/\n\n3\ufe0f\u20e3 FRONTIER MODELS AND PRODUCTION AGENTS: ADVANCING MICROSOFT FOUNDRY FOR THE AGENTIC ERA\n\nIntroducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry.\n\n\ud83d\udca1 KEY INSIGHT: Automation investments compound over time, delivering increasing returns as coverage expands\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/frontier-models-and-production-agents-advancing-microsoft-foundry-for-the-agentic-era/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "grafana.com",
+    "azure.microsoft.com"
   ],
-  "last_post_timestamp": "2026-07-11T05:49:25.929617+00:00"
+  "last_post_timestamp": "2026-07-13T06:29:39.358149+00:00"
 }
