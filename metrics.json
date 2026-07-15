@@ -1,14 +1,14 @@
 {
-  "total_posts": 206,
+  "total_posts": 207,
   "posts_today": 1,
-  "last_post_date": "2026-07-13",
+  "last_post_date": "2026-07-15",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 94,
     "lessons_learned": 7,
-    "technical_deep_dives": 9,
+    "technical_deep_dives": 10,
     "industry_predictions": 24,
     "career_advice": 25,
     "controversial_takes": 11,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 95,
+    "growth_plan": 96,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 19,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-07",
-      "time": "2026-02-07T08:53:36.188135+00:00",
-      "format": "digest",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-07",
       "time": "2026-02-07T09:09:05.529311+00:00",
@@ -1109,14 +1101,21 @@
         "grafana.com",
         "grafana.com"
       ]
+    },
+    {
+      "date": "2026-07-15",
+      "time": "2026-07-15T05:41:29.652062+00:00",
+      "format": "technical_deep_dives",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 179,
-  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc PLATFORM WINS:\n\n1\ufe0f\u20e3 HOW TO SCALE ACCESS CONTROL IN GRAFANA CLOUD\n\nOne of the primary reasons organizations adopt Grafana Cloud is to create a single pane of glass across the data they collect from self-hosted systems, cloud providers, and...\n\n\ud83d\udca1 KEY INSIGHT: Structured observability data enables faster root cause identification during incident response\n\ud83d\udd17 Read more: https://grafana.com/blog/how-to-scale-access-control-in-grafana-cloud/\n\n2\ufe0f\u20e3 'GRAFANA'S BIG TENT' PODCAST: ANTHROPIC ON AGENTIC CODING, OBSERVABILITY, AND THE FUTURE OF SOFTWARE ENGINE\u2026\n\nIn this episode of \"Grafana's Big Tent\" podcast, hosts Mat Ryer, Senior Director of AI at Grafana Labs, and Tom Wilkie, CTO at Grafana Labs, sit down with Eric Burns, Field...\n\n\ud83d\udca1 KEY INSIGHT: Proactive observability enables issue detection before user impact, reducing incident severity\n\ud83d\udd17 Read more: https://grafana.com/blog/-grafana-s-big-tent-podcast-anthropic-on-agentic-coding-observability-and-the-future-of-software-engineering/\n\n3\ufe0f\u20e3 FRONTIER MODELS AND PRODUCTION AGENTS: ADVANCING MICROSOFT FOUNDRY FOR THE AGENTIC ERA\n\nIntroducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry.\n\n\ud83d\udca1 KEY INSIGHT: Automation investments compound over time, delivering increasing returns as coverage expands\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/frontier-models-and-production-agents-advancing-microsoft-foundry-for-the-agentic-era/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
-  "last_post_format": "digest",
+  "posts_created": 180,
+  "last_post_content": "Companies failing at the architecture behind automated recovery systems share this common pattern: inadequate planning and insufficient testing. The reality is that automated recovery systems require careful consideration of technical constraints and requirements. Production experience shows that teams often find it challenging to balance system complexity with recovery time objectives.\n\nThe data shows that technical constraints and requirements include scalability, reliability, and performance.\n\u2022 System scalability is critical to handle increased workload\n\u2022 Reliability is essential to ensure system uptime\n\u2022 Performance metrics are necessary to evaluate system efficiency\n\nThe solution architecture typically involves a combination of hardware and software components, with diagrams illustrating the relationships between these components. Experience reveals that a well-designed architecture can significantly improve system recovery times.\n\nImplementation challenges and solutions include addressing data consistency and system failures. Evidence suggests that thorough testing and simulation can help identify potential issues before they occur.\n\nPerformance metrics and results indicate that automated recovery systems can significantly improve system availability and reduce downtime. The reality is that careful planning and execution are essential to achieving these benefits.\n\nLessons learned and future improvements include the importance of continuous monitoring and evaluation. Teams often find that regular review and update of the system architecture can help identify areas for improvement.\n\nWhat other solutions have you used for similar problems?\n\n#infrastructure #platformengineering #scalability #automation #sre",
+  "last_post_format": "technical_deep_dives",
   "last_post_sources": [
-    "grafana.com",
-    "azure.microsoft.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-07-13T06:29:39.358149+00:00"
+  "last_post_timestamp": "2026-07-15T05:41:29.653143+00:00"
 }
