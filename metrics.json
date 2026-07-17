@@ -1,12 +1,12 @@
 {
-  "total_posts": 207,
+  "total_posts": 208,
   "posts_today": 1,
-  "last_post_date": "2026-07-15",
+  "last_post_date": "2026-07-17",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 94,
+    "digest": 95,
     "lessons_learned": 7,
     "technical_deep_dives": 10,
     "industry_predictions": 24,
@@ -16,7 +16,7 @@
   },
   "sources_used": {
     "www.infoq.com": 123,
-    "kubernetes.io": 26,
+    "kubernetes.io": 27,
     "www.docker.com": 24,
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
@@ -36,7 +36,7 @@
     "growth_plan": 96,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
-    "about.gitlab.com": 19,
+    "about.gitlab.com": 22,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 7,
@@ -51,7 +51,7 @@
     "blog.cloudflare.com": 3,
     "dropbox.tech": 1,
     "blog.uptimerobot.com": 1,
-    "grafana.com": 20
+    "grafana.com": 22
   },
   "errors": [
     {
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-07",
-      "time": "2026-02-07T09:09:05.529311+00:00",
-      "format": "digest",
-      "sources": [
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "martinfowler.com"
-      ]
-    },
     {
       "date": "2026-02-07",
       "time": "2026-02-07T09:25:07.261998+00:00",
@@ -1109,13 +1096,28 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-07-17",
+      "time": "2026-07-17T05:51:09.114667+00:00",
+      "format": "digest",
+      "sources": [
+        "kubernetes.io",
+        "grafana.com",
+        "about.gitlab.com",
+        "about.gitlab.com",
+        "grafana.com",
+        "about.gitlab.com"
+      ]
     }
   ],
-  "posts_created": 180,
-  "last_post_content": "Companies failing at the architecture behind automated recovery systems share this common pattern: inadequate planning and insufficient testing. The reality is that automated recovery systems require careful consideration of technical constraints and requirements. Production experience shows that teams often find it challenging to balance system complexity with recovery time objectives.\n\nThe data shows that technical constraints and requirements include scalability, reliability, and performance.\n\u2022 System scalability is critical to handle increased workload\n\u2022 Reliability is essential to ensure system uptime\n\u2022 Performance metrics are necessary to evaluate system efficiency\n\nThe solution architecture typically involves a combination of hardware and software components, with diagrams illustrating the relationships between these components. Experience reveals that a well-designed architecture can significantly improve system recovery times.\n\nImplementation challenges and solutions include addressing data consistency and system failures. Evidence suggests that thorough testing and simulation can help identify potential issues before they occur.\n\nPerformance metrics and results indicate that automated recovery systems can significantly improve system availability and reduce downtime. The reality is that careful planning and execution are essential to achieving these benefits.\n\nLessons learned and future improvements include the importance of continuous monitoring and evaluation. Teams often find that regular review and update of the system architecture can help identify areas for improvement.\n\nWhat other solutions have you used for similar problems?\n\n#infrastructure #platformengineering #scalability #automation #sre",
-  "last_post_format": "technical_deep_dives",
+  "posts_created": 181,
+  "last_post_content": "\u26a1\ufe0f Strategic moves in cloud and infra.\nIndustry leaders optimize tech stacks and debunk myths in the DevOps trenches. Here\u2019s what matters.\n\n\ud83d\udccc ESSENTIAL READS:\n\n1\ufe0f\u20e3 OPERATING AI/ML WORKLOADS ON KUBERNETES: A HEADLAMP PLUGIN FOR KUBEFLOW\n\nKubernetes has quietly become the default platform for AI and machine learning. Whether you run notebook servers for data scientists, schedule distributed training jobs, tune...\n\n\ud83d\udca1 KEY INSIGHT: Production-validated container orchestration patterns reduce operational risk at scale\n\ud83d\udd17 Read more: https://kubernetes.io/blog/2026/07/13/introducing-headlamp-plugin-for-kubeflow/\n\n2\ufe0f\u20e3 BUILDING AN END-TO-END RELIABILITY TESTING STRATEGY WITH GRAFANA CLOUD\n\nModern applications can fail in many different ways, from performance regressions and frontend errors to systems that break under heavy load.\n\n\ud83d\udca1 KEY INSIGHT: Proactive observability enables issue detection before user impact, reducing incident severity\n\ud83d\udd17 Read more: https://grafana.com/blog/building-an-end-to-end-reliability-testing-strategy-with-grafana-cloud/\n\n3\ufe0f\u20e3 FORRESTER CONSULTING: GITLAB DUO AGENT PLATFORM DELIVERS 400% ROI\n\nA new Forrester Consulting Total Economic Impact\u2122 study found that organizations using GitLab Duo Agent Platform achieve a 400% return on investment and $7.\n\n\ud83d\udca1 KEY INSIGHT: Platform engineering that makes developers more productive, not frustrated.\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-duo-agent-platform-delivers-400-percent-roi/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 How is your organization responding to these signals?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "about.gitlab.com",
+    "grafana.com",
+    "kubernetes.io"
   ],
-  "last_post_timestamp": "2026-07-15T05:41:29.653143+00:00"
+  "last_post_timestamp": "2026-07-17T05:51:09.115436+00:00"
 }
