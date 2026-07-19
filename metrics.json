@@ -1,7 +1,7 @@
 {
-  "total_posts": 208,
+  "total_posts": 209,
   "posts_today": 1,
-  "last_post_date": "2026-07-17",
+  "last_post_date": "2026-07-19",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 95,
     "lessons_learned": 7,
     "technical_deep_dives": 10,
-    "industry_predictions": 24,
+    "industry_predictions": 25,
     "career_advice": 25,
     "controversial_takes": 11,
     "ai_and_automation": 11
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 96,
+    "growth_plan": 97,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 22,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-07",
-      "time": "2026-02-07T09:25:07.261998+00:00",
-      "format": "digest",
-      "sources": [
-        "martinfowler.com",
-        "www.infoq.com",
-        "www.infoq.com",
-        "www.hashicorp.com",
-        "www.infoq.com",
-        "www.cncf.io"
-      ]
-    },
     {
       "date": "2026-02-07",
       "time": "2026-02-07T09:34:17.739296+00:00",
@@ -1109,15 +1096,21 @@
         "grafana.com",
         "about.gitlab.com"
       ]
+    },
+    {
+      "date": "2026-07-19",
+      "time": "2026-07-19T06:06:50.332265+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 181,
-  "last_post_content": "\u26a1\ufe0f Strategic moves in cloud and infra.\nIndustry leaders optimize tech stacks and debunk myths in the DevOps trenches. Here\u2019s what matters.\n\n\ud83d\udccc ESSENTIAL READS:\n\n1\ufe0f\u20e3 OPERATING AI/ML WORKLOADS ON KUBERNETES: A HEADLAMP PLUGIN FOR KUBEFLOW\n\nKubernetes has quietly become the default platform for AI and machine learning. Whether you run notebook servers for data scientists, schedule distributed training jobs, tune...\n\n\ud83d\udca1 KEY INSIGHT: Production-validated container orchestration patterns reduce operational risk at scale\n\ud83d\udd17 Read more: https://kubernetes.io/blog/2026/07/13/introducing-headlamp-plugin-for-kubeflow/\n\n2\ufe0f\u20e3 BUILDING AN END-TO-END RELIABILITY TESTING STRATEGY WITH GRAFANA CLOUD\n\nModern applications can fail in many different ways, from performance regressions and frontend errors to systems that break under heavy load.\n\n\ud83d\udca1 KEY INSIGHT: Proactive observability enables issue detection before user impact, reducing incident severity\n\ud83d\udd17 Read more: https://grafana.com/blog/building-an-end-to-end-reliability-testing-strategy-with-grafana-cloud/\n\n3\ufe0f\u20e3 FORRESTER CONSULTING: GITLAB DUO AGENT PLATFORM DELIVERS 400% ROI\n\nA new Forrester Consulting Total Economic Impact\u2122 study found that organizations using GitLab Duo Agent Platform achieve a 400% return on investment and $7.\n\n\ud83d\udca1 KEY INSIGHT: Platform engineering that makes developers more productive, not frustrated.\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-duo-agent-platform-delivers-400-percent-roi/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 How is your organization responding to these signals?",
-  "last_post_format": "digest",
+  "posts_created": 182,
+  "last_post_content": "Resilient container infrastructure shows what works. Worth understanding.\n\nMany thought kubernetes vs. the next generation of orchestration was overhyped. The evidence says otherwise. The data shows that this debate is far from over, with new technologies emerging to challenge the status quo.\n\nThe reality is that several predictions can be made about the future of orchestration, including:\n\u2022 Increased adoption of cloud-native technologies\n\u2022 Greater emphasis on security and compliance\n\u2022 More focus on simplifying complex systems\n\nProduction experience shows that these predictions are likely to come to fruition in the near future, with significant changes expected within the next 12-18 months. Teams often find that staying ahead of the curve is crucial in this rapidly evolving field.\n\nThe data suggests that professionals should be prepared to adapt to new technologies and methodologies, with a focus on developing skills in areas such as containerization and automation. Experience reveals that those who are able to do so will be well-positioned for success.\n\nWhat predictions do you have for DevOps in 2026? Share your thoughts below!\n\n#llmops #containers #docker #platformengineering #sre",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
-    "about.gitlab.com",
-    "grafana.com",
-    "kubernetes.io"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-07-17T05:51:09.115436+00:00"
+  "last_post_timestamp": "2026-07-19T06:06:50.333404+00:00"
 }
