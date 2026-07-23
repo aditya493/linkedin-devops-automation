@@ -1,12 +1,12 @@
 {
-  "total_posts": 210,
+  "total_posts": 211,
   "posts_today": 1,
-  "last_post_date": "2026-07-21",
+  "last_post_date": "2026-07-23",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 95,
+    "digest": 96,
     "lessons_learned": 7,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -26,8 +26,8 @@
     "blog.checkpoint.com": 23,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 20,
-    "www.cncf.io": 39,
+    "aws.amazon.com": 22,
+    "www.cncf.io": 41,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -36,13 +36,13 @@
     "growth_plan": 98,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
-    "about.gitlab.com": 22,
+    "about.gitlab.com": 23,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 7,
     "www.sonarsource.com": 3,
     "blog.gitguardian.com": 6,
-    "engineering.atspotify.com": 3,
+    "engineering.atspotify.com": 4,
     "microservices.io": 3,
     "blogs.microsoft.com": 14,
     "www.paloaltonetworks.com": 4,
@@ -306,19 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-07",
-      "time": "2026-02-07T09:50:29.943870+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.checkpoint.com",
-        "blog.rapid7.com",
-        "blog.checkpoint.com",
-        "blog.rapid7.com",
-        "azure.microsoft.com",
-        "blog.checkpoint.com"
-      ]
-    },
     {
       "date": "2026-02-07",
       "time": "2026-02-07T09:58:00.803510+00:00",
@@ -1099,13 +1086,29 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-07-23",
+      "time": "2026-07-23T06:09:59.052544+00:00",
+      "format": "digest",
+      "sources": [
+        "www.cncf.io",
+        "engineering.atspotify.com",
+        "www.cncf.io",
+        "aws.amazon.com",
+        "aws.amazon.com",
+        "about.gitlab.com"
+      ]
     }
   ],
-  "posts_created": 183,
-  "last_post_content": "Resilient container infrastructure shows what works. Pay attention to this.\n\nUnpopular opinion: gitops at scale: managing 500+ kubernetes clusters matters more than most realize.\nThe reality is that managing large numbers of Kubernetes clusters poses significant challenges, including consistency, security, and scalability. Teams often find that traditional management approaches are inadequate for such large-scale deployments.\n\nThe data shows that technical constraints and requirements for managing 500+ Kubernetes clusters include:\n\u2022 High availability and disaster recovery\n\u2022 Centralized management and monitoring\n\u2022 Automated deployment and scaling\n\u2022 Robust security and access controls\n\nProduction experience shows that a well-designed solution architecture is critical to success, incorporating elements such as automated pipelines, infrastructure as code, and centralized logging and monitoring.\n\nExperience reveals that implementation challenges and solutions include addressing complexities in cluster configuration, network policies, and resource allocation, as well as ensuring seamless integration with existing toolchains and workflows.\n\nThe reality is that performance metrics and results are key to evaluating the effectiveness of GitOps at scale, including metrics such as deployment frequency, lead time, and mean time to recovery.\n\nEvidence suggests that lessons learned from managing large-scale Kubernetes deployments highlight the importance of continuous monitoring, feedback loops, and iterative improvement, as well as the need for standardized processes and tooling.\n\nHow would you approach this challenge? Share your technical thoughts.\n\n#devops #artificialintelligence #kubernetes #aiops #containers",
-  "last_post_format": "technical_deep_dives",
+  "posts_created": 184,
+  "last_post_content": "\ud83d\udee0\ufe0f What high-perf teams are watching this week.\nAutomation architects drive efficiency and scale across industries.\n\n\ud83d\udccc ARCHITECTURE PATTERNS:\n\n1\ufe0f\u20e3 PLATFORM ENGINEERING FOR THE AGENTIC ENTERPRISE: MANAGING APPLICATIONS, RESOURCES, AND AI AGENTS\n\nPlatform engineering is evolving Platform engineering has become one of the defining disciplines of the cloud native era. As organizations embraced Kubernetes, microservices,...\n\n\ud83d\udca1 KEY INSIGHT: Production-validated container orchestration patterns reduce operational risk at scale\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/07/21/platform-engineering-for-the-agentic-enterprise-managing-applications-resources-and-ai-agents/\n\n2\ufe0f\u20e3 CONTENT INGESTION & PODCAST VIDEO INCIDENT REPORT\n\nOver the past two months, podcast creators have experienced a series of reliability issues on Spotify. This... The post Content Ingestion &amp; Podcast Video Incident Report...\n\n\ud83d\udca1 KEY INSIGHT: Systematic post-incident analysis prevents recurrence and builds institutional knowledge\n\ud83d\udd17 Read more: https://engineering.atspotify.com/2026/7/content-ingestion-and-podcast-video-incident-report/\n\n3\ufe0f\u20e3 I MADE A POLICY ENGINE THINK IT WAS IN PRODUCTION\n\nKyverno is a Kubernetes-native policy engine that validates, mutates, and generates resources before workloads reach your cluster, enforcing security and compliance rules as...\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/07/22/i-made-a-policy-engine-think-it-was-in-production/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHAT DID WE MISS?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "about.gitlab.com",
+    "engineering.atspotify.com",
+    "www.cncf.io",
+    "aws.amazon.com"
   ],
-  "last_post_timestamp": "2026-07-21T05:57:48.123361+00:00"
+  "last_post_timestamp": "2026-07-23T06:09:59.053405+00:00"
 }

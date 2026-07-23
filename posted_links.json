@@ -19,6 +19,7 @@
     "https://about.gitlab.com/blog/gitlab-orbit-and-google-antigravity/",
     "https://about.gitlab.com/blog/how-to-set-up-gitlab-saml-sso-with-google-workspace/",
     "https://about.gitlab.com/blog/introduction-to-gitlab-duo-agent-platform/",
+    "https://about.gitlab.com/blog/modernize-java-with-cursor-and-gitlab/",
     "https://about.gitlab.com/blog/monitor-manage-automate-ai-workflows/",
     "https://about.gitlab.com/blog/strengthening-gitlab-com-security-mandatory-multi-factor-authentication/",
     "https://about.gitlab.com/blog/understanding-agents-foundational-custom-external/",
@@ -38,7 +39,9 @@
     "https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/",
     "https://aws.amazon.com/blogs/mt/cross-region-aws-privatelink-monitoring-with-amazon-cloudwatch-network-synthetic-monitor/",
     "https://aws.amazon.com/blogs/mt/deploying-custom-terraform-to-lza-managed-accounts-with-aft/",
+    "https://aws.amazon.com/blogs/mt/extend-amazon-cloudwatch-beyond-native-connectors-with-cribl-stream/",
     "https://aws.amazon.com/blogs/mt/from-monolith-to-multi-account-pinterests-aws-organization-transformation-journey/",
+    "https://aws.amazon.com/blogs/mt/how-amazon-achieved-full-stack-observability-across-400-offices-with-amazon-opensearch-serverless/",
     "https://aws.amazon.com/blogs/mt/innovation-sandbox-on-aws-with-real-time-analytics-dashboard/",
     "https://aws.amazon.com/blogs/mt/investigating-service-issues-with-amazon-cloudwatch-application-signals-custom-metrics/",
     "https://aws.amazon.com/blogs/mt/optimize-cost-and-automate-security-remediation-with-ams-trusted-remediator/",
@@ -95,6 +98,7 @@
     "https://engineering.atspotify.com/2026/1/congratulations-to-the-recipients-of-the-2025-spotify-foss-fund/",
     "https://engineering.atspotify.com/2026/1/why-we-use-separate-tech-stacks-for-personalization-and-experimentation/",
     "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint/",
+    "https://engineering.atspotify.com/2026/7/content-ingestion-and-podcast-video-incident-report/",
     "https://engineering.fb.com/2025/12/19/data-infrastructure/drp-metas-root-cause-analysis-platform-at-scale/",
     "https://engineering.fb.com/2025/12/22/developer-tools/python-typing-survey-2025-code-quality-flexibility-typing-adoption/",
     "https://engineering.fb.com/2026/01/12/web/css-at-scale-with-stylex/",
@@ -236,6 +240,8 @@
     "https://www.cncf.io/blog/2026/06/04/securing-ci-cd-for-an-open-source-project-controlling-who-runs-what/",
     "https://www.cncf.io/blog/2026/06/22/telemetry-that-matters-designing-sustainable-high-impact-observability-pipelines/",
     "https://www.cncf.io/blog/2026/06/25/building-a-cluster-aware-ai-agent-with-kubernetes-argo-cd-and-gitops/",
+    "https://www.cncf.io/blog/2026/07/21/platform-engineering-for-the-agentic-enterprise-managing-applications-resources-and-ai-agents/",
+    "https://www.cncf.io/blog/2026/07/22/i-made-a-policy-engine-think-it-was-in-production/",
     "https://www.crowdstrike.com/en-us/blog/ai-tool-poisoning/",
     "https://www.crowdstrike.com/en-us/blog/architecture-of-agentic-defense-inside-the-falcon-platform/",
     "https://www.crowdstrike.com/en-us/blog/built-for-scale-powered-by-ai-innovation-driving-falcon-exposure-management/",
@@ -470,7 +476,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "dac0d23ab42b": "2026-07-07T06:54:36.960989+00:00",
       "fec444d66488": "2026-07-09T06:53:26.105450+00:00",
       "17ec623277a4": "2026-07-11T05:49:25.927434+00:00",
       "243932d7e489": "2026-07-13T06:29:39.355746+00:00",
@@ -487,10 +492,16 @@
       "254482a13887": "2026-07-17T05:51:09.113726+00:00",
       "7a7c69c512b1": "2026-07-17T05:51:09.113747+00:00",
       "f0c151ffd556": "2026-07-19T06:06:50.331203+00:00",
-      "a0c8b535f9f6": "2026-07-21T05:57:48.121091+00:00"
+      "a0c8b535f9f6": "2026-07-21T05:57:48.121091+00:00",
+      "8cd86cb1eca9": "2026-07-23T06:09:59.051553+00:00",
+      "2a29b6a30c14": "2026-07-23T06:09:59.051597+00:00",
+      "235e740811a1": "2026-07-23T06:09:59.051616+00:00",
+      "aeda87f7cb1d": "2026-07-23T06:09:59.051635+00:00",
+      "4b7f8c27fe89": "2026-07-23T06:09:59.051650+00:00",
+      "78b309d40483": "2026-07-23T06:09:59.051661+00:00"
     },
-    "last_post_id": "urn:li:share:7485211404891885568",
-    "last_posted_at_utc": "2026-07-21T05:57:48.121134+00:00",
-    "last_format": "technical_deep_dives"
+    "last_post_id": "urn:li:share:7485939248194359296",
+    "last_posted_at_utc": "2026-07-23T06:09:59.051668+00:00",
+    "last_format": "digest"
   }
 }
