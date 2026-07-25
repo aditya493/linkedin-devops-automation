@@ -1,7 +1,7 @@
 {
-  "total_posts": 211,
+  "total_posts": 212,
   "posts_today": 1,
-  "last_post_date": "2026-07-23",
+  "last_post_date": "2026-07-25",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 7,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
-    "career_advice": 25,
+    "career_advice": 26,
     "controversial_takes": 11,
     "ai_and_automation": 11
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 98,
+    "growth_plan": 99,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 5,
     "about.gitlab.com": 23,
@@ -306,18 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-07",
-      "time": "2026-02-07T09:58:00.803510+00:00",
-      "format": "digest",
-      "sources": [
-        "blog.newrelic.com",
-        "www.cncf.io",
-        "www.cncf.io",
-        "blog.google",
-        "blog.google"
-      ]
-    },
     {
       "date": "2026-02-07",
       "time": "2026-02-07T16:45:04.976468+00:00",
@@ -1099,16 +1087,21 @@
         "aws.amazon.com",
         "about.gitlab.com"
       ]
+    },
+    {
+      "date": "2026-07-25",
+      "time": "2026-07-25T05:50:22.874279+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 184,
-  "last_post_content": "\ud83d\udee0\ufe0f What high-perf teams are watching this week.\nAutomation architects drive efficiency and scale across industries.\n\n\ud83d\udccc ARCHITECTURE PATTERNS:\n\n1\ufe0f\u20e3 PLATFORM ENGINEERING FOR THE AGENTIC ENTERPRISE: MANAGING APPLICATIONS, RESOURCES, AND AI AGENTS\n\nPlatform engineering is evolving Platform engineering has become one of the defining disciplines of the cloud native era. As organizations embraced Kubernetes, microservices,...\n\n\ud83d\udca1 KEY INSIGHT: Production-validated container orchestration patterns reduce operational risk at scale\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/07/21/platform-engineering-for-the-agentic-enterprise-managing-applications-resources-and-ai-agents/\n\n2\ufe0f\u20e3 CONTENT INGESTION & PODCAST VIDEO INCIDENT REPORT\n\nOver the past two months, podcast creators have experienced a series of reliability issues on Spotify. This... The post Content Ingestion &amp; Podcast Video Incident Report...\n\n\ud83d\udca1 KEY INSIGHT: Systematic post-incident analysis prevents recurrence and builds institutional knowledge\n\ud83d\udd17 Read more: https://engineering.atspotify.com/2026/7/content-ingestion-and-podcast-video-incident-report/\n\n3\ufe0f\u20e3 I MADE A POLICY ENGINE THINK IT WAS IN PRODUCTION\n\nKyverno is a Kubernetes-native policy engine that validates, mutates, and generates resources before workloads reach your cluster, enforcing security and compliance rules as...\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/07/22/i-made-a-policy-engine-think-it-was-in-production/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHAT DID WE MISS?",
-  "last_post_format": "digest",
+  "posts_created": 185,
+  "last_post_content": "DevOps culture transformation shows what works. This matters.\n\nThe thing nobody tells engineers about how to transition from traditional IT to DevOps in 2026:\nTeams often find that transitioning to DevOps requires a significant shift in mindset and approach, moving from traditional IT roles to a more collaborative and automated environment.\n\nExperience reveals that several strategies can facilitate a successful transition, including:\n\u2022 Adopting a culture of continuous learning and improvement\n\u2022 Gaining experience with automation tools and technologies\n\u2022 Developing strong communication and collaboration skills\n\nThe data shows that common mistakes to avoid include attempting to adopt DevOps without a clear understanding of its principles and practices, and failing to invest in the necessary training and education.\n\nProduction experience shows that getting started with DevOps requires access to the right resources, including online training programs, industry conferences, and professional networks.\n\nThe reality is that transitioning to DevOps takes time, with most teams requiring several months to a year or more to complete the transition.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#automation #aiops #scalability #infrastructure #developerexperience",
+  "last_post_format": "career_advice",
   "last_post_sources": [
-    "about.gitlab.com",
-    "engineering.atspotify.com",
-    "www.cncf.io",
-    "aws.amazon.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-07-23T06:09:59.053405+00:00"
+  "last_post_timestamp": "2026-07-25T05:50:22.875442+00:00"
 }
