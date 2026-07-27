@@ -1,12 +1,12 @@
 {
-  "total_posts": 212,
+  "total_posts": 213,
   "posts_today": 1,
-  "last_post_date": "2026-07-25",
+  "last_post_date": "2026-07-27",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 96,
+    "digest": 97,
     "lessons_learned": 7,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -26,7 +26,7 @@
     "blog.checkpoint.com": 23,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 22,
+    "aws.amazon.com": 23,
     "www.cncf.io": 41,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
@@ -39,7 +39,7 @@
     "about.gitlab.com": 23,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
-    "azure.microsoft.com": 7,
+    "azure.microsoft.com": 8,
     "www.sonarsource.com": 3,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 4,
@@ -51,7 +51,7 @@
     "blog.cloudflare.com": 3,
     "dropbox.tech": 1,
     "blog.uptimerobot.com": 1,
-    "grafana.com": 22
+    "grafana.com": 26
   },
   "errors": [
     {
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-07",
-      "time": "2026-02-07T16:45:04.976468+00:00",
-      "format": "ai_and_automation",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-08",
       "time": "2026-02-08T06:12:20.502223+00:00",
@@ -1095,13 +1087,28 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-07-27",
+      "time": "2026-07-27T06:40:20.488545+00:00",
+      "format": "digest",
+      "sources": [
+        "grafana.com",
+        "azure.microsoft.com",
+        "grafana.com",
+        "grafana.com",
+        "grafana.com",
+        "aws.amazon.com"
+      ]
     }
   ],
-  "posts_created": 185,
-  "last_post_content": "DevOps culture transformation shows what works. This matters.\n\nThe thing nobody tells engineers about how to transition from traditional IT to DevOps in 2026:\nTeams often find that transitioning to DevOps requires a significant shift in mindset and approach, moving from traditional IT roles to a more collaborative and automated environment.\n\nExperience reveals that several strategies can facilitate a successful transition, including:\n\u2022 Adopting a culture of continuous learning and improvement\n\u2022 Gaining experience with automation tools and technologies\n\u2022 Developing strong communication and collaboration skills\n\nThe data shows that common mistakes to avoid include attempting to adopt DevOps without a clear understanding of its principles and practices, and failing to invest in the necessary training and education.\n\nProduction experience shows that getting started with DevOps requires access to the right resources, including online training programs, industry conferences, and professional networks.\n\nThe reality is that transitioning to DevOps takes time, with most teams requiring several months to a year or more to complete the transition.\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#automation #aiops #scalability #infrastructure #developerexperience",
-  "last_post_format": "career_advice",
+  "posts_created": 186,
+  "last_post_content": "\ud83d\ude80 Signals shaping modern engineering.\nDevOps experts curate the signals that drive innovation.\n\n\ud83d\udccc INDUSTRY PULSE:\n\n1\ufe0f\u20e3 HOW TO MONITOR YOUR SUPABASE PROJECTS: CONNECT GRAFANA CLOUD IN ONE CLICK\n\nAs AI agents accelerate software development and spin up applications at scale, visibility into what's happening behind the scenes, including query performance and database...\n\n\ud83d\udca1 KEY INSIGHT: Proactive observability enables issue detection before user impact, reducing incident severity\n\ud83d\udd17 Read more: https://grafana.com/blog/grafana-cloud-supabase-one-click-integration/\n\n2\ufe0f\u20e3 AT&T AND MICROSOFT SCALE TRILLION-TOKEN WORKLOADS WITH MICROSOFT FOUNDRY AND AMD\n\n...\nAT&#38;T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalable infrastructure are enabling production-scale telecom AI. The post AT&amp;T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD appeared first on Micro\n\n\ud83d\udca1 KEY INSIGHT: Reproducible infrastructure provisioning eliminates environment drift and reduces incident root causes\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/\n\n3\ufe0f\u20e3 BEYOND PERFORMANCE MONITORING: UNDERSTAND THE USER EXPERIENCE WITH GRAFANA CLOUD FRONTEND OBSERVABILITY\n\nYou've optimized your Largest Contentful Paint . Your Time to First Byte is under 200ms. Your Lighthouse scores are green. And yet, your checkout conversion rate is quietly...\n\n\ud83d\udca1 KEY INSIGHT: Structured observability data enables faster root cause identification during incident response\n\ud83d\udd17 Read more: https://grafana.com/blog/beyond-performance-monitoring-understand-the-user-experience-with-grafana-cloud-frontend-observability/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "azure.microsoft.com",
+    "aws.amazon.com",
+    "grafana.com"
   ],
-  "last_post_timestamp": "2026-07-25T05:50:22.875442+00:00"
+  "last_post_timestamp": "2026-07-27T06:40:20.489699+00:00"
 }
