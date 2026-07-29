@@ -55,6 +55,7 @@
     "https://azure.microsoft.com/en-us/blog/frontier-models-and-production-agents-advancing-microsoft-foundry-for-the-agentic-era/",
     "https://azure.microsoft.com/en-us/blog/microsofts-strategic-ai-datacenter-planning-enables-seamless-large-scale-nvidia-rubin-deployments/",
     "https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/",
+    "https://azure.microsoft.com/en-us/blog/what-customers-value-most-in-microsoft-databases-from-reliability-to-ai-readiness/",
     "https://blog.checkpoint.com/ai-security/securing-ai-agent-behavior-with-amazon-bedrock-agentcore-and-checkpoint-ai-security/",
     "https://blog.checkpoint.com/artificial-intelligence/check-point-secures-ai-factories-with-nvidia/",
     "https://blog.checkpoint.com/company-and-culture/building-cyber-readiness-early-why-youth-education-is-a-security-imperative/",
@@ -311,6 +312,7 @@
     "https://www.infoq.com/articles/ai-assisted-development-series/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/engineering-speed-scale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/evolution-backend-streaming-application/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/articles/evolutionary-architecture-pattern/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/friction-fix/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/preventing-data-exfiltration-google-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/articles/skeleton-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -419,6 +421,7 @@
     "https://www.infoq.com/presentations/hierarchical-team/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/integrating-renewable-energy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/java-grpc-workload/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/presentations/kotlin-serverless/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/liquid-theme-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/llm-ai-africa/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/one-testing-environment/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -445,8 +448,10 @@
     "https://www.microsoft.com/en-us/security/blog/2026/06/24/cnapp-evolution-how-microsoft-aligns-with-leading-cloud-risk-management-platforms/",
     "https://www.microsoft.com/en-us/security/blog/2026/06/24/stealc-and-amadey-breaking-down-infostealers-and-the-cybercrime-services-that-deliver-them/",
     "https://www.pagerduty.com/blog/ai/scaling-ai-operations-beyond-the-pilot-phase/",
+    "https://www.paloaltonetworks.com/blog/cloud-security/agentless-malware-sandboxing/",
     "https://www.paloaltonetworks.com/blog/cloud-security/ai-security-gap-cloud-models-agents/",
     "https://www.paloaltonetworks.com/blog/cloud-security/application-security-veracode-partnership/",
+    "https://www.paloaltonetworks.com/blog/cloud-security/cortex-cloud-2-2/",
     "https://www.paloaltonetworks.com/blog/cloud-security/mcp-servers-ai-attack-surface-security/",
     "https://www.paloaltonetworks.com/blog/cloud-security/secure-ai-ecosystem-data-to-runtime/",
     "https://www.rapid7.com/blog/post/cds-reducing-cloud-chaos-rapid7-partners-with-armo-delivering-cloud-runtime-security",
@@ -469,6 +474,7 @@
     "https://www.rapid7.com/blog/post/tr-chrysalis-notepad-supply-chain-risk-next-steps",
     "https://www.rapid7.com/blog/post/ve-patch-tuesday-windows-backwards-compatibility-challenge",
     "https://www.sonarsource.com/blog/ai-coding-trust-gap/",
+    "https://www.sonarsource.com/blog/cli-vs-ide/",
     "https://www.sonarsource.com/blog/secrets-detection-cli-beta/",
     "https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/",
     "https://www.welivesecurity.com/en/cybersecurity/old-habits-die-hard-2025-most-common-passwords/",
@@ -482,7 +488,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "2f69a8f20018": "2026-07-15T05:41:29.651100+00:00",
       "0250614c0e18": "2026-07-17T05:51:09.113607+00:00",
       "c5882400e847": "2026-07-17T05:51:09.113661+00:00",
       "b3d1a2a5bc9b": "2026-07-17T05:51:09.113681+00:00",
@@ -503,10 +508,16 @@
       "e1ae2fcff45c": "2026-07-27T06:40:20.487490+00:00",
       "0dccb194c2f1": "2026-07-27T06:40:20.487510+00:00",
       "9531116fdb21": "2026-07-27T06:40:20.487529+00:00",
-      "3fc7f7da5b7e": "2026-07-27T06:40:20.487546+00:00"
+      "3fc7f7da5b7e": "2026-07-27T06:40:20.487546+00:00",
+      "cc0f6116ce18": "2026-07-29T06:07:47.728674+00:00",
+      "2e3af8cff2d6": "2026-07-29T06:07:47.728750+00:00",
+      "100b45129e84": "2026-07-29T06:07:47.728789+00:00",
+      "3e7d3f005416": "2026-07-29T06:07:47.728819+00:00",
+      "621e51cc97b1": "2026-07-29T06:07:47.728852+00:00",
+      "595f88e723f1": "2026-07-29T06:07:47.728871+00:00"
     },
-    "last_post_id": "urn:li:share:7487396437081841665",
-    "last_posted_at_utc": "2026-07-27T06:40:20.487556+00:00",
+    "last_post_id": "urn:li:share:7488113022503247872",
+    "last_posted_at_utc": "2026-07-29T06:07:47.728882+00:00",
     "last_format": "digest"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "total_posts": 213,
+  "total_posts": 214,
   "posts_today": 1,
-  "last_post_date": "2026-07-27",
+  "last_post_date": "2026-07-29",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 97,
+    "digest": 98,
     "lessons_learned": 7,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -15,7 +15,7 @@
     "ai_and_automation": 11
   },
   "sources_used": {
-    "www.infoq.com": 123,
+    "www.infoq.com": 125,
     "kubernetes.io": 27,
     "www.docker.com": 24,
     "krebsonsecurity.com": 6,
@@ -39,13 +39,13 @@
     "about.gitlab.com": 23,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
-    "azure.microsoft.com": 8,
-    "www.sonarsource.com": 3,
+    "azure.microsoft.com": 9,
+    "www.sonarsource.com": 4,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 4,
     "microservices.io": 3,
     "blogs.microsoft.com": 14,
-    "www.paloaltonetworks.com": 4,
+    "www.paloaltonetworks.com": 6,
     "github.blog": 2,
     "googleprojectzero.blogspot.com": 2,
     "blog.cloudflare.com": 3,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-08",
-      "time": "2026-02-08T06:12:20.502223+00:00",
-      "format": "controversial_takes",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-09",
       "time": "2026-02-09T13:04:56.135314+00:00",
@@ -1100,15 +1092,29 @@
         "grafana.com",
         "aws.amazon.com"
       ]
+    },
+    {
+      "date": "2026-07-29",
+      "time": "2026-07-29T06:07:47.729843+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "azure.microsoft.com",
+        "www.infoq.com",
+        "www.sonarsource.com",
+        "www.paloaltonetworks.com",
+        "www.paloaltonetworks.com"
+      ]
     }
   ],
-  "posts_created": 186,
-  "last_post_content": "\ud83d\ude80 Signals shaping modern engineering.\nDevOps experts curate the signals that drive innovation.\n\n\ud83d\udccc INDUSTRY PULSE:\n\n1\ufe0f\u20e3 HOW TO MONITOR YOUR SUPABASE PROJECTS: CONNECT GRAFANA CLOUD IN ONE CLICK\n\nAs AI agents accelerate software development and spin up applications at scale, visibility into what's happening behind the scenes, including query performance and database...\n\n\ud83d\udca1 KEY INSIGHT: Proactive observability enables issue detection before user impact, reducing incident severity\n\ud83d\udd17 Read more: https://grafana.com/blog/grafana-cloud-supabase-one-click-integration/\n\n2\ufe0f\u20e3 AT&T AND MICROSOFT SCALE TRILLION-TOKEN WORKLOADS WITH MICROSOFT FOUNDRY AND AMD\n\n...\nAT&#38;T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalable infrastructure are enabling production-scale telecom AI. The post AT&amp;T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD appeared first on Micro\n\n\ud83d\udca1 KEY INSIGHT: Reproducible infrastructure provisioning eliminates environment drift and reduces incident root causes\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/\n\n3\ufe0f\u20e3 BEYOND PERFORMANCE MONITORING: UNDERSTAND THE USER EXPERIENCE WITH GRAFANA CLOUD FRONTEND OBSERVABILITY\n\nYou've optimized your Largest Contentful Paint . Your Time to First Byte is under 200ms. Your Lighthouse scores are green. And yet, your checkout conversion rate is quietly...\n\n\ud83d\udca1 KEY INSIGHT: Structured observability data enables faster root cause identification during incident response\n\ud83d\udd17 Read more: https://grafana.com/blog/beyond-performance-monitoring-understand-the-user-experience-with-grafana-cloud-frontend-observability/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
+  "posts_created": 187,
+  "last_post_content": "\ud83c\udf10 What matters for builders and operators.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc CLOUD-NATIVE BREAKTHROUGHS:\n\n1\ufe0f\u20e3 PRESENTATION: CLEAN ARCHITECTURE FOR SERVERLESS: BUSINESS LOGIC YOU CAN TAKE ANYWHERE\n\nElena van Engelen discusses how to eliminate serverless vendor lock-in without sacrificing native cloud capabilities. She explains how to structure FaaS applications using...\n\n\ud83d\udca1 KEY INSIGHT: Serverless computing changes the operational model and requires a corresponding shift in observability approach\n\ud83d\udd17 Read more: https://www.infoq.com/presentations/kotlin-serverless/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2\ufe0f\u20e3 WHAT CUSTOMERS VALUE MOST IN MICROSOFT DATABASES\u2014FROM RELIABILITY TO AI READINESS\n\nEvery day, customers trust Microsoft Databases to power their most critical applications, business processes, and AI-powered experiences.\n\n\ud83d\udca1 KEY INSIGHT: AI-assisted tooling can reduce toil and improve consistency in structured, well-defined workflows\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/what-customers-value-most-in-microsoft-databases-from-reliability-to-ai-readiness/\n\n3\ufe0f\u20e3 ARTICLE: AN EVOLUTIONARY ARCHITECTURE PATTERN FOR MANAGING AI\u2019S PACE OF CHANGE\n\nTraditional API gateways assume deterministic services and simple schemas - assumptions agentic AI breaks. Discover why enterprise engineering leaders are adopting AI Gateways...\n\n\ud83d\udca1 KEY INSIGHT: AI-assisted tooling can reduce toil and improve consistency in structured, well-defined workflows\n\ud83d\udd17 Read more: https://www.infoq.com/articles/evolutionary-architecture-pattern/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 How is your organization responding to these signals?",
   "last_post_format": "digest",
   "last_post_sources": [
+    "www.paloaltonetworks.com",
     "azure.microsoft.com",
-    "aws.amazon.com",
-    "grafana.com"
+    "www.sonarsource.com",
+    "www.infoq.com"
   ],
-  "last_post_timestamp": "2026-07-27T06:40:20.489699+00:00"
+  "last_post_timestamp": "2026-07-29T06:07:47.731077+00:00"
 }
