@@ -21,6 +21,7 @@
     "https://about.gitlab.com/blog/introduction-to-gitlab-duo-agent-platform/",
     "https://about.gitlab.com/blog/modernize-java-with-cursor-and-gitlab/",
     "https://about.gitlab.com/blog/monitor-manage-automate-ai-workflows/",
+    "https://about.gitlab.com/blog/open-weight-model-letter/",
     "https://about.gitlab.com/blog/strengthening-gitlab-com-security-mandatory-multi-factor-authentication/",
     "https://about.gitlab.com/blog/understanding-agents-foundational-custom-external/",
     "https://about.gitlab.com/blog/understanding-flows-multi-agent-workflows/",
@@ -38,6 +39,8 @@
     "https://aws.amazon.com/blogs/devops/supercharge-your-cloud-operations-with-the-kiro-power-for-aws-devops-agent/",
     "https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/",
     "https://aws.amazon.com/blogs/mt/automate-ci-cd-troubleshooting-with-aws-devops-agent-and-github/",
+    "https://aws.amazon.com/blogs/mt/autonomous-root-cause-analysis-for-aws-systems-manager-patch-failures-using-aws-devops-agent/",
+    "https://aws.amazon.com/blogs/mt/build-bespoke-operational-workflows-with-aws-devops-agent-custom-sre-agents/",
     "https://aws.amazon.com/blogs/mt/cross-region-aws-privatelink-monitoring-with-amazon-cloudwatch-network-synthetic-monitor/",
     "https://aws.amazon.com/blogs/mt/deploying-custom-terraform-to-lza-managed-accounts-with-aft/",
     "https://aws.amazon.com/blogs/mt/extend-amazon-cloudwatch-beyond-native-connectors-with-cribl-stream/",
@@ -121,6 +124,7 @@
     "https://grafana.com/blog/cost-attribution-in-grafana-cloud-manage-spend-across-observability-and-testing-workflows/",
     "https://grafana.com/blog/customize-preconfigured-views-for-aws-azure-and-google-cloud-with-cloud-provider-observability-in-grafana-cloud/",
     "https://grafana.com/blog/eliminate-noisy-log-lines-with-adaptive-logs-drop-rules/",
+    "https://grafana.com/blog/explore-what-s-next-in-agentic-operations-introducing-ai-week/",
     "https://grafana.com/blog/full-stack-observability-in-grafana-cloud-how-to-investigate-issues-across-services-and-infrastructure/",
     "https://grafana.com/blog/get-observability-in-the-terminal-for-you-and-your-agents-with-the-gcx-cli-tool/",
     "https://grafana.com/blog/grafana-13-1-release-all-the-latest-features/",
@@ -128,6 +132,7 @@
     "https://grafana.com/blog/grafana-labs-named-a-leader-again-in-the-2026-gartner-magic-quadrant-for-observability-platforms/",
     "https://grafana.com/blog/grafanacon-2026-on-demand-sessions-are-now-available/",
     "https://grafana.com/blog/how-grafana-assistant-learns-your-infrastructure-before-you-even-ask/",
+    "https://grafana.com/blog/how-to-build-a-trust-platform-for-your-agent-with-grafana-agent-observability/",
     "https://grafana.com/blog/how-to-generate-real-world-load-tests-using-grafana-cloud-k6-and-production-telemetry/",
     "https://grafana.com/blog/how-to-scale-access-control-in-grafana-cloud/",
     "https://grafana.com/blog/introducing-secrets-management-for-grafana-cloud-k6/",
@@ -177,6 +182,7 @@
     "https://martinfowler.com/fragments/2026-02-04.html",
     "https://netflixtechblog.com/data-bridge-how-netflix-simplifies-data-movement-36d10d91c313?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.com/dynamically-splitting-wide-partitions-in-cassandra-for-time-series-workloads-0eded064f456?source=rss-c3aeaf49d8a4------2",
+    "https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.com/the-ai-evolution-of-graph-search-at-netflix-d416ec5b1151?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.medium.com/the-data-canary-how-netflix-validates-catalog-metadata-18b699d58e36?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.medium.com/towards-generalizable-and-efficient-large-scale-generative-recommenders-a7db648aa257?source=rss-c3aeaf49d8a4------2",
@@ -488,12 +494,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "0250614c0e18": "2026-07-17T05:51:09.113607+00:00",
-      "c5882400e847": "2026-07-17T05:51:09.113661+00:00",
-      "b3d1a2a5bc9b": "2026-07-17T05:51:09.113681+00:00",
-      "5669ddced6e3": "2026-07-17T05:51:09.113697+00:00",
-      "254482a13887": "2026-07-17T05:51:09.113726+00:00",
-      "7a7c69c512b1": "2026-07-17T05:51:09.113747+00:00",
       "f0c151ffd556": "2026-07-19T06:06:50.331203+00:00",
       "a0c8b535f9f6": "2026-07-21T05:57:48.121091+00:00",
       "8cd86cb1eca9": "2026-07-23T06:09:59.051553+00:00",
@@ -514,10 +514,16 @@
       "100b45129e84": "2026-07-29T06:07:47.728789+00:00",
       "3e7d3f005416": "2026-07-29T06:07:47.728819+00:00",
       "621e51cc97b1": "2026-07-29T06:07:47.728852+00:00",
-      "595f88e723f1": "2026-07-29T06:07:47.728871+00:00"
+      "595f88e723f1": "2026-07-29T06:07:47.728871+00:00",
+      "9999c11db873": "2026-07-31T06:23:14.803215+00:00",
+      "70fe8ee1bb84": "2026-07-31T06:23:14.803276+00:00",
+      "dbdd076a40ea": "2026-07-31T06:23:14.803316+00:00",
+      "1405406abb65": "2026-07-31T06:23:14.803349+00:00",
+      "98a68857886b": "2026-07-31T06:23:14.803378+00:00",
+      "3c07e4121565": "2026-07-31T06:23:14.803410+00:00"
     },
-    "last_post_id": "urn:li:share:7488113022503247872",
-    "last_posted_at_utc": "2026-07-29T06:07:47.728882+00:00",
+    "last_post_id": "urn:li:share:7488841686559756288",
+    "last_posted_at_utc": "2026-07-31T06:23:14.803430+00:00",
     "last_format": "digest"
   }
 }
