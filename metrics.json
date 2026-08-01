@@ -1,12 +1,12 @@
 {
-  "total_posts": 215,
+  "total_posts": 216,
   "posts_today": 1,
-  "last_post_date": "2026-07-31",
+  "last_post_date": "2026-08-01",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 99,
+    "digest": 100,
     "lessons_learned": 7,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 99,
+    "growth_plan": 100,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 6,
     "about.gitlab.com": 24,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-10",
-      "time": "2026-02-10T05:01:50.907542+00:00",
-      "format": "controversial_takes",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-10",
       "time": "2026-02-10T07:54:50.244203+00:00",
@@ -1110,16 +1102,21 @@
         "netflixtechblog.medium.com",
         "aws.amazon.com"
       ]
+    },
+    {
+      "date": "2026-08-01",
+      "time": "2026-08-01T06:08:09.182896+00:00",
+      "format": "digest",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 188,
-  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nDevOps experts curate the signals that drive innovation.\n\n\ud83d\udccc LEADERSHIP LESSONS:\n\n1\ufe0f\u20e3 EXPLORE WHAT'S NEXT IN AGENTIC OPERATIONS: INTRODUCING AI WEEK\n\nObservability has traditionally been tacked on after your code hits production, but with agentic operations on the rise, that's no longer sustainable.\n\n\ud83d\udca1 KEY INSIGHT: Distributed tracing surfaces system behavior that aggregate metrics cannot reveal\n\ud83d\udd17 Read more: https://grafana.com/blog/explore-what-s-next-in-agentic-operations-introducing-ai-week/\n\n2\ufe0f\u20e3 WHY GITLAB SIGNED THE OPEN WEIGHTS AND AMERICAN AI LEADERSHIP LETTER\n\nThis week GitLab signed the Open Weights and American AI Leadership letter , joining a long list of other technology companies that support a strong, open AI ecosystem.\n\n\ud83d\udca1 KEY INSIGHT: AI-assisted tooling can reduce toil and improve consistency in structured, well-defined workflows\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/open-weight-model-letter/\n\n3\ufe0f\u20e3 HOW TO BUILD A TRUST PLATFORM FOR YOUR AGENT WITH GRAFANA AGENT OBSERVABILITY\n\nObserving fast-growing agentic workloads is no small feat, especially if you try to build your own monitoring stack or rely solely on tools built for a time before LLMs.\n\n\ud83d\udca1 KEY INSIGHT: Distributed tracing surfaces system behavior that aggregate metrics cannot reveal\n\ud83d\udd17 Read more: https://grafana.com/blog/how-to-build-a-trust-platform-for-your-agent-with-grafana-agent-observability/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHAT DID WE MISS?",
+  "posts_created": 189,
+  "last_post_content": "\u2601\ufe0f Cloud-native breakthroughs to watch.\nObservability advocates surface what teams measure and why.\n\n\ud83d\udccc INDUSTRY PULSE:\n\n1\ufe0f\u20e3 BUILDING OBSERVABILITY FOR 100+ MICROSERVICES\n\nThe thing nobody tells engineers about building observability for 100+ microservices:\n\n\ud83d\udca1 KEY INSIGHT: Distributed tracing surfaces system behavior that aggregate metrics cannot reveal\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 How is your organization responding to these signals?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "grafana.com",
-    "netflixtechblog.medium.com",
-    "aws.amazon.com",
-    "about.gitlab.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-07-31T06:23:14.805599+00:00"
+  "last_post_timestamp": "2026-08-01T06:08:09.184057+00:00"
 }
