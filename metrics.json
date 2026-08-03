@@ -1,12 +1,12 @@
 {
-  "total_posts": 216,
+  "total_posts": 217,
   "posts_today": 1,
-  "last_post_date": "2026-08-01",
+  "last_post_date": "2026-08-03",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 100,
+    "digest": 101,
     "lessons_learned": 7,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -16,7 +16,7 @@
   },
   "sources_used": {
     "www.infoq.com": 125,
-    "kubernetes.io": 27,
+    "kubernetes.io": 28,
     "www.docker.com": 24,
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
@@ -27,7 +27,7 @@
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 25,
-    "www.cncf.io": 41,
+    "www.cncf.io": 43,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -35,12 +35,12 @@
     "www.hashicorp.com": 18,
     "growth_plan": 100,
     "snyk.io": 9,
-    "netflixtechblog.medium.com": 6,
-    "about.gitlab.com": 24,
+    "netflixtechblog.medium.com": 7,
+    "about.gitlab.com": 25,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 9,
-    "www.sonarsource.com": 4,
+    "www.sonarsource.com": 5,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 4,
     "microservices.io": 3,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-10",
-      "time": "2026-02-10T07:54:50.244203+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-10",
       "time": "2026-02-10T13:05:28.952190+00:00",
@@ -1110,13 +1102,30 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-08-03",
+      "time": "2026-08-03T06:33:42.688933+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "netflixtechblog.medium.com",
+        "www.cncf.io",
+        "kubernetes.io",
+        "www.cncf.io",
+        "www.sonarsource.com"
+      ]
     }
   ],
-  "posts_created": 189,
-  "last_post_content": "\u2601\ufe0f Cloud-native breakthroughs to watch.\nObservability advocates surface what teams measure and why.\n\n\ud83d\udccc INDUSTRY PULSE:\n\n1\ufe0f\u20e3 BUILDING OBSERVABILITY FOR 100+ MICROSERVICES\n\nThe thing nobody tells engineers about building observability for 100+ microservices:\n\n\ud83d\udca1 KEY INSIGHT: Distributed tracing surfaces system behavior that aggregate metrics cannot reveal\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 How is your organization responding to these signals?",
+  "posts_created": 190,
+  "last_post_content": "\ud83c\udf10 What matters for builders and operators.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc KEY DEVELOPMENTS:\n\n1\ufe0f\u20e3 HOW TO GOVERN AGENTIC AI, MCPS, AND AI CODE ASSISTANTS\n\nAI code completion built human review into the process by design. A developer types, a suggestion appears, and a human decides whether to accept it.\n\n\ud83d\udca1 KEY INSIGHT: AI-assisted tooling can reduce toil and improve consistency in structured, well-defined workflows\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/govern-agentic-ai-mcps-code-assistants/\n\n2\ufe0f\u20e3 MODELING DEVICE CAPABILITIES FOR ANALYTICS\n\nby Aarti Laddha , Richard Diaz-Cool , Rishika Idnani , Venkatesh Selveraj Netflix supports a vast and evolving set of features and content types, ranging from 4K streaming and...\n\n\ud83d\udca1 KEY INSIGHT: Practical insights for engineers building production systems.\n\ud83d\udd17 Read more: https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8?source=rss-c3aeaf49d8a4------2\n\n3\ufe0f\u20e3 SCALING KUBERNETES PODS WITH KEDA BASED ON AMAZON SQS QUEUE DEPTH\n\nIn event-driven Kubernetes architectures, CPU and memory utilization often fail to reflect real system pressure. A worker pod may sit idle from a CPU perspective while...\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/07/31/scaling-kubernetes-pods-with-keda-based-on-amazon-sqs-queue-depth/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "about.gitlab.com",
+    "netflixtechblog.medium.com",
+    "www.cncf.io",
+    "kubernetes.io",
+    "www.sonarsource.com"
   ],
-  "last_post_timestamp": "2026-08-01T06:08:09.184057+00:00"
+  "last_post_timestamp": "2026-08-03T06:33:42.690102+00:00"
 }
