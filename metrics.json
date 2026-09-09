@@ -1,12 +1,12 @@
 {
-  "total_posts": 217,
-  "posts_today": 0,
+  "total_posts": 218,
+  "posts_today": 1,
   "last_post_date": "2026-09-09",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 101,
+    "digest": 102,
     "lessons_learned": 7,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -23,11 +23,11 @@
     "blog.newrelic.com": 9,
     "engineering.fb.com": 8,
     "blog.google": 5,
-    "blog.checkpoint.com": 23,
+    "blog.checkpoint.com": 24,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 25,
-    "www.cncf.io": 43,
+    "www.cncf.io": 47,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -36,7 +36,7 @@
     "growth_plan": 100,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
-    "about.gitlab.com": 25,
+    "about.gitlab.com": 26,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 9,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-10",
-      "time": "2026-02-10T13:05:28.952190+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-11",
       "time": "2026-02-11T13:01:17.505284+00:00",
@@ -1115,17 +1107,28 @@
         "www.cncf.io",
         "www.sonarsource.com"
       ]
+    },
+    {
+      "date": "2026-09-09",
+      "time": "2026-09-09T05:08:13.142617+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "www.cncf.io",
+        "www.cncf.io",
+        "www.cncf.io",
+        "www.cncf.io",
+        "blog.checkpoint.com"
+      ]
     }
   ],
-  "posts_created": 190,
-  "last_post_content": "\ud83c\udf10 What matters for builders and operators.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc KEY DEVELOPMENTS:\n\n1\ufe0f\u20e3 HOW TO GOVERN AGENTIC AI, MCPS, AND AI CODE ASSISTANTS\n\nAI code completion built human review into the process by design. A developer types, a suggestion appears, and a human decides whether to accept it.\n\n\ud83d\udca1 KEY INSIGHT: AI-assisted tooling can reduce toil and improve consistency in structured, well-defined workflows\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/govern-agentic-ai-mcps-code-assistants/\n\n2\ufe0f\u20e3 MODELING DEVICE CAPABILITIES FOR ANALYTICS\n\nby Aarti Laddha , Richard Diaz-Cool , Rishika Idnani , Venkatesh Selveraj Netflix supports a vast and evolving set of features and content types, ranging from 4K streaming and...\n\n\ud83d\udca1 KEY INSIGHT: Practical insights for engineers building production systems.\n\ud83d\udd17 Read more: https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8?source=rss-c3aeaf49d8a4------2\n\n3\ufe0f\u20e3 SCALING KUBERNETES PODS WITH KEDA BASED ON AMAZON SQS QUEUE DEPTH\n\nIn event-driven Kubernetes architectures, CPU and memory utilization often fail to reflect real system pressure. A worker pod may sit idle from a CPU perspective while...\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/07/31/scaling-kubernetes-pods-with-keda-based-on-amazon-sqs-queue-depth/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
+  "posts_created": 191,
+  "last_post_content": "\ud83d\udce1 This week's essential DevOps signals.\nAI innovators map the future of intelligent systems.\n\n\ud83d\udccc STRATEGIC HIGHLIGHTS:\n\n1\ufe0f\u20e3 BRING YOUR OWN MODEL TO GITLAB DUO SELF-HOSTED WITH MICROSOFT FOUNDRY\n\nFor many organizations, the question about AI coding tools isn't whether they help, but where the code goes. Teams under data sovereignty, residency, or regulatory constraints...\n\n\ud83d\udca1 KEY INSIGHT: AI-assisted tooling can reduce toil and improve consistency in structured, well-defined workflows\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-duo-self-hosted-models-on-microsoft-foundry/\n\n2\ufe0f\u20e3 CLOUD NATIVE COMPUTING FOUNDATION ANNOUNCES KARMADA GRADUATION\n\nMulti-cluster, multi-cloud Kubernetes orchestration project reaches production maturity as global enterprises scale AI training and inference across hybrid infrastructure Key...\n\n\ud83d\udca1 KEY INSIGHT: Production-validated container orchestration patterns reduce operational risk at scale\n\ud83d\udd17 Read more: https://www.cncf.io/announcements/2026/09/07/cloud-native-computing-foundation-announces-karmada-graduation/\n\n3\ufe0f\u20e3 CHINA MERCHANTS BANK WINS CNCF END USER CASE STUDY CONTEST FOR UNIFYING AI TRAINING AND INFERENCE ON KUBERN\u2026\n\nNew cloud native platform lifted average accelerator compute utilization from 35% to more than 60% and cut inference cost per 1 million tokens by more than 60% Key Highlights...\n\n\ud83d\udca1 KEY INSIGHT: Production-validated container orchestration patterns reduce operational risk at scale\n\ud83d\udd17 Read more: https://www.cncf.io/announcements/2026/09/07/china-merchants-bank-wins-cncf-end-user-case-study-contest-for-unifying-ai-training-and-inference-on-kubernetes/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "about.gitlab.com",
-    "netflixtechblog.medium.com",
+    "blog.checkpoint.com",
     "www.cncf.io",
-    "kubernetes.io",
-    "www.sonarsource.com"
+    "about.gitlab.com"
   ],
-  "last_post_timestamp": "2026-08-03T06:33:42.690102+00:00"
+  "last_post_timestamp": "2026-09-09T05:08:13.143764+00:00"
 }
