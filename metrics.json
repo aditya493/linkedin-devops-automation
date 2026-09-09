@@ -1,13 +1,13 @@
 {
-  "total_posts": 218,
-  "posts_today": 1,
+  "total_posts": 219,
+  "posts_today": 2,
   "last_post_date": "2026-09-09",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 102,
-    "lessons_learned": 7,
+    "lessons_learned": 8,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
     "career_advice": 26,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 100,
+    "growth_plan": 101,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 26,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-11",
-      "time": "2026-02-11T13:01:17.505284+00:00",
-      "format": "ai_and_automation",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-12",
       "time": "2026-02-12T13:00:39.196775+00:00",
@@ -1120,15 +1112,21 @@
         "www.cncf.io",
         "blog.checkpoint.com"
       ]
+    },
+    {
+      "date": "2026-09-09",
+      "time": "2026-09-09T08:05:44.214757+00:00",
+      "format": "lessons_learned",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 191,
-  "last_post_content": "\ud83d\udce1 This week's essential DevOps signals.\nAI innovators map the future of intelligent systems.\n\n\ud83d\udccc STRATEGIC HIGHLIGHTS:\n\n1\ufe0f\u20e3 BRING YOUR OWN MODEL TO GITLAB DUO SELF-HOSTED WITH MICROSOFT FOUNDRY\n\nFor many organizations, the question about AI coding tools isn't whether they help, but where the code goes. Teams under data sovereignty, residency, or regulatory constraints...\n\n\ud83d\udca1 KEY INSIGHT: AI-assisted tooling can reduce toil and improve consistency in structured, well-defined workflows\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-duo-self-hosted-models-on-microsoft-foundry/\n\n2\ufe0f\u20e3 CLOUD NATIVE COMPUTING FOUNDATION ANNOUNCES KARMADA GRADUATION\n\nMulti-cluster, multi-cloud Kubernetes orchestration project reaches production maturity as global enterprises scale AI training and inference across hybrid infrastructure Key...\n\n\ud83d\udca1 KEY INSIGHT: Production-validated container orchestration patterns reduce operational risk at scale\n\ud83d\udd17 Read more: https://www.cncf.io/announcements/2026/09/07/cloud-native-computing-foundation-announces-karmada-graduation/\n\n3\ufe0f\u20e3 CHINA MERCHANTS BANK WINS CNCF END USER CASE STUDY CONTEST FOR UNIFYING AI TRAINING AND INFERENCE ON KUBERN\u2026\n\nNew cloud native platform lifted average accelerator compute utilization from 35% to more than 60% and cut inference cost per 1 million tokens by more than 60% Key Highlights...\n\n\ud83d\udca1 KEY INSIGHT: Production-validated container orchestration patterns reduce operational risk at scale\n\ud83d\udd17 Read more: https://www.cncf.io/announcements/2026/09/07/china-merchants-bank-wins-cncf-end-user-case-study-contest-for-unifying-ai-training-and-inference-on-kubernetes/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
-  "last_post_format": "digest",
+  "posts_created": 192,
+  "last_post_content": "After analyzing 5 years of DevOps data, here's the truth about first year with platform engineering: key lessons:\n\nKey insights on first year with platform engineering: key lessons:\n\n\u2022 Set the scene - what went wrong\n\u2022 The immediate impact and consequences\n\u2022 Root cause analysis\n\u2022 The implementation that fixed it\n\nWhat would you have done differently in this situation?\n\n#infrastructure #devops #scalability #sre #automation",
+  "last_post_format": "lessons_learned",
   "last_post_sources": [
-    "blog.checkpoint.com",
-    "www.cncf.io",
-    "about.gitlab.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-09-09T05:08:13.143764+00:00"
+  "last_post_timestamp": "2026-09-09T08:05:44.215951+00:00"
 }
