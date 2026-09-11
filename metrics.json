@@ -1,13 +1,13 @@
 {
-  "total_posts": 219,
-  "posts_today": 2,
-  "last_post_date": "2026-09-09",
+  "total_posts": 220,
+  "posts_today": 1,
+  "last_post_date": "2026-09-11",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 102,
-    "lessons_learned": 8,
+    "lessons_learned": 9,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
     "career_advice": 26,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 101,
+    "growth_plan": 102,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 26,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-12",
-      "time": "2026-02-12T13:00:39.196775+00:00",
-      "format": "ai_and_automation",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-13",
       "time": "2026-02-13T04:52:17.934673+00:00",
@@ -1120,13 +1112,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-09-11",
+      "time": "2026-09-11T07:59:44.257544+00:00",
+      "format": "lessons_learned",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 192,
-  "last_post_content": "After analyzing 5 years of DevOps data, here's the truth about first year with platform engineering: key lessons:\n\nKey insights on first year with platform engineering: key lessons:\n\n\u2022 Set the scene - what went wrong\n\u2022 The immediate impact and consequences\n\u2022 Root cause analysis\n\u2022 The implementation that fixed it\n\nWhat would you have done differently in this situation?\n\n#infrastructure #devops #scalability #sre #automation",
+  "posts_created": 193,
+  "last_post_content": "In 2026, the cost optimization strategy that saves companies $500k annually is no longer optional. Here's why:\n\nKey insights on the cost optimization strategy that saves companies $500k annually:\n\n\u2022 Set the scene - what went wrong\n\u2022 The immediate impact and consequences\n\u2022 Root cause analysis\n\u2022 The implementation that fixed it\n\nWhat would you have done differently in this situation?\n\n#scalability #microservices #sre #infrastructure #devops",
   "last_post_format": "lessons_learned",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-09-09T08:05:44.215951+00:00"
+  "last_post_timestamp": "2026-09-11T07:59:44.258408+00:00"
 }
