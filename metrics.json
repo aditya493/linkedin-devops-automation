@@ -1,12 +1,12 @@
 {
-  "total_posts": 220,
+  "total_posts": 221,
   "posts_today": 1,
-  "last_post_date": "2026-09-11",
+  "last_post_date": "2026-09-13",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 102,
+    "digest": 103,
     "lessons_learned": 9,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -27,7 +27,7 @@
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 25,
-    "www.cncf.io": 47,
+    "www.cncf.io": 48,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -39,7 +39,7 @@
     "about.gitlab.com": 26,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
-    "azure.microsoft.com": 9,
+    "azure.microsoft.com": 10,
     "www.sonarsource.com": 5,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 4,
@@ -51,7 +51,7 @@
     "blog.cloudflare.com": 3,
     "dropbox.tech": 1,
     "blog.uptimerobot.com": 1,
-    "grafana.com": 28
+    "grafana.com": 32
   },
   "errors": [
     {
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-13",
-      "time": "2026-02-13T04:52:17.934673+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-13",
       "time": "2026-02-13T12:52:28.484546+00:00",
@@ -1120,13 +1112,28 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-09-13",
+      "time": "2026-09-13T08:15:38.049672+00:00",
+      "format": "digest",
+      "sources": [
+        "grafana.com",
+        "grafana.com",
+        "grafana.com",
+        "grafana.com",
+        "www.cncf.io",
+        "azure.microsoft.com"
+      ]
     }
   ],
-  "posts_created": 193,
-  "last_post_content": "In 2026, the cost optimization strategy that saves companies $500k annually is no longer optional. Here's why:\n\nKey insights on the cost optimization strategy that saves companies $500k annually:\n\n\u2022 Set the scene - what went wrong\n\u2022 The immediate impact and consequences\n\u2022 Root cause analysis\n\u2022 The implementation that fixed it\n\nWhat would you have done differently in this situation?\n\n#scalability #microservices #sre #infrastructure #devops",
-  "last_post_format": "lessons_learned",
+  "posts_created": 194,
+  "last_post_content": "\ud83d\udca1 Innovation in cloud-native and edge computing.\nAutomation architects drive efficiency and scale across industries.\n\n\ud83d\udccc ARCHITECTURE PATTERNS:\n\n1\ufe0f\u20e3 KNOWLEDGE GRAPH AS CONTEXT FOR LLMS: DEMONSTRATING DECISIVE RCA AND FASTER PRODUCTION PERFORMANCE\n\nOn the product team here at Grafana Labs, we consider AI agents our users, too. That\u2019s why we set out to test how well agents can debug incidents across the full stack, and how...\n\n\ud83d\udca1 KEY INSIGHT: Systematic post-incident analysis prevents recurrence and builds institutional knowledge\n\ud83d\udd17 Read more: https://grafana.com/blog/knowledge-graph-as-context-for-llms-demonstrating-decisive-rca-and-faster-production-performance/\n\n2\ufe0f\u20e3 HOW TO MEASURE AND IMPROVE INSTRUMENTATION QUALITY FOR BETTER FULL-STACK OBSERVABILITY\n\nModern engineering teams instrument everything, with metrics, logs, traces, and profiles flowing from hundreds of services at once.\n\n\ud83d\udca1 KEY INSIGHT: Distributed tracing surfaces system behavior that aggregate metrics cannot reveal\n\ud83d\udd17 Read more: https://grafana.com/blog/how-to-measure-and-improve-instrumentation-quality-for-better-full-stack-observability/\n\n3\ufe0f\u20e3 VISUAL PLAYBACK OF THE USER JOURNEY: INTRODUCING SESSION REPLAY IN GRAFANA CLOUD FRONTEND OBSERVABILITY\n\nGrafana Cloud Frontend Observability helps engineering teams quantify the end user experience by bringing metrics, logs, traces, and user session context to client-side web...\n\n\ud83d\udca1 KEY INSIGHT: Structured observability data enables faster root cause identification during incident response\n\ud83d\udd17 Read more: https://grafana.com/blog/visual-playback-of-the-user-journey-introducing-session-replay-in-grafana-cloud-frontend-observability/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "www.cncf.io",
+    "azure.microsoft.com",
+    "grafana.com"
   ],
-  "last_post_timestamp": "2026-09-11T07:59:44.258408+00:00"
+  "last_post_timestamp": "2026-09-13T08:15:38.050776+00:00"
 }
