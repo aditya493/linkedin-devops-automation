@@ -1,12 +1,12 @@
 {
-  "total_posts": 221,
+  "total_posts": 222,
   "posts_today": 1,
-  "last_post_date": "2026-09-13",
+  "last_post_date": "2026-09-15",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 103,
+    "digest": 104,
     "lessons_learned": 9,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -27,7 +27,7 @@
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 25,
-    "www.cncf.io": 48,
+    "www.cncf.io": 49,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -36,7 +36,7 @@
     "growth_plan": 102,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
-    "about.gitlab.com": 26,
+    "about.gitlab.com": 27,
     "martinfowler.com": 7,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 10,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-13",
-      "time": "2026-02-13T12:52:28.484546+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-14",
       "time": "2026-02-14T11:48:02.962640+00:00",
@@ -1125,15 +1117,23 @@
         "www.cncf.io",
         "azure.microsoft.com"
       ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "2026-09-15T08:36:09.229557+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "www.cncf.io"
+      ]
     }
   ],
-  "posts_created": 194,
-  "last_post_content": "\ud83d\udca1 Innovation in cloud-native and edge computing.\nAutomation architects drive efficiency and scale across industries.\n\n\ud83d\udccc ARCHITECTURE PATTERNS:\n\n1\ufe0f\u20e3 KNOWLEDGE GRAPH AS CONTEXT FOR LLMS: DEMONSTRATING DECISIVE RCA AND FASTER PRODUCTION PERFORMANCE\n\nOn the product team here at Grafana Labs, we consider AI agents our users, too. That\u2019s why we set out to test how well agents can debug incidents across the full stack, and how...\n\n\ud83d\udca1 KEY INSIGHT: Systematic post-incident analysis prevents recurrence and builds institutional knowledge\n\ud83d\udd17 Read more: https://grafana.com/blog/knowledge-graph-as-context-for-llms-demonstrating-decisive-rca-and-faster-production-performance/\n\n2\ufe0f\u20e3 HOW TO MEASURE AND IMPROVE INSTRUMENTATION QUALITY FOR BETTER FULL-STACK OBSERVABILITY\n\nModern engineering teams instrument everything, with metrics, logs, traces, and profiles flowing from hundreds of services at once.\n\n\ud83d\udca1 KEY INSIGHT: Distributed tracing surfaces system behavior that aggregate metrics cannot reveal\n\ud83d\udd17 Read more: https://grafana.com/blog/how-to-measure-and-improve-instrumentation-quality-for-better-full-stack-observability/\n\n3\ufe0f\u20e3 VISUAL PLAYBACK OF THE USER JOURNEY: INTRODUCING SESSION REPLAY IN GRAFANA CLOUD FRONTEND OBSERVABILITY\n\nGrafana Cloud Frontend Observability helps engineering teams quantify the end user experience by bringing metrics, logs, traces, and user session context to client-side web...\n\n\ud83d\udca1 KEY INSIGHT: Structured observability data enables faster root cause identification during incident response\n\ud83d\udd17 Read more: https://grafana.com/blog/visual-playback-of-the-user-journey-introducing-session-replay-in-grafana-cloud-frontend-observability/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHICH TREND RESONATES MOST WITH YOUR TEAM?",
+  "posts_created": 195,
+  "last_post_content": "\ud83d\udca1 Innovation in cloud-native and edge computing.\nPlatform architects surface actionable insights for resilient systems.\n\n\ud83d\udccc OBSERVABILITY INSIGHTS:\n\n1\ufe0f\u20e3 GITLAB DEDICATED: COMPLIANCE FOR A NEW REGULATORY ERA\n\nEnforcements such as NIS2 are no longer a future planning consideration. The European Union Agency for Cybersecurity's (ENISA) NIS360 report confirms that supervisory...\n\n\ud83d\udca1 KEY INSIGHT: Identifying vulnerabilities earlier in the development lifecycle reduces remediation cost significantly\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-dedicated-compliance/\n\n2\ufe0f\u20e3 CILIUM 1.20: GATEWAY API EXTERNALAUTH, TCPROUTE/UDPROUTE, ENI IPAM FOR IPV6, AND MORE\n\nCilium 1.20, the second major open source Cilium release of 2026 after Cilium 1.19, is finally here. Three themes stand out in this release: Thank you to every contributor,...\n\n\ud83d\udca1 KEY INSIGHT: Automated deployment pipelines enable both speed and reliability without requiring a trade-off between them\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 How is your organization responding to these signals?",
   "last_post_format": "digest",
   "last_post_sources": [
     "www.cncf.io",
-    "azure.microsoft.com",
-    "grafana.com"
+    "about.gitlab.com"
   ],
-  "last_post_timestamp": "2026-09-13T08:15:38.050776+00:00"
+  "last_post_timestamp": "2026-09-15T08:36:09.230276+00:00"
 }

@@ -12,6 +12,7 @@
     "https://about.gitlab.com/blog/dependency-scanning-auto-remediation/",
     "https://about.gitlab.com/blog/getting-started-with-gitlab-duo-agentic-chat/",
     "https://about.gitlab.com/blog/gitlab-bug-bounty-program-policy-updates/",
+    "https://about.gitlab.com/blog/gitlab-dedicated-compliance/",
     "https://about.gitlab.com/blog/gitlab-duo-agent-platform-complete-getting-started-guide/",
     "https://about.gitlab.com/blog/gitlab-duo-agent-platform-delivers-400-percent-roi/",
     "https://about.gitlab.com/blog/gitlab-duo-agent-platform-is-generally-available/",
@@ -272,6 +273,7 @@
     "https://www.cncf.io/blog/2026/07/31/scaling-kubernetes-pods-with-keda-based-on-amazon-sqs-queue-depth/",
     "https://www.cncf.io/blog/2026/09/08/kubernetes-access-via-an-identity-provider-public-client-not-confidential/",
     "https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/",
+    "https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/",
     "https://www.crowdstrike.com/en-us/blog/ai-tool-poisoning/",
     "https://www.crowdstrike.com/en-us/blog/architecture-of-agentic-defense-inside-the-falcon-platform/",
     "https://www.crowdstrike.com/en-us/blog/built-for-scale-powered-by-ai-innovation-driving-falcon-exposure-management/",
@@ -525,10 +527,12 @@
       "9ea423608ef6": "2026-09-13T08:15:38.048520+00:00",
       "c4e7ecbf2aca": "2026-09-13T08:15:38.048551+00:00",
       "c578c44cc78b": "2026-09-13T08:15:38.048578+00:00",
-      "aef63fae4560": "2026-09-13T08:15:38.048602+00:00"
+      "aef63fae4560": "2026-09-13T08:15:38.048602+00:00",
+      "71e51ed5e901": "2026-09-15T08:36:09.228623+00:00",
+      "cd30900f40f0": "2026-09-15T08:36:09.228667+00:00"
     },
-    "last_post_id": "urn:li:share:7504815036008271873",
-    "last_posted_at_utc": "2026-09-13T08:15:38.048615+00:00",
+    "last_post_id": "urn:li:share:7505544977293418497",
+    "last_posted_at_utc": "2026-09-15T08:36:09.228675+00:00",
     "last_format": "digest"
   }
 }
