@@ -1,12 +1,12 @@
 {
-  "total_posts": 222,
+  "total_posts": 223,
   "posts_today": 1,
-  "last_post_date": "2026-09-15",
+  "last_post_date": "2026-09-17",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 104,
+    "digest": 105,
     "lessons_learned": 9,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -15,7 +15,7 @@
     "ai_and_automation": 11
   },
   "sources_used": {
-    "www.infoq.com": 125,
+    "www.infoq.com": 129,
     "kubernetes.io": 28,
     "www.docker.com": 24,
     "krebsonsecurity.com": 6,
@@ -37,7 +37,7 @@
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 27,
-    "martinfowler.com": 7,
+    "martinfowler.com": 8,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 10,
     "www.sonarsource.com": 5,
@@ -45,7 +45,7 @@
     "engineering.atspotify.com": 4,
     "microservices.io": 3,
     "blogs.microsoft.com": 14,
-    "www.paloaltonetworks.com": 6,
+    "www.paloaltonetworks.com": 7,
     "github.blog": 2,
     "googleprojectzero.blogspot.com": 2,
     "blog.cloudflare.com": 3,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-14",
-      "time": "2026-02-14T11:48:02.962640+00:00",
-      "format": "ai_and_automation",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-15",
       "time": "2026-02-15T05:52:47.272514+00:00",
@@ -1126,14 +1118,28 @@
         "about.gitlab.com",
         "www.cncf.io"
       ]
+    },
+    {
+      "date": "2026-09-17",
+      "time": "2026-09-17T08:37:02.155869+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "martinfowler.com",
+        "www.infoq.com",
+        "www.paloaltonetworks.com"
+      ]
     }
   ],
-  "posts_created": 195,
-  "last_post_content": "\ud83d\udca1 Innovation in cloud-native and edge computing.\nPlatform architects surface actionable insights for resilient systems.\n\n\ud83d\udccc OBSERVABILITY INSIGHTS:\n\n1\ufe0f\u20e3 GITLAB DEDICATED: COMPLIANCE FOR A NEW REGULATORY ERA\n\nEnforcements such as NIS2 are no longer a future planning consideration. The European Union Agency for Cybersecurity's (ENISA) NIS360 report confirms that supervisory...\n\n\ud83d\udca1 KEY INSIGHT: Identifying vulnerabilities earlier in the development lifecycle reduces remediation cost significantly\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-dedicated-compliance/\n\n2\ufe0f\u20e3 CILIUM 1.20: GATEWAY API EXTERNALAUTH, TCPROUTE/UDPROUTE, ENI IPAM FOR IPV6, AND MORE\n\nCilium 1.20, the second major open source Cilium release of 2026 after Cilium 1.19, is finally here. Three themes stand out in this release: Thank you to every contributor,...\n\n\ud83d\udca1 KEY INSIGHT: Automated deployment pipelines enable both speed and reliability without requiring a trade-off between them\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 How is your organization responding to these signals?",
+  "posts_created": 196,
+  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nObservability advocates surface what teams measure and why.\n\n\ud83d\udccc THIS WEEK'S STANDOUTS:\n\n1\ufe0f\u20e3 FROM MEMORY-HUNGRY HNSW TO QUANTIZED SPANN: THE TECHNICAL EVOLUTION OF PINTEREST'S MANAS PLATFORM\n\nPinterest Engineering has enhanced its Manas search platform to manage vast data, improving efficiency in search and discovery functions.\n\n\ud83d\udca1 KEY INSIGHT: Platform engineering that makes developers more productive, not frustrated.\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/09/pinterest-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2\ufe0f\u20e3 MICROSOFT OPEN-SOURCES TAUGRID TO SIMPLIFY AI WORKLOAD MANAGEMENT ON KUBERNETES\n\nMicrosoft has open-sourced TauGrid, a cloud-native platform designed to manage, schedule, and monitor AI workloads on GPU-enabled Kubernetes clusters. By Sergio De Simone\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/09/microsoft-taugrid-open-source/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n3\ufe0f\u20e3 LYFT MOVES STREAMING FLEET TO APACHE FLINK KUBERNETES OPERATOR\n\nLyft has moved hundreds of production Flink jobs from a 2020 in-house Kubernetes operator to the Apache Flink Kubernetes Operator, unlocking last-state upgrades, in-place...\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/09/lyft-flink-k8s-operator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHAT DID WE MISS?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "www.cncf.io",
-    "about.gitlab.com"
+    "www.infoq.com",
+    "www.paloaltonetworks.com",
+    "martinfowler.com"
   ],
-  "last_post_timestamp": "2026-09-15T08:36:09.230276+00:00"
+  "last_post_timestamp": "2026-09-17T08:37:02.156574+00:00"
 }

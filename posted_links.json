@@ -190,6 +190,7 @@
     "https://martinfowler.com/fragments/2026-01-08.html",
     "https://martinfowler.com/fragments/2026-01-22.html",
     "https://martinfowler.com/fragments/2026-02-04.html",
+    "https://martinfowler.com/fragments/2026-09-16.html",
     "https://netflixtechblog.com/data-bridge-how-netflix-simplifies-data-movement-36d10d91c313?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.com/dynamically-splitting-wide-partitions-in-cassandra-for-time-series-workloads-0eded064f456?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3?source=rss-c3aeaf49d8a4------2",
@@ -432,6 +433,10 @@
     "https://www.infoq.com/news/2026/07/cloudflare-unified-data-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/07/cycle-eu-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/07/platform-projects-products/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/09/atlassian-automated-rca/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/09/lyft-flink-k8s-operator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/09/microsoft-taugrid-open-source/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/09/pinterest-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/2025-year-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/ai-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/code-leadership-balance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -479,6 +484,7 @@
     "https://www.paloaltonetworks.com/blog/cloud-security/cortex-cloud-2-2/",
     "https://www.paloaltonetworks.com/blog/cloud-security/mcp-servers-ai-attack-surface-security/",
     "https://www.paloaltonetworks.com/blog/cloud-security/secure-ai-ecosystem-data-to-runtime/",
+    "https://www.paloaltonetworks.com/blog/security-operations/cortex-data-security-ga-dlp-ddr/",
     "https://www.rapid7.com/blog/post/cds-reducing-cloud-chaos-rapid7-partners-with-armo-delivering-cloud-runtime-security",
     "https://www.rapid7.com/blog/post/dr-microsoft-defender-to-tangible-security-outcomes-with-rapid7-mdr",
     "https://www.rapid7.com/blog/post/dr-siem-moving-toward-unified-security-operations-rapid7-named-idc-marketscape-major-player",
@@ -529,10 +535,16 @@
       "c578c44cc78b": "2026-09-13T08:15:38.048578+00:00",
       "aef63fae4560": "2026-09-13T08:15:38.048602+00:00",
       "71e51ed5e901": "2026-09-15T08:36:09.228623+00:00",
-      "cd30900f40f0": "2026-09-15T08:36:09.228667+00:00"
+      "cd30900f40f0": "2026-09-15T08:36:09.228667+00:00",
+      "26f172c14c85": "2026-09-17T08:37:02.154944+00:00",
+      "d13101a7ab65": "2026-09-17T08:37:02.154990+00:00",
+      "c4c0fdf122b7": "2026-09-17T08:37:02.155004+00:00",
+      "b0d4f8a31843": "2026-09-17T08:37:02.155013+00:00",
+      "09aa566d1e16": "2026-09-17T08:37:02.155023+00:00",
+      "90a55929d39a": "2026-09-17T08:37:02.155038+00:00"
     },
-    "last_post_id": "urn:li:share:7505544977293418497",
-    "last_posted_at_utc": "2026-09-15T08:36:09.228675+00:00",
+    "last_post_id": "urn:li:share:7506269974852804609",
+    "last_posted_at_utc": "2026-09-17T08:37:02.155043+00:00",
     "last_format": "digest"
   }
 }
