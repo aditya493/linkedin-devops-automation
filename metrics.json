@@ -1,12 +1,12 @@
 {
-  "total_posts": 223,
+  "total_posts": 224,
   "posts_today": 1,
-  "last_post_date": "2026-09-17",
+  "last_post_date": "2026-09-19",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 105,
+    "digest": 106,
     "lessons_learned": 9,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
@@ -16,7 +16,7 @@
   },
   "sources_used": {
     "www.infoq.com": 129,
-    "kubernetes.io": 28,
+    "kubernetes.io": 30,
     "www.docker.com": 24,
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
@@ -27,7 +27,7 @@
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
     "aws.amazon.com": 25,
-    "www.cncf.io": 49,
+    "www.cncf.io": 50,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -39,13 +39,13 @@
     "about.gitlab.com": 27,
     "martinfowler.com": 8,
     "www.aquasec.com": 1,
-    "azure.microsoft.com": 10,
+    "azure.microsoft.com": 11,
     "www.sonarsource.com": 5,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 4,
     "microservices.io": 3,
     "blogs.microsoft.com": 14,
-    "www.paloaltonetworks.com": 7,
+    "www.paloaltonetworks.com": 9,
     "github.blog": 2,
     "googleprojectzero.blogspot.com": 2,
     "blog.cloudflare.com": 3,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-15",
-      "time": "2026-02-15T05:52:47.272514+00:00",
-      "format": "ai_and_automation",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-17",
       "time": "2026-02-17T04:48:49.550066+00:00",
@@ -1131,15 +1123,29 @@
         "www.infoq.com",
         "www.paloaltonetworks.com"
       ]
+    },
+    {
+      "date": "2026-09-19",
+      "time": "2026-09-19T08:00:33.997979+00:00",
+      "format": "digest",
+      "sources": [
+        "www.cncf.io",
+        "kubernetes.io",
+        "azure.microsoft.com",
+        "kubernetes.io",
+        "www.paloaltonetworks.com",
+        "www.paloaltonetworks.com"
+      ]
     }
   ],
-  "posts_created": 196,
-  "last_post_content": "\ud83c\udf0d Global tech trends to watch.\nObservability advocates surface what teams measure and why.\n\n\ud83d\udccc THIS WEEK'S STANDOUTS:\n\n1\ufe0f\u20e3 FROM MEMORY-HUNGRY HNSW TO QUANTIZED SPANN: THE TECHNICAL EVOLUTION OF PINTEREST'S MANAS PLATFORM\n\nPinterest Engineering has enhanced its Manas search platform to manage vast data, improving efficiency in search and discovery functions.\n\n\ud83d\udca1 KEY INSIGHT: Platform engineering that makes developers more productive, not frustrated.\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/09/pinterest-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2\ufe0f\u20e3 MICROSOFT OPEN-SOURCES TAUGRID TO SIMPLIFY AI WORKLOAD MANAGEMENT ON KUBERNETES\n\nMicrosoft has open-sourced TauGrid, a cloud-native platform designed to manage, schedule, and monitor AI workloads on GPU-enabled Kubernetes clusters. By Sergio De Simone\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/09/microsoft-taugrid-open-source/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n3\ufe0f\u20e3 LYFT MOVES STREAMING FLEET TO APACHE FLINK KUBERNETES OPERATOR\n\nLyft has moved hundreds of production Flink jobs from a 2020 in-house Kubernetes operator to the Apache Flink Kubernetes Operator, unlocking last-state upgrades, in-place...\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/09/lyft-flink-k8s-operator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHAT DID WE MISS?",
+  "posts_created": 197,
+  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nTop teams separate signal from noise in modern infrastructure. Insights below.\n\n\ud83d\udccc AUTOMATION STRATEGIES:\n\n1\ufe0f\u20e3 RUNNING OPENBAO ON KUBERNETES WITH A CLOUDNATIVEPG POSTGRESQL BACKEND\n\n...\nManaging infrastructure secrets on Kubernetes needs a backend that is self-healing and free of vendor lock-in, and that is exactly what OpenBao (the Linux Foundation&#8217;s open-source fork of HashiCorp Vault) and CloudNativePG give you: an entirely...\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/\n\n2\ufe0f\u20e3 KUBERNETES V1.37: POD-LEVEL RESOURCE MANAGERS GRADUATED TO BETA\n\n...\nWith the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Resources by equipping Kubelet's Topology Manager, CPU Manager, and Memory Manager to use Pod-level resource declarations ( .spec.resources ) directly when making hardwar\n\n\ud83d\udca1 KEY INSIGHT: Effective cluster management practices significantly reduce the frequency and impact of production issues\n\ud83d\udd17 Read more: https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/\n\n3\ufe0f\u20e3 MICROSOFT RECOGNIZED AS A LEADER IN THE 2026 GARTNER\u00ae MAGIC QUADRANT\u2122 FOR DISTRIBUTED HYBRID INFRASTRUCTURE\n\nGartner highlighted Microsoft\u2019s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more.\n\n\ud83d\udca1 KEY INSIGHT: Infrastructure as code transforms environment management into a standard software engineering discipline\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 How is your organization responding to these signals?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "www.infoq.com",
     "www.paloaltonetworks.com",
-    "martinfowler.com"
+    "azure.microsoft.com",
+    "kubernetes.io",
+    "www.cncf.io"
   ],
-  "last_post_timestamp": "2026-09-17T08:37:02.156574+00:00"
+  "last_post_timestamp": "2026-09-19T08:00:34.001256+00:00"
 }
