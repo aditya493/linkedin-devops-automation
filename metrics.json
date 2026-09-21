@@ -1,13 +1,13 @@
 {
-  "total_posts": 224,
+  "total_posts": 225,
   "posts_today": 1,
-  "last_post_date": "2026-09-19",
+  "last_post_date": "2026-09-21",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 106,
-    "lessons_learned": 9,
+    "lessons_learned": 10,
     "technical_deep_dives": 11,
     "industry_predictions": 25,
     "career_advice": 26,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 102,
+    "growth_plan": 103,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 27,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-17",
-      "time": "2026-02-17T04:48:49.550066+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-18",
       "time": "2026-02-18T04:50:09.376176+00:00",
@@ -1136,16 +1128,21 @@
         "www.paloaltonetworks.com",
         "www.paloaltonetworks.com"
       ]
+    },
+    {
+      "date": "2026-09-21",
+      "time": "2026-09-21T08:51:27.566340+00:00",
+      "format": "lessons_learned",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 197,
-  "last_post_content": "\ud83d\udcca Data-driven insights for engineering teams.\nTop teams separate signal from noise in modern infrastructure. Insights below.\n\n\ud83d\udccc AUTOMATION STRATEGIES:\n\n1\ufe0f\u20e3 RUNNING OPENBAO ON KUBERNETES WITH A CLOUDNATIVEPG POSTGRESQL BACKEND\n\n...\nManaging infrastructure secrets on Kubernetes needs a backend that is self-healing and free of vendor lock-in, and that is exactly what OpenBao (the Linux Foundation&#8217;s open-source fork of HashiCorp Vault) and CloudNativePG give you: an entirely...\n\n\ud83d\udca1 KEY INSIGHT: GitOps-driven container orchestration provides auditability and rollback capability for all infrastructure changes\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/\n\n2\ufe0f\u20e3 KUBERNETES V1.37: POD-LEVEL RESOURCE MANAGERS GRADUATED TO BETA\n\n...\nWith the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Resources by equipping Kubelet's Topology Manager, CPU Manager, and Memory Manager to use Pod-level resource declarations ( .spec.resources ) directly when making hardwar\n\n\ud83d\udca1 KEY INSIGHT: Effective cluster management practices significantly reduce the frequency and impact of production issues\n\ud83d\udd17 Read more: https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/\n\n3\ufe0f\u20e3 MICROSOFT RECOGNIZED AS A LEADER IN THE 2026 GARTNER\u00ae MAGIC QUADRANT\u2122 FOR DISTRIBUTED HYBRID INFRASTRUCTURE\n\nGartner highlighted Microsoft\u2019s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more.\n\n\ud83d\udca1 KEY INSIGHT: Infrastructure as code transforms environment management into a standard software engineering discipline\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 How is your organization responding to these signals?",
-  "last_post_format": "digest",
+  "posts_created": 198,
+  "last_post_content": "Hot take: from 200 manual steps to zero-touch deployment: a case study is more important than most people realize.\n\nKey insights on from 200 manual steps to zero-touch deployment: a case study:\n\n\u2022 Set the scene - what went wrong\n\u2022 The immediate impact and consequences\n\u2022 Root cause analysis\n\u2022 The implementation that fixed it\n\nWhat would you have done differently in this situation?\n\n#llmops #cloudengineering #devops #genai #sre",
+  "last_post_format": "lessons_learned",
   "last_post_sources": [
-    "www.paloaltonetworks.com",
-    "azure.microsoft.com",
-    "kubernetes.io",
-    "www.cncf.io"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-09-19T08:00:34.001256+00:00"
+  "last_post_timestamp": "2026-09-21T08:51:27.567728+00:00"
 }
