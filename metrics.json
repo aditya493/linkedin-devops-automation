@@ -1,7 +1,7 @@
 {
-  "total_posts": 225,
+  "total_posts": 226,
   "posts_today": 1,
-  "last_post_date": "2026-09-21",
+  "last_post_date": "2026-09-23",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 11,
     "industry_predictions": 25,
     "career_advice": 26,
-    "controversial_takes": 11,
+    "controversial_takes": 12,
     "ai_and_automation": 11
   },
   "sources_used": {
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 103,
+    "growth_plan": 104,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 27,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-18",
-      "time": "2026-02-18T04:50:09.376176+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-19",
       "time": "2026-02-19T07:43:23.497689+00:00",
@@ -1136,13 +1128,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-09-23",
+      "time": "2026-09-23T08:30:20.753119+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 198,
-  "last_post_content": "Hot take: from 200 manual steps to zero-touch deployment: a case study is more important than most people realize.\n\nKey insights on from 200 manual steps to zero-touch deployment: a case study:\n\n\u2022 Set the scene - what went wrong\n\u2022 The immediate impact and consequences\n\u2022 Root cause analysis\n\u2022 The implementation that fixed it\n\nWhat would you have done differently in this situation?\n\n#llmops #cloudengineering #devops #genai #sre",
-  "last_post_format": "lessons_learned",
+  "posts_created": 199,
+  "last_post_content": "Comprehensive monitoring and alerting reveals patterns. This matters.\n\nThe thing nobody tells engineers about why your monitoring strategy is probably wrong:\n\nKey insights on why your monitoring strategy is probably wrong:\n\n\u2022 Bold statement that challenges conventional wisdom\n\u2022 3 supporting arguments with real examples\n\u2022 Acknowledge the counterargument\n\u2022 Personal story illustrating the point\n\nAgree or disagree? Share your perspective in the comments.\n\n#grafana #microservices #sre #infrastructureascode #cloudengineering",
+  "last_post_format": "controversial_takes",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-09-21T08:51:27.567728+00:00"
+  "last_post_timestamp": "2026-09-23T08:30:20.754125+00:00"
 }
