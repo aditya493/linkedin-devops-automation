@@ -1,7 +1,7 @@
 {
-  "total_posts": 226,
+  "total_posts": 227,
   "posts_today": 1,
-  "last_post_date": "2026-09-23",
+  "last_post_date": "2026-09-25",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 106,
     "lessons_learned": 10,
     "technical_deep_dives": 11,
-    "industry_predictions": 25,
+    "industry_predictions": 26,
     "career_advice": 26,
     "controversial_takes": 12,
     "ai_and_automation": 11
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 104,
+    "growth_plan": 105,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 27,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-19",
-      "time": "2026-02-19T07:43:23.497689+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-23",
       "time": "2026-02-23T12:56:48.136631+00:00",
@@ -1136,13 +1128,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-09-25",
+      "time": "2026-09-25T08:44:24.841954+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 199,
-  "last_post_content": "Comprehensive monitoring and alerting reveals patterns. This matters.\n\nThe thing nobody tells engineers about why your monitoring strategy is probably wrong:\n\nKey insights on why your monitoring strategy is probably wrong:\n\n\u2022 Bold statement that challenges conventional wisdom\n\u2022 3 supporting arguments with real examples\n\u2022 Acknowledge the counterargument\n\u2022 Personal story illustrating the point\n\nAgree or disagree? Share your perspective in the comments.\n\n#grafana #microservices #sre #infrastructureascode #cloudengineering",
-  "last_post_format": "controversial_takes",
+  "posts_created": 200,
+  "last_post_content": "DevOps culture transformation shows what works. Let's break this down.\n\nThe thing nobody tells engineers about 5 devops trends that will dominate 2026:\n\nKey insights on 5 devops trends that will dominate 2026:\n\n\u2022 Hook with controversial statement\n\u2022 3-5 specific predictions with reasoning\n\u2022 Personal experience backing each prediction\n\u2022 Timeline for when these changes will happen\n\nMissing any major trends? What would you add to this list?\n\n#sre #scalability #techin2026 #devops #automation",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-09-23T08:30:20.754125+00:00"
+  "last_post_timestamp": "2026-09-25T08:44:24.843195+00:00"
 }
