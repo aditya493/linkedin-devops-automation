@@ -1,7 +1,7 @@
 {
-  "total_posts": 227,
+  "total_posts": 228,
   "posts_today": 1,
-  "last_post_date": "2026-09-25",
+  "last_post_date": "2026-09-27",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 11,
     "industry_predictions": 26,
     "career_advice": 26,
-    "controversial_takes": 12,
+    "controversial_takes": 13,
     "ai_and_automation": 11
   },
   "sources_used": {
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 105,
+    "growth_plan": 106,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 27,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-23",
-      "time": "2026-02-23T12:56:48.136631+00:00",
-      "format": "technical_deep_dives",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-24",
       "time": "2026-02-24T07:45:12.754821+00:00",
@@ -1136,13 +1128,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-09-27",
+      "time": "2026-09-27T09:12:35.687024+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 200,
-  "last_post_content": "DevOps culture transformation shows what works. Let's break this down.\n\nThe thing nobody tells engineers about 5 devops trends that will dominate 2026:\n\nKey insights on 5 devops trends that will dominate 2026:\n\n\u2022 Hook with controversial statement\n\u2022 3-5 specific predictions with reasoning\n\u2022 Personal experience backing each prediction\n\u2022 Timeline for when these changes will happen\n\nMissing any major trends? What would you add to this list?\n\n#sre #scalability #techin2026 #devops #automation",
-  "last_post_format": "industry_predictions",
+  "posts_created": 201,
+  "last_post_content": "DevOps culture transformation shows what works. Worth understanding.\n\nThe hidden cost of configuration drift: the silent killer of devops that teams often miss:\n\nKey insights on configuration drift: the silent killer of devops:\n\n\u2022 Bold statement that challenges conventional wisdom\n\u2022 3 supporting arguments with real examples\n\u2022 Acknowledge the counterargument\n\u2022 Personal story illustrating the point\n\nChallenge this thinking - what's missing here?\n\n#infrastructure #llmops #automation #genai #devops",
+  "last_post_format": "controversial_takes",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-09-25T08:44:24.843195+00:00"
+  "last_post_timestamp": "2026-09-27T09:12:35.688053+00:00"
 }
