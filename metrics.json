@@ -1,14 +1,14 @@
 {
-  "total_posts": 228,
+  "total_posts": 229,
   "posts_today": 1,
-  "last_post_date": "2026-09-27",
+  "last_post_date": "2026-09-29",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 106,
     "lessons_learned": 10,
-    "technical_deep_dives": 11,
+    "technical_deep_dives": 12,
     "industry_predictions": 26,
     "career_advice": 26,
     "controversial_takes": 13,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 106,
+    "growth_plan": 107,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 27,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-24",
-      "time": "2026-02-24T07:45:12.754821+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-24",
       "time": "2026-02-24T13:00:23.394362+00:00",
@@ -1136,13 +1128,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-09-29",
+      "time": "2026-09-29T09:44:02.315718+00:00",
+      "format": "technical_deep_dives",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 201,
-  "last_post_content": "DevOps culture transformation shows what works. Worth understanding.\n\nThe hidden cost of configuration drift: the silent killer of devops that teams often miss:\n\nKey insights on configuration drift: the silent killer of devops:\n\n\u2022 Bold statement that challenges conventional wisdom\n\u2022 3 supporting arguments with real examples\n\u2022 Acknowledge the counterargument\n\u2022 Personal story illustrating the point\n\nChallenge this thinking - what's missing here?\n\n#infrastructure #llmops #automation #genai #devops",
-  "last_post_format": "controversial_takes",
+  "posts_created": 202,
+  "last_post_content": "Everyone talks about the architecture behind automated recovery systems, but nobody mentions this:\n\nKey insights on the architecture behind automated recovery systems:\n\n\u2022 Problem statement with context\n\u2022 Technical constraints and requirements\n\u2022 Solution architecture with diagrams\n\u2022 Implementation challenges and solutions\n\nHow would you approach this challenge? Share your technical thoughts.\n\n#gitops #devops #sre #automation #infrastructure",
+  "last_post_format": "technical_deep_dives",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-09-27T09:12:35.688053+00:00"
+  "last_post_timestamp": "2026-09-29T09:44:02.316928+00:00"
 }
