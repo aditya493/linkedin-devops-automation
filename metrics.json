@@ -1,7 +1,7 @@
 {
-  "total_posts": 229,
+  "total_posts": 230,
   "posts_today": 1,
-  "last_post_date": "2026-09-29",
+  "last_post_date": "2026-10-01",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 106,
     "lessons_learned": 10,
     "technical_deep_dives": 12,
-    "industry_predictions": 26,
+    "industry_predictions": 27,
     "career_advice": 26,
     "controversial_takes": 13,
     "ai_and_automation": 11
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 107,
+    "growth_plan": 108,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 27,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-24",
-      "time": "2026-02-24T13:00:23.394362+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-25",
       "time": "2026-02-25T04:51:26.842588+00:00",
@@ -1136,13 +1128,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "time": "2026-10-01T10:01:34.960215+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 202,
-  "last_post_content": "Everyone talks about the architecture behind automated recovery systems, but nobody mentions this:\n\nKey insights on the architecture behind automated recovery systems:\n\n\u2022 Problem statement with context\n\u2022 Technical constraints and requirements\n\u2022 Solution architecture with diagrams\n\u2022 Implementation challenges and solutions\n\nHow would you approach this challenge? Share your technical thoughts.\n\n#gitops #devops #sre #automation #infrastructure",
-  "last_post_format": "technical_deep_dives",
+  "posts_created": 203,
+  "last_post_content": "The hidden cost of the death of traditional it operations that teams often miss:\n\nKey insights on the death of traditional it operations:\n\n\u2022 Hook with controversial statement\n\u2022 3-5 specific predictions with reasoning\n\u2022 Personal experience backing each prediction\n\u2022 Timeline for when these changes will happen\n\nMissing any major trends? What would you add to this list?\n\n#serverless #cloudengineering #automation #infrastructure #infrastructureascode",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-09-29T09:44:02.316928+00:00"
+  "last_post_timestamp": "2026-10-01T10:01:34.961462+00:00"
 }
