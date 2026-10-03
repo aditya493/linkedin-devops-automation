@@ -42,11 +42,14 @@
     "https://aws.amazon.com/blogs/devops/supercharge-your-cloud-operations-with-the-kiro-power-for-aws-devops-agent/",
     "https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/",
     "https://aws.amazon.com/blogs/mt/automate-ci-cd-troubleshooting-with-aws-devops-agent-and-github/",
+    "https://aws.amazon.com/blogs/mt/automate-rca-across-servicenow-dynatrace-and-slack-with-aws-devops-agent/",
     "https://aws.amazon.com/blogs/mt/autonomous-root-cause-analysis-for-aws-systems-manager-patch-failures-using-aws-devops-agent/",
+    "https://aws.amazon.com/blogs/mt/best-practices-for-writing-aws-devops-agent-skills/",
     "https://aws.amazon.com/blogs/mt/build-bespoke-operational-workflows-with-aws-devops-agent-custom-sre-agents/",
     "https://aws.amazon.com/blogs/mt/cross-region-aws-privatelink-monitoring-with-amazon-cloudwatch-network-synthetic-monitor/",
     "https://aws.amazon.com/blogs/mt/deploying-custom-terraform-to-lza-managed-accounts-with-aft/",
     "https://aws.amazon.com/blogs/mt/extend-amazon-cloudwatch-beyond-native-connectors-with-cribl-stream/",
+    "https://aws.amazon.com/blogs/mt/from-2-am-alarm-to-answer-security-triage-with-aws-devops-agent/",
     "https://aws.amazon.com/blogs/mt/from-monolith-to-multi-account-pinterests-aws-organization-transformation-journey/",
     "https://aws.amazon.com/blogs/mt/how-amazon-achieved-full-stack-observability-across-400-offices-with-amazon-opensearch-serverless/",
     "https://aws.amazon.com/blogs/mt/innovation-sandbox-on-aws-with-real-time-analytics-dashboard/",
@@ -279,6 +282,9 @@
     "https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/",
     "https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/",
     "https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/",
+    "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-application-developer-journey/",
+    "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-infrastructure-engineer-journey/",
+    "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-sre-journey/",
     "https://www.crowdstrike.com/en-us/blog/ai-tool-poisoning/",
     "https://www.crowdstrike.com/en-us/blog/architecture-of-agentic-defense-inside-the-falcon-platform/",
     "https://www.crowdstrike.com/en-us/blog/built-for-scale-powered-by-ai-innovation-driving-falcon-exposure-management/",
@@ -526,21 +532,19 @@
   ],
   "meta": {
     "topic_hashes": {
-      "3aba8b6be8a7": "2026-09-19T08:00:33.996615+00:00",
-      "94388c7a2072": "2026-09-19T08:00:33.996677+00:00",
-      "da48aa6e7bbc": "2026-09-19T08:00:33.996718+00:00",
-      "d62d512084db": "2026-09-19T08:00:33.996745+00:00",
-      "5b59789ba9d4": "2026-09-19T08:00:33.996769+00:00",
-      "5bface20e6e2": "2026-09-19T08:00:33.996796+00:00",
       "90bf9e6175ca": "2026-09-21T08:51:27.565147+00:00",
       "c1b9129f125e": "2026-09-23T08:30:20.752184+00:00",
       "a7508228e947": "2026-09-25T08:44:24.840710+00:00",
       "392da3497620": "2026-09-27T09:12:35.685940+00:00",
       "2f69a8f20018": "2026-09-29T09:44:02.314008+00:00",
-      "7c86f96cb12e": "2026-10-01T10:01:34.958872+00:00"
+      "7c86f96cb12e": "2026-10-01T10:01:34.958872+00:00",
+      "0622da1d091d": "2026-10-03T09:04:19.162769+00:00",
+      "9a7e05e7ac16": "2026-10-03T09:04:19.162669+00:00",
+      "a691f961db8c": "2026-10-03T09:04:19.162719+00:00",
+      "f1f917000aae": "2026-10-03T09:04:19.162745+00:00"
     },
-    "last_post_id": "urn:li:share:7511364681773793280",
-    "last_posted_at_utc": "2026-10-01T10:01:34.958919+00:00",
-    "last_format": "industry_predictions"
+    "last_post_id": "urn:li:share:7512075044223606785",
+    "last_posted_at_utc": "2026-10-03T09:04:19.162780+00:00",
+    "last_format": "digest"
   }
 }

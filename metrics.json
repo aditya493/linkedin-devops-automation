@@ -1,12 +1,12 @@
 {
-  "total_posts": 230,
+  "total_posts": 231,
   "posts_today": 1,
-  "last_post_date": "2026-10-01",
+  "last_post_date": "2026-10-03",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 106,
+    "digest": 107,
     "lessons_learned": 10,
     "technical_deep_dives": 12,
     "industry_predictions": 27,
@@ -26,8 +26,8 @@
     "blog.checkpoint.com": 24,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 25,
-    "www.cncf.io": 50,
+    "aws.amazon.com": 28,
+    "www.cncf.io": 53,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-02-25",
-      "time": "2026-02-25T04:51:26.842588+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-02-25",
       "time": "2026-02-25T12:59:28.285632+00:00",
@@ -1136,13 +1128,27 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-10-03",
+      "time": "2026-10-03T09:04:19.163907+00:00",
+      "format": "digest",
+      "sources": [
+        "www.cncf.io",
+        "aws.amazon.com",
+        "www.cncf.io",
+        "aws.amazon.com",
+        "aws.amazon.com",
+        "www.cncf.io"
+      ]
     }
   ],
-  "posts_created": 203,
-  "last_post_content": "The hidden cost of the death of traditional it operations that teams often miss:\n\nKey insights on the death of traditional it operations:\n\n\u2022 Hook with controversial statement\n\u2022 3-5 specific predictions with reasoning\n\u2022 Personal experience backing each prediction\n\u2022 Timeline for when these changes will happen\n\nMissing any major trends? What would you add to this list?\n\n#serverless #cloudengineering #automation #infrastructure #infrastructureascode",
-  "last_post_format": "industry_predictions",
+  "posts_created": 204,
+  "last_post_content": "\ud83c\udfaf Platform engineering: what stands out now.\nSecurity champions share what shapes the future of operations.\n\n\ud83d\udccc THIS WEEK'S STANDOUTS:\n\n1\ufe0f\u20e3 KUBECON + CLOUDNATIVECON NORTH AMERICA 2026: BUILD YOUR SRE JOURNEY\n\nIf your day starts with questions about reliability, performance, observability, incidents, scaling, or what is going to break next, there is no shortage of places to spend...\n\n\ud83d\udca1 KEY INSIGHT: Reduced mean time to recovery directly improves system reliability and organizational confidence\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-sre-journey/\n\n2\ufe0f\u20e3 FROM 2 AM ALARM TO ANSWER: SECURITY TRIAGE WITH AWS DEVOPS AGENT\n\nSecurity incident triage usually starts cold. An Amazon CloudWatch alarm fires at 2 a.m. because an AWS Identity and Access Management (IAM) access key just created another...\n\n\ud83d\udca1 KEY INSIGHT: MTTR is a leading indicator of operational maturity \u2014 improvements compound over time\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/from-2-am-alarm-to-answer-security-triage-with-aws-devops-agent/\n\n3\ufe0f\u20e3 KUBECON + CLOUDNATIVECON NORTH AMERICA 2026: BUILD YOUR INFRASTRUCTURE ENGINEER JOURNEY\n\nInfrastructure engineers sit at one of the busiest intersections in cloud native. Kubernetes clusters need to scale. Networks need to connect them.\n\n\ud83d\udca1 KEY INSIGHT: Effective cluster management practices significantly reduce the frequency and impact of production issues\n\ud83d\udd17 Read more: https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-infrastructure-engineer-journey/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "www.cncf.io",
+    "aws.amazon.com"
   ],
-  "last_post_timestamp": "2026-10-01T10:01:34.961462+00:00"
+  "last_post_timestamp": "2026-10-03T09:04:19.165121+00:00"
 }
