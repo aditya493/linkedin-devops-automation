@@ -9,6 +9,7 @@
     "https://about.gitlab.com/blog/ai-is-reshaping-devsecops-attend-gitlab-transcend-to-see-whats-next/",
     "https://about.gitlab.com/blog/building-trust-in-agentic-tools-what-we-learned-from-our-users/",
     "https://about.gitlab.com/blog/customizing-gitlab-duo-chat-rules-prompts-workflows/",
+    "https://about.gitlab.com/blog/deepseek-reasonix-vulnerability-discovered/",
     "https://about.gitlab.com/blog/dependency-scanning-auto-remediation/",
     "https://about.gitlab.com/blog/getting-started-with-gitlab-duo-agentic-chat/",
     "https://about.gitlab.com/blog/gitlab-bug-bounty-program-policy-updates/",
@@ -447,6 +448,10 @@
     "https://www.infoq.com/news/2026/09/lyft-flink-k8s-operator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/09/microsoft-taugrid-open-source/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/09/pinterest-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/10/envoy-gateway-1-9-1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/10/gitlab-critical-vulnerabilities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/10/istio-1-31-agentgateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/10/open-source-ai-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/2025-year-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/ai-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/code-leadership-balance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -464,6 +469,7 @@
     "https://www.infoq.com/presentations/kotlin-serverless/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/liquid-theme-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/llm-ai-africa/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/presentations/managing-async-apis/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/one-testing-environment/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/patterns-organizational-change/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/service-level-prioritized-load-shedding/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -532,7 +538,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "90bf9e6175ca": "2026-09-21T08:51:27.565147+00:00",
       "c1b9129f125e": "2026-09-23T08:30:20.752184+00:00",
       "a7508228e947": "2026-09-25T08:44:24.840710+00:00",
       "392da3497620": "2026-09-27T09:12:35.685940+00:00",
@@ -541,10 +546,16 @@
       "0622da1d091d": "2026-10-03T09:04:19.162769+00:00",
       "9a7e05e7ac16": "2026-10-03T09:04:19.162669+00:00",
       "a691f961db8c": "2026-10-03T09:04:19.162719+00:00",
-      "f1f917000aae": "2026-10-03T09:04:19.162745+00:00"
+      "f1f917000aae": "2026-10-03T09:04:19.162745+00:00",
+      "448480d28aa8": "2026-10-05T10:19:01.961876+00:00",
+      "198c6fead73c": "2026-10-05T10:19:01.961916+00:00",
+      "2307c83f4a89": "2026-10-05T10:19:01.961936+00:00",
+      "8cbcb4b73e11": "2026-10-05T10:19:01.961968+00:00",
+      "17a5d3392e28": "2026-10-05T10:19:01.961984+00:00",
+      "7f01fa39ab39": "2026-10-05T10:19:01.961997+00:00"
     },
-    "last_post_id": "urn:li:share:7512075044223606785",
-    "last_posted_at_utc": "2026-10-03T09:04:19.162780+00:00",
+    "last_post_id": "urn:li:share:7512818624047439872",
+    "last_posted_at_utc": "2026-10-05T10:19:01.962005+00:00",
     "last_format": "digest"
   }
 }
