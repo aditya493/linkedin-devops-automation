@@ -1,7 +1,7 @@
 {
-  "total_posts": 232,
+  "total_posts": 233,
   "posts_today": 1,
-  "last_post_date": "2026-10-05",
+  "last_post_date": "2026-10-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -11,7 +11,7 @@
     "technical_deep_dives": 12,
     "industry_predictions": 27,
     "career_advice": 26,
-    "controversial_takes": 13,
+    "controversial_takes": 14,
     "ai_and_automation": 11
   },
   "sources_used": {
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 108,
+    "growth_plan": 109,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 28,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-01",
-      "time": "2026-03-01T05:47:23.683407+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-03",
       "time": "2026-03-03T12:45:54.267956+00:00",
@@ -1146,14 +1138,21 @@
         "www.infoq.com",
         "www.infoq.com"
       ]
+    },
+    {
+      "date": "2026-10-07",
+      "time": "2026-10-07T10:07:27.590961+00:00",
+      "format": "controversial_takes",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 205,
-  "last_post_content": "\u26a1\ufe0f Strategic moves in cloud and infra.\nCloud pioneers highlight key developments for practitioners.\n\n\ud83d\udccc ARCHITECTURE PATTERNS:\n\n1\ufe0f\u20e3 ENVOY GATEWAY 1.9.1 TIGHTENS SECURITY AND ADDRESSES A DIFFICULT UPGRADE PATH\n\nEnvoy Gateway has released v1.9.1, a maintenance release that focuses heavily on security, upgrade reliability, and operational correctness following the broader v1.9 release.\n\n\ud83d\udca1 KEY INSIGHT: Deployment confidence is a measurable outcome of rigorous pipeline design and testing strategy\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/10/envoy-gateway-1-9-1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2\ufe0f\u20e3 PRESENTATION: MANAGING ASYNCHRONOUS APIS AT SCALE\n\nIan Cooper discusses managing asynchronous APIs in event-driven architectures at scale. He explains the \"ABCs\" of messaging (Address, Binding, Contract) and shares how to...\n\n\ud83d\udca1 KEY INSIGHT: AI-assisted tooling can reduce toil and improve consistency in structured, well-defined workflows\n\ud83d\udd17 Read more: https://www.infoq.com/presentations/managing-async-apis/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n3\ufe0f\u20e3 DEEPSEEK-REASONIX: HOW A POISONED CONFIG CAN HIJACK AN AI CODING AGENT\n\nGitLab's Threat Research Group discovered a command execution vulnerability ( GHSA-grg2-7gc6-36m6 , CVE-2026-102437 ) in DeepSeek-Reasonix Studio, a desktop git client designed...\n\n\ud83d\udca1 KEY INSIGHT: Automated vulnerability scanning in CI/CD reduces the window of exposure for known vulnerabilities\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/deepseek-reasonix-vulnerability-discovered/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHAT\u2019S YOUR TAKE ON THESE DEVELOPMENTS?",
-  "last_post_format": "digest",
+  "posts_created": 206,
+  "last_post_content": "Many engineers remain skeptical about infrastructure as code is failing most teams. The data tells a different story:\n\nKey insights on infrastructure as code is failing most teams:\n\n\u2022 Bold statement that challenges conventional wisdom\n\u2022 3 supporting arguments with real examples\n\u2022 Acknowledge the counterargument\n\u2022 Personal story illustrating the point\n\nWhat's your take on this? Let's debate it professionally in the comments.\n\n#genai #artificialintelligence #cloudengineering #sre #llmops",
+  "last_post_format": "controversial_takes",
   "last_post_sources": [
-    "about.gitlab.com",
-    "www.infoq.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-10-05T10:19:01.974790+00:00"
+  "last_post_timestamp": "2026-10-07T10:07:27.591628+00:00"
 }
