@@ -1,7 +1,7 @@
 {
-  "total_posts": 233,
+  "total_posts": 234,
   "posts_today": 1,
-  "last_post_date": "2026-10-07",
+  "last_post_date": "2026-10-09",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 27,
     "career_advice": 26,
     "controversial_takes": 14,
-    "ai_and_automation": 11
+    "ai_and_automation": 12
   },
   "sources_used": {
     "www.infoq.com": 134,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 109,
+    "growth_plan": 110,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 7,
     "about.gitlab.com": 28,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-03",
-      "time": "2026-03-03T12:45:54.267956+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-04",
       "time": "2026-03-04T12:47:42.651228+00:00",
@@ -1146,13 +1138,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "time": "2026-10-09T10:22:52.183385+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 206,
-  "last_post_content": "Many engineers remain skeptical about infrastructure as code is failing most teams. The data tells a different story:\n\nKey insights on infrastructure as code is failing most teams:\n\n\u2022 Bold statement that challenges conventional wisdom\n\u2022 3 supporting arguments with real examples\n\u2022 Acknowledge the counterargument\n\u2022 Personal story illustrating the point\n\nWhat's your take on this? Let's debate it professionally in the comments.\n\n#genai #artificialintelligence #cloudengineering #sre #llmops",
-  "last_post_format": "controversial_takes",
+  "posts_created": 207,
+  "last_post_content": "DevOps culture transformation shows what works. Pay attention to this.\n\nTeams using AI for how teams are using github copilot in devops workflows are seeing surprising results. Here's the data:\n\nKey insights on how teams are using github copilot in devops workflows:\n\n\u2022 The AI/automation problem being addressed\n\u2022 Tools and technologies evaluated\n\u2022 Implementation approach step-by-step\n\u2022 What worked vs what didn't\n\nWhat's the biggest challenge you've faced adopting AI tools?\n\n#mlops #cloudengineering #artificialintelligence #techin2026 #idp",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-10-07T10:07:27.591628+00:00"
+  "last_post_timestamp": "2026-10-09T10:22:52.184630+00:00"
 }
