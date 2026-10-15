@@ -1,12 +1,12 @@
 {
-  "total_posts": 236,
+  "total_posts": 237,
   "posts_today": 1,
-  "last_post_date": "2026-10-13",
+  "last_post_date": "2026-10-15",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 108,
+    "digest": 109,
     "lessons_learned": 10,
     "technical_deep_dives": 13,
     "industry_predictions": 27,
@@ -21,12 +21,12 @@
     "krebsonsecurity.com": 6,
     "blog.pagerduty.com": 1,
     "blog.newrelic.com": 9,
-    "engineering.fb.com": 8,
+    "engineering.fb.com": 9,
     "blog.google": 5,
     "blog.checkpoint.com": 24,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 28,
+    "aws.amazon.com": 29,
     "www.cncf.io": 53,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
@@ -35,8 +35,8 @@
     "www.hashicorp.com": 18,
     "growth_plan": 112,
     "snyk.io": 9,
-    "netflixtechblog.medium.com": 7,
-    "about.gitlab.com": 28,
+    "netflixtechblog.medium.com": 8,
+    "about.gitlab.com": 30,
     "martinfowler.com": 8,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 11,
@@ -51,7 +51,7 @@
     "blog.cloudflare.com": 3,
     "dropbox.tech": 1,
     "blog.uptimerobot.com": 1,
-    "grafana.com": 32
+    "grafana.com": 33
   },
   "errors": [
     {
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-07",
-      "time": "2026-03-07T11:45:34.715850+00:00",
-      "format": "controversial_takes",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-08",
       "time": "2026-03-08T05:38:22.222612+00:00",
@@ -1146,13 +1138,30 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-10-15",
+      "time": "2026-10-15T08:11:24.474587+00:00",
+      "format": "digest",
+      "sources": [
+        "netflixtechblog.medium.com",
+        "about.gitlab.com",
+        "about.gitlab.com",
+        "aws.amazon.com",
+        "grafana.com",
+        "engineering.fb.com"
+      ]
     }
   ],
-  "posts_created": 209,
-  "last_post_content": "Container orchestration in production reveals key patterns. Worth understanding.\n\nThe thing nobody tells engineers about inside a zero-downtime kubernetes migration:\n\nKey insights on inside a zero-downtime kubernetes migration:\n\n\u2022 Problem statement with context\n\u2022 Technical constraints and requirements\n\u2022 Solution architecture with diagrams\n\u2022 Implementation challenges and solutions\n\nWhat other solutions have you used for similar problems?\n\n#aiops #llmops #docker #cloudengineering #devops",
-  "last_post_format": "technical_deep_dives",
+  "posts_created": 210,
+  "last_post_content": "\ud83d\udd12 Security, scale, and innovation: the highlights.\nPlatform architects surface actionable insights for resilient systems.\n\n\ud83d\udccc INDUSTRY PULSE:\n\n1\ufe0f\u20e3 RELIABLE GPU COMPUTE FOR LARGE TRAINING & INFERENCE JOBS\n\nHow we detect failing GPUs and network fabric, remediate machines automatically, and let long-running jobs survive hardware loss.\n\n\ud83d\udca1 KEY INSIGHT: Automation investments compound over time, delivering increasing returns as coverage expands\n\ud83d\udd17 Read more: https://netflixtechblog.com/reliable-gpu-compute-for-large-training-inference-jobs-d62b03a96d7a?source=rss-c3aeaf49d8a4------2\n\n2\ufe0f\u20e3 SCALING GIT FOR THE AGENTIC SOFTWARE FACTORY\n\nAI agents are fundamentally changing the economics of software development. As the cost of producing code falls, the volume of changes moving through the software factory is...\n\n\ud83d\udca1 KEY INSIGHT: Targeted automation of repetitive operational tasks frees engineering capacity for higher-value work\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/scaling-git-for-the-agentic-software-factory/\n\n3\ufe0f\u20e3 GITLAB'S AGENT ORCHESTRATION ELIMINATES THE WAIT BETWEEN DEVELOPMENT STAGES\n\nAI coding tools have changed how fast software gets written, but not how fast it ships. As code generation accelerates, the bottleneck moves downstream into verify, review, and...\n\n\ud83d\udca1 KEY INSIGHT: Targeted automation of repetitive operational tasks frees engineering capacity for higher-value work\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-agent-orchestration/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHAT DID WE MISS?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "engineering.fb.com",
+    "netflixtechblog.medium.com",
+    "aws.amazon.com",
+    "about.gitlab.com",
+    "grafana.com"
   ],
-  "last_post_timestamp": "2026-10-13T10:25:31.755773+00:00"
+  "last_post_timestamp": "2026-10-15T08:11:24.475465+00:00"
 }

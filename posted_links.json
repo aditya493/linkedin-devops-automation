@@ -12,6 +12,7 @@
     "https://about.gitlab.com/blog/deepseek-reasonix-vulnerability-discovered/",
     "https://about.gitlab.com/blog/dependency-scanning-auto-remediation/",
     "https://about.gitlab.com/blog/getting-started-with-gitlab-duo-agentic-chat/",
+    "https://about.gitlab.com/blog/gitlab-agent-orchestration/",
     "https://about.gitlab.com/blog/gitlab-bug-bounty-program-policy-updates/",
     "https://about.gitlab.com/blog/gitlab-dedicated-compliance/",
     "https://about.gitlab.com/blog/gitlab-duo-agent-platform-complete-getting-started-guide/",
@@ -26,6 +27,7 @@
     "https://about.gitlab.com/blog/modernize-java-with-cursor-and-gitlab/",
     "https://about.gitlab.com/blog/monitor-manage-automate-ai-workflows/",
     "https://about.gitlab.com/blog/open-weight-model-letter/",
+    "https://about.gitlab.com/blog/scaling-git-for-the-agentic-software-factory/",
     "https://about.gitlab.com/blog/strengthening-gitlab-com-security-mandatory-multi-factor-authentication/",
     "https://about.gitlab.com/blog/understanding-agents-foundational-custom-external/",
     "https://about.gitlab.com/blog/understanding-flows-multi-agent-workflows/",
@@ -41,6 +43,7 @@
     "https://aws.amazon.com/blogs/devops/feature-flag-orchestration-with-aws-devops-agent-and-launchdarkly/",
     "https://aws.amazon.com/blogs/devops/from-ai-agent-prototype-to-product-lessons-from-building-aws-devops-agent/",
     "https://aws.amazon.com/blogs/devops/supercharge-your-cloud-operations-with-the-kiro-power-for-aws-devops-agent/",
+    "https://aws.amazon.com/blogs/mt/ai-powered-anomaly-detection-for-aws-systems-manager-session-manager-logs-using-amazon-bedrock/",
     "https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/",
     "https://aws.amazon.com/blogs/mt/automate-ci-cd-troubleshooting-with-aws-devops-agent-and-github/",
     "https://aws.amazon.com/blogs/mt/automate-rca-across-servicenow-dynatrace-and-slack-with-aws-devops-agent/",
@@ -122,6 +125,7 @@
     "https://engineering.fb.com/2026/02/04/security/cross-device-passkey-authentication-for-xr-devices-meta-quest/",
     "https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/",
     "https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study/",
+    "https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/",
     "https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/",
     "https://github.blog/engineering/infrastructure/when-protections-outlive-their-purpose-a-lesson-on-managing-defense-systems-at-scale/",
     "https://grafana.com/blog/-grafana-s-big-tent-podcast-anthropic-on-agentic-coding-observability-and-the-future-of-software-engineering/",
@@ -137,6 +141,7 @@
     "https://grafana.com/blog/explore-what-s-next-in-agentic-operations-introducing-ai-week/",
     "https://grafana.com/blog/full-stack-observability-in-grafana-cloud-how-to-investigate-issues-across-services-and-infrastructure/",
     "https://grafana.com/blog/get-observability-in-the-terminal-for-you-and-your-agents-with-the-gcx-cli-tool/",
+    "https://grafana.com/blog/go-from-alert-to-post-incident-review-with-grafana-cloud-irm-and-ai/",
     "https://grafana.com/blog/grafana-13-1-release-all-the-latest-features/",
     "https://grafana.com/blog/grafana-cloud-supabase-one-click-integration/",
     "https://grafana.com/blog/grafana-labs-named-a-leader-again-in-the-2026-gartner-magic-quadrant-for-observability-platforms/",
@@ -202,6 +207,7 @@
     "https://netflixtechblog.com/dynamically-splitting-wide-partitions-in-cassandra-for-time-series-workloads-0eded064f456?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8?source=rss-c3aeaf49d8a4------2",
+    "https://netflixtechblog.com/reliable-gpu-compute-for-large-training-inference-jobs-d62b03a96d7a?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.com/the-ai-evolution-of-graph-search-at-netflix-d416ec5b1151?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.medium.com/the-data-canary-how-netflix-validates-catalog-metadata-18b699d58e36?source=rss-c3aeaf49d8a4------2",
     "https://netflixtechblog.medium.com/towards-generalizable-and-efficient-large-scale-generative-recommenders-a7db648aa257?source=rss-c3aeaf49d8a4------2",
@@ -552,10 +558,16 @@
       "7f01fa39ab39": "2026-10-05T10:19:01.961997+00:00",
       "df29f5268451": "2026-10-07T10:07:27.590109+00:00",
       "7d548b9c2358": "2026-10-09T10:22:52.182003+00:00",
-      "a73c5f6f8d72": "2026-10-13T10:25:31.753407+00:00"
+      "a73c5f6f8d72": "2026-10-13T10:25:31.753407+00:00",
+      "456be350389b": "2026-10-15T08:11:24.473474+00:00",
+      "25cf4ce5c3b8": "2026-10-15T08:11:24.473517+00:00",
+      "4f23fb5d0356": "2026-10-15T08:11:24.473533+00:00",
+      "b5fd174cda95": "2026-10-15T08:11:24.473545+00:00",
+      "95ec2e7fe8b7": "2026-10-15T08:11:24.473556+00:00",
+      "aeb59a61e170": "2026-10-15T08:11:24.473567+00:00"
     },
-    "last_post_id": "urn:li:share:7515719362725519360",
-    "last_posted_at_utc": "2026-10-13T10:25:31.753447+00:00",
-    "last_format": "technical_deep_dives"
+    "last_post_id": "urn:li:share:7516410384938057728",
+    "last_posted_at_utc": "2026-10-15T08:11:24.473572+00:00",
+    "last_format": "digest"
   }
 }
