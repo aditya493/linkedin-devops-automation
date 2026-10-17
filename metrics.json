@@ -1,7 +1,7 @@
 {
-  "total_posts": 237,
+  "total_posts": 238,
   "posts_today": 1,
-  "last_post_date": "2026-10-15",
+  "last_post_date": "2026-10-17",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 10,
     "technical_deep_dives": 13,
     "industry_predictions": 27,
-    "career_advice": 26,
+    "career_advice": 27,
     "controversial_takes": 15,
     "ai_and_automation": 12
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 112,
+    "growth_plan": 113,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 30,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-08",
-      "time": "2026-03-08T05:38:22.222612+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-08",
       "time": "2026-03-08T11:47:43.826309+00:00",
@@ -1151,17 +1143,21 @@
         "grafana.com",
         "engineering.fb.com"
       ]
+    },
+    {
+      "date": "2026-10-17",
+      "time": "2026-10-17T07:42:48.296801+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 210,
-  "last_post_content": "\ud83d\udd12 Security, scale, and innovation: the highlights.\nPlatform architects surface actionable insights for resilient systems.\n\n\ud83d\udccc INDUSTRY PULSE:\n\n1\ufe0f\u20e3 RELIABLE GPU COMPUTE FOR LARGE TRAINING & INFERENCE JOBS\n\nHow we detect failing GPUs and network fabric, remediate machines automatically, and let long-running jobs survive hardware loss.\n\n\ud83d\udca1 KEY INSIGHT: Automation investments compound over time, delivering increasing returns as coverage expands\n\ud83d\udd17 Read more: https://netflixtechblog.com/reliable-gpu-compute-for-large-training-inference-jobs-d62b03a96d7a?source=rss-c3aeaf49d8a4------2\n\n2\ufe0f\u20e3 SCALING GIT FOR THE AGENTIC SOFTWARE FACTORY\n\nAI agents are fundamentally changing the economics of software development. As the cost of producing code falls, the volume of changes moving through the software factory is...\n\n\ud83d\udca1 KEY INSIGHT: Targeted automation of repetitive operational tasks frees engineering capacity for higher-value work\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/scaling-git-for-the-agentic-software-factory/\n\n3\ufe0f\u20e3 GITLAB'S AGENT ORCHESTRATION ELIMINATES THE WAIT BETWEEN DEVELOPMENT STAGES\n\nAI coding tools have changed how fast software gets written, but not how fast it ships. As code generation accelerates, the bottleneck moves downstream into verify, review, and...\n\n\ud83d\udca1 KEY INSIGHT: Targeted automation of repetitive operational tasks frees engineering capacity for higher-value work\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-agent-orchestration/\n\n\ud83d\udcac WHAT DID WE MISS?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 WHAT DID WE MISS?",
-  "last_post_format": "digest",
+  "posts_created": 211,
+  "last_post_content": "The thing nobody tells engineers about why every developer should learn operations:\n\nKey insights on why every developer should learn operations:\n\n\u2022 Career milestone or challenge context\n\u2022 3-5 specific strategies that work\n\u2022 Common mistakes to avoid\n\u2022 Resources for getting started\n\nWhat's the best career advice you've received in tech?\n\n#infrastructure #developerexperience #scalability #automation #devops",
+  "last_post_format": "career_advice",
   "last_post_sources": [
-    "engineering.fb.com",
-    "netflixtechblog.medium.com",
-    "aws.amazon.com",
-    "about.gitlab.com",
-    "grafana.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-10-15T08:11:24.475465+00:00"
+  "last_post_timestamp": "2026-10-17T07:42:48.298275+00:00"
 }
