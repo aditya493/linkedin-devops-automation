@@ -1,7 +1,7 @@
 {
-  "total_posts": 238,
+  "total_posts": 239,
   "posts_today": 1,
-  "last_post_date": "2026-10-17",
+  "last_post_date": "2026-10-19",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 27,
     "career_advice": 27,
     "controversial_takes": 15,
-    "ai_and_automation": 12
+    "ai_and_automation": 13
   },
   "sources_used": {
     "www.infoq.com": 134,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 113,
+    "growth_plan": 114,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 30,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-08",
-      "time": "2026-03-08T11:47:43.826309+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-10",
       "time": "2026-03-10T04:28:54.947642+00:00",
@@ -1151,13 +1143,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-10-19",
+      "time": "2026-10-19T08:43:31.381996+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 211,
-  "last_post_content": "The thing nobody tells engineers about why every developer should learn operations:\n\nKey insights on why every developer should learn operations:\n\n\u2022 Career milestone or challenge context\n\u2022 3-5 specific strategies that work\n\u2022 Common mistakes to avoid\n\u2022 Resources for getting started\n\nWhat's the best career advice you've received in tech?\n\n#infrastructure #developerexperience #scalability #automation #devops",
-  "last_post_format": "career_advice",
+  "posts_created": 212,
+  "last_post_content": "Outages become learning opportunities. Here's the signal.\n\nMany engineers remain skeptical about chatgpt for incident response: what works and what doesn't. The data tells a different story:\n\nKey insights on chatgpt for incident response: what works and what doesn't:\n\n\u2022 The AI/automation problem being addressed\n\u2022 Tools and technologies evaluated\n\u2022 Implementation approach step-by-step\n\u2022 What worked vs what didn't\n\nAre you skeptical or optimistic about AI in DevOps? Let's discuss!\n\n#artificialintelligence #genai #mlops #devops #llmops",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-10-17T07:42:48.298275+00:00"
+  "last_post_timestamp": "2026-10-19T08:43:31.383124+00:00"
 }
