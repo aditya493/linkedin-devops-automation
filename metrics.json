@@ -1,12 +1,12 @@
 {
-  "total_posts": 239,
+  "total_posts": 240,
   "posts_today": 1,
-  "last_post_date": "2026-10-19",
+  "last_post_date": "2026-10-21",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 109,
+    "digest": 110,
     "lessons_learned": 10,
     "technical_deep_dives": 13,
     "industry_predictions": 27,
@@ -15,7 +15,7 @@
     "ai_and_automation": 13
   },
   "sources_used": {
-    "www.infoq.com": 134,
+    "www.infoq.com": 137,
     "kubernetes.io": 30,
     "www.docker.com": 24,
     "krebsonsecurity.com": 6,
@@ -36,7 +36,7 @@
     "growth_plan": 114,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
-    "about.gitlab.com": 30,
+    "about.gitlab.com": 33,
     "martinfowler.com": 8,
     "www.aquasec.com": 1,
     "azure.microsoft.com": 11,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-10",
-      "time": "2026-03-10T04:28:54.947642+00:00",
-      "format": "controversial_takes",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-10",
       "time": "2026-03-10T12:54:56.555304+00:00",
@@ -1151,13 +1143,27 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-10-21",
+      "time": "2026-10-21T08:28:16.875834+00:00",
+      "format": "digest",
+      "sources": [
+        "www.infoq.com",
+        "about.gitlab.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "about.gitlab.com",
+        "about.gitlab.com"
+      ]
     }
   ],
-  "posts_created": 212,
-  "last_post_content": "Outages become learning opportunities. Here's the signal.\n\nMany engineers remain skeptical about chatgpt for incident response: what works and what doesn't. The data tells a different story:\n\nKey insights on chatgpt for incident response: what works and what doesn't:\n\n\u2022 The AI/automation problem being addressed\n\u2022 Tools and technologies evaluated\n\u2022 Implementation approach step-by-step\n\u2022 What worked vs what didn't\n\nAre you skeptical or optimistic about AI in DevOps? Let's discuss!\n\n#artificialintelligence #genai #mlops #devops #llmops",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 213,
+  "last_post_content": "\ud83d\udee1\ufe0f Security, compliance, and trust: the essentials.\nCollaboration experts spotlight culture and process breakthroughs.\n\n\ud83d\udccc LEADERSHIP LESSONS:\n\n1\ufe0f\u20e3 AWS INTRODUCES PREVIEW OF WELL-ARCHITECTED AGENT\n\nAWS recently announced the preview of the Well-Architected Agent, a service that analyzes environments against Well-Architected best practices and provides prioritized...\n\n\ud83d\udca1 KEY INSIGHT: Serverless computing changes the operational model and requires a corresponding shift in observability approach\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/10/aws-well-architected-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2\ufe0f\u20e3 UNCOVER THE BUSINESS LOGIC VULNERABILITIES SAST SCANNERS MISS\n\nBroken object-level authorization ranks first on the OWASP API Security Top 10 , and OWASP says that traditional static application security testing (SAST) tools struggle to...\n\n\ud83d\udca1 KEY INSIGHT: Automated vulnerability scanning in CI/CD reduces the window of exposure for known vulnerabilities\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-business-logic-security-analyzer/\n\n3\ufe0f\u20e3 PRESENTATION: BEYOND THE PROTOTYPE: SCALING FRAMEWORK AGNOSTIC AI AGENT INFRASTRUCTURE WITH RAY\n\nThe speakers discuss transitioning AI agents from local FastAPI prototypes to resilient production systems on Kubernetes using Ray.\n\n\ud83d\udca1 KEY INSIGHT: Effective cluster management practices significantly reduce the frequency and impact of production issues\n\ud83d\udd17 Read more: https://www.infoq.com/presentations/scale-llm-agents-production-ray/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHAT DID WE MISS?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "www.infoq.com",
+    "about.gitlab.com"
   ],
-  "last_post_timestamp": "2026-10-19T08:43:31.383124+00:00"
+  "last_post_timestamp": "2026-10-21T08:28:16.877116+00:00"
 }
