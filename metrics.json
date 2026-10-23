@@ -1,7 +1,7 @@
 {
-  "total_posts": 240,
+  "total_posts": 241,
   "posts_today": 1,
-  "last_post_date": "2026-10-21",
+  "last_post_date": "2026-10-23",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -9,7 +9,7 @@
     "digest": 110,
     "lessons_learned": 10,
     "technical_deep_dives": 13,
-    "industry_predictions": 27,
+    "industry_predictions": 28,
     "career_advice": 27,
     "controversial_takes": 15,
     "ai_and_automation": 13
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 114,
+    "growth_plan": 115,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 33,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-10",
-      "time": "2026-03-10T12:54:56.555304+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-11",
       "time": "2026-03-11T07:37:41.366833+00:00",
@@ -1156,14 +1148,21 @@
         "about.gitlab.com",
         "about.gitlab.com"
       ]
+    },
+    {
+      "date": "2026-10-23",
+      "time": "2026-10-23T08:29:10.903565+00:00",
+      "format": "industry_predictions",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 213,
-  "last_post_content": "\ud83d\udee1\ufe0f Security, compliance, and trust: the essentials.\nCollaboration experts spotlight culture and process breakthroughs.\n\n\ud83d\udccc LEADERSHIP LESSONS:\n\n1\ufe0f\u20e3 AWS INTRODUCES PREVIEW OF WELL-ARCHITECTED AGENT\n\nAWS recently announced the preview of the Well-Architected Agent, a service that analyzes environments against Well-Architected best practices and provides prioritized...\n\n\ud83d\udca1 KEY INSIGHT: Serverless computing changes the operational model and requires a corresponding shift in observability approach\n\ud83d\udd17 Read more: https://www.infoq.com/news/2026/10/aws-well-architected-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n2\ufe0f\u20e3 UNCOVER THE BUSINESS LOGIC VULNERABILITIES SAST SCANNERS MISS\n\nBroken object-level authorization ranks first on the OWASP API Security Top 10 , and OWASP says that traditional static application security testing (SAST) tools struggle to...\n\n\ud83d\udca1 KEY INSIGHT: Automated vulnerability scanning in CI/CD reduces the window of exposure for known vulnerabilities\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-business-logic-security-analyzer/\n\n3\ufe0f\u20e3 PRESENTATION: BEYOND THE PROTOTYPE: SCALING FRAMEWORK AGNOSTIC AI AGENT INFRASTRUCTURE WITH RAY\n\nThe speakers discuss transitioning AI agents from local FastAPI prototypes to resilient production systems on Kubernetes using Ray.\n\n\ud83d\udca1 KEY INSIGHT: Effective cluster management practices significantly reduce the frequency and impact of production issues\n\ud83d\udd17 Read more: https://www.infoq.com/presentations/scale-llm-agents-production-ray/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHAT DID WE MISS?",
-  "last_post_format": "digest",
+  "posts_created": 214,
+  "last_post_content": "DevOps practices at scale reveal key patterns. Pay attention to this.\n\nMany thought 5 devops trends that will dominate 2026 was overhyped. The evidence says otherwise.\n\nKey insights on 5 devops trends that will dominate 2026:\n\n\u2022 Hook with controversial statement\n\u2022 3-5 specific predictions with reasoning\n\u2022 Personal experience backing each prediction\n\u2022 Timeline for when these changes will happen\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#infrastructure #developerexperience #devops #sre #genai",
+  "last_post_format": "industry_predictions",
   "last_post_sources": [
-    "www.infoq.com",
-    "about.gitlab.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-10-21T08:28:16.877116+00:00"
+  "last_post_timestamp": "2026-10-23T08:29:10.904603+00:00"
 }
