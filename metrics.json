@@ -1,7 +1,7 @@
 {
-  "total_posts": 241,
+  "total_posts": 242,
   "posts_today": 1,
-  "last_post_date": "2026-10-23",
+  "last_post_date": "2026-10-25",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 28,
     "career_advice": 27,
     "controversial_takes": 15,
-    "ai_and_automation": 13
+    "ai_and_automation": 14
   },
   "sources_used": {
     "www.infoq.com": 137,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 115,
+    "growth_plan": 116,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 33,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-11",
-      "time": "2026-03-11T07:37:41.366833+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-11",
       "time": "2026-03-11T12:54:53.336337+00:00",
@@ -1156,13 +1148,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-10-25",
+      "time": "2026-10-25T08:20:34.063564+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 214,
-  "last_post_content": "DevOps practices at scale reveal key patterns. Pay attention to this.\n\nMany thought 5 devops trends that will dominate 2026 was overhyped. The evidence says otherwise.\n\nKey insights on 5 devops trends that will dominate 2026:\n\n\u2022 Hook with controversial statement\n\u2022 3-5 specific predictions with reasoning\n\u2022 Personal experience backing each prediction\n\u2022 Timeline for when these changes will happen\n\nWhich of these trends will have the biggest impact? Share your perspective!\n\n#infrastructure #developerexperience #devops #sre #genai",
-  "last_post_format": "industry_predictions",
+  "posts_created": 215,
+  "last_post_content": "Many engineers remain skeptical about building self-healing infrastructure with ai. The data tells a different story:\n\nKey insights on building self-healing infrastructure with ai:\n\n\u2022 The AI/automation problem being addressed\n\u2022 Tools and technologies evaluated\n\u2022 Implementation approach step-by-step\n\u2022 What worked vs what didn't\n\nAre you skeptical or optimistic about AI in DevOps? Let's discuss!\n\n#mlops #cloudengineering #sre #artificialintelligence #genai",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-10-23T08:29:10.904603+00:00"
+  "last_post_timestamp": "2026-10-25T08:20:34.064753+00:00"
 }
