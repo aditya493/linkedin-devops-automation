@@ -1,7 +1,7 @@
 {
-  "total_posts": 242,
+  "total_posts": 243,
   "posts_today": 1,
-  "last_post_date": "2026-10-25",
+  "last_post_date": "2026-10-27",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 10,
     "technical_deep_dives": 13,
     "industry_predictions": 28,
-    "career_advice": 27,
+    "career_advice": 28,
     "controversial_takes": 15,
     "ai_and_automation": 14
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 116,
+    "growth_plan": 117,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 33,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-11",
-      "time": "2026-03-11T12:54:53.336337+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-12",
       "time": "2026-03-12T12:54:58.694244+00:00",
@@ -1156,13 +1148,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-10-27",
+      "time": "2026-10-27T08:51:39.079115+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 215,
-  "last_post_content": "Many engineers remain skeptical about building self-healing infrastructure with ai. The data tells a different story:\n\nKey insights on building self-healing infrastructure with ai:\n\n\u2022 The AI/automation problem being addressed\n\u2022 Tools and technologies evaluated\n\u2022 Implementation approach step-by-step\n\u2022 What worked vs what didn't\n\nAre you skeptical or optimistic about AI in DevOps? Let's discuss!\n\n#mlops #cloudengineering #sre #artificialintelligence #genai",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 216,
+  "last_post_content": "Bridging development and operations delivers value faster. Pay attention to this.\n\nUnpopular opinion: why finops knowledge will boost your devops career matters more than most realize.\n\nKey insights on why finops knowledge will boost your devops career:\n\n\u2022 Career milestone or challenge context\n\u2022 3-5 specific strategies that work\n\u2022 Common mistakes to avoid\n\u2022 Resources for getting started\n\nWhat's the best career advice you've received in tech?\n\n#devops #scalability #automation #sre #gitops",
+  "last_post_format": "career_advice",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-10-25T08:20:34.064753+00:00"
+  "last_post_timestamp": "2026-10-27T08:51:39.079803+00:00"
 }
