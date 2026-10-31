@@ -1,14 +1,14 @@
 {
-  "total_posts": 244,
+  "total_posts": 245,
   "posts_today": 1,
-  "last_post_date": "2026-10-29",
+  "last_post_date": "2026-10-31",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 111,
     "lessons_learned": 10,
-    "technical_deep_dives": 13,
+    "technical_deep_dives": 14,
     "industry_predictions": 28,
     "career_advice": 28,
     "controversial_takes": 15,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 117,
+    "growth_plan": 118,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 33,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-13",
-      "time": "2026-03-13T12:51:26.559767+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-14",
       "time": "2026-03-14T05:41:53.667040+00:00",
@@ -1161,16 +1153,21 @@
         "blog.checkpoint.com",
         "www.aquasec.com"
       ]
+    },
+    {
+      "date": "2026-10-31",
+      "time": "2026-10-31T09:30:52.078325+00:00",
+      "format": "technical_deep_dives",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 217,
-  "last_post_content": "\ud83d\udd12 Security, scale, and innovation: the highlights.\nPlatform architects surface actionable insights for resilient systems.\n\n\ud83d\udccc AUTOMATION STRATEGIES:\n\n1\ufe0f\u20e3 EVALUATE AI MODELS FOR OBSERVABILITY: O11Y-BENCH JOINS FIREWORKS' SPECIALIZED INTELLIGENCE INDEX AND REACHE\u2026\n\nWhen evaluating AI models for observability, generating a plausible query or explanation isn't enough. Teams need to know whether an agent's conclusions are supported by...\n\n\ud83d\udca1 KEY INSIGHT: Structured observability data enables faster root cause identification during incident response\n\ud83d\udd17 Read more: https://grafana.com/blog/evaluate-ai-models-for-observability-o11y-bench-joins-fireworks-specialized-intelligence-index-and-reaches-v1-1/\n\n2\ufe0f\u20e3 EMBRACING OBSERVABILITY FOR THE AI ERA AT RE:INVENT 2026\n\nAs organizations continue to scale their cloud presence and bring AI agents into production, effective operations become increasingly critical for success.\n\n\ud83d\udca1 KEY INSIGHT: Proactive observability enables issue detection before user impact, reducing incident severity\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/embracing-observability-for-the-ai-era-at-reinvent-2026/\n\n3\ufe0f\u20e3 AGENT OBSERVABILITY FAQ: UNDERSTAND THE VALUE OF MONITORING, EVALUATING, AND IMPROVING YOUR AI AGENTS\n\nAgents have quickly become part of the tech landscape as organizations embrace AI across their businesses. But embracing agents also means embracing the monitoring best...\n\n\ud83d\udca1 KEY INSIGHT: Distributed tracing surfaces system behavior that aggregate metrics cannot reveal\n\ud83d\udd17 Read more: https://grafana.com/blog/agent-observability-faq-understand-the-value-of-monitoring-evaluating-and-improving-your-ai-agents/\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#CloudNative #DevSecOps #Observability #Platform #Infra #Kubernetes #DevOps\n\n\u2753 How is your organization responding to these signals?",
-  "last_post_format": "digest",
+  "posts_created": 218,
+  "last_post_content": "Everyone talks about how teams build ci/cd pipelines that deploy 500+ times per day, but nobody mentions this:\n\nKey insights on how teams build ci/cd pipelines that deploy 500+ times per day:\n\n\u2022 Problem statement with context\n\u2022 Technical constraints and requirements\n\u2022 Solution architecture with diagrams\n\u2022 Implementation challenges and solutions\n\nQuestions about the implementation? Drop them in the comments!\n\n#cicd #mlops #githubactions #cloudengineering #sre",
+  "last_post_format": "technical_deep_dives",
   "last_post_sources": [
-    "www.aquasec.com",
-    "blog.checkpoint.com",
-    "grafana.com",
-    "aws.amazon.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-10-29T09:49:05.226616+00:00"
+  "last_post_timestamp": "2026-10-31T09:30:52.079583+00:00"
 }
