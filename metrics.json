@@ -1,7 +1,7 @@
 {
-  "total_posts": 245,
+  "total_posts": 246,
   "posts_today": 1,
-  "last_post_date": "2026-10-31",
+  "last_post_date": "2026-11-01",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 28,
     "career_advice": 28,
     "controversial_takes": 15,
-    "ai_and_automation": 14
+    "ai_and_automation": 15
   },
   "sources_used": {
     "www.infoq.com": 137,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 118,
+    "growth_plan": 119,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 33,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-14",
-      "time": "2026-03-14T05:41:53.667040+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-15",
       "time": "2026-03-15T06:02:53.808617+00:00",
@@ -1161,13 +1153,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-11-01",
+      "time": "2026-11-01T10:19:32.663869+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 218,
-  "last_post_content": "Everyone talks about how teams build ci/cd pipelines that deploy 500+ times per day, but nobody mentions this:\n\nKey insights on how teams build ci/cd pipelines that deploy 500+ times per day:\n\n\u2022 Problem statement with context\n\u2022 Technical constraints and requirements\n\u2022 Solution architecture with diagrams\n\u2022 Implementation challenges and solutions\n\nQuestions about the implementation? Drop them in the comments!\n\n#cicd #mlops #githubactions #cloudengineering #sre",
-  "last_post_format": "technical_deep_dives",
+  "posts_created": 219,
+  "last_post_content": "Teams using AI for the future of aiops: beyond alert noise reduction are seeing surprising results. Here's the data:\n\nKey insights on the future of aiops: beyond alert noise reduction:\n\n\u2022 The AI/automation problem being addressed\n\u2022 Tools and technologies evaluated\n\u2022 Implementation approach step-by-step\n\u2022 What worked vs what didn't\n\nWhat's the biggest challenge you've faced adopting AI tools?\n\n#artificialintelligence #cloudengineering #aiops #aiops #genai",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-10-31T09:30:52.079583+00:00"
+  "last_post_timestamp": "2026-11-01T10:19:32.664532+00:00"
 }
