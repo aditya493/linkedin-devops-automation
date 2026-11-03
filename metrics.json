@@ -1,14 +1,14 @@
 {
-  "total_posts": 246,
+  "total_posts": 247,
   "posts_today": 1,
-  "last_post_date": "2026-11-01",
+  "last_post_date": "2026-11-03",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
     "digest": 111,
     "lessons_learned": 10,
-    "technical_deep_dives": 14,
+    "technical_deep_dives": 15,
     "industry_predictions": 28,
     "career_advice": 28,
     "controversial_takes": 15,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 119,
+    "growth_plan": 120,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 33,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-15",
-      "time": "2026-03-15T06:02:53.808617+00:00",
-      "format": "controversial_takes",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-16",
       "time": "2026-03-16T05:10:37.744061+00:00",
@@ -1161,13 +1153,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-11-03",
+      "time": "2026-11-03T10:43:46.667572+00:00",
+      "format": "technical_deep_dives",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 219,
-  "last_post_content": "Teams using AI for the future of aiops: beyond alert noise reduction are seeing surprising results. Here's the data:\n\nKey insights on the future of aiops: beyond alert noise reduction:\n\n\u2022 The AI/automation problem being addressed\n\u2022 Tools and technologies evaluated\n\u2022 Implementation approach step-by-step\n\u2022 What worked vs what didn't\n\nWhat's the biggest challenge you've faced adopting AI tools?\n\n#artificialintelligence #cloudengineering #aiops #aiops #genai",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 220,
+  "last_post_content": "Hot take: the architecture behind automated recovery systems is more important than most people realize.\n\nKey insights on the architecture behind automated recovery systems:\n\n\u2022 Problem statement with context\n\u2022 Technical constraints and requirements\n\u2022 Solution architecture with diagrams\n\u2022 Implementation challenges and solutions\n\nQuestions about the implementation? Drop them in the comments!\n\n#scalability #artificialintelligence #automation #sre #infrastructureascode",
+  "last_post_format": "technical_deep_dives",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-11-01T10:19:32.664532+00:00"
+  "last_post_timestamp": "2026-11-03T10:43:46.668811+00:00"
 }
