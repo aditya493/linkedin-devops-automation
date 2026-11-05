@@ -1,7 +1,7 @@
 {
-  "total_posts": 247,
+  "total_posts": 248,
   "posts_today": 1,
-  "last_post_date": "2026-11-03",
+  "last_post_date": "2026-11-05",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -12,7 +12,7 @@
     "industry_predictions": 28,
     "career_advice": 28,
     "controversial_takes": 15,
-    "ai_and_automation": 15
+    "ai_and_automation": 16
   },
   "sources_used": {
     "www.infoq.com": 137,
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 18,
-    "growth_plan": 120,
+    "growth_plan": 121,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 33,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-16",
-      "time": "2026-03-16T05:10:37.744061+00:00",
-      "format": "technical_deep_dives",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-16",
       "time": "2026-03-16T13:03:02.613461+00:00",
@@ -1161,13 +1153,21 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "time": "2026-11-05T10:42:51.398329+00:00",
+      "format": "ai_and_automation",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 220,
-  "last_post_content": "Hot take: the architecture behind automated recovery systems is more important than most people realize.\n\nKey insights on the architecture behind automated recovery systems:\n\n\u2022 Problem statement with context\n\u2022 Technical constraints and requirements\n\u2022 Solution architecture with diagrams\n\u2022 Implementation challenges and solutions\n\nQuestions about the implementation? Drop them in the comments!\n\n#scalability #artificialintelligence #automation #sre #infrastructureascode",
-  "last_post_format": "technical_deep_dives",
+  "posts_created": 221,
+  "last_post_content": "The ROI from ai-powered code reviews: 6 months of real-world data is surprising industry leaders. Here's why:\n\nKey insights on ai-powered code reviews: 6 months of real-world data:\n\n\u2022 The AI/automation problem being addressed\n\u2022 Tools and technologies evaluated\n\u2022 Implementation approach step-by-step\n\u2022 What worked vs what didn't\n\nWhat AI tools have made the biggest impact on your productivity?\n\n#aiops #llmops #aiops #sre #cloudengineering",
+  "last_post_format": "ai_and_automation",
   "last_post_sources": [
     "growth_plan"
   ],
-  "last_post_timestamp": "2026-11-03T10:43:46.668811+00:00"
+  "last_post_timestamp": "2026-11-05T10:42:51.399579+00:00"
 }
