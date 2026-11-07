@@ -46,6 +46,7 @@
     "https://aws.amazon.com/blogs/devops/feature-flag-orchestration-with-aws-devops-agent-and-launchdarkly/",
     "https://aws.amazon.com/blogs/devops/from-ai-agent-prototype-to-product-lessons-from-building-aws-devops-agent/",
     "https://aws.amazon.com/blogs/devops/supercharge-your-cloud-operations-with-the-kiro-power-for-aws-devops-agent/",
+    "https://aws.amazon.com/blogs/devops/your-guide-to-the-developer-tools-track-at-aws-reinvent-2026/",
     "https://aws.amazon.com/blogs/mt/ai-powered-anomaly-detection-for-aws-systems-manager-session-manager-logs-using-amazon-bedrock/",
     "https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/",
     "https://aws.amazon.com/blogs/mt/automate-ci-cd-troubleshooting-with-aws-devops-agent-and-github/",
@@ -57,6 +58,7 @@
     "https://aws.amazon.com/blogs/mt/deploying-custom-terraform-to-lza-managed-accounts-with-aft/",
     "https://aws.amazon.com/blogs/mt/embracing-observability-for-the-ai-era-at-reinvent-2026/",
     "https://aws.amazon.com/blogs/mt/extend-amazon-cloudwatch-beyond-native-connectors-with-cribl-stream/",
+    "https://aws.amazon.com/blogs/mt/find-your-logging-gaps-before-they-become-compliance-gaps-with-cloudtrail-data-event-coverage/",
     "https://aws.amazon.com/blogs/mt/from-2-am-alarm-to-answer-security-triage-with-aws-devops-agent/",
     "https://aws.amazon.com/blogs/mt/from-monolith-to-multi-account-pinterests-aws-organization-transformation-journey/",
     "https://aws.amazon.com/blogs/mt/how-amazon-achieved-full-stack-observability-across-400-offices-with-amazon-opensearch-serverless/",
@@ -73,6 +75,7 @@
     "https://azure.microsoft.com/en-us/blog/frontier-models-and-production-agents-advancing-microsoft-foundry-for-the-agentic-era/",
     "https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/",
     "https://azure.microsoft.com/en-us/blog/microsofts-strategic-ai-datacenter-planning-enables-seamless-large-scale-nvidia-rubin-deployments/",
+    "https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/",
     "https://azure.microsoft.com/en-us/blog/the-future-of-infrastructure-resiliency-starts-with-modernization/",
     "https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/",
     "https://azure.microsoft.com/en-us/blog/what-customers-value-most-in-microsoft-databases-from-reliability-to-ai-readiness/",
@@ -205,6 +208,7 @@
     "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
     "https://martinfowler.com/articles/2025-music.html",
     "https://martinfowler.com/articles/convo-what-how.html",
+    "https://martinfowler.com/articles/data-product-platform-nav.html",
     "https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html",
     "https://martinfowler.com/bliki/ExcessiveBold.html",
     "https://martinfowler.com/fragments/2026-01-08.html",
@@ -469,6 +473,7 @@
     "https://www.infoq.com/news/2026/10/gitlab-critical-vulnerabilities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/10/istio-1-31-agentgateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/news/2026/10/open-source-ai-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/news/2026/11/culture-kubernetes-bank/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/2025-year-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/ai-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/podcasts/code-leadership-balance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -494,6 +499,7 @@
     "https://www.infoq.com/presentations/solving-cloud-infrastructure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/swift-apps-services/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.infoq.com/presentations/wasm-components-faas/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "https://www.infoq.com/presentations/zero-trust-ai-agents-production-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "https://www.mend.io/blog/introducing-mend-io-ai-security-maturity-survey/",
     "https://www.mend.io/blog/mend-leadership-update-the-next-phase-of-growth/",
     "https://www.microsoft.com/en-us/industry/blog/healthcare/2026/01/11/bridging-the-gap-between-ai-and-medicine-claude-in-microsoft-foundry-advances-capabilities-for-healthcare-and-life-sciences-customers/",
@@ -556,7 +562,6 @@
   ],
   "meta": {
     "topic_hashes": {
-      "a7508228e947": "2026-10-23T08:29:10.902430+00:00",
       "fec444d66488": "2026-10-25T08:20:34.062243+00:00",
       "95d55e283881": "2026-10-27T08:51:39.078377+00:00",
       "05f7252dab00": "2026-10-29T09:49:05.223921+00:00",
@@ -568,10 +573,16 @@
       "19cff12ad14e": "2026-10-31T09:30:52.076985+00:00",
       "bf45c0baf4f0": "2026-11-01T10:19:32.662960+00:00",
       "2f69a8f20018": "2026-11-03T10:43:46.666256+00:00",
-      "1ec8d27664ec": "2026-11-05T10:42:51.397054+00:00"
+      "1ec8d27664ec": "2026-11-05T10:42:51.397054+00:00",
+      "75d5c5a5006b": "2026-11-07T09:56:04.479112+00:00",
+      "e46283f2b47a": "2026-11-07T09:56:04.479159+00:00",
+      "84e18ddc4ad7": "2026-11-07T09:56:04.479178+00:00",
+      "83c2258c71ca": "2026-11-07T09:56:04.479194+00:00",
+      "ae40c8bf321a": "2026-11-07T09:56:04.479210+00:00",
+      "af313b198427": "2026-11-07T09:56:04.479226+00:00"
     },
-    "last_post_id": "urn:li:share:7524058644045455360",
-    "last_posted_at_utc": "2026-11-05T10:42:51.397098+00:00",
-    "last_format": "ai_and_automation"
+    "last_post_id": "urn:li:share:7524771646092587008",
+    "last_posted_at_utc": "2026-11-07T09:56:04.479235+00:00",
+    "last_format": "digest"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "total_posts": 248,
+  "total_posts": 249,
   "posts_today": 1,
-  "last_post_date": "2026-11-05",
+  "last_post_date": "2026-11-07",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 111,
+    "digest": 112,
     "lessons_learned": 10,
     "technical_deep_dives": 15,
     "industry_predictions": 28,
@@ -15,7 +15,7 @@
     "ai_and_automation": 16
   },
   "sources_used": {
-    "www.infoq.com": 137,
+    "www.infoq.com": 139,
     "kubernetes.io": 30,
     "www.docker.com": 24,
     "krebsonsecurity.com": 6,
@@ -26,7 +26,7 @@
     "blog.checkpoint.com": 25,
     "www.crowdstrike.com": 20,
     "blog.qualys.com": 4,
-    "aws.amazon.com": 31,
+    "aws.amazon.com": 33,
     "www.cncf.io": 53,
     "blog.rapid7.com": 20,
     "feeds.feedburner.com": 8,
@@ -37,9 +37,9 @@
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 33,
-    "martinfowler.com": 8,
+    "martinfowler.com": 9,
     "www.aquasec.com": 2,
-    "azure.microsoft.com": 11,
+    "azure.microsoft.com": 12,
     "www.sonarsource.com": 5,
     "blog.gitguardian.com": 6,
     "engineering.atspotify.com": 4,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-16",
-      "time": "2026-03-16T13:03:02.613461+00:00",
-      "format": "controversial_takes",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-17",
       "time": "2026-03-17T07:47:41.761063+00:00",
@@ -1161,13 +1153,29 @@
       "sources": [
         "growth_plan"
       ]
+    },
+    {
+      "date": "2026-11-07",
+      "time": "2026-11-07T09:56:04.480376+00:00",
+      "format": "digest",
+      "sources": [
+        "aws.amazon.com",
+        "azure.microsoft.com",
+        "martinfowler.com",
+        "www.infoq.com",
+        "www.infoq.com",
+        "aws.amazon.com"
+      ]
     }
   ],
-  "posts_created": 221,
-  "last_post_content": "The ROI from ai-powered code reviews: 6 months of real-world data is surprising industry leaders. Here's why:\n\nKey insights on ai-powered code reviews: 6 months of real-world data:\n\n\u2022 The AI/automation problem being addressed\n\u2022 Tools and technologies evaluated\n\u2022 Implementation approach step-by-step\n\u2022 What worked vs what didn't\n\nWhat AI tools have made the biggest impact on your productivity?\n\n#aiops #llmops #aiops #sre #cloudengineering",
-  "last_post_format": "ai_and_automation",
+  "posts_created": 222,
+  "last_post_content": "\ud83d\ude80 Signals shaping modern engineering.\nIndustry leaders optimize tech stacks and debunk myths in the DevOps trenches. Here\u2019s what matters.\n\n\ud83d\udccc LEADERSHIP LESSONS:\n\n1\ufe0f\u20e3 FIND YOUR LOGGING GAPS BEFORE THEY BECOME COMPLIANCE GAPS WITH CLOUDTRAIL DATA EVENT COVERAGE\n\nAWS CloudTrail now includes a Data event coverage page in the AWS CloudTrail console, giving you a single view of how well your resources are covered by data event logging.\n\n\ud83d\udca1 KEY INSIGHT: Cloud-native design patterns require genuine architectural commitment to deliver their expected benefits\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/find-your-logging-gaps-before-they-become-compliance-gaps-with-cloudtrail-data-event-coverage/\n\n2\ufe0f\u20e3 PREDICTING AND DETECTING FAILURES: HOW AZURE STRENGTHENS RELIABILITY FOR MISSION-CRITICAL WORKLOADS\n\nAzure Failure Prediction and Detection (AFPD) helps reduce interruptions by predicting hardware failures, moving eligible workloads, and notifying customers when action is...\n\n\ud83d\udca1 KEY INSIGHT: Cloud-native design patterns require genuine architectural commitment to deliver their expected benefits\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/\n\n3\ufe0f\u20e3 THE DATA PRODUCT PLATFORM NAVIGATOR\n\nMany organizations adopting data mesh and data products face a common challenge. They may be tasked with building a self-service platform for data products and data mesh from...\n\n\ud83d\udca1 KEY INSIGHT: Platform engineering that makes developers more productive, not frustrated.\n\ud83d\udd17 Read more: https://martinfowler.com/articles/data-product-platform-nav.html\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
+  "last_post_format": "digest",
   "last_post_sources": [
-    "growth_plan"
+    "www.infoq.com",
+    "aws.amazon.com",
+    "azure.microsoft.com",
+    "martinfowler.com"
   ],
-  "last_post_timestamp": "2026-11-05T10:42:51.399579+00:00"
+  "last_post_timestamp": "2026-11-07T09:56:04.481439+00:00"
 }
