@@ -583,6 +583,8 @@
     },
     "last_post_id": "urn:li:share:7524771646092587008",
     "last_posted_at_utc": "2026-11-07T09:56:04.479235+00:00",
-    "last_format": "digest"
+    "last_format": "digest",
+    "last_error_at_utc": "2026-11-09T11:18:06.184522+00:00",
+    "last_error_msg": "No post_id returned"
   }
 }
