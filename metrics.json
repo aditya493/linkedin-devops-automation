@@ -1,7 +1,7 @@
 {
   "total_posts": 249,
   "posts_today": 0,
-  "last_post_date": "2026-11-11",
+  "last_post_date": "2026-11-13",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -54,11 +54,6 @@
     "grafana.com": 35
   },
   "errors": [
-    {
-      "date": "2026-05-08",
-      "time": "2026-05-08T13:25:12.232423+00:00",
-      "error": "No post_id returned"
-    },
     {
       "date": "2026-05-09",
       "time": "2026-05-09T12:13:17.565531+00:00",
@@ -302,6 +297,11 @@
     {
       "date": "2026-11-11",
       "time": "2026-11-11T10:41:43.865338+00:00",
+      "error": "No post_id returned"
+    },
+    {
+      "date": "2026-11-13",
+      "time": "2026-11-13T10:50:36.799628+00:00",
       "error": "No post_id returned"
     }
   ],
