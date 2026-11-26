@@ -1,12 +1,12 @@
 {
-  "total_posts": 249,
-  "posts_today": 0,
-  "last_post_date": "2026-11-25",
+  "total_posts": 250,
+  "posts_today": 1,
+  "last_post_date": "2026-11-26",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
     "lessons": 10,
-    "digest": 112,
+    "digest": 113,
     "lessons_learned": 10,
     "technical_deep_dives": 15,
     "industry_predictions": 28,
@@ -28,15 +28,15 @@
     "blog.qualys.com": 4,
     "aws.amazon.com": 33,
     "www.cncf.io": 53,
-    "blog.rapid7.com": 20,
+    "blog.rapid7.com": 23,
     "feeds.feedburner.com": 8,
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
-    "www.hashicorp.com": 18,
+    "www.hashicorp.com": 19,
     "growth_plan": 121,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
-    "about.gitlab.com": 33,
+    "about.gitlab.com": 35,
     "martinfowler.com": 9,
     "www.aquasec.com": 2,
     "azure.microsoft.com": 12,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-17",
-      "time": "2026-03-17T07:47:41.761063+00:00",
-      "format": "career_advice",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-18",
       "time": "2026-03-18T04:52:08.616140+00:00",
@@ -1166,16 +1158,28 @@
         "www.infoq.com",
         "aws.amazon.com"
       ]
+    },
+    {
+      "date": "2026-11-26",
+      "time": "2026-11-26T05:01:05.006987+00:00",
+      "format": "digest",
+      "sources": [
+        "about.gitlab.com",
+        "blog.rapid7.com",
+        "blog.rapid7.com",
+        "blog.rapid7.com",
+        "about.gitlab.com",
+        "www.hashicorp.com"
+      ]
     }
   ],
-  "posts_created": 222,
-  "last_post_content": "\ud83d\ude80 Signals shaping modern engineering.\nIndustry leaders optimize tech stacks and debunk myths in the DevOps trenches. Here\u2019s what matters.\n\n\ud83d\udccc LEADERSHIP LESSONS:\n\n1\ufe0f\u20e3 FIND YOUR LOGGING GAPS BEFORE THEY BECOME COMPLIANCE GAPS WITH CLOUDTRAIL DATA EVENT COVERAGE\n\nAWS CloudTrail now includes a Data event coverage page in the AWS CloudTrail console, giving you a single view of how well your resources are covered by data event logging.\n\n\ud83d\udca1 KEY INSIGHT: Cloud-native design patterns require genuine architectural commitment to deliver their expected benefits\n\ud83d\udd17 Read more: https://aws.amazon.com/blogs/mt/find-your-logging-gaps-before-they-become-compliance-gaps-with-cloudtrail-data-event-coverage/\n\n2\ufe0f\u20e3 PREDICTING AND DETECTING FAILURES: HOW AZURE STRENGTHENS RELIABILITY FOR MISSION-CRITICAL WORKLOADS\n\nAzure Failure Prediction and Detection (AFPD) helps reduce interruptions by predicting hardware failures, moving eligible workloads, and notifying customers when action is...\n\n\ud83d\udca1 KEY INSIGHT: Cloud-native design patterns require genuine architectural commitment to deliver their expected benefits\n\ud83d\udd17 Read more: https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/\n\n3\ufe0f\u20e3 THE DATA PRODUCT PLATFORM NAVIGATOR\n\nMany organizations adopting data mesh and data products face a common challenge. They may be tasked with building a self-service platform for data products and data mesh from...\n\n\ud83d\udca1 KEY INSIGHT: Platform engineering that makes developers more productive, not frustrated.\n\ud83d\udd17 Read more: https://martinfowler.com/articles/data-product-platform-nav.html\n\n\ud83d\udcac WHICH ONE CAUGHT YOUR ATTENTION?\n\n#DevOps #Cloud #SRE #Platform #Security #Kubernetes #Engineering\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
+  "posts_created": 223,
+  "last_post_content": "\ud83d\udca1 Innovation in cloud-native and edge computing.\nEngineering visionaries spotlight what matters most this week.\n\n\ud83d\udccc ESSENTIAL READS:\n\n1\ufe0f\u20e3 GITLAB DEDICATED: A GO-LIVE GUIDE\n\nGitLab Dedicated is a single-tenant SaaS solution that is fully isolated, deployed in your preferred AWS cloud region, and hosted and maintained by GitLab.\n\n\ud83d\udca1 KEY INSIGHT: Deliberate cloud architecture decisions prevent cost escalation and operational complexity\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-dedicated-a-go-live-guide/\n\n2\ufe0f\u20e3 RAPID7 NAMED A LEADER IN THE 2026 GARTNER\u00ae MAGIC QUADRANT\u2122 FOR INTEGRATED SECURITY OPERATIONS CENTER SYSTEMS\n\nRecognized for Completeness of Vision and Ability to Execute. We are proud to share that Rapid7 has been recognized as a Leader in the 2026 Gartner\u00ae Magic Quadrant\u2122 for...\n\n\ud83d\udca1 KEY INSIGHT: Integrated security practices deliver more consistent protection than perimeter-only approaches\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/so-rapid7-named-leader-2026-gartner-magic-quadrant-integrated-security-operations-center-systems-isocs\n\n3\ufe0f\u20e3 CVE-2026-123903: CRITICAL VMWARE DIRECTORY SERVICE AUTHENTICATION BYPASS AFFECTS VCENTER\n\nOverview On November 24, 2026, Broadcom released VMware Security Advisory VMSA-2026-0011 to address several new vulnerabilities, including CVE-2026-123903 , a critical...\n\n\ud83d\udca1 KEY INSIGHT: Continuous delivery practices reduce batch size and lower the risk of each individual deployment\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/etr-cve-2026-123903-critical-vmware-directory-service-authentication-bypass-affects-vcenter\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
   "last_post_format": "digest",
   "last_post_sources": [
-    "www.infoq.com",
-    "aws.amazon.com",
-    "azure.microsoft.com",
-    "martinfowler.com"
+    "www.hashicorp.com",
+    "about.gitlab.com",
+    "blog.rapid7.com"
   ],
-  "last_post_timestamp": "2026-11-07T09:56:04.481439+00:00"
+  "last_post_timestamp": "2026-11-26T05:01:05.007797+00:00"
 }
