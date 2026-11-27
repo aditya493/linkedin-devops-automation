@@ -1,7 +1,7 @@
 {
-  "total_posts": 250,
+  "total_posts": 251,
   "posts_today": 1,
-  "last_post_date": "2026-11-26",
+  "last_post_date": "2026-11-27",
   "formats_used": {
     "case_study": 10,
     "deep_dive": 5,
@@ -10,7 +10,7 @@
     "lessons_learned": 10,
     "technical_deep_dives": 15,
     "industry_predictions": 28,
-    "career_advice": 28,
+    "career_advice": 29,
     "controversial_takes": 15,
     "ai_and_automation": 16
   },
@@ -33,7 +33,7 @@
     "www.mend.io": 2,
     "unit42.paloaltonetworks.com": 7,
     "www.hashicorp.com": 19,
-    "growth_plan": 121,
+    "growth_plan": 122,
     "snyk.io": 9,
     "netflixtechblog.medium.com": 8,
     "about.gitlab.com": 35,
@@ -306,14 +306,6 @@
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-03-18",
-      "time": "2026-03-18T04:52:08.616140+00:00",
-      "format": "industry_predictions",
-      "sources": [
-        "growth_plan"
-      ]
-    },
     {
       "date": "2026-03-18",
       "time": "2026-03-18T13:03:16.953352+00:00",
@@ -1171,15 +1163,21 @@
         "about.gitlab.com",
         "www.hashicorp.com"
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "time": "2026-11-27T11:59:33.653062+00:00",
+      "format": "career_advice",
+      "sources": [
+        "growth_plan"
+      ]
     }
   ],
-  "posts_created": 223,
-  "last_post_content": "\ud83d\udca1 Innovation in cloud-native and edge computing.\nEngineering visionaries spotlight what matters most this week.\n\n\ud83d\udccc ESSENTIAL READS:\n\n1\ufe0f\u20e3 GITLAB DEDICATED: A GO-LIVE GUIDE\n\nGitLab Dedicated is a single-tenant SaaS solution that is fully isolated, deployed in your preferred AWS cloud region, and hosted and maintained by GitLab.\n\n\ud83d\udca1 KEY INSIGHT: Deliberate cloud architecture decisions prevent cost escalation and operational complexity\n\ud83d\udd17 Read more: https://about.gitlab.com/blog/gitlab-dedicated-a-go-live-guide/\n\n2\ufe0f\u20e3 RAPID7 NAMED A LEADER IN THE 2026 GARTNER\u00ae MAGIC QUADRANT\u2122 FOR INTEGRATED SECURITY OPERATIONS CENTER SYSTEMS\n\nRecognized for Completeness of Vision and Ability to Execute. We are proud to share that Rapid7 has been recognized as a Leader in the 2026 Gartner\u00ae Magic Quadrant\u2122 for...\n\n\ud83d\udca1 KEY INSIGHT: Integrated security practices deliver more consistent protection than perimeter-only approaches\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/so-rapid7-named-leader-2026-gartner-magic-quadrant-integrated-security-operations-center-systems-isocs\n\n3\ufe0f\u20e3 CVE-2026-123903: CRITICAL VMWARE DIRECTORY SERVICE AUTHENTICATION BYPASS AFFECTS VCENTER\n\nOverview On November 24, 2026, Broadcom released VMware Security Advisory VMSA-2026-0011 to address several new vulnerabilities, including CVE-2026-123903 , a critical...\n\n\ud83d\udca1 KEY INSIGHT: Continuous delivery practices reduce batch size and lower the risk of each individual deployment\n\ud83d\udd17 Read more: https://www.rapid7.com/blog/post/etr-cve-2026-123903-critical-vmware-directory-service-authentication-bypass-affects-vcenter\n\n\ud83d\udcac WHAT WOULD YOU PRIORITIZE FIRST?\n\n#Infrastructure #DevOps #Security #CloudNative #Kubernetes #Engineering #DevSecOps\n\n\u2753 WHICH SIGNAL WILL SHAPE YOUR ROADMAP?",
-  "last_post_format": "digest",
+  "posts_created": 224,
+  "last_post_content": "After analyzing 5 years of DevOps data, here's the truth about why every developer should learn operations:\n\nKey insights on why every developer should learn operations:\n\n\u2022 Career milestone or challenge context\n\u2022 3-5 specific strategies that work\n\u2022 Common mistakes to avoid\n\u2022 Resources for getting started\n\nQuestions about transitioning to DevOps? Share them in the comments!\n\n#automation #devops #scalability #finops #microservices",
+  "last_post_format": "career_advice",
   "last_post_sources": [
-    "www.hashicorp.com",
-    "about.gitlab.com",
-    "blog.rapid7.com"
+    "growth_plan"
   ],
-  "last_post_timestamp": "2026-11-26T05:01:05.007797+00:00"
+  "last_post_timestamp": "2026-11-27T11:59:33.653842+00:00"
 }
